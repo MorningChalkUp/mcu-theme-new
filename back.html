@@ -7,7 +7,9 @@
     <title>Title Page</title>
 
     <link rel="stylesheet" href="css/material.min.css">
-    <link rel="stylesheet" href="css/material-grid.min.css">
+    <!-- <link rel="stylesheet" href="css/material-grid.min.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -15,7 +17,118 @@
     <![endif]-->
   </head>
   <body>
-    <h1 class="text-center">Hello World</h1>
+    <div class="mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--scroll">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Title</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Title</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <div class="mdl-grid">
+            <article class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+              <h1><a href="#">Two Ladies Walk Into a Box</a></h1>
+              <div class="meta">
+                December 7, 2016<br>
+                by Eric Sherred | Staff
+              </div>
+              <div class="share">
+                <button class="mdl-button">
+                  Facebook
+                </button>
+                <button class="mdl-button">
+                  Twitter
+                </button>
+                <button class="mdl-button">
+                  Email
+                </button>
+              </div>
+              <div class="main-img">
+                <img style="width: 100%;" src="https://placekitten.com/400/300" alt="Two Ladies Walk Into a Box">
+              </div>
+              <div class="content">
+                <h2>THE STORY</h2>
+                <p>Good morning and welcome to the Morning Chalk Up. Today’s edition was chalked up while watching teachers at Kansas City High School tell individual students how special they are.</p>
+                <h2>IS THIS A JOKE?</h2>
+                <p>Sadly, no. They’ve already knocked up five affiliates so far: Copperhead CrossFit, Sol CrossFit, Spark CrossFit, 8th Street CrossFit and Back Alley CrossFit. While just about every affiliate we’ve been to felt very safe, like being with your family, it might be a good idea to double check the batteries on your security cams.</p>
+                <h2>HOW DOES THE HEIST GO DOWN?</h2>
+                <p>Two ladies walk into the box. One of them asks questions about joining the affiliate while the one with the baby sits down and grabs what she can quickly find.</p>
+                <h2>HAVE THEY CAUGHT THESE BANDITS YET?</h2>
+                <p>Authorities are still on the hunt, but the good news is that they were caught on a security camera so it’s only a matter of time.</p>
+              </div>
+              <div class="tags">
+                <ul class="mdl-list">
+                  <li class="mdl-list__item"><a href="">#KaraWebb</a></li>
+                  <li class="mdl-list__item"><a href="">#CrossFit</a></li>
+                  <li class="mdl-list__item"><a href="">#HighSchool</a></li>
+                  <li class="mdl-list__item"><a href="">#Awesome</a></li>
+                  <li class="mdl-list__item"><a href="">#SomethingElse</a></li>
+                </ul>
+              </div>
+            </article>
+            <section class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop recommended">
+              <div class="mdl-grid">
+                <h3 class="mdl-cell mdl-cell--12-col center">Recommended Stories</h3>
+                <article class="mdl-cell mdl-cell--6-col teaser">
+                  <div class="feature">
+                    <img style="width: 100%" src="https://placekitten.com/400/300" alt="">
+                  </div>
+                  <div class="meta">
+                    <a href="#">Tidbits</a> • Dec 1, 2016
+                  </div>
+                  <h4>Orange Juice V. Soda. Which is Healthier?</h4>
+                  <div class="byline">
+                    BY JESSE KRIM  |  STAFF
+                  </div>
+                </article>
+                <article class="mdl-cell mdl-cell--6-col teaser">
+                  <div class="feature">
+                    <img style="width: 100%" src="https://placekitten.com/400/300" alt="">
+                  </div>
+                  <div class="meta">
+                    <a href="#">Tidbits</a> • Dec 1, 2016
+                  </div>
+                  <h4>Orange Juice V. Soda. Which is Healthier?</h4>
+                  <div class="byline">
+                    BY JESSE KRIM  |  STAFF
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <section class="subscribe">
+        <span>Get The Morning Chalk Up</span>
+        <p>Delivered to your inbox every morning</p>
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="sample1">
+            <label class="mdl-textfield__label" for="sample1">Text...</label>
+          </div>
+          <button class="mdl-button mdl-js-button">Submit</button>
+        </form>
+      </section>
+    </div>
 
 
     <script src="js/jquery-2.2.3.min.js"></script>

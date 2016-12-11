@@ -1,0 +1,31 @@
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+html body div.mdl-layout header .mdl-layout__header-row {
+  padding-left: 40px;
+}
+html body div.mdl-layout header .mdl-layout__header-row nav {
+  text-align: center;
+}
+html body div.mdl-layout main .page-content .mdl-grid article .tags ul li {
+  float: left;
+  padding: 5px;
+}
+html body div.mdl-layout section.subscribe {
+  text-align: center;
+  background: #3d5ba9;
+  color: #ffffff;
+}
+html body div.mdl-layout section.subscribe button {
+  background: #4BB749;
+  color: #fff;
+}
+html body div.mdl-layout footer {
+  /*padding: 6px 16px;*/
+}
