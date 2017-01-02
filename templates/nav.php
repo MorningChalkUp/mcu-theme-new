@@ -1,7 +1,7 @@
 <header class="mdl-layout__header">
   <div class="mdl-layout__header-row">
     <!-- Title -->
-    <span class="mdl-layout-title"><a href="#"><span>Morning</span> Chalk Up</a></span>
+    <span class="mdl-layout-title"><a href="/"><span>Morning</span> Chalk Up</a></span>
     <nav class="mdl-navigation mdl-layout--large-screen-only">
     <a class="mdl-navigation__link" href="">Home</a>
     <a class="mdl-navigation__link" href="">Tidbits</a>
