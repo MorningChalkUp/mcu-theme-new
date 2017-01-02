@@ -23,5 +23,8 @@
         window.open('https://twitter.com/intent/tweet?text=' + 'TITLE' + ' via Morning Chalk Up' + '&link=' + 'URL', '_blank');
       });
     </script>
+
+    <?php wp_footer(); ?>
+
   </body>
 </html>
