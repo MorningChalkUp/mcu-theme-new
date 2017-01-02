@@ -12,14 +12,16 @@
             </div>
             <div class="mdl-layout-spacer"></div>
           </div>
-          <?php query_posts('showposts=9');
-          if (have_posts()) {
-            while (have_posts()) {
-              the_post();
-              get_template_part( 'templates/teaser', 'archive' );
-            }
-          } 
-          ?>
+          <div class="mdl-grid">
+            <?php query_posts('showposts=9');
+            if (have_posts()) {
+              while (have_posts()) {
+                the_post();
+                get_template_part( 'templates/teaser', 'archive' );
+              }
+            } 
+            ?>
+          </div>
         </section>
       </div>
       
@@ -28,7 +30,10 @@
       <div class="mdl-grid">
         <section class="mdl-cell mdl-cell--12-col main archive">
           <div class="mdl-grid">
-            <?php query_posts('showposts=0&offset=9');
+            <?php query_posts( array(
+                'offset' => 9,
+                'posts_per_page' => -1,
+              ) );
               if (have_posts()) {
                 while (have_posts()) {
                   the_post();
