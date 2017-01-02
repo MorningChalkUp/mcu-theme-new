@@ -3,11 +3,12 @@
     <!-- Title -->
     <span class="mdl-layout-title"><a href="#"><span>Morning</span> Chalk Up</a></span>
     <nav class="mdl-navigation mdl-layout--large-screen-only">
-    <a class="mdl-navigation__link" href="">Home</a>
-    <a class="mdl-navigation__link" href="">Tidbits</a>
-    <a class="mdl-navigation__link" href="">the Morning Chalk Up</a>
-    <a class="mdl-navigation__link" href="">Events</a>
-    <a class="mdl-navigation__link" href="">About</a>
+      <?php 
+        $array_menu = wp_get_nav_menu_items('main-menu');
+        foreach ($array_menu as $m) {
+          echo '<a class="mdl-navigation__link" href="{$m->url}" title="{$m->title}">{$m->title}</a>';
+        }
+      ?>
     </nav>
     <div class="mdl-layout-spacer"></div>
     <div class="right sub">
@@ -25,10 +26,11 @@
 <div class="mdl-layout__drawer mdl-layout--small-screen-only">
   <span class="mdl-layout-title"><a href="#"><span>Morning</span> Chalk Up</a></span>
   <nav class="mdl-navigation">
-    <a class="mdl-navigation__link" href="">Home</a>
-    <a class="mdl-navigation__link" href="">Tidbits</a>
-    <a class="mdl-navigation__link" href="">the Morning Chalk Up</a>
-    <a class="mdl-navigation__link" href="">Events</a>
-    <a class="mdl-navigation__link" href="">About</a>
+    <?php 
+      $array_menu = wp_get_nav_menu_items('main-menu');
+      foreach ($array_menu as $m) {
+        echo '<a class="mdl-navigation__link" href="{$m->url}" title="{$m->title}">{$m->title}</a>';
+      }
+    ?>
   </nav>
 </div>
