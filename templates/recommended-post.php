@@ -10,7 +10,7 @@ $thumb_url = $thumb_url_array[0];
   </div>
   <div class="meta">
     <?php 
-      $categories = get_the_category();
+      $categories = get_the_category( $post->ID );
       if ( ! empty( $categories ) ) {
           echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
       }
