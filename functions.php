@@ -27,6 +27,17 @@ function mcu_infinite_scroll_render() {
   get_template_part( 'loop' );
 }
 
+add_filter( 'get_the_archive_title', function ($title) {
+    if ( is_category() ) {
+            $title = single_cat_title( '', false );
+        } elseif ( is_tag() ) {
+            $title = single_tag_title( '', false );
+        } elseif ( is_author() ) {
+            $title = get_the_author();
+        }
+    return $title;
+});
+
 if(function_exists("register_field_group"))
 {
   register_field_group(array (
