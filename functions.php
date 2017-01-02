@@ -2,34 +2,27 @@
 
 add_theme_support('post-thumbnails'); 
 
-function mcu_get_nav() {
-  include get_template_directory_uri() . 'templates/nav.php';
+add_theme_support( 'title-tag' );
+
+function mcu_register_menu() {
+  register_nav_menu('main-menu',__( 'Main Nav' ));
 }
+add_action( 'init', 'mcu_register_menu' );
 
-function mcu_get_fb() {
-  include get_template_directory_uri() . 'templates/fb.php';
+function remove_ul ( $menu ){
+  return preg_replace( array( '#^<ul[^>]*>#', '#</ul>$#' ), '', $menu );
 }
+add_filter( 'wp_nav_menu', 'remove_ul' );
 
-function mcu_get_post() {
-  include get_template_directory_uri() . 'templates/post.php';
+function mcu_infinite_scroll_init() {
+  add_theme_support( 'infinite-scroll', array(
+    'container' => 'content',
+    'render' => 'mcu_infinite_scroll_render',
+    'footer' => 'footer',
+  ) );
 }
+add_action( 'init', 'mcu_infinite_scroll_init' );
 
-function mcu_get_recommended() {
-  include get_template_directory_uri() . 'templates/recommended.php';
-}
-
-function mcu_get_recommended_post() {
-  include get_template_directory_uri() . 'templates/recommended_post.php';
-}
-
-function mcu_get_subscribe() {
-  include get_template_directory_uri() . 'templates/subscribe.php';
-}
-
-function mcu_get_footer() {
-  include get_template_directory_uri() . 'templates/footer.php';
-}
-
-function mcu_get_post() {
-
+function mcu_infinite_scroll_render() {
+  get_template_part( 'loop' );
 }

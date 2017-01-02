@@ -26,6 +26,6 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <?php mcu_get_fb(); ?>
+    <?php get_template_part( 'templates/fb' ); ?>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <?php mcu_get_nav(); ?>
+      <?php get_template_part( 'templates/nav' ); ?>
