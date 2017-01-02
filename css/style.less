@@ -1,54 +1,486 @@
-.left {
-  text-align: left;
-}
-.right {
-  text-align: right;
-}
-.center {
-  text-align: center;
+/*
+Theme Name: MorningChalkUp
+Author: Eric Sherred
+Author URI: http://ericsherred.org/
+Description: Full Morning Chalk Up site development - January 2017
+Version: 2.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: morningchalkup_v2
+*/
+
+@white: #fff;
+@lt-white: rgba(255,255,255,0.5);
+@blue: #3D5BA9;
+@grey: #333132;
+@lt-grey: rgba(51,49,50,0.75);
+@line-grey: rgba(51,49,50,0.2);
+@green: #4BB749;
+@dk-green: rgba(75,183,73,0.9);
+
+@fb-btn: #3b5998;
+@fb-btn-hover: #2d4373;
+@tw-btn: #55acee;
+@tw-btn-hover: #2795e9;
+@em-btn: #00b388;
+@em-btn-hover: #008061;
+
+@regular: 400;
+@normal: 500;
+@demi: 600;
+@bold: 700;
+
+@open-sans: 'Open Sans', sans-serif;
+@industry: "industry",sans-serif;
+
+body,p,div {
+  font-family: @open-sans;
+  font-weight: @regular;
+  line-height: 2em;
 }
 
-html {
-  body {
-    div.mdl-layout {
-      header {
-        .mdl-layout__header-row {
-          padding-left: 40px;
-          .mdl-layout-title {
+a {
+  color: @blue;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
+h1 {
+  font-size: 48px;
+  font-family: @industry;
+  line-height: 48px;
+  margin: 21px 0;
+  font-weight: @bold;
+  a {
+    font-weight: @bold;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+h2 {
+  font-size: 28px;
+  font-family: @industry;
+  line-height: 28px;
+  margin: 28px 0 !important;
+  font-weight: @demi;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: @open-sans;
+  font-weight: @bold;
+  margin: .75em 0em;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 30px;
+  font-family: @open-sans;
+  font-weight: @demi;
+  line-height: 1.5em;
+  margin: 0 0 .5em 0;
+}
+
+header {
+  &.mdl-layout__header {
+    background-color: @white;
+    box-shadow: none;
+    border-bottom: 1px solid @line-grey;
+    .mdl-layout__header-row {
+      padding: 0px 32px;
+      color: @grey;
+      .mdl-layout-title {
+        margin-right: 28px;
+        a {
+          text-transform: uppercase;
+          font-size: 20px;
+          font-family: @industry;
+          font-weight: @demi;
+          span {
+            color: @grey;
           }
-          nav {
-            text-align: center;
+          &:hover {
+            text-decoration: none;
           }
         }
       }
-      main {
-        .page-content {
-          .mdl-grid {
-            article {
-              .tags {
-                ul {
-                  li {
-                    float: left;
-                    padding:5px;
-                  }
-                }
+      nav {
+        &.mdl-navigation {
+          a {
+            &.mdl-navigation__link {
+              color: @grey;
+              font-family: @open-sans;
+              font-weight: @demi;
+              font-size: 16px;
+              padding: 0px 12px;
+              &:hover {
+                text-decoration: none;
+                color: @blue;
               }
             }
           }
         }
       }
-      section.subscribe {
-        text-align: center;
-        background: #3d5ba9;
-        color: #ffffff;
-        button {
-          background: #4BB749;
-          color: #fff;
+      .right {
+        line-height: 64px;
+        height: 64px;
+        a {
+          color: @grey;
+          font-family: @open-sans;
+          font-weight: @demi;
+          font-size: 16px;
+          &:hover {
+            text-decoration: none;
+            color: @blue;
+          }
+        }
+        &.sub {
+          padding-right: 32px;
+        }
+        &.search {
+          border-left: 1px solid @line-grey;
+          padding-left: 32px;
+          a {
+            i {
+              font-size: 24px;
+              vertical-align: middle;
+            }
+          }
         }
       }
-      footer {
-        /*padding: 6px 16px;*/
+    }
+    .mdl-layout__drawer-button {
+      color: @grey;
+    }
+  }
+}
+.mdl-layout__drawer {
+  background-color: @white;
+  .mdl-layout-title {
+    border-bottom: 1px solid @line-grey;
+    a {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-family: @industry;
+      font-weight: @demi;
+      span {
+        color: @grey;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  nav {
+    &.mdl-navigation {
+      a {
+        &.mdl-navigation__link {
+          color: @grey;
+          font-family: @open-sans;
+          font-weight: @demi;
+          font-size: 16px;
+          &:hover {
+            background-color: @blue;
+            color: @white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.mdl-layout__content {
+  .page-content {
+    article {
+      &.main {
+        &.article {
+          max-width: 770px;
+        }
+        h2 {
+          font-family: @open-sans;
+          font-weight: @bold;
+          font-size: 36px;
+          line-height: 1em;
+        }
+        .meta {
+          font-size: 14px;
+          color: @lt-grey;
+          text-transform: uppercase;
+          line-height: 1.5em;
+        }
+        .share {
+          margin: 21px 0;
+          button {
+            font-family: "open sans", sans-serif;
+            font-weight: @demi;
+            color: @white;
+            margin: 0 5px 0 0;
+            &.fb {
+              background-color: @fb-btn;
+              &:hover {
+                background-color: @fb-btn-hover;
+              }
+            }
+            &.tw {
+              background-color: @tw-btn;
+              &:hover {
+                background-color: @tw-btn-hover;
+              }
+            }
+            &.em {
+              background-color: @em-btn;
+              &:hover {
+                background-color: @em-btn-hover;
+              }
+            }
+          }
+        }
+        .img {
+          .feature-img {
+            max-width: 770px;
+            width:100%;
+            height: auto;
+            display: block;
+          }
+        }
+        .sub-sec {
+          text-align: center;
+          font-family: @open-sans;
+          font-weight: @bold;
+          font-size: 24px;
+          text-transform: uppercase;
+          color: @grey;
+          margin: 18px 0;
+          img {
+            display: block;
+            max-width: 50px;
+            height: auto;
+            margin: auto;
+          }
+        }
+        .tags {
+          margin: 2em 0;
+        }
+      }
+    }
+    section {
+      &.recommended {
+        border-top: 5px solid @blue;
+        border-bottom: 2px solid @blue;
+        margin-bottom: 50px;
+        padding-bottom: 21px;
+      }
+      &.archive {
+        .title {
+          text-align: center;
+          h1 {
+            font-family: @industry;
+            margin: 18px 0;
+          }
+          p {
+            font-family: @open-sans;
+            font-size: 24px;
+            color: @grey;
+            line-height: 1.5em;
+            margin: 0;
+          }
+        }
+        article {
+          margin-top: 25px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
+
+section {
+  &.subscribe {
+    background-color: @blue;
+    text-align: center;
+    h1 {
+      color: @white;
+      margin: 12px 0;
+    }
+    .sub-title {
+      color: @white;
+      font-size: 22px;
+      line-height: 1.5em;
+    }
+    .sub-form {
+      .mdl-textfield {
+        label {
+          color: @lt-white;
+          font-size: 16px;
+          top: 18px;
+          font-family: @open-sans;
+          &:after {
+            background: @white;
+          }
+        }
+        input {
+          border-bottom-color: @lt-white;
+          font-size: 16px;
+          color: @white;
+          font-family: @open-sans;
+        }
+        &.is-dirty {
+          label {
+            color: @white;
+            font-size: 12px;
+            top: 2px;
+          }
+          input { 
+            border-bottom: 1px solid @white;
+          }
+        }
+        &.is-focused {
+          label {
+            color: @white;
+            font-size: 12px;
+            top: 2px;
+          }
+          input {
+            border-bottom: 1px solid @white;
+            font-size: 16px;
+            color: @white;
+          }
+        }
+      }
+      button {
+        margin-left: 5px;
+        &.submit {
+          background-color: @green;
+          color: @white;
+          &:hover {
+            background-color: @dk-green;
+          }
+        }
+      }
+    }
+  }
+}
+
+article {
+  &.teaser {
+    .img {
+      .teaser-img {
+        /*max-width: 400px;*/
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+    .meta {
+      font-size: 14px;
+      font-family: "open sans", sans-serif;
+      font-weight: @regular;
+      text-transform: uppercase;
+      margin: 1em 0;
+    }
+    h4 {
+      a {
+        color: @grey;
+        font-weight: @demi;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .byline {
+      font-size: 14px;
+      color: @lt-grey;
+    }
+  }
+}
+
+footer {
+  &.mdl-mini-footer {
+    border-top: 1px solid @line-grey;
+    padding: 14px;
+    background: @white;
+    ul {
+      li {
+          font-family: @open-sans;
+          font-weight: @demi;
+          font-size: 16px;
+          color: @grey;
+        a {
+          font-family: @open-sans;
+          font-weight: @demi;
+          font-size: 16px;
+          color: @grey;
+          i {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    &.mdl-layout__header {
+      .mdl-layout__header-row {
+        padding: 0 16px 0 72px;
+        .right {
+          line-height: 56px;
+          height: 56px;
+          &.sub {
+            padding-right: 16px;
+          }
+          &.search {
+            padding-left: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 875px) {
+  section {
+    &.subscribe {
+      h1 {
+        font-size: 32px;
+        line-height: 1.5em;
+        margin: 0;
+      }
+      .sub-title {
+        font-size: 18px;
+        line-height: 1em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    &.mdl-mini-footer {
+      ul {
+        text-align: center;
+        li {
+          font-size: 12px;
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+      .mdl-mini-footer__left-section {
+        margin: auto;
+        padding-bottom: 12px;
+      }
+      .mdl-mini-footer__right-section {
+        margin: auto;
       }
     }
   }

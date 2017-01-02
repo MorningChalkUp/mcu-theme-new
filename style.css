@@ -1,12 +1,13 @@
-.left {
-  text-align: left;
-}
-.right {
-  text-align: right;
-}
-.center {
-  text-align: center;
-}
+/*
+Theme Name: MorningChalkUp
+Author: Eric Sherred
+Author URI: http://ericsherred.org/
+Description: Full Morning Chalk Up site development - January 2017
+Version: 2.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: morningchalkup_v2
+*/
 body,
 p,
 div {
