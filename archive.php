@@ -12,14 +12,16 @@
             </div>
             <div class="mdl-layout-spacer"></div>
           </div>
-          <?php query_posts('showposts=9');
-          if (have_posts()) {
-            while (have_posts()) {
-              the_post();
-              get_template_part( 'templates/teaser', 'archive' );
-            }
-          } 
-          ?>
+          <div class="mdl-grid">
+            <?php query_posts('showposts=9');
+            if (have_posts()) {
+              while (have_posts()) {
+                the_post();
+                get_template_part( 'templates/teaser', 'archive' );
+              }
+            } 
+            ?>
+          </div>
         </section>
       </div>
       
