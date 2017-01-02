@@ -8,8 +8,8 @@
       <?php
         if ( have_posts() ) {
           while ( have_posts() ) {
-            the_post(); 
-            mcu_get_post();
+            the_post();
+            get_template_part( 'templates/post' );
           }
         }
       ?>
@@ -19,15 +19,15 @@
     <div class="mdl-grid">
       <div class="mdl-layout-spacer"></div>
       
-      <?php mcu_get_recommended(); ?>
+      <?php get_template_part( 'templates/recommented' ); ?>
 
       <div class="mdl-layout-spacer"></div>
     </div>
   </div>
 
-  <?php mcu_get_subscribe(); ?>
+  <?php get_template_part( 'templates/subscribe' ); ?>
 
-  <?php mcu_get_footer(); ?>
+  <?php get_template_part( 'templates/footer' ); ?>
 
 </main>
 
