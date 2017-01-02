@@ -6,7 +6,7 @@
       <?php 
         $array_menu = wp_get_nav_menu_items('Main Nav');
         foreach ($array_menu as $m) {
-          echo '<a class="mdl-navigation__link" href="{$m->url}" title="{$m->title}">{$m->title}</a>';
+          echo '<a class="mdl-navigation__link" href="' . $m->url . '" title="' . $m->title . '">' . $m->title . '</a>';
         }
       ?>
     </nav>
