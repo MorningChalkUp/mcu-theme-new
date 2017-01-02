@@ -29,7 +29,3 @@ function mcu_get_subscribe() {
 function mcu_get_footer() {
   include get_template_directory_uri() . 'templates/footer.php';
 }
-
-function mcu_get_post() {
-
-}
