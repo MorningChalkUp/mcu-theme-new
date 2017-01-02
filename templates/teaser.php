@@ -6,7 +6,7 @@ $thumb_url = $thumb_url_array[0];
 
 <article class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet teaser">
   <div class="img">
-    <a href="#"><img class="teaser-img" src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>"></a>
+    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img class="teaser-img" src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>"></a>
   </div>
   <div class="meta">
     <?php 
