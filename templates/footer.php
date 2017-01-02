@@ -1,11 +1,12 @@
 <footer class="mdl-mini-footer">
   <div class="mdl-mini-footer__left-section">
     <ul class="mdl-mini-footer__link-list">
-      <li><a href="#">Tidbits</a></li>
-      <li><a href="#">the Morning Chalk Up</a></li>
-      <li><a href="#">Events</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Subscribe</a></li>
+      <?php 
+        $array_menu = wp_get_nav_menu_items('Main Nav');
+        foreach ($array_menu as $m) {
+          echo '<li><a class="mdl-navigation__link" href="' . $m->url . '" title="' . $m->title . '">' . $m->title . '</a></li>';
+        }
+      ?>
     </ul>
   </div>
   <div class="mdl-mini-footer__right-section">
