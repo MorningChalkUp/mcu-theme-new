@@ -16,7 +16,7 @@ $thumb_url = $thumb_url_array[0];
       }
     ?>
     •
-    <?php echo get_the_date('M j, Y')); ?>
+    <?php echo get_the_date('M j, Y'); ?>
   </div>
   <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
   <div class="byline">
