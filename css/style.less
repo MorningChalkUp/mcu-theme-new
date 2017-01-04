@@ -14,6 +14,7 @@ Text Domain: morningchalkup_v2
 @blue: #3D5BA9;
 @grey: #333132;
 @lt-grey: rgba(51,49,50,0.75);
+@bg-lt-grey: rgba(216,216,216,0.1);
 @line-grey: rgba(51,49,50,0.2);
 @green: #4BB749;
 @dk-green: rgba(75,183,73,0.9);
@@ -48,6 +49,12 @@ a {
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+  }
+}
+
+img {
+  &.circle {
+    border-radius: 50%;
   }
 }
 
@@ -273,6 +280,82 @@ header {
         .tags {
           margin: 2em 0;
         }
+        &.about {
+          min-height: 100%;
+          .hero {
+            background-image: url('img/about-bg.png');
+            background-size: cover;
+            position: relative;
+            height: calc(~"100vh - 64px");
+            width: 100%;
+            h1 {
+              position:absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              right: 5%;
+              text-align: right;
+              max-width: 675px;
+              margin: 0;
+              font-family: @open-sans;
+              font-size: 64px;
+              font-weight: @regular;
+              /*max-width: 675px;*/
+              line-height: 1.25em;
+              span {
+                color: @blue;
+                font-weight: @bold;
+              }
+            }
+            &:after {
+              clear: both;
+              content: '.';
+              font-size: 1px;
+              visibility: hidden;
+              display: block;
+            }
+          }
+          .story {
+            text-align: center;
+            background: @bg-lt-grey;
+          }
+          .mission {
+            text-align: center;
+          }
+          .team {
+            text-align: center;
+            background: @bg-lt-grey;
+            section {
+              &.team-member {
+                margin-bottom: 25px;
+                .name {
+                  font-family: @open-sans;
+                  font-weight: @bold;
+                  font-size: 36px;
+                  color: @grey;
+                }
+                .info {
+                  font-size: 18px;
+                  line-height: 1.25em;
+                  strong {
+                    display: block;
+                  }
+                }
+                .quote {
+                  margin: 18px 0 10px 0;
+                }
+                .email {
+                  a {
+                    background: @blue;
+                    color: @white;
+                    &:hover {
+                      text-decoration: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
     section {
@@ -449,9 +532,37 @@ footer {
       }
     }
   }
+  .mdl-layout__content {
+    .page-content {
+      article {
+        &.main {
+          &.about {
+            .hero {
+              height: calc(~"100vh - 56px");
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 875px) {
+  .mdl-layout__content {
+    .page-content {
+      article {
+        &.main {
+          &.about {
+            .hero {
+              h1 {
+                font-size: 48px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   section {
     &.subscribe {
       h1 {
