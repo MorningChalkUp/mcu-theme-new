@@ -19,7 +19,8 @@
                 the_post();
                 get_template_part( 'templates/teaser', 'archive' );
               }
-            } 
+            }
+            wp_reset_postdata();
             ?>
           </div>
         </section>
@@ -39,7 +40,8 @@
                   the_post();
                   get_template_part( 'templates/teaser', 'archive' );
                 }
-              } 
+              }
+              wp_reset_postdata();
             ?>
           </div>
         </section>
