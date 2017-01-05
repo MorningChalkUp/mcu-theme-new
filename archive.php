@@ -13,15 +13,17 @@
             <div class="mdl-layout-spacer"></div>
           </div>
           <div class="mdl-grid">
-            <?php query_posts('posts_per_page=-1');
-            if (have_posts()) {
+            <?php 
+            $archive = new WP_Query('posts_per_page=9');
+            if ($archive->have_posts()) {
               $i = 0;
-              while (have_posts() && $i < 9) {
-                the_post();
+              while ($archive->have_posts()) {
+                $archive->the_post();
                 get_template_part( 'templates/teaser', 'archive' );
-                $i++;
+                $do_not_duplicate[] = $post->ID;
               }
             }
+            wp_reset_postdata();
             ?>
           </div>
         </section>
@@ -33,12 +35,14 @@
         <section class="mdl-cell mdl-cell--12-col main archive">
           <div class="mdl-grid">
             <?php 
-              if (have_posts()) {
-                while (have_posts()) {
-                  the_post();
+              $archive = new WP_Query( array( 'posts_per_page' => -1, 'post__not_in' => $do_not_duplicate ) );
+              if ($archive->have_posts()) {
+                while ($archive->have_posts()) {
+                  $archive->the_post();
                   get_template_part( 'templates/teaser', 'archive' );
                 }
               }
+              wp_reset_postdata();
             ?>
           </div>
         </section>
