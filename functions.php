@@ -4,7 +4,13 @@ add_theme_support('post-thumbnails');
 
 add_theme_support( 'title-tag' );
 
+
+
 add_image_size( 'blog-roll', 370, 247, true );
+
+add_image_size( 'mcu-thumb', 75, 75, true );
+
+add_image_size( 'featured', 855, 590, true );
 
 
 function mcu_register_menu() {
