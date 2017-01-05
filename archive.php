@@ -32,7 +32,7 @@
       
       <?php get_template_part( 'templates/subscribe' ); ?>
       
-      <?php if (have_posts()) : ?>
+      <?php if (have_posts() && $i >= 9) : ?>
       <div class="mdl-grid">
         <section class="mdl-cell mdl-cell--12-col main archive">
           <div class="mdl-grid">
