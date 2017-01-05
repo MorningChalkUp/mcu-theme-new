@@ -13,7 +13,9 @@
             <div class="mdl-layout-spacer"></div>
           </div>
           <div class="mdl-grid">
-            <?php query_posts('posts_per_page=9');
+            <?php 
+            global $query_string;
+            query_posts( $query_string . 'posts_per_page=9' );
             if (have_posts()) {
               while (have_posts()) {
                 the_post();
@@ -32,6 +34,8 @@
         <section class="mdl-cell mdl-cell--12-col main archive">
           <div class="mdl-grid">
             <?php 
+              global $query_string;
+              query_posts( $query_string . 'posts_per_page=-1' );
               if (have_posts()) {
                 $i = 0;
                 while (have_posts()) {
