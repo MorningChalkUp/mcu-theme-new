@@ -16,8 +16,9 @@
             <?php 
             query_posts('posts_per_page=-1' );
             if (have_posts()) {
-              while (have_posts()) {
-                the_post();
+              $i = 0;
+              while (have_posts() && $i < 9) {
+                the_post(); $i++;
                 get_template_part( 'templates/teaser', 'archive' );
               }
             }
