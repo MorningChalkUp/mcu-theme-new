@@ -15,7 +15,9 @@
           <div class="mdl-grid">
             <?php 
             global $query_string;
-            query_posts( $query_string . 'posts_per_page=-1' );
+            parse_str( $query_string, $args );
+            $args['posts_per_page'] = 5;
+            query_posts( $args );
             if (have_posts()) {
               $i = 0;
               while (have_posts() && $i < 9) {
