@@ -40,7 +40,7 @@
               $i = 0;
               while (have_posts()) {
                 the_post();
-                if 
+
                 get_template_part( 'templates/teaser', 'archive' );
                 $i++;
               }
