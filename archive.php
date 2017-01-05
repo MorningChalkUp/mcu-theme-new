@@ -13,11 +13,13 @@
             <div class="mdl-layout-spacer"></div>
           </div>
           <div class="mdl-grid">
-            <?php query_posts('showposts=9');
+            <?php query_posts('posts_per_page=-1');
             if (have_posts()) {
-              while (have_posts()) {
+              $i = 0;
+              while (have_posts() && $i < 9) {
                 the_post();
                 get_template_part( 'templates/teaser', 'archive' );
+                $i++;
               }
             }
             wp_reset_postdata();
@@ -31,10 +33,7 @@
       <div class="mdl-grid">
         <section class="mdl-cell mdl-cell--12-col main archive">
           <div class="mdl-grid">
-            <?php query_posts( array(
-                'offset' => '9',
-                'posts_per_page' => '-1',
-              ) );
+            <?php 
               if (have_posts()) {
                 while (have_posts()) {
                   the_post();
