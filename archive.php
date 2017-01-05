@@ -31,8 +31,8 @@
         <section class="mdl-cell mdl-cell--12-col main archive">
           <div class="mdl-grid">
             <?php query_posts( array(
-                'offset' => 9,
-                'posts_per_page' => -1,
+                'offset' => '9',
+                'posts_per_page' => '-1',
               ) );
               if (have_posts()) {
                 while (have_posts()) {
