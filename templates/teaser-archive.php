@@ -1,7 +1,7 @@
 <?php 
 if ( has_post_thumbnail() ) {
   $thumb_id = get_post_thumbnail_id();
-  $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'blog-roll', true);
+  $thumb_url_array = wp_get_attachment_image_src( $thumb_id, 'blog-roll' );
   $thumb_url = $thumb_url_array[0];
 } else {
   $thumb_url = get_template_directory_uri() . '/screenshot.png';
@@ -10,7 +10,9 @@ if ( has_post_thumbnail() ) {
 
 <article class="mdl-cell mdl-cell--4-col teaser">
   <div class="img">
-    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img class="teaser-img" src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>"></a>
+    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+      <img class="teaser-img" src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>">
+    </a>
   </div>
   <div class="meta">
     <?php 
