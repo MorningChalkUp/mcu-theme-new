@@ -219,6 +219,9 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content article.main .tags {
   margin: 2em 0;
 }
+.mdl-layout__content .page-content article.main.about .hero {
+  background-image: url(img/about-bg.png) cover / cover;
+}
 .mdl-layout__content .page-content section.recommended {
   border-top: 5px solid #3D5BA9;
   border-bottom: 2px solid #3D5BA9;
