@@ -16,7 +16,7 @@
             <?php 
             global $query_string;
             parse_str( $query_string, $args );
-            $args['posts_per_page'] = 5;
+            $args['posts_per_page'] = -1;
             query_posts( $args );
             if (have_posts()) {
               $i = 0;
@@ -37,9 +37,12 @@
         <section class="mdl-cell mdl-cell--12-col main archive">
           <div class="mdl-grid">
             <?php 
+              $i = 0;
               while (have_posts()) {
                 the_post();
+                if 
                 get_template_part( 'templates/teaser', 'archive' );
+                $i++;
               }
             ?>
           </div>
