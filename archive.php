@@ -14,7 +14,8 @@
           </div>
           <div class="mdl-grid">
             <?php 
-            query_posts('posts_per_page=-1' );
+            global $query_string;
+            query_posts( $query_string . 'posts_per_page=-1' );
             if (have_posts()) {
               $i = 0;
               while (have_posts() && $i < 9) {
