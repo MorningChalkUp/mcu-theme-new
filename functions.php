@@ -12,6 +12,7 @@ add_image_size( 'mcu-thumb', 75, 75, true );
 
 add_image_size( 'featured', 855, 590, true );
 
+add_image_size( 'team-member', 200, 200, true );
 
 function mcu_register_menu() {
   register_nav_menu('main-menu',__( 'Main Nav' ));
