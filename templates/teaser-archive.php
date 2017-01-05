@@ -1,7 +1,7 @@
 <?php 
 if ( has_post_thumbnail() ) {
   $thumb_id = get_post_thumbnail_id();
-  $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+  $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'blog-roll', true);
   $thumb_url = $thumb_url_array[0];
 } else {
   $thumb_url = get_template_directory_uri() . '/screenshot.png';
