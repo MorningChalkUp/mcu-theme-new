@@ -35,7 +35,7 @@
         <section class="mdl-cell mdl-cell--12-col main archive">
           <div class="mdl-grid">
             <?php 
-              $archive = new WP_Query( array( 'posts_per_page' => -1, 'post__not_in' => $do_not_duplicate ) );
+              $archive = new WP_Query( array( 'posts_per_page' => -1, 'post_not_in' => $do_not_duplicate ) );
               if ($archive->have_posts()) {
                 while ($archive->have_posts()) {
                   $archive->the_post();
