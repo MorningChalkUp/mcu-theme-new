@@ -22,7 +22,6 @@
                 $i++;
               }
             }
-            wp_reset_postdata();
             ?>
           </div>
         </section>
@@ -40,7 +39,6 @@
                   get_template_part( 'templates/teaser', 'archive' );
                 }
               }
-              wp_reset_postdata();
             ?>
           </div>
         </section>
