@@ -35,15 +35,11 @@
           <div class="mdl-grid">
             <?php 
               global $query_string;
-              query_posts( $query_string . 'posts_per_page=-1' );
+              query_posts( $query_string . 'posts_per_page=-1&offset=9' );
               if (have_posts()) {
-                $i = 0;
                 while (have_posts()) {
                   the_post();
-                  if ( $i >= 9) {
-                    get_template_part( 'templates/teaser', 'archive' );
-                  }
-                  $i++;
+                  get_template_part( 'templates/teaser', 'archive' );
                 }
               }
               wp_reset_postdata();

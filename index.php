@@ -13,13 +13,16 @@
             <div class="mdl-layout-spacer"></div>
           </div>
           <div class="mdl-grid">
-            <?php query_posts('showposts=9');
+            <?php 
+            global $query_string;
+            query_posts( $query_string . 'posts_per_page=9' );
             if (have_posts()) {
               while (have_posts()) {
                 the_post();
                 get_template_part( 'templates/teaser', 'archive' );
               }
-            } 
+            }
+            wp_reset_postdata();
             ?>
           </div>
         </section>
@@ -30,16 +33,16 @@
       <div class="mdl-grid">
         <section class="mdl-cell mdl-cell--12-col main archive">
           <div class="mdl-grid">
-            <?php query_posts( array(
-                'offset' => 9,
-                'posts_per_page' => -1,
-              ) );
+            <?php 
+              global $query_string;
+              query_posts( $query_string . 'posts_per_page=-1&offset=9' );
               if (have_posts()) {
                 while (have_posts()) {
                   the_post();
                   get_template_part( 'templates/teaser', 'archive' );
                 }
-              } 
+              }
+              wp_reset_postdata();
             ?>
           </div>
         </section>
