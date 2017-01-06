@@ -84,9 +84,9 @@
               <div class="mdl-grid fields">
                 <div class="mdl-layout-spacer"></div>
                 <div class="mdl-cell mdl-cell--4-col">
-                  <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                  <a href="/thank-you" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
                     Subscribe
-                  </button>
+                  </a>
                 </div>
                 <div class="mdl-layout-spacer"></div>
                 <div class="mdl-cell mdl-cell--4-col">
