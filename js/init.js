@@ -18,13 +18,25 @@ $('.js-share-twitter').on('click', function() {
 });
 
 $('input.event-state').on('change', function() {
-  window.location = '?state=' + $('input.event-state').data('val');
+  if (window.location.search != "") {
+    window.location = window.location.search + "&state=" + $('input.event-state').data('val');
+  } else {
+    window.location = '?state=' + $('input.event-state').data('val');
+  }
 });
 
 $('input.event-month').on('change', function() {
-  window.location = '?month=' + $('input.event-month').data('val');
+  if (window.location.search != "") {
+    window.location = window.location.search + "&month=" + $('input.event-month').data('val');
+  } else {
+    window.location = '?month=' + $('input.event-month').data('val');
+  }
 });
 
 $('input.event-type').on('change', function() {
-  window.location = '?type=' + $('input.event-type').data('val');
+  if (window.location.search != "") {
+    window.location = window.location.search + "&type=" + $('input.event-type').data('val');
+  } else {
+    window.location = '?type=' + $('input.event-type').data('val');
+  }
 });
