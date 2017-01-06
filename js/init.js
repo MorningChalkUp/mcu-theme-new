@@ -18,13 +18,13 @@ $('.js-share-twitter').on('click', function() {
 });
 
 $('input.event-state').on('change', function() {
-  window.location = '?' + $('input.event-state').data('val');
+  window.location = '?state=' + $('input.event-state').data('val');
 });
 
 $('input.event-month').on('change', function() {
-  window.location = '?' + $('input.event-month').data('val');
+  window.location = '?month=' + $('input.event-month').data('val');
 });
 
 $('input.event-type').on('change', function() {
-  window.location = '?' + $('input.event-type').data('val');
+  window.location = '?type=' + $('input.event-type').data('val');
 });
