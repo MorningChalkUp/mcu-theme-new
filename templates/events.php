@@ -1,4 +1,8 @@
 <?php 
+$currentdate = date("Y-m-d",mktime(0,0,0,date("m"),date("d")-1,date("Y")));
+
+$currentMonth = (int)date('m');
+
 if ( $_GET['date']) {
   query_posts(array(
     'meta_query'      => array(
