@@ -12,7 +12,7 @@
     </nav>
     <div class="mdl-layout-spacer"></div>
     <div class="right sub">
-      <a href="#">
+      <a href="/subscribe">
         <i class="mdi mdi-email"></i> <span class="mdl-layout--large-screen-only">Subscribe</span>
       </a>
     </div>
