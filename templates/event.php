@@ -8,11 +8,11 @@
   <div class="mdl-cell mdl-cell--1-col mdl-cell--middle date">
     <a href="?date=<?php echo $event_date->format('Y-m-d'); ?>"><?php echo $event_date->format('M d, Y'); ?></a>
   </div>
-  <div class="mdl-cell mdl-cell--10-col mdl-cell--middle event-info">
+  <div class="mdl-cell mdl-cell--9-col mdl-cell--middle event-info">
     <a href="<?php echo get_field('event_url'); ?>" target="_blank" title="<?php the_title(); ?>" alt="<?php the_title(); ?>"><h5><?php the_title(); ?></h5></a>
     <div class="event-address"><?php echo get_field('event_address') ?></div>
   </div>
-  <div class="mdl-cell mdl-cell--1-col mdl-cell--middle tag">
+  <div class="mdl-cell mdl-cell--2-col mdl-cell--middle tag">
     <?php
       if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
         foreach ( $terms as $term ) :
