@@ -53,7 +53,7 @@ if ( $_GET['type'] ) {
   );
 }*/
 
-$args['meta_query'][] = array(
+/*$args['meta_query'][] = array(
   'key' => 'event_date',
   'compare' => '>',
   'value' => $currentdate,
@@ -66,7 +66,7 @@ $args['meta_key']       => 'event_date';
 $args['orderby']        => 'meta_value_num';
 $args['order']          => 'ASC';
 
-query_posts($args);
+query_posts($args);*/
 
 $select_terms = get_terms( array(
     'taxonomy' => 'event_type',
