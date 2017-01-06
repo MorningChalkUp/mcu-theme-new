@@ -16,6 +16,7 @@ Text Domain: morningchalkup_v2
 @lt-grey: rgba(51,49,50,0.75);
 @bg-lt-grey: rgba(216,216,216,0.1);
 @line-grey: rgba(51,49,50,0.2);
+@field-grey: #757575;
 @green: #4BB749;
 @dk-green: rgba(75,183,73,0.9);
 
@@ -284,6 +285,7 @@ header {
           min-height: 100%;
           .hero {
             background-image: url('img/about-bg.png');
+            background-position: bottom center;
             background-size: cover;
             position: relative;
             height: calc(~"100vh - 64px");
@@ -352,6 +354,79 @@ header {
                     }
                   }
                 }
+              }
+            }
+          }
+        }
+        &.subscribe-page {
+          min-height: 100%;
+          .hero {
+            background-image: url('img/about-bg.png');
+            background-position: bottom center;
+            background-size: cover;
+            position: relative;
+            min-height: calc(~"100vh - 64px");
+            width: 100%;
+            h1 {
+              text-align: right;
+              float: right;
+              max-width: 675px;
+              margin: 0;
+              font-family: @open-sans;
+              font-size: 64px;
+              font-weight: @regular;
+              line-height: 1.25em;
+              span {
+                color: @blue;
+                font-weight: @bold;
+              }
+              &:after {
+                clear: both;
+                display: block;
+                visibility: hidden;
+                font-size: 1px;
+                content: '.';
+                line-height: 1px;
+              }
+            }
+            .form {
+              background: @white;
+              padding: 25px 0px;
+              .headline {
+                font-family: @open-sans;
+                font-size: 24px;
+                text-align: center;
+                h1 {
+                  text-align: center;
+                  max-width: none;
+                  float: none;
+                  i {
+                    display: block;
+                    color: @blue;
+                    margin-bottom: 10px;
+                  }
+                }
+                .like {
+                  margin-top: 20px;
+                  font-size: 24px;
+                  background-color: @blue;
+                  color: @white;
+                  text-transform: initial;
+                  &:hover {
+                    text-decoration: none;
+                  }
+                }
+              }
+              .fields {
+                .mdl-textfield {
+                  width: 100%;
+                }
+                label {
+                  line-height: 1em;
+                }
+              }
+              &.thank-you {
+                margin-top: 50px;
               }
             }
           }

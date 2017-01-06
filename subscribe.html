@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/getmdl-select.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://use.typekit.net/ydo2tvd.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title"><a href="#"><span>Morning</span> Chalk Up</a></span>
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="">Home</a>
+          <a class="mdl-navigation__link" href="">Tidbits</a>
+          <a class="mdl-navigation__link" href="">the Morning Chalk Up</a>
+          <a class="mdl-navigation__link" href="">Events</a>
+          <a class="mdl-navigation__link" href="">About</a>
+          </nav>
+          <div class="mdl-layout-spacer"></div>
+          <div class="right sub">
+            <a href="#">
+              <i class="mdi mdi-email"></i> <span class="mdl-layout--large-screen-only">Subscribe</span>
+            </a>
+          </div>
+          <div class="right search">
+            <a href="#">
+              <i class="mdi mdi-magnify"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+        <span class="mdl-layout-title"><a href="#"><span>Morning</span> Chalk Up</a></span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Home</a>
+          <a class="mdl-navigation__link" href="">Tidbits</a>
+          <a class="mdl-navigation__link" href="">the Morning Chalk Up</a>
+          <a class="mdl-navigation__link" href="">Events</a>
+          <a class="mdl-navigation__link" href="">About</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <article class="main subscribe-page">
+            <section class="hero">
+              <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--12-col title">
+                  <h1>The Morning <span>Chalk Up</span> is the newsletter for people who do CrossFit.</h1> 
+                </div>
+              </div>
+              <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--12-col mdl-grid">
+                  <div class="mdl-layout-spacer"></div>
+                  <div class="mdl-cell mdl-cell--10-col form">
+                    <div class="mdl-grid">
+                      <div class="mdl-layout-spacer"></div>
+                      <div class="mdl-cell mdl-cell--10-col headline">
+                        Get the email that CrossFit athletes, insiders and fans are reading every morning.
+                      </div>
+                      <div class="mdl-layout-spacer"></div>
+                    </div>
+                    <div class="mdl-grid fields">
+                      <div class="mdl-layout-spacer"></div>
+                      <div class="mdl-cell mdl-cell--4-col">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="fname" name="fname">
+                          <label class="mdl-textfield__label" for="fname">First Name</label>
+                        </div>
+                      </div>
+                      <div class="mdl-layout-spacer"></div>
+                      <div class="mdl-cell mdl-cell--4-col">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="lname" name="lname">
+                          <label class="mdl-textfield__label" for="lname">Last Name</label>
+                        </div>
+                      </div>
+                      <div class="mdl-layout-spacer"></div>
+                    </div>
+                    <div class="mdl-grid fields">
+                      <div class="mdl-layout-spacer"></div>
+                      <div class="mdl-cell mdl-cell--4-col">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="email" name="email">
+                          <label class="mdl-textfield__label" for="email">Email</label>
+                        </div>
+                      </div>
+                      <div class="mdl-layout-spacer"></div>
+                      <div class="mdl-cell mdl-cell--4-col">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="zip" name="zip">
+                          <label class="mdl-textfield__label" for="zip">Zip Code</label>
+                        </div>
+                      </div>
+                      <div class="mdl-layout-spacer"></div>
+                    </div>
+                    <div class="mdl-grid fields">
+                      <div class="mdl-layout-spacer"></div>
+                      <div class="mdl-cell mdl-cell--4-col">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="website" name="website">
+                          <label class="mdl-textfield__label" for="website">Website</label>
+                        </div>
+                      </div>
+                      <div class="mdl-layout-spacer"></div>
+                      <div class="mdl-cell mdl-cell--4-col">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height" style="width: 100%;">
+                          <input class="mdl-textfield__input" type="text" required id="about" name="about" readonly tabIndex="-1">
+                          <label for="about">
+                              <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                          </label>
+                          <label for="about" class="mdl-textfield__label">*Tell Us More About Youself</label>
+                          <ul for="about" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                              <li class="mdl-menu__item">CrossFit Fan!</li>
+                              <li class="mdl-menu__item">Elite Athlete</li>
+                              <li class="mdl-menu__item">Box Owner/Coach</li>
+                              <li class="mdl-menu__item">Media/Sponsor</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="mdl-layout-spacer"></div>
+                    </div>
+                    <div class="mdl-grid fields">
+                      <div class="mdl-layout-spacer"></div>
+                      <div class="mdl-cell mdl-cell--4-col">
+                        <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                          Subscribe
+                        </button>
+                      </div>
+                      <div class="mdl-layout-spacer"></div>
+                      <div class="mdl-cell mdl-cell--4-col">
+                      </div>
+                      <div class="mdl-layout-spacer"></div>
+                    </div>
+                  </div>
+                  <div class="mdl-layout-spacer"></div>
+                </div>
+              </div>
+            </section>
+          </article>
+        </div>
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section">
+            <ul class="mdl-mini-footer__link-list">
+              <li><a href="#">Tidbits</a></li>
+              <li><a href="#">the Morning Chalk Up</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Subscribe</a></li>
+            </ul>
+          </div>
+          <div class="mdl-mini-footer__right-section">
+            <ul class="mdl-mini-footer__link-list">
+              <li>Connect With Us: </li>
+              <li><a href="#"><i class="mdi mdi-youtube-play"></i></a></li>
+              <li><a href="#"><i class="mdi mdi-instagram"></i></a></li>
+              <li><a href="#"><i class="mdi mdi-facebook-box"></i></a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script defer src="js/getmdl-select.min.js"></script>
+  </body>
+</html>

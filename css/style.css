@@ -25,6 +25,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+img.circle {
+  border-radius: 50%;
+}
 h1 {
   font-size: 48px;
   font-family: "industry", sans-serif;
@@ -219,8 +222,112 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content article.main .tags {
   margin: 2em 0;
 }
+.mdl-layout__content .page-content article.main.about {
+  min-height: 100%;
+}
 .mdl-layout__content .page-content article.main.about .hero {
-  background-image: url(img/about-bg.png) cover / cover;
+  background-image: url('img/about-bg.png');
+  background-size: cover;
+  position: relative;
+  height: calc(100vh - 64px);
+  width: 100%;
+}
+.mdl-layout__content .page-content article.main.about .hero h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  text-align: right;
+  max-width: 675px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  /*max-width: 675px;*/
+  line-height: 1.25em;
+}
+.mdl-layout__content .page-content article.main.about .hero h1 span {
+  color: #3D5BA9;
+  font-weight: 700;
+}
+.mdl-layout__content .page-content article.main.about .hero:after {
+  clear: both;
+  content: '.';
+  font-size: 1px;
+  visibility: hidden;
+  display: block;
+}
+.mdl-layout__content .page-content article.main.about .story {
+  text-align: center;
+  background: rgba(216, 216, 216, 0.1);
+}
+.mdl-layout__content .page-content article.main.about .mission {
+  text-align: center;
+}
+.mdl-layout__content .page-content article.main.about .team {
+  text-align: center;
+  background: rgba(216, 216, 216, 0.1);
+}
+.mdl-layout__content .page-content article.main.about .team section.team-member {
+  margin-bottom: 25px;
+}
+.mdl-layout__content .page-content article.main.about .team section.team-member .name {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #333132;
+}
+.mdl-layout__content .page-content article.main.about .team section.team-member .info {
+  font-size: 18px;
+  line-height: 1.25em;
+}
+.mdl-layout__content .page-content article.main.about .team section.team-member .info strong {
+  display: block;
+}
+.mdl-layout__content .page-content article.main.about .team section.team-member .quote {
+  margin: 18px 0 10px 0;
+}
+.mdl-layout__content .page-content article.main.about .team section.team-member .email a {
+  background: #3D5BA9;
+  color: #fff;
+}
+.mdl-layout__content .page-content article.main.about .team section.team-member .email a:hover {
+  text-decoration: none;
+}
+.mdl-layout__content .page-content article.main.subscribe-page {
+  min-height: 100%;
+}
+.mdl-layout__content .page-content article.main.subscribe-page .hero {
+  background-image: url('img/about-bg.png');
+  background-size: cover;
+  position: relative;
+  height: calc(100vh - 64px);
+  width: 100%;
+}
+.mdl-layout__content .page-content article.main.subscribe-page .hero h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  text-align: right;
+  max-width: 675px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  /*max-width: 675px;*/
+  line-height: 1.25em;
+}
+.mdl-layout__content .page-content article.main.subscribe-page .hero h1 span {
+  color: #3D5BA9;
+  font-weight: 700;
+}
+.mdl-layout__content .page-content article.main.subscribe-page .hero:after {
+  clear: both;
+  content: '.';
+  font-size: 1px;
+  visibility: hidden;
+  display: block;
 }
 .mdl-layout__content .page-content section.recommended {
   border-top: 5px solid #3D5BA9;
@@ -360,8 +467,14 @@ footer.mdl-mini-footer ul li a i {
   header.mdl-layout__header .mdl-layout__header-row .right.search {
     padding-left: 16px;
   }
+  .mdl-layout__content .page-content article.main.about .hero {
+    height: calc(100vh - 56px);
+  }
 }
 @media screen and (max-width: 875px) {
+  .mdl-layout__content .page-content article.main.about .hero h1 {
+    font-size: 48px;
+  }
   section.subscribe h1 {
     font-size: 32px;
     line-height: 1.5em;
