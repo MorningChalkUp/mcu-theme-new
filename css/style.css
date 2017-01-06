@@ -64,6 +64,13 @@ h4 {
   line-height: 1.5em;
   margin: 0 0 .5em 0;
 }
+h5 {
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin: 0;
+}
 header.mdl-layout__header {
   background-color: #fff;
   box-shadow: none;
@@ -227,6 +234,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 .mdl-layout__content .page-content article.main.about .hero {
   background-image: url('img/about-bg.png');
+  background-position: bottom center;
   background-size: cover;
   position: relative;
   height: calc(100vh - 64px);
@@ -299,35 +307,71 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 .mdl-layout__content .page-content article.main.subscribe-page .hero {
   background-image: url('img/about-bg.png');
+  background-position: bottom center;
   background-size: cover;
   position: relative;
-  height: calc(100vh - 64px);
+  min-height: calc(100vh - 64px);
   width: 100%;
 }
 .mdl-layout__content .page-content article.main.subscribe-page .hero h1 {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 5%;
   text-align: right;
+  float: right;
   max-width: 675px;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 64px;
   font-weight: 400;
-  /*max-width: 675px;*/
   line-height: 1.25em;
 }
 .mdl-layout__content .page-content article.main.subscribe-page .hero h1 span {
   color: #3D5BA9;
   font-weight: 700;
 }
-.mdl-layout__content .page-content article.main.subscribe-page .hero:after {
+.mdl-layout__content .page-content article.main.subscribe-page .hero h1:after {
   clear: both;
-  content: '.';
-  font-size: 1px;
-  visibility: hidden;
   display: block;
+  visibility: hidden;
+  font-size: 1px;
+  content: '.';
+  line-height: 1px;
+}
+.mdl-layout__content .page-content article.main.subscribe-page .hero .form {
+  background: #fff;
+  padding: 25px 0px;
+}
+.mdl-layout__content .page-content article.main.subscribe-page .hero .form .headline {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+.mdl-layout__content .page-content article.main.subscribe-page .hero .form .headline h1 {
+  text-align: center;
+  max-width: none;
+  float: none;
+}
+.mdl-layout__content .page-content article.main.subscribe-page .hero .form .headline h1 i {
+  display: block;
+  color: #3D5BA9;
+  margin-bottom: 10px;
+}
+.mdl-layout__content .page-content article.main.subscribe-page .hero .form .headline .like {
+  margin-top: 20px;
+  font-size: 24px;
+  background-color: #3D5BA9;
+  color: #fff;
+  text-transform: initial;
+}
+.mdl-layout__content .page-content article.main.subscribe-page .hero .form .headline .like:hover {
+  text-decoration: none;
+}
+.mdl-layout__content .page-content article.main.subscribe-page .hero .form .fields .mdl-textfield {
+  width: 100%;
+}
+.mdl-layout__content .page-content article.main.subscribe-page .hero .form .fields label {
+  line-height: 1em;
+}
+.mdl-layout__content .page-content article.main.subscribe-page .hero .form.thank-you {
+  margin-top: 50px;
 }
 .mdl-layout__content .page-content section.recommended {
   border-top: 5px solid #3D5BA9;

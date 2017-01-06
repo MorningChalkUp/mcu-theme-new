@@ -35,6 +35,15 @@ Text Domain: morningchalkup_v2
 @open-sans: 'Open Sans', sans-serif;
 @industry: "industry",sans-serif;
 
+/* Event Chip Colors */
+@national: #3F51B5;
+@crossfit: #FF5722;
+@charity: #4CAF50;
+@local: #03A9F4;
+@weightlifting: #9C27B0;
+@international: #607D8B;
+@workshop: #E91E63;
+
 body,p,div {
   font-family: @open-sans;
   font-weight: @regular;
@@ -97,6 +106,14 @@ h4 {
   font-weight: @demi;
   line-height: 1.5em;
   margin: 0 0 .5em 0;
+}
+
+h5 {
+  font-size: 24px;
+  font-family: @open-sans;
+  font-weight: @demi;
+  line-height: 1.5em;
+  margin: 0;
 }
 
 header {
@@ -427,6 +444,52 @@ header {
               }
               &.thank-you {
                 margin-top: 50px;
+              }
+            }
+          }
+        }
+        &.events {
+          .calendar {
+            a {
+              color: @grey;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+            .row {
+              border-bottom: 1px solid @line-grey;
+            }
+            .tag {
+              .mdl-chip {
+                background: @blue;
+                color: @white;
+                width: 100%;
+                max-width: 100px;
+                text-align: center;
+                a {
+                  color: @white;
+                }
+                &.national {
+                  background-color: @national;
+                }
+                &.crossfit {
+                  background-color: @crossfit;
+                }
+                &.charity {
+                  background-color: @charity;
+                }
+                &.local {
+                  background-color: @local;
+                }
+                &.weightlifting {
+                  background-color: @weightlifting;
+                }
+                &.international {
+                  background-color: @international;
+                }
+                &.workshop {
+                  background-color: @workshop;
+                }
               }
             }
           }
