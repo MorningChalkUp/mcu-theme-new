@@ -5,7 +5,7 @@ $currentdate = date("Y-m-d",mktime(0,0,0,date("m"),date("d")-1,date("Y")));
 $currentMonth = (int)date('m');
 
 if ( $_GET['date']) {
-  $posts = get_posts(array(
+  query_posts(array(
     'meta_query'      => array(
       array(
         'key' => 'event_date',
@@ -14,7 +14,7 @@ if ( $_GET['date']) {
         'type' => 'DATE',
       )),
     'post_type'       => 'mcu_event',
-    'numberposts'     => -1,
+    'posts_per_page'  => -1,
     'meta_key'        => 'event_date',
     'orderby'         => 'meta_value_num',
     'order'           => 'ASC'
@@ -28,7 +28,7 @@ elseif ( $_GET['month']) {
     $start_date = date("Y-m-d",mktime(0,0,0,$_GET['month'],1,date("Y")));
     $end_date = date("Y-m-d",mktime(0,0,0,$_GET['month'],date("t"),date("Y")));
   }
-  $posts = get_posts(array(
+  query_posts(array(
     'meta_query'      => array(
       array(
         'key' => 'event_date',
@@ -37,14 +37,14 @@ elseif ( $_GET['month']) {
         'type' => 'DATE',
       )),
     'post_type'       => 'mcu_event',
-    'numberposts'     => -1,
+    'posts_per_page'  => -1,
     'meta_key'        => 'event_date',
     'orderby'         => 'meta_value_num',
     'order'           => 'ASC'
   ));
 }
 elseif ( $_GET['state']) {
-  $posts = get_posts(array(
+  query_posts(array(
     'meta_query'      => array(
       array(
         'key' => 'event_location',
@@ -52,14 +52,14 @@ elseif ( $_GET['state']) {
         'value' => $_GET['state'],
       )),
     'post_type'       => 'mcu_event',
-    'numberposts'     => -1,
+    'posts_per_page'  => -1,
     'meta_key'        => 'event_date',
     'orderby'         => 'meta_value_num',
     'order'           => 'ASC'
   ));
 }
 elseif ( $_GET['type'] ) {
-  $posts = get_posts(array(
+  query_posts(array(
     'tax_query'      => array(
       array(
         'taxonomy' => 'event_type',
@@ -67,14 +67,14 @@ elseif ( $_GET['type'] ) {
         'terms' => $_GET['type'],
       )),
     'post_type'       => 'mcu_event',
-    'numberposts'     => -1,
+    'posts_per_page'  => -1,
     'meta_key'        => 'event_date',
     'orderby'         => 'meta_value_num',
     'order'           => 'ASC'
   ));
 }
 else {
-  $posts = get_posts(array(
+  query_posts(array(
     'meta_query'      => array(
       array(
         'key' => 'event_date',
@@ -83,7 +83,7 @@ else {
          'type' => 'DATE',
       )),
     'post_type'       => 'mcu_event',
-    'numberposts'     => -1,
+    'posts_per_page'  => -1,
     'meta_key'        => 'event_date',
     'orderby'         => 'meta_value_num',
     'order'           => 'ASC'
