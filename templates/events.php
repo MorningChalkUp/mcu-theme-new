@@ -14,7 +14,7 @@ if ( $_GET['date']) {
         'type' => 'DATE',
       )),
     'post_type'       => 'mcu_event',
-    'posts_per_page'  => -1,
+    'numberposts'     => -1,
     'meta_key'        => 'event_date',
     'orderby'         => 'meta_value_num',
     'order'           => 'ASC'
@@ -37,7 +37,7 @@ elseif ( $_GET['month']) {
         'type' => 'DATE',
       )),
     'post_type'       => 'mcu_event',
-    'posts_per_page'  => -1,
+    'numberposts'     => -1,
     'meta_key'        => 'event_date',
     'orderby'         => 'meta_value_num',
     'order'           => 'ASC'
@@ -52,7 +52,7 @@ elseif ( $_GET['state']) {
         'value' => $_GET['state'],
       )),
     'post_type'       => 'mcu_event',
-    'posts_per_page'  => -1,
+    'numberposts'     => -1,
     'meta_key'        => 'event_date',
     'orderby'         => 'meta_value_num',
     'order'           => 'ASC'
@@ -67,7 +67,7 @@ elseif ( $_GET['type'] ) {
         'terms' => $_GET['type'],
       )),
     'post_type'       => 'mcu_event',
-    'posts_per_page'  => -1,
+    'numberposts'     => -1,
     'meta_key'        => 'event_date',
     'orderby'         => 'meta_value_num',
     'order'           => 'ASC'
@@ -83,7 +83,7 @@ else {
          'type' => 'DATE',
       )),
     'post_type'       => 'mcu_event',
-    'posts_per_page'  => -1,
+    'numberposts'     => -1,
     'meta_key'        => 'event_date',
     'orderby'         => 'meta_value_num',
     'order'           => 'ASC'
@@ -106,7 +106,7 @@ $select_terms = get_terms( array(
     It's not a CrossFit competition unless it's sponsored by CrossFit®. Every other competition, except for weightlifting, is unofficial. Large-scale major sponsored events are "national" and smaller ones are "local."
   </div>
   <div class="mdl-cell mdl-cell--12-col calendar">
-  
+
     <?php 
       if (have_posts()) {
         while (have_posts()) {
