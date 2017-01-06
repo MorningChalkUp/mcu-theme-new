@@ -1,9 +1,4 @@
 <?php 
-
-$currentdate = date("Y-m-d",mktime(0,0,0,date("m"),date("d")-1,date("Y")));
-
-$currentMonth = (int)date('m');
-
 if ( $_GET['date']) {
   query_posts(array(
     'meta_query'      => array(
@@ -99,9 +94,9 @@ $select_terms = get_terms( array(
 
 <article class="mdl-cell mdl-cell--8-col main events">
   <h1>Competition Calendar</h1>
-  <div class="mdl-cell mdl-cell--12-col filters">
+  <!-- <div class="mdl-cell mdl-cell--12-col filters">
     Filters
-  </div>
+  </div> -->
   <div class="mdl-cell mdl-cell--12-col info">
     It's not a CrossFit competition unless it's sponsored by CrossFit®. Every other competition, except for weightlifting, is unofficial. Large-scale major sponsored events are "national" and smaller ones are "local."
   </div>
@@ -113,6 +108,8 @@ $select_terms = get_terms( array(
           the_post();
           get_template_part( 'templates/event' );
         }
+      } else {
+        _e('Sorry, no events currently matched your criteria.');
       }
     ?>
     
