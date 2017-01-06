@@ -9,7 +9,7 @@ $type_val = '';
 
 $args[];
 
-if ( $_GET['date'] ) {
+/*if ( $_GET['date'] ) {
   $args['meta_query'][] = array(
     'key' => 'event_date',
     'compare' => '=',
@@ -35,7 +35,7 @@ if ( $_GET['month'] ) {
     'type' => 'DATE',
   );
 }
-if ( $_GET['state']) {
+if ( $_GET['state'] ) {
   $state_val = $state[$_GET['state']];
   $args['meta_query'][] = array(
     'key' => 'event_location',
@@ -51,7 +51,7 @@ if ( $_GET['type'] ) {
     'field' => 'slug',
     'terms' => $_GET['type'],
   );
-}
+}*/
 
 $args['meta_query'][] = array(
   'key' => 'event_date',
