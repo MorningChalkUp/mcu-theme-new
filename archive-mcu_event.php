@@ -6,12 +6,7 @@
       <div class="mdl-layout-spacer"></div>
 
       <?php
-        if ( have_posts() ) {
-          while ( have_posts() ) {
-            the_post();
-            get_template_part( 'templates/events' );
-          }
-        }
+        get_template_part( 'templates/events' );
       ?>
 
       <div class="mdl-layout-spacer"></div>
