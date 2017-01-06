@@ -23,4 +23,6 @@
 
 </main>
 
+<?php echo( basename(get_permalink()) ); ?>
+
 <?php get_footer(); ?>
