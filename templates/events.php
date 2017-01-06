@@ -7,6 +7,8 @@ $state_val = '';
 $month_val = '';
 $type_val = '';
 
+$args[];
+
 if ( $_GET['date'] ) {
   $args['meta_query'][] = array(
     'key' => 'event_date',
