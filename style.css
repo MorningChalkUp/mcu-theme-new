@@ -380,6 +380,9 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content article.main.events .calendar a:hover {
   text-decoration: none;
 }
+.mdl-layout__content .page-content article.main.events .calendar .row {
+  border-bottom: 1px solid rgba(51, 49, 50, 0.2);
+}
 .mdl-layout__content .page-content article.main.events .calendar .tag .mdl-chip {
   background: #3D5BA9;
   color: #fff;
