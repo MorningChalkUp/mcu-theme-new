@@ -449,6 +449,26 @@ header {
           }
         }
         &.events {
+          .filters {
+            .mdl-textfield {
+              width: 200px;
+              label {
+                line-height: 1em;
+              }
+            }
+            a {
+              &:hover {
+                text-decoration: none;
+              }
+              &.reset {
+                background-color: @fb-btn;
+                color: @white;
+                &:hover {
+                  background-color: @fb-btn-hover;
+                }
+              }
+            }
+          }
           .calendar {
             a {
               color: @grey;

@@ -8,6 +8,7 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: morningchalkup_v2
 */
+/* Event Chip Colors */
 body,
 p,
 div {
@@ -372,6 +373,49 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 .mdl-layout__content .page-content article.main.subscribe-page .hero .form.thank-you {
   margin-top: 50px;
+}
+.mdl-layout__content .page-content article.main.events .filters label {
+  line-height: 1em;
+}
+.mdl-layout__content .page-content article.main.events .calendar a {
+  color: #333132;
+}
+.mdl-layout__content .page-content article.main.events .calendar a:hover {
+  text-decoration: none;
+}
+.mdl-layout__content .page-content article.main.events .calendar .row {
+  border-bottom: 1px solid rgba(51, 49, 50, 0.2);
+}
+.mdl-layout__content .page-content article.main.events .calendar .tag .mdl-chip {
+  background: #3D5BA9;
+  color: #fff;
+  width: 100%;
+  max-width: 100px;
+  text-align: center;
+}
+.mdl-layout__content .page-content article.main.events .calendar .tag .mdl-chip a {
+  color: #fff;
+}
+.mdl-layout__content .page-content article.main.events .calendar .tag .mdl-chip.national {
+  background-color: #3F51B5;
+}
+.mdl-layout__content .page-content article.main.events .calendar .tag .mdl-chip.crossfit {
+  background-color: #FF5722;
+}
+.mdl-layout__content .page-content article.main.events .calendar .tag .mdl-chip.charity {
+  background-color: #4CAF50;
+}
+.mdl-layout__content .page-content article.main.events .calendar .tag .mdl-chip.local {
+  background-color: #03A9F4;
+}
+.mdl-layout__content .page-content article.main.events .calendar .tag .mdl-chip.weightlifting {
+  background-color: #9C27B0;
+}
+.mdl-layout__content .page-content article.main.events .calendar .tag .mdl-chip.international {
+  background-color: #607D8B;
+}
+.mdl-layout__content .page-content article.main.events .calendar .tag .mdl-chip.workshop {
+  background-color: #E91E63;
 }
 .mdl-layout__content .page-content section.recommended {
   border-top: 5px solid #3D5BA9;
