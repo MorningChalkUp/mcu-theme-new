@@ -2,6 +2,7 @@
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-2.2.3.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/material.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/getmdl-select.min.js"></script>
 
     <script>
       $('.js-share-email').on('click', function() {
