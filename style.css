@@ -380,6 +380,16 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content article.main.events .filters .mdl-textfield label {
   line-height: 1em;
 }
+.mdl-layout__content .page-content article.main.events .filters a:hover {
+  text-decoration: none;
+}
+.mdl-layout__content .page-content article.main.events .filters a.reset {
+  background-color: #3b5998;
+  color: #fff;
+}
+.mdl-layout__content .page-content article.main.events .filters a.reset:hover {
+  background-color: #2d4373;
+}
 .mdl-layout__content .page-content article.main.events .calendar a {
   color: #333132;
 }

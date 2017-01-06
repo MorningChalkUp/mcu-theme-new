@@ -190,6 +190,8 @@ $select_terms = get_terms( array(
       </ul>
     </div>
 
+    <a href="?" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Reset</a>
+
   </div>
   <div class="mdl-cell mdl-cell--12-col info">
     It's not a CrossFit competition unless it's sponsored by CrossFit®. Every other competition, except for weightlifting, is unofficial. Large-scale major sponsored events are "national" and smaller ones are "local."
