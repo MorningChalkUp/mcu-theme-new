@@ -1,7 +1,7 @@
 <?php 
   global $quote_num, $exclude, $cat_story_id, $cat_story_link;
 
-/*  $story_args_feature = array (
+  $story_args_feature = array (
     'cat' => $cat_story_id,
     'posts_per_page'  => 1,
     'meta_query'      => array(
@@ -26,7 +26,7 @@
 
   $exclude[] = wp_list_pluck( $story_feature->posts, 'ID' );
 
-  $story_args = array (
+/*  $story_args = array (
     'cat' => $cat_story_id,
     'posts_per_page'  => 6,
     'post__not_in' => $feature_id,
