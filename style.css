@@ -551,6 +551,10 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   display: table-cell;
   width: 75px;
 }
+.mdl-layout__content section.feature .mcu-roll .stories article.category-title .img img {
+  width: 75px;
+  height: 75px;
+}
 .mdl-layout__content section.feature .mcu-roll .stories article.category-title .info {
   display: table-cell;
   padding: 5px 0;
@@ -585,6 +589,12 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   font-size: 18px;
   color: #333132;
   line-height: 1.25em;
+}
+.mdl-layout__content section.feature .mcu-roll .stories article.mcu .info .title a {
+  color: #333132;
+}
+.mdl-layout__content section.feature .mcu-roll .stories article.mcu .info .title a:hover {
+  text-decoration: none;
 }
 .mdl-layout__content section.feature .mcu-roll .stories article.mcu .info .date {
   font-family: 'Open Sans', sans-serif;

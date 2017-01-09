@@ -649,6 +649,10 @@ header {
               .img {
                 display: table-cell;
                 width: 75px;
+                img {
+                  width: 75px;
+                  height: 75px;
+                }
               }
               .info {
                 display: table-cell;
@@ -683,6 +687,12 @@ header {
                   font-size: 18px;
                   color: @grey;
                   line-height: 1.25em;
+                  a {
+                    color: @grey;
+                    &:hover {
+                      text-decoration: none;
+                    }
+                  }
                 }
                 .date {
                   font-family: @open-sans;
