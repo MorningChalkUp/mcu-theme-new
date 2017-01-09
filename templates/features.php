@@ -3,7 +3,6 @@
 ?>
 
 <section class="feature mdl-grid">
-  test
   <?php 
    /* $feature_args = array (
       'cat' => array($cat_story_id,$cat_tidbits_id),
@@ -48,7 +47,7 @@
       </article>
       
       <?php 
-        /*$mcu_args = array (
+        $mcu_args = array (
           'cat' => $cat_mcu_id,
           'posts_per_page'  => 5,
         );
@@ -61,7 +60,7 @@
             get_template_part( 'templates/mcu' );
           }
         }
-        wp_reset_postdata();*/
+        wp_reset_postdata();
       ?>
 
     </div>
