@@ -19,6 +19,7 @@
       
       <?php 
         $mcu = new WP_Query($mcu_args);
+        var_dump($mcu);
         if ( $mcu->have_posts() ) {
           while( $mcu->have_posts() ) {
             $mcu->the_post();
