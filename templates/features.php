@@ -1,3 +1,10 @@
+<?php 
+  $mcu_args = array (
+   'cat'               => $cat_mcu_id,
+   'posts_per_page'    => 5,
+  );
+?>
+
 <section class="feature mdl-grid">
   <?php 
     // if ($feature->have_posts()) {
