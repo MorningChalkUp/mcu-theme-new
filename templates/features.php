@@ -1,4 +1,6 @@
 <?php 
+  global $cat_mcu_id, $cat_mcu_link;
+
   // Home Feature
   $feature_args = array (
     'cat' => array($cat_story_id,$cat_tidbits_id),

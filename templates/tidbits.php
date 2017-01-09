@@ -1,5 +1,5 @@
 <?php
-  global $quote_num;
+  global $quote_num, $exclude, $cat_tidbits_id, $cat_tidbits_link;
 
   $tidbit_args_feature = array (
     'cat' => $cat_tidbits_id,
