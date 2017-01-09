@@ -52,7 +52,7 @@
           'posts_per_page'  => 5,
         );
 
-        $mcu = new WP_Query($args);
+        $mcu = new WP_Query($mcu_args);
 
         if ($mcu->have_posts()) {
           white($mcu->have_posts()) {
