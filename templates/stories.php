@@ -1,7 +1,7 @@
 <?php 
   global $quote_num, $exclude, $cat_story_id, $cat_story_link;
 
-  $story_args_feature = array (
+/*  $story_args_feature = array (
     'cat' => $cat_story_id,
     'posts_per_page'  => 1,
     'meta_query'      => array(
@@ -36,7 +36,7 @@
     'post_type' => 'quote',
     'posts_per_page'  => 1,
     'offset' => 1;
-  );
+  );*/
 
 ?>
 <section class="mdl-cell mdl-cell--12-col main archive home">
