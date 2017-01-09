@@ -18,7 +18,7 @@
       </article>
       
       <?php 
-        $mcu = new WP_Query($mcu_args);
+        $mcu = new WP_Query(array( 'posts_per_page' => 5 ));
         var_dump($mcu);
         if ( $mcu->have_posts() ) {
           while( $mcu->have_posts() ) {
