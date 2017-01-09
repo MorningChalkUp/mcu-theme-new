@@ -14,12 +14,12 @@
   $quote_cat = get_category_by_slug( 'quote' );
   $quote_cat_id = $cat->term_id;
 
-  $quote_args = array (
+  $/*quote_args = array (
     'post_type' => 'quote'
     'posts_per_page'  => 2,
   );
 
-  $quote = new WP_Query($quote_args);
+  $quote = new WP_Query($quote_args);*/
 ?>
 
 <?php get_header(); ?>
