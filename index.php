@@ -14,7 +14,39 @@
   $quote_cat = get_category_by_slug('quote');
   $quote_cat_id = $cat->term_id;
 
-  /*
+  // Home Feature
+  $feature_args = array (
+    'cat' => array($cat_story_id,$cat_tidbits_id),
+    'posts_per_page'  => 1,
+    'meta_query'      => array(
+      array(
+        'key' => 'featured',
+        'compare' => '=',
+        'value' => 'home',
+      ),
+    ),
+  );
+
+  $feature = new WP_Query($feature_args);
+
+  if ($feature->post_count != 1) {
+    $feature_args = array (
+      'cat' => array($cat_story_id,$cat_tidbits_id),
+      'posts_per_page'  => 1,
+    );
+    $feature = new WP_Query($feature_args);
+  }
+
+  $exclude[] = wp_list_pluck( $tidbit_feature->posts, 'ID' );
+
+  // MCU
+  $mcu_args = array (
+    'cat' => $cat_mcu_id,
+    'posts_per_page'  => 5,
+  );
+
+  $mcu = new WP_Query($args);
+  
   // Tidbits
   $tidbit_args = array (
     'cat' => $cat_tidbits_id,
@@ -99,13 +131,13 @@
       
       <?php get_template_part( 'templates/features' ); ?>
 
-      <!-- <div class="mdl-grid">
+      <div class="mdl-grid">
 
-        <?php //get_template_part( 'templates/tidbits' ); ?>
+        <?php get_template_part( 'templates/tidbits' ); ?>
 
-        <?php //get_template_part( 'templates/stories' ); ?>
+        <?php get_template_part( 'templates/stories' ); ?>
 
-      </div> -->
+      </div>
       
     <?php get_template_part( 'templates/subscribe' ); ?>
       

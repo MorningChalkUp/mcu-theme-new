@@ -10,7 +10,7 @@
     
     <?php
       if ($story_feature->have_posts()) {
-        white($story_feature->have_posts()) {
+        while($story_feature->have_posts()) {
           $story_feature->the_post();
           get_template_part( 'templates/feature', 'sub' );
         }
@@ -19,7 +19,7 @@
 
     <?php
       if ($quote->have_posts()) {
-        white($quote->have_posts()) {
+        while($quote->have_posts()) {
           $quote->the_post();
           get_template_part( 'templates/quote' );
         }
@@ -28,7 +28,7 @@
 
     <?php
       if ($stories->have_posts()) {
-        white($stories->have_posts()) {
+        while($stories->have_posts()) {
           $stories->the_post();
           get_template_part( 'templates/teaser' );
         }
