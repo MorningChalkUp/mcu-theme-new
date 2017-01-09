@@ -634,16 +634,6 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   line-height: 2em;
   text-transform: uppercase;
 }
-.mdl-layout__content section.feature .featured .content .category mark a {
-  background: #3D5BA9;
-  color: #fff;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.mdl-layout__content section.feature .featured .content .category mark a:hover {
-  text-decoration: none;
-}
 .mdl-layout__content section.feature .featured .content .title mark {
   background: #fff;
   color: #333132;
@@ -652,6 +642,15 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   font-size: 48px;
   padding: 10px;
   line-height: 2em;
+}
+.mdl-layout__content section.feature .featured .content .title mark a {
+  background: #fff;
+  color: #333132;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.mdl-layout__content section.feature .featured .content .title mark a:hover {
+  text-decoration: none;
 }
 section.subscribe {
   background-color: #3D5BA9;
