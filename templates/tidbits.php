@@ -38,7 +38,7 @@
   );
 
   $quote_args = array (
-    'post_type' => 'quote'
+    'post_type' => 'quote',
     'posts_per_page'  => 1,
   );
 
