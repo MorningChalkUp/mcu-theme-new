@@ -454,6 +454,9 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   margin-top: 25px;
   margin-bottom: 25px;
 }
+.mdl-layout__content .page-content section.archive.home .sec-title {
+  text-align: center;
+}
 .mdl-layout__content .page-content section.archive.home .sec-title a {
   border-bottom: 3px solid #3D5BA9;
   color: #333132;
