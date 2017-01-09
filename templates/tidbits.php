@@ -66,11 +66,11 @@
     ?>
     
     <?php
-      // $quote = new WP_Query($quote_args);
-      if ($quote->have_posts())
+      $quote = new WP_Query($quote_args);
+      if ($quote->have_posts()) {
         while($quote->have_posts()) {
           $quote->the_post();
-          // get_template_part( 'templates/quote' );
+          get_template_part( 'templates/quote' );
         }
       }
     ?>
