@@ -14,7 +14,7 @@
   $quote_cat = get_category_by_slug('quote');
   $quote_cat_id = $cat->term_id;
 
-  // Home Feature
+/*  // Home Feature
   $feature_args = array (
     'cat' => array($cat_story_id,$cat_tidbits_id),
     'posts_per_page'  => 1,
@@ -121,7 +121,7 @@
     'posts_per_page'  => 2,
   );
 
-  $quote = new WP_Query($quote_args);
+  $quote = new WP_Query($quote_args);*/
 ?>
 
 <?php get_header(); ?>
