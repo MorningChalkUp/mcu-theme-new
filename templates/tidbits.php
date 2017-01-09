@@ -46,40 +46,4 @@
     ?>
 
   </div>
-</section> $i < 3) {
-          $tidbits->the_post(); $i++
-          get_template_part( 'templates/teaser' );
-        }
-      }*/
-    ?>
-    
-    <?php
-     /* if ($quote->have_posts())
-        while($quote->have_posts()) {
-          $quote->the_post();
-          get_template_part( 'templates/quote' );
-        }
-      }*/
-    ?>
-
-    <?php
-      /* $tidbit_feature = new WP_Query($tidbit_args);
-      if ($tidbit_feature->have_posts()) {
-        while($tidbit_feature->have_posts()) {
-          $tidbit_feature->the_post();
-          get_template_part( 'templates/feature', 'sub' );
-        }
-      }*/
-    ?>
-
-    <?php
-       /*if ($tidbits->have_posts()) {
-        while($tidbits->have_posts()) {
-          $tidbits->the_post();
-          get_template_part( 'templates/teaser' );
-        }
-      }*/
-    ?>
-
-  </div>
 </section>
