@@ -99,13 +99,13 @@
       
       <?php get_template_part( 'templates/features' ); ?>
 
-      <div class="mdl-grid">
+      <!-- <div class="mdl-grid">
 
         <?php get_template_part( 'templates/tidbits' ); ?>
 
         <?php get_template_part( 'templates/stories' ); ?>
 
-      </div>
+      </div> -->
       
     <?php get_template_part( 'templates/subscribe' ); ?>
       
