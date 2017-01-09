@@ -395,7 +395,6 @@ $state['WY'] = 'Wyoming';
 $state['INTL'] = 'International';
 
 // Homepage Loops and vars
-
 if (is_home()) {
 
   $cat_mcu = get_category_by_slug( 'mcu' );
@@ -521,3 +520,5 @@ if (is_home()) {
   );
 
   $quote = new WP_Query($quote_args);
+
+}
