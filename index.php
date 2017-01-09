@@ -14,41 +14,6 @@
   $quote_cat = get_category_by_slug( 'quote' );
   $quote_cat_id = $cat->term_id;
 
-  
-  // Tidbits
-  $tidbit_args = array (
-    'cat' => $cat_tidbits_id,
-    'posts_per_page'  => 1,
-    'meta_query'      => array(
-      array(
-        'key' => 'featured',
-        'compare' => '=',
-        'value' => 'section',
-      ),
-    ),
-    'post__not_in' => $exclude,
-  );
-
-  $tidbit_feature = new WP_Query($tidbit_args);
-
-  if ($tidbit_feature->post_count != 1) {
-    $tidbit_args = array (
-      'cat' => $cat_tidbits_id,
-      'posts_per_page'  => 1,
-    );
-    $tidbit_feature = new WP_Query($tidbit_args);
-  }
-
-  $exclude[] = wp_list_pluck( $tidbit_feature->posts, 'ID' );
-
-  $tidbit_args = array (
-    'cat' => $cat_tidbits_id,
-    'posts_per_page'  => 9,
-    'post__not_in' => $exclude,
-  );
-
-  $tidbits = new WP_Query($tidbit_args);
-
 /*  // Stories
   $story_args = array (
     'cat' => $cat_story_id,

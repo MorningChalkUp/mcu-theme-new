@@ -1,3 +1,44 @@
+<?php
+  $tidbit_args = array (
+    'cat' => $cat_tidbits_id,
+    'posts_per_page'  => 1,
+    'meta_query'      => array(
+      array(
+        'key' => 'featured',
+        'compare' => '=',
+        'value' => 'section',
+      ),
+    ),
+    'post__not_in' => $exclude,
+  );
+
+  $tidbit_feature = new WP_Query($tidbit_args);
+
+  if ($tidbit_feature->post_count != 1) {
+    $tidbit_args = array (
+      'cat' => $cat_tidbits_id,
+      'posts_per_page'  => 1,
+    );
+    $tidbit_feature = new WP_Query($tidbit_args);
+  }
+
+  $exclude[] = wp_list_pluck( $tidbit_feature->posts, 'ID' );
+
+  $tidbit_args = array (
+    'cat' => $cat_tidbits_id,
+    'posts_per_page'  => 3,
+    'post__not_in' => $exclude,
+  );
+
+  $tidbit_args_2 = array (
+    'cat' => $cat_tidbits_id,
+    'posts_per_page'  => 9,
+    'offset' => 3,
+    'post__not_in' => $exclude,
+  );
+
+?>
+
 <section class="mdl-cell mdl-cell--12-col main archive home">
   <div class="mdl-grid">
     <div class="mdl-layout-spacer"></div>
@@ -9,12 +50,6 @@
   <div class="mdl-grid">
 
     <?php
-      $tidbit_args = array (
-        'cat' => $cat_tidbits_id,
-        'posts_per_page'  => 3,
-        'post__not_in' => $exclude,
-      );
-
       $tidbits = new WP_Query($tidbit_args);
 
       if ($tidbits->have_posts()) {
@@ -44,12 +79,13 @@
     ?>
 
     <?php
-       /*if ($tidbits->have_posts()) {
+      $tidbits = new WP_Query($tidbit_args_2);
+       if ($tidbits->have_posts()) {
         while($tidbits->have_posts()) {
           $tidbits->the_post();
           get_template_part( 'templates/teaser', 'archive' );
         }
-      }*/
+      }
     ?>
 
   </div>
