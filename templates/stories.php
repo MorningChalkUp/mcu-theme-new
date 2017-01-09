@@ -1,5 +1,5 @@
 <?php 
-  global $quote_num, $exclude, $cat_story_id, $cat_story_link;
+  global $quote_num, $exclude, $ex_str, $cat_story_id, $cat_story_link;
 
   $story_args_feature = array (
     'cat' => $cat_story_id,
@@ -11,7 +11,7 @@
         'value' => 'section',
       ),
     ),
-    'post__not_in' => $exclude,
+    'post__not_in' => $ex_str,
   );
 
   $story_feature = new WP_Query($story_args_feature);
@@ -25,11 +25,12 @@
   }
 
   $exclude[] = wp_list_pluck( $story_feature->posts, 'ID' );
+  $ex_str = implode(" ",$exclude);
 
   $story_args = array (
     'cat' => $cat_story_id,
     'posts_per_page'  => 6,
-    'post__not_in' => $exclude,
+    'post__not_in' => $ex_str,
   );
 
   $quote_args = array (

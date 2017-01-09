@@ -1,5 +1,5 @@
 <?php 
-  global $cat_mcu_id, $cat_mcu_link;
+  global $cat_mcu_id, $cat_mcu_link, $ex_str;
 
   // Home Feature
   $feature_args = array (
@@ -25,7 +25,8 @@
   }
 
   $exclude[] = wp_list_pluck( $tidbit_feature->posts, 'ID' );
-
+  $ex_str = implode(" ",$exclude);
+  
   // MCU
   $mcu_args = array (
    'cat'               => $cat_mcu_id,
