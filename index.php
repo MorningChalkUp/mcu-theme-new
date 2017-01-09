@@ -11,8 +11,7 @@
   $cat_story_id = $cat_story->term_id;
   $cat_story_link = get_category_link( $cat_story_id );
 
-  $quote_cat = get_category_by_slug( 'quote' );
-  $quote_cat_id = $cat->term_id;
+  $quote_num = 0;
 
 /*  // Stories
   $story_args = array (
@@ -48,13 +47,6 @@
 
   $stories = new WP_Query($story_feature);
 
-  // Quotes
-  $quote_args = array (
-    'post_type' => 'quote'
-    'posts_per_page'  => 2,
-  );
-
-  $quote = new WP_Query($quote_args);*/
 ?>
 
 <?php get_header(); ?>
