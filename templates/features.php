@@ -3,9 +3,9 @@
 ?>
 
 <section class="feature mdl-grid">
-  
+  test
   <?php 
-    $feature_args = array (
+   /* $feature_args = array (
       'cat' => array($cat_story_id,$cat_tidbits_id),
       'posts_per_page'  => 1,
       'meta_query'      => array(
@@ -35,7 +35,7 @@
         get_template_part( 'templates/feature' );
       }
     }
-    wp_reset_postdata();
+    wp_reset_postdata();*/
   ?>
 
   <div class="mcu-roll mdl-cell mdl-cell--4-col mdl-cell--order-1-desktop">
@@ -48,7 +48,7 @@
       </article>
       
       <?php 
-        $mcu_args = array (
+        /*$mcu_args = array (
           'cat' => $cat_mcu_id,
           'posts_per_page'  => 5,
         );
@@ -61,7 +61,7 @@
             get_template_part( 'templates/mcu' );
           }
         }
-        wp_reset_postdata();
+        wp_reset_postdata();*/
       ?>
 
     </div>
