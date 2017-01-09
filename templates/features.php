@@ -1,3 +1,38 @@
+<?php
+  // Home Feature
+  $feature_args = array (
+    'cat' => array($cat_story_id,$cat_tidbits_id),
+    'posts_per_page'  => 1,
+    'meta_query'      => array(
+      array(
+        'key' => 'featured',
+        'compare' => '=',
+        'value' => 'home',
+      ),
+    ),
+  );
+
+  $feature = new WP_Query($feature_args);
+
+  if ($feature->post_count != 1) {
+    $feature_args = array (
+      'cat' => array($cat_story_id,$cat_tidbits_id),
+      'posts_per_page'  => 1,
+    );
+    $feature = new WP_Query($feature_args);
+  }
+
+  $exclude[] = wp_list_pluck( $tidbit_feature->posts, 'ID' );
+
+  // MCU
+  $mcu_args = array (
+    'cat' => $cat_mcu_id,
+    'posts_per_page'  => 5,
+  );
+
+  $mcu = new WP_Query($args);
+?>
+
 <section class="feature mdl-grid">
   
   <?php 
