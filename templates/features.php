@@ -54,13 +54,13 @@
 
         $mcu = new WP_Query($mcu_args);
 
-        if ($mcu->have_posts()) {
+        /*if ($mcu->have_posts()) {
           white($mcu->have_posts()) {
             $mcu->the_post();
             get_template_part( 'templates/mcu' );
           }
         }
-        wp_reset_postdata();
+        wp_reset_postdata();*/
       ?>
 
     </div>
