@@ -47,6 +47,13 @@
 
   $stories = new WP_Query($story_feature);
 
+  // Quotes
+  $quote_args = array (
+    'post_type' => 'quote'
+    'posts_per_page'  => 2,
+  );
+
+  $quote = new WP_Query($quote_args);*/
 ?>
 
 <?php get_header(); ?>
