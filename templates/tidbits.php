@@ -1,5 +1,5 @@
 <?php 
-  $tidbit_args = array (
+ /* $tidbit_args = array (
     'cat' => $cat_tidbits_id,
     'posts_per_page'  => 1,
     'meta_query'      => array(
@@ -28,7 +28,7 @@
     'cat' => $cat_tidbits_id,
     'posts_per_page'  => 9,
     'post__not_in' => $exclude,
-  );
+  );*/
 
 ?>
 
@@ -43,14 +43,14 @@
   <div class="mdl-grid">
 
     <?php
-      $tidbits = new WP_Query($tidbit_args);
+      /*$tidbits = new WP_Query($tidbit_args);
       $i = 0;
       if ($tidbits->have_posts()) {
         while($tidbits->have_posts() && $i < 3) {
           $tidbits->the_post(); $i++
           get_template_part( 'templates/teaser' );
         }
-      }
+      }*/
     ?>
     
     <?php
@@ -63,22 +63,22 @@
     ?>
 
     <?php
-       $tidbit_feature = new WP_Query($tidbit_args);
+      /* $tidbit_feature = new WP_Query($tidbit_args);
       if ($tidbit_feature->have_posts()) {
         while($tidbit_feature->have_posts()) {
           $tidbit_feature->the_post();
           get_template_part( 'templates/feature', 'sub' );
         }
-      }
+      }*/
     ?>
 
     <?php
-       if ($tidbits->have_posts()) {
+       /*if ($tidbits->have_posts()) {
         while($tidbits->have_posts()) {
           $tidbits->the_post();
           get_template_part( 'templates/teaser' );
         }
-      }
+      }*/
     ?>
 
   </div>
