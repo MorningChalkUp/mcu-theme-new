@@ -9,14 +9,20 @@
   <div class="mdl-grid">
 
     <?php
-      /*$i = 0;
+      $tidbit_args = array (
+        'cat' => $cat_tidbits_id,
+        'posts_per_page'  => 3,
+        'post__not_in' => $exclude,
+      );
+
       $tidbits = new WP_Query($tidbit_args);
+
       if ($tidbits->have_posts()) {
-        while($tidbits->have_posts() && $i < 3) {
-          $tidbits->the_post(); $i++
+        while($tidbits->have_posts()) {
+          $tidbits->the_post();
           get_template_part( 'templates/teaser' );
         }
-      }*/
+      }
     ?>
     
     <?php
