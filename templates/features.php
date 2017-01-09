@@ -18,10 +18,12 @@
       </article>
       
       <?php 
+        $mcu = new WP_Query($mcu_args);
         if ( $mcu->have_posts() ) {
           while( $mcu->have_posts() ) {
             $mcu->the_post();
             //get_template_part( 'templates/mcu' );
+            the_title();
           }
         }
         echo 'test';
