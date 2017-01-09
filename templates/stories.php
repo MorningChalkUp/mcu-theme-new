@@ -1,5 +1,5 @@
 <?php 
-  $story_args = array (
+/*  $story_args = array (
     'cat' => $cat_story_id,
     'posts_per_page'  => 1,
     'meta_query'      => array(
@@ -28,7 +28,7 @@
     'cat' => $cat_story_id,
     'posts_per_page'  => 3,
     'post__not_in' => $feature_id,
-  );
+  );*/
 
 ?>
 
@@ -43,13 +43,13 @@
   <div class="mdl-grid">
     
     <?php
-      $story_feature = new WP_Query($story_feature);
+     /* $story_feature = new WP_Query($story_feature);
       if ($story_feature->have_posts()) {
         while($story_feature->have_posts()) {
           $story_feature->the_post();
           get_template_part( 'templates/feature', 'sub' );
         }
-      }
+      }*/
     ?>
 
     <?php
@@ -62,13 +62,13 @@
     ?>
 
     <?php
-      $stories = new WP_Query($story_feature);
+      /*$stories = new WP_Query($story_feature);
       if ($stories->have_posts()) {
         while($stories->have_posts()) {
           $stories->the_post();
           get_template_part( 'templates/teaser' );
         }
-      }
+      }*/
     ?>
 
   </div>
