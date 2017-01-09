@@ -40,16 +40,10 @@
   $exclude[] = wp_list_pluck( $tidbit_feature->posts, 'ID' );*/
 
   // MCU
-  $mcu_args = array (
-    'cat'               => $cat_mcu_id,
-    'posts_per_page'    => 5,
-    'post_type'         => 'post',
-    'post_status'       => 'publish',
-    'pagination'        => true,
-    'posts_per_page'    => 5,
-    'order'             => 'ASC',
-    'orderby'           => 'date',
-  );
+$mcu_args = array (
+   'cat'               => $cat_mcu_id,
+   'posts_per_page'    => 5,
+ );
   
 /*  // Tidbits
   $tidbit_args = array (
