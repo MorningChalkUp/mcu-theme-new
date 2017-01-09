@@ -37,6 +37,11 @@
     'post__not_in' => $exclude,
   );
 
+  $quote_args = array (
+    'post_type' => 'quote'
+    'posts_per_page'  => 1,
+  );
+
 ?>
 
 <section class="mdl-cell mdl-cell--12-col main archive home">
@@ -61,12 +66,13 @@
     ?>
     
     <?php
-      /*if ($quote->have_posts())
+      $quote = new WP_Query($quote_args);
+      if ($quote->have_posts())
         while($quote->have_posts()) {
           $quote->the_post();
           get_template_part( 'templates/quote' );
         }
-      }*/
+      }
     ?>
 
     <?php
