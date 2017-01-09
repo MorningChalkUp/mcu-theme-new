@@ -3,24 +3,29 @@ $currentdate = date("Y-m-d",mktime(0,0,0,date("m"),date("d")-1,date("Y")));
 
 $currentMonth = (int)date('m');
 
-$state_val = '';
-$month_val = '';
-$type_val = '';
-
-$args[];
-
-/*if ( $_GET['date'] ) {
-  $args['meta_query'][] = array(
-    'key' => 'event_date',
-    'compare' => '=',
-    'value' => date($_GET['date']),
-    'type' => 'DATE',
-  );
+if ( $_GET['date']) {
+  query_posts(array(
+    'meta_query'      => array(
+      array(
+        'key' => 'event_date',
+        'compare' => '=',
+        'value' => date($_GET['date']),
+        'type' => 'DATE',
+      ),
+      array(
+        'key' => 'event_date',
+         'compare' => '>',
+         'value' => $currentdate,
+         'type' => 'DATE',
+      )),
+    'post_type'       => 'mcu_event',
+    'posts_per_page'  => -1,
+    'meta_key'        => 'event_date',
+    'orderby'         => 'meta_value_num',
+    'order'           => 'ASC'
+  ));
 }
-if ( $_GET['month'] ) {
-  $monthNum  = $_GET['month'];
-  $dateObj   = DateTime::createFromFormat('!m', $monthNum);
-  $month_val = $dateObj->format('F');
+elseif ( $_GET['month']) {
   if ( $_GET['month'] < $currentMonth ) {
     $start_date = date("Y-m-d",mktime(0,0,0,$_GET['month'],1,date("Y")+1));
     $end_date = date("Y-m-d",mktime(0,0,0,$_GET['month'],date("t"),date("Y")+1));
@@ -28,45 +33,86 @@ if ( $_GET['month'] ) {
     $start_date = date("Y-m-d",mktime(0,0,0,$_GET['month'],1,date("Y")));
     $end_date = date("Y-m-d",mktime(0,0,0,$_GET['month'],date("t"),date("Y")));
   }
-  $args['meta_query'][] = array(
-    'key' => 'event_date',
-    'compare' => 'BETWEEN',
-    'value' => array($start_date, $end_date),
-    'type' => 'DATE',
-  );
+  query_posts(array(
+    'meta_query'      => array(
+      array(
+        'key' => 'event_date',
+        'compare' => 'BETWEEN',
+        'value' => array($start_date, $end_date),
+        'type' => 'DATE',
+      ),
+      array(
+        'key' => 'event_date',
+         'compare' => '>',
+         'value' => $currentdate,
+         'type' => 'DATE',
+      )),
+    'post_type'       => 'mcu_event',
+    'posts_per_page'  => -1,
+    'meta_key'        => 'event_date',
+    'orderby'         => 'meta_value_num',
+    'order'           => 'ASC'
+  ));
 }
-if ( $_GET['state'] ) {
-  $state_val = $state[$_GET['state']];
-  $args['meta_query'][] = array(
-    'key' => 'event_location',
-    'compare' => '=',
-    'value' => $_GET['state'],
-  );
+elseif ( $_GET['state']) {
+  query_posts(array(
+    'meta_query'      => array(
+      array(
+        'key' => 'event_location',
+        'compare' => '=',
+        'value' => $_GET['state'],
+      ),
+      array(
+        'key' => 'event_date',
+         'compare' => '>',
+         'value' => $currentdate,
+         'type' => 'DATE',
+      )),
+    'post_type'       => 'mcu_event',
+    'posts_per_page'  => -1,
+    'meta_key'        => 'event_date',
+    'orderby'         => 'meta_value_num',
+    'order'           => 'ASC'
+  ));
 }
-if ( $_GET['type'] ) {
-  $type_obj = get_term_by('slug', $_GET['type'], 'event_type');
-  $type_val = $type_obj->name;
-  $args['tax_query'][] = array(
-    'taxonomy' => 'event_type',
-    'field' => 'slug',
-    'terms' => $_GET['type'],
-  );
-}*/
-
-/*$args['meta_query'][] = array(
-  'key' => 'event_date',
-  'compare' => '>',
-  'value' => $currentdate,
-  'type' => 'DATE',
-);
-
-$args['post_type']      => 'mcu_event';
-$args['posts_per_page'] => -1;
-$args['meta_key']       => 'event_date';
-$args['orderby']        => 'meta_value_num';
-$args['order']          => 'ASC';
-
-query_posts($args);*/
+elseif ( $_GET['type'] ) {
+  query_posts(array(
+    'tax_query'      => array(
+      array(
+        'taxonomy' => 'event_type',
+        'field' => 'slug',
+        'terms' => $_GET['type'],
+      )),
+    'meta_query'      => array(
+      array(
+        'key' => 'event_date',
+         'compare' => '>',
+         'value' => $currentdate,
+         'type' => 'DATE',
+      )),
+    'post_type'       => 'mcu_event',
+    'posts_per_page'  => -1,
+    'meta_key'        => 'event_date',
+    'orderby'         => 'meta_value_num',
+    'order'           => 'ASC'
+  ));
+}
+else {
+  query_posts(array(
+    'meta_query'      => array(
+      array(
+        'key' => 'event_date',
+         'compare' => '>',
+         'value' => $currentdate,
+         'type' => 'DATE',
+      )),
+    'post_type'       => 'mcu_event',
+    'posts_per_page'  => -1,
+    'meta_key'        => 'event_date',
+    'orderby'         => 'meta_value_num',
+    'order'           => 'ASC'
+  ));
+}
 
 $select_terms = get_terms( array(
     'taxonomy' => 'event_type',
@@ -80,7 +126,7 @@ $select_terms = get_terms( array(
   <div class="mdl-cell mdl-cell--12-col filters">
     
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height">
-      <input class="mdl-textfield__input event-state" type="text" id="state" value="<?php exho $state_val; ?>" readonly tabIndex="-1">
+      <input class="mdl-textfield__input event-state" type="text" id="state" value="" readonly tabIndex="-1">
       <label for="state">
         <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
       </label>
@@ -140,7 +186,7 @@ $select_terms = get_terms( array(
     </div>
 
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height">
-      <input class="mdl-textfield__input event-month" type="text" id="month" value="<?php exho $month_val; ?>" readonly tabIndex="-1">
+      <input class="mdl-textfield__input event-month" type="text" id="month" value="" readonly tabIndex="-1">
       <label for="month">
         <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
       </label>
@@ -155,7 +201,7 @@ $select_terms = get_terms( array(
     </div>
 
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height">
-      <input class="mdl-textfield__input event-type" type="text" id="type" value="<?php exho $type_val; ?>" readonly tabIndex="-1">
+      <input class="mdl-textfield__input event-type" type="text" id="type" value="" readonly tabIndex="-1">
       <label for="type">
         <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
       </label>
