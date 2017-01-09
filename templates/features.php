@@ -18,8 +18,11 @@
       </article>
       
       <?php 
-        $mcu = new WP_Query(array( 'posts_per_page' => 5 ));
-        var_dump($mcu);
+        $mcu_args = array (
+          'cat'               => $cat_mcu_id,
+          'posts_per_page'    => 5,
+        );
+        $mcu = new WP_Query($mcu_args);
         if ( $mcu->have_posts() ) {
           while( $mcu->have_posts() ) {
             $mcu->the_post();
