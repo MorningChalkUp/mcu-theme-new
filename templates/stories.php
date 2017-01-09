@@ -51,34 +51,34 @@
   <div class="mdl-grid">
     
     <?php
-      /*$story_feature = new WP_Query($story_args_feature);
+      $story_feature = new WP_Query($story_args_feature);
       if ($story_feature->have_posts()) {
         while($story_feature->have_posts()) {
           $story_feature->the_post();
           get_template_part( 'templates/feature', 'sub' );
         }
-      }*/
+      }
     ?>
 
     <?php
-      /*$quote = new WP_Query($quote_args);
+      $quote = new WP_Query($quote_args);
       if ($quote->have_posts()) {
         while($quote->have_posts()) {
           $quote_num++;
           $quote->the_post();
           get_template_part( 'templates/quote' );
         }
-      }*/
+      }
     ?>
 
     <?php
-      /*$stories = new WP_Query($story_feature);
+      $stories = new WP_Query($story_feature);
       if ($stories->have_posts()) {
         while($stories->have_posts()) {
           $stories->the_post();
           get_template_part( 'templates/teaser', 'archive' );
         }
-      }*/
+      }
     ?>
 
   </div>
