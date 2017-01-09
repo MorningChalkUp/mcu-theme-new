@@ -1,5 +1,5 @@
 <?php
-  $tidbit_args = array (
+  $tidbit_args_feature = array (
     'cat' => $cat_tidbits_id,
     'posts_per_page'  => 1,
     'meta_query'      => array(
@@ -12,14 +12,14 @@
     'post__not_in' => $exclude,
   );
 
-  $tidbit_feature = new WP_Query($tidbit_args);
+  $tidbit_feature = new WP_Query($tidbit_args_feature);
 
   if ($tidbit_feature->post_count != 1) {
-    $tidbit_args = array (
+    $tidbit_args_feature = array (
       'cat' => $cat_tidbits_id,
       'posts_per_page'  => 1,
     );
-    $tidbit_feature = new WP_Query($tidbit_args);
+    $tidbit_feature = new WP_Query($tidbit_args_feature);
   }
 
   $exclude[] = wp_list_pluck( $tidbit_feature->posts, 'ID' );
@@ -32,7 +32,7 @@
 
   $tidbit_args_2 = array (
     'cat' => $cat_tidbits_id,
-    'posts_per_page'  => 9,
+    'posts_per_page'  => 6,
     'offset' => 3,
     'post__not_in' => $exclude,
   );
@@ -70,12 +70,13 @@
     ?>
 
     <?php
-      /*if ($tidbit_feature->have_posts()) {
+      $tidbit_feature = new WP_Query($tidbit_args_feature);
+      if ($tidbit_feature->have_posts()) {
         while($tidbit_feature->have_posts()) {
           $tidbit_feature->the_post();
           get_template_part( 'templates/feature', 'sub' );
         }
-      }*/
+      }
     ?>
 
     <?php
