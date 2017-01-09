@@ -45,7 +45,7 @@
     'posts_per_page'  => 5,
   );
 
-  $mcu = new WP_Query($args);
+  $mcu = new WP_Query($mcu_args);
   
 /*  // Tidbits
   $tidbit_args = array (
