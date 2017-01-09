@@ -374,8 +374,21 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content article.main.subscribe-page .hero .form.thank-you {
   margin-top: 50px;
 }
-.mdl-layout__content .page-content article.main.events .filters label {
+.mdl-layout__content .page-content article.main.events .filters .mdl-textfield {
+  width: 200px;
+}
+.mdl-layout__content .page-content article.main.events .filters .mdl-textfield label {
   line-height: 1em;
+}
+.mdl-layout__content .page-content article.main.events .filters a:hover {
+  text-decoration: none;
+}
+.mdl-layout__content .page-content article.main.events .filters a.reset {
+  background-color: #3b5998;
+  color: #fff;
+}
+.mdl-layout__content .page-content article.main.events .filters a.reset:hover {
+  background-color: #2d4373;
 }
 .mdl-layout__content .page-content article.main.events .calendar a {
   color: #333132;
@@ -440,6 +453,204 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content section.archive article {
   margin-top: 25px;
   margin-bottom: 25px;
+}
+.mdl-layout__content .page-content section.archive.home .sec-title a {
+  border-bottom: 3px solid #3D5BA9;
+  color: #333132;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+.mdl-layout__content .page-content section.archive.home .sec-title a:hover {
+  text-decoration: none;
+}
+.mdl-layout__content .page-content section.archive.home article.quote {
+  height: 510px;
+  border: 2px solid #3D5BA9;
+  text-align: center;
+  color: #3D5BA9;
+  font-weight: 700;
+  line-height: normal;
+  padding: 20px;
+}
+.mdl-layout__content .page-content section.archive.home article.quote span {
+  display: block;
+}
+.mdl-layout__content .page-content section.archive.home article.quote #quote1,
+.mdl-layout__content .page-content section.archive.home article.quote #quote2 {
+  height: 470px;
+  font-size: 100px;
+  line-height: normal;
+}
+.mdl-layout__content .page-content section.archive.home article.quote #quote1 #textfit-inner,
+.mdl-layout__content .page-content section.archive.home article.quote #quote2 #textfit-inner {
+  line-height: normal;
+}
+.mdl-layout__content .page-content section.archive.home article.sub-feature {
+  background-size: cover;
+  height: 510px;
+  position: relative;
+}
+.mdl-layout__content .page-content section.archive.home article.sub-feature .content {
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+  text-align: right;
+  display: table-cell;
+  max-width: 80%;
+}
+.mdl-layout__content .page-content section.archive.home article.sub-feature .content .category mark {
+  background: #3D5BA9;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+.mdl-layout__content .page-content section.archive.home article.sub-feature .content .title {
+  text-align: right;
+}
+.mdl-layout__content .page-content section.archive.home article.sub-feature .content .title mark {
+  background: #fff;
+  color: #333132;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  padding: 10px;
+  line-height: 2em;
+}
+.mdl-layout__content section.feature.mdl-grid {
+  padding: 0;
+}
+.mdl-layout__content section.feature .mcu-roll {
+  min-width: 33.333333333333333%;
+  background: rgba(216, 216, 216, 0.2);
+  padding: 10px;
+}
+.mdl-layout__content section.feature .mcu-roll.mdl-cell {
+  margin: 0px;
+}
+.mdl-layout__content section.feature .mcu-roll .more {
+  text-align: right;
+  padding: 20px 5px 0px;
+  font-family: "industry", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.mdl-layout__content section.feature .mcu-roll .stories {
+  display: table;
+  width: 100%;
+  table-layout: auto;
+}
+.mdl-layout__content section.feature .mcu-roll .stories article.category-title {
+  display: table-row;
+}
+.mdl-layout__content section.feature .mcu-roll .stories article.category-title .img {
+  display: table-cell;
+  width: 75px;
+}
+.mdl-layout__content section.feature .mcu-roll .stories article.category-title .img img {
+  width: 75px;
+  height: 75px;
+}
+.mdl-layout__content section.feature .mcu-roll .stories article.category-title .info {
+  display: table-cell;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(51, 49, 50, 0.3);
+  font-family: "industry", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #3D5BA9;
+}
+.mdl-layout__content section.feature .mcu-roll .stories article.mcu {
+  display: table-row;
+}
+.mdl-layout__content section.feature .mcu-roll .stories article.mcu .img {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 75px;
+  line-height: 92px;
+}
+.mdl-layout__content section.feature .mcu-roll .stories article.mcu .img img {
+  border-radius: 50%;
+}
+.mdl-layout__content section.feature .mcu-roll .stories article.mcu .info {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0px 15px;
+  border-bottom: 1px solid rgba(51, 49, 50, 0.3);
+}
+.mdl-layout__content section.feature .mcu-roll .stories article.mcu .info .title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #333132;
+  line-height: 1.25em;
+}
+.mdl-layout__content section.feature .mcu-roll .stories article.mcu .info .title a {
+  color: #333132;
+}
+.mdl-layout__content section.feature .mcu-roll .stories article.mcu .info .title a:hover {
+  text-decoration: none;
+}
+.mdl-layout__content section.feature .mcu-roll .stories article.mcu .info .date {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #3D5BA9;
+  text-transform: uppercase;
+  line-height: 1.25em;
+}
+.mdl-layout__content section.feature .mcu-roll .stories article.mcu:hover {
+  text-decoration: none;
+}
+.mdl-layout__content section.feature .featured {
+  background-size: cover;
+  min-width: 66.666666666666667%;
+  position: relative;
+  height: 590px;
+}
+.mdl-layout__content section.feature .featured.mdl-cell {
+  margin: 0px;
+}
+.mdl-layout__content section.feature .featured .content {
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+  text-align: right;
+  display: table-cell;
+  max-width: 50%;
+}
+.mdl-layout__content section.feature .featured .content .category mark {
+  background: #3D5BA9;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+.mdl-layout__content section.feature .featured .content .title mark {
+  background: #fff;
+  color: #333132;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  padding: 10px;
+  line-height: 2em;
+}
+.mdl-layout__content section.feature .featured .content .title mark a {
+  background: #fff;
+  color: #333132;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.mdl-layout__content section.feature .featured .content .title mark a:hover {
+  text-decoration: none;
 }
 section.subscribe {
   background-color: #3D5BA9;
@@ -571,6 +782,14 @@ footer.mdl-mini-footer ul li a i {
   section.subscribe .sub-title {
     font-size: 18px;
     line-height: 1em;
+  }
+}
+@media screen and (max-width: 839px) {
+  .mdl-layout__content section.feature .mcu-roll {
+    min-width: 100%;
+  }
+  .mdl-layout__content section.feature .featured {
+    min-width: 100%;
   }
 }
 @media screen and (max-width: 500px) {

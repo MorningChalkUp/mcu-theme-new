@@ -1,7 +1,7 @@
 <section class="mdl-cell mdl-cell--12-col main archive home">
   <div class="mdl-grid">
     <div class="mdl-layout-spacer"></div>
-    <div class="mdl-cell mdl-cell--8-col title">
+    <div class="mdl-cell mdl-cell--8-col sec-title">
       <a href="<?php echo esc_url( $cat_story_link ); ?>">Latest Stories</a>
     </div>
     <div class="mdl-layout-spacer"></div>

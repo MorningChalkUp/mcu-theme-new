@@ -42,8 +42,8 @@
 <section class="mdl-cell mdl-cell--12-col main archive home">
   <div class="mdl-grid">
     <div class="mdl-layout-spacer"></div>
-    <div class="mdl-cell mdl-cell--8-col title">
-      <a href="<?php //echo esc_url( $cat__tidbits_link ); ?>">Latest Tidbits</a>
+    <div class="mdl-cell mdl-cell--8-col sec-title">
+      <a href="<?php echo esc_url( $cat__tidbits_link ); ?>">Latest Tidbits</a>
     </div>
     <div class="mdl-layout-spacer"></div>
   </div>
