@@ -26,17 +26,17 @@
 
   $exclude[] = wp_list_pluck( $story_feature->posts, 'ID' );
 
-/*  $story_args = array (
+  $story_args = array (
     'cat' => $cat_story_id,
     'posts_per_page'  => 6,
-    'post__not_in' => $feature_id,
+    'post__not_in' => $exclude,
   );
 
   $quote_args = array (
     'post_type' => 'quote',
     'posts_per_page'  => 1,
     'offset' => 1;
-  );*/
+  );
 
 ?>
 <section class="mdl-cell mdl-cell--12-col main archive home">
