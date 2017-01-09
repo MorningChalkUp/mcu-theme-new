@@ -38,7 +38,7 @@
   }
 
   $exclude[] = wp_list_pluck( $tidbit_feature->posts, 'ID' );
-/*
+
   // MCU
   $mcu_args = array (
     'cat' => $cat_mcu_id,
@@ -46,7 +46,7 @@
   );
 
   $mcu = new WP_Query($args);
-  
+  /*
   // Tidbits
   $tidbit_args = array (
     'cat' => $cat_tidbits_id,
