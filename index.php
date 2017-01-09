@@ -14,7 +14,7 @@
   $quote_cat = get_category_by_slug('quote');
   $quote_cat_id = $cat->term_id;
 
-/*  // Home Feature
+  // Home Feature
   $feature_args = array (
     'cat' => array($cat_story_id,$cat_tidbits_id),
     'posts_per_page'  => 1,
@@ -38,7 +38,7 @@
   }
 
   $exclude[] = wp_list_pluck( $tidbit_feature->posts, 'ID' );
-
+/*
   // MCU
   $mcu_args = array (
     'cat' => $cat_mcu_id,
