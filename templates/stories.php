@@ -72,7 +72,7 @@
     ?>
 
     <?php
-      $stories = new WP_Query($story_feature);
+      $stories = new WP_Query($story_args);
       if ($stories->have_posts()) {
         while($stories->have_posts()) {
           $stories->the_post();
