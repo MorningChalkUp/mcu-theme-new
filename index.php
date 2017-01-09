@@ -41,8 +41,14 @@
 
   // MCU
   $mcu_args = array (
-    // 'category_name' => 'mcu',
-    'posts_per_page'  => 5,
+    'cat'               => $cat_mcu_id,
+    'posts_per_page'    => 5,
+    'post_type'         => 'post',
+    'post_status'       => 'publish',
+    'pagination'        => true,
+    'posts_per_page'    => 5,
+    'order'             => 'ASC',
+    'orderby'           => 'date',
   );
   
 /*  // Tidbits
