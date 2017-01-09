@@ -10,6 +10,7 @@
 
     <?php
       $i = 0;
+      $tidbits = new WP_Query($tidbit_args);
       if ($tidbits->have_posts()) {
         while($tidbits->have_posts() && $i < 3) {
           $tidbits->the_post(); $i++
@@ -18,7 +19,7 @@
       }
     ?>
     
-    <?php
+    <!-- <?php
       if ($quote->have_posts())
         while($quote->have_posts()) {
           $quote->the_post();
@@ -43,7 +44,7 @@
           get_template_part( 'templates/teaser' );
         }
       }
-    ?>
+    ?> -->
 
   </div>
 </section>

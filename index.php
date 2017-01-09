@@ -15,7 +15,7 @@
   $quote_cat_id = $cat->term_id;
 
   
-/*  // Tidbits
+  // Tidbits
   $tidbit_args = array (
     'cat' => $cat_tidbits_id,
     'posts_per_page'  => 1,
@@ -49,7 +49,7 @@
 
   $tidbits = new WP_Query($tidbit_args);
 
-  // Stories
+/*  // Stories
   $story_args = array (
     'cat' => $cat_story_id,
     'posts_per_page'  => 1,
