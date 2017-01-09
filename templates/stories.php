@@ -33,11 +33,11 @@
     'post__not_in' => $ex_str,
   );
 
-  $quote_args = array (
+  /*$quote_args = array (
     'post_type' => 'quote',
     'posts_per_page'  => 1,
     'offset' => 1;
-  );
+  );*/
 
 ?>
 <section class="mdl-cell mdl-cell--12-col main archive home">
