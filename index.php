@@ -97,7 +97,7 @@
   <main class="mdl-layout__content">
     <div class="page-content">
       
-      <?php //get_template_part( 'templates/features' ); ?>
+      <?php get_template_part( 'templates/features' ); ?>
 
       <!-- <div class="mdl-grid">
 
