@@ -1,4 +1,6 @@
 <?php 
+  global $quote_num;
+  
   $story_args_feature = array (
     'cat' => $cat_story_id,
     'posts_per_page'  => 1,
