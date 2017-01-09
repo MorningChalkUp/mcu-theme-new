@@ -30,7 +30,7 @@
       if ($stories->have_posts()) {
         while($stories->have_posts()) {
           $stories->the_post();
-          get_template_part( 'templates/teaser' );
+          get_template_part( 'templates/teaser', 'archive' );
         }
       }
     ?>

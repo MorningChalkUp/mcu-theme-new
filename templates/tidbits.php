@@ -20,7 +20,7 @@
       if ($tidbits->have_posts()) {
         while($tidbits->have_posts()) {
           $tidbits->the_post();
-          get_template_part( 'templates/teaser' );
+          get_template_part( 'templates/teaser', 'archive' );
         }
       }
     ?>
@@ -47,7 +47,7 @@
        /*if ($tidbits->have_posts()) {
         while($tidbits->have_posts()) {
           $tidbits->the_post();
-          get_template_part( 'templates/teaser' );
+          get_template_part( 'templates/teaser', 'archive' );
         }
       }*/
     ?>
