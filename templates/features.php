@@ -18,8 +18,8 @@
       </article>
       
       <?php 
-        if ($mcu->have_posts()) {
-          while($mcu->have_posts()) {
+        if ( $mcu->have_posts() ) {
+          while( $mcu->have_posts() ) {
             $mcu->the_post();
             get_template_part( 'templates/mcu' );
           }
