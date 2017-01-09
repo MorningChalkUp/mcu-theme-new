@@ -1,4 +1,6 @@
 <?php
+  global $quote_num;
+
   $tidbit_args_feature = array (
     'cat' => $cat_tidbits_id,
     'posts_per_page'  => 1,
