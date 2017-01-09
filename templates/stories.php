@@ -9,30 +9,30 @@
   <div class="mdl-grid">
     
     <?php
-
-      white($story_feature->have_posts()) {
-        $story_feature->the_post();
-        get_template_part( 'templates/feature', 'sub' );
+      if ($story_feature->have_posts()) {
+        white($story_feature->have_posts()) {
+          $story_feature->the_post();
+          get_template_part( 'templates/feature', 'sub' );
+        }
       }
-
     ?>
 
     <?php
-
-      white($quote->have_posts()) {
-        $quote->the_post();
-        get_template_part( 'templates/quote' );
+      if ($quote->have_posts()) {
+        white($quote->have_posts()) {
+          $quote->the_post();
+          get_template_part( 'templates/quote' );
+        }
       }
-
     ?>
 
     <?php
-
-      white($stories->have_posts()) {
-        $stories->the_post();
-        get_template_part( 'templates/teaser' );
+      if ($stories->have_posts()) {
+        white($stories->have_posts()) {
+          $stories->the_post();
+          get_template_part( 'templates/teaser' );
+        }
       }
-
     ?>
 
   </div>

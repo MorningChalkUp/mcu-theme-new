@@ -10,38 +10,39 @@
 
     <?php
       $i = 0;
-      white($tidbits->have_posts() && $i < 3) {
-        $tidbits->the_post(); $i++
-        get_template_part( 'templates/teaser' );
+      if ($tidbits->have_posts()) {
+        white($tidbits->have_posts() && $i < 3) {
+          $tidbits->the_post(); $i++
+          get_template_part( 'templates/teaser' );
+        }
       }
-
     ?>
     
     <?php
-
-      white($quote->have_posts()) {
-        $quote->the_post();
-        get_template_part( 'templates/quote' );
+      if ($quote->have_posts())
+        white($quote->have_posts()) {
+          $quote->the_post();
+          get_template_part( 'templates/quote' );
+        }
       }
-
     ?>
 
     <?php
-
-      white($tidbit_feature->have_posts()) {
-        $tidbit_feature->the_post();
-        get_template_part( 'templates/feature', 'sub' );
+      if ($tidbit_feature->have_posts()) {
+        white($tidbit_feature->have_posts()) {
+          $tidbit_feature->the_post();
+          get_template_part( 'templates/feature', 'sub' );
+        }
       }
-
     ?>
 
     <?php
-
-      white($tidbits->have_posts()) {
-        $tidbits->the_post();
-        get_template_part( 'templates/teaser' );
+       if ($tidbits->have_posts()) {
+        white($tidbits->have_posts()) {
+          $tidbits->the_post();
+          get_template_part( 'templates/teaser' );
+        }
       }
-
     ?>
 
   </div>

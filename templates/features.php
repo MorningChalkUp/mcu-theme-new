@@ -1,9 +1,11 @@
 <section class="feature mdl-grid">
   
   <?php 
-    white($mcu->have_posts()) {
-      $mcu->the_post();
-      get_template_part( 'templates/feature' );
+    if ($feature->have_posts()) {
+      white($feature->have_posts()) {
+        $feature->the_post();
+        get_template_part( 'templates/feature' );
+      }
     }
   ?>
 
@@ -17,9 +19,11 @@
       </article>
       
       <?php 
-        white($mcu->have_posts()) {
-          $mcu->the_post();
-          get_template_part( 'templates/mcu' );
+        if ($mcu->have_posts()) {
+          white($mcu->have_posts()) {
+            $mcu->the_post();
+            get_template_part( 'templates/mcu' );
+          }
         }
       ?>
 
