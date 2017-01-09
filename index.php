@@ -1,5 +1,5 @@
 <?php
-  $cat_mcu = get_category_by_slug( 'mcu' );
+  /*$cat_mcu = get_category_by_slug( 'mcu' );
   $cat_mcu_id = $cat_mcu->term_id;
   $cat_mcu_link = get_category_link( $cat_mcu_id );
 
@@ -12,7 +12,7 @@
   $cat_story_link = get_category_link( $cat_story_id );
 
   $quote_cat = get_category_by_slug( 'quote' );
-  $quote_cat_id = $cat->term_id;
+  $quote_cat_id = $cat->term_id;*/
 
   $/*quote_args = array (
     'post_type' => 'quote'
