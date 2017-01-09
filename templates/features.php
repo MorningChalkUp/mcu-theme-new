@@ -33,12 +33,13 @@
 
 <section class="feature mdl-grid">
   <?php 
-    // if ($feature->have_posts()) {
-    //   while($feature->have_posts()) {
-    //     $feature->the_post();
-    //     get_template_part( 'templates/feature' );
-    //   }
-    // }
+    $feature = new WP_Query($feature_args);
+    if ($feature->have_posts()) {
+      while($feature->have_posts()) {
+        $feature->the_post();
+        get_template_part( 'templates/feature' );
+      }
+    }
   ?>
 
   <div class="mcu-roll mdl-cell mdl-cell--4-col mdl-cell--order-1-desktop">
