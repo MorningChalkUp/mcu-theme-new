@@ -121,7 +121,7 @@
     'posts_per_page'  => 2,
   );
 
-  $quote = new WP_Query($quote_args);*/
+  $quote = new WP_Query($quote_args);
 ?>
 
 <?php get_header(); ?>
@@ -133,9 +133,9 @@
 
       <div class="mdl-grid">
 
-        <?php get_template_part( 'templates/tidbits' ); ?>
+        <?php //get_template_part( 'templates/tidbits' ); ?>
 
-        <?php get_template_part( 'templates/stories' ); ?>
+        <?php //get_template_part( 'templates/stories' ); ?>
 
       </div>
       
