@@ -524,6 +524,15 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   padding: 10px;
   line-height: 2em;
 }
+.mdl-layout__content .page-content section.archive.home article.sub-feature .content .title mark a {
+  background: #fff;
+  color: #333132;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.mdl-layout__content .page-content section.archive.home article.sub-feature .content .title mark a:hover {
+  text-decoration: none;
+}
 .mdl-layout__content section.feature.mdl-grid {
   padding: 0;
 }
