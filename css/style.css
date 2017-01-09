@@ -72,6 +72,15 @@ h5 {
   line-height: 1.5em;
   margin: 0;
 }
+.mdl-grid {
+  max-width: 1170px;
+}
+.mdl-grid.feature {
+  max-width: 100%;
+}
+.mdl-grid.subscribe {
+  max-width: 100%;
+}
 header.mdl-layout__header {
   background-color: #fff;
   box-shadow: none;
@@ -454,6 +463,9 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   margin-top: 25px;
   margin-bottom: 25px;
 }
+.mdl-layout__content .page-content section.archive.home .sec-title {
+  text-align: center;
+}
 .mdl-layout__content .page-content section.archive.home .sec-title a {
   border-bottom: 3px solid #3D5BA9;
   color: #333132;
@@ -520,6 +532,15 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   font-size: 48px;
   padding: 10px;
   line-height: 2em;
+}
+.mdl-layout__content .page-content section.archive.home article.sub-feature .content .title mark a {
+  background: #fff;
+  color: #333132;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.mdl-layout__content .page-content section.archive.home article.sub-feature .content .title mark a:hover {
+  text-decoration: none;
 }
 .mdl-layout__content section.feature.mdl-grid {
   padding: 0;
