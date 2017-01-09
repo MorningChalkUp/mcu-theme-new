@@ -41,7 +41,7 @@
 
   // MCU
   $mcu_args = array (
-    'cat' => $cat_mcu_id,
+    'category_name' => 'mcu',
     'posts_per_page'  => 5,
   );
   
