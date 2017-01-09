@@ -58,7 +58,6 @@
 
     <?php
       $tidbits = new WP_Query($tidbit_args);
-
       if ($tidbits->have_posts()) {
         while($tidbits->have_posts()) {
           $tidbits->the_post();
