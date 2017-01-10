@@ -183,3 +183,176 @@ function cptui_register_my_taxes() {
 // End cptui_register_my_taxes()
 }
 
+if(function_exists("register_field_group"))
+{
+  register_field_group(array (
+    'id' => 'acf_events',
+    'title' => 'Events',
+    'fields' => array (
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'mcu_event',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'acf_after_title',
+      'layout' => 'no_box',
+      'hide_on_screen' => array (
+        0 => 'the_content',
+        1 => 'excerpt',
+        2 => 'custom_fields',
+        3 => 'discussion',
+        4 => 'comments',
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+  register_field_group(array (
+    'id' => 'acf_featured-content',
+    'title' => 'Featured Content',
+    'fields' => array (
+      array (
+        'key' => 'field_58731b6c14c95',
+        'label' => 'Featured',
+        'name' => 'featured',
+        'type' => 'radio',
+        'instructions' => 'Select "Home" for homepage top content.
+  
+  Select "Section" for section area feature (smaller content).',
+        'required' => 1,
+        'choices' => array (
+          'home = Home' => 'home = Home',
+          'section = Section' => 'section = Section',
+          'none = None' => 'none = None',
+          '' => '',
+        ),
+        'other_choice' => 0,
+        'save_other_choice' => 0,
+        'default_value' => 'none',
+        'layout' => 'horizontal',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'post_category',
+          'operator' => '==',
+          'value' => '341',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+      array (
+        array (
+          'param' => 'post_category',
+          'operator' => '==',
+          'value' => '342',
+          'order_no' => 0,
+          'group_no' => 1,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'side',
+      'layout' => 'no_box',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+  register_field_group(array (
+    'id' => 'acf_quotes',
+    'title' => 'Quotes',
+    'fields' => array (
+      array (
+        'key' => 'field_5873b4c557f36',
+        'label' => 'Quote Text',
+        'name' => 'quote_text',
+        'type' => 'textarea',
+        'instructions' => 'Do not include physical quotes (") around entire quote.',
+        'required' => 1,
+        'default_value' => '',
+        'placeholder' => '',
+        'maxlength' => '',
+        'rows' => '',
+        'formatting' => 'none',
+      ),
+      array (
+        'key' => 'field_5873b50457f37',
+        'label' => 'Qute Attribution',
+        'name' => 'qute_attribution',
+        'type' => 'text',
+        'instructions' => 'Attribute the quote ',
+        'required' => 1,
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'none',
+        'maxlength' => '',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'quote',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'acf_after_title',
+      'layout' => 'no_box',
+      'hide_on_screen' => array (
+        0 => 'permalink',
+        1 => 'the_content',
+        2 => 'excerpt',
+        3 => 'custom_fields',
+        4 => 'discussion',
+        5 => 'comments',
+        6 => 'revisions',
+        7 => 'slug',
+        8 => 'author',
+        9 => 'format',
+        10 => 'featured_image',
+        11 => 'send-trackbacks',
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+  register_field_group(array (
+    'id' => 'acf_the-morning-chalk-up',
+    'title' => 'The Morning Chalk Up',
+    'fields' => array (
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'post_category',
+          'operator' => '==',
+          'value' => '4',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'normal',
+      'layout' => 'no_box',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+}
+
