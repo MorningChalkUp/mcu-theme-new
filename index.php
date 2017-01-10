@@ -7,7 +7,7 @@
   $cat_tidbits_id = $cat_tidbit->term_id;
   $cat_tidbits_link = get_category_link( $cat_tidbits_id );
 
-  $cat_story = get_category_by_slug( 'story' );
+  $cat_story = get_category_by_slug( 'stories' );
   $cat_story_id = $cat_story->term_id;
   $cat_story_link = get_category_link( $cat_story_id );
 
