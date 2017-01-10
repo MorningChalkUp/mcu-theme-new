@@ -38,14 +38,14 @@ $tags = wp_get_post_tags( $post->ID );
     <?php if (get_field('mcu_deals')): ?>
       <div class="sub-sec tips">
         <img src="<?php echo get_template_directory_uri(); ?>/img/deals.png" alt="Chalk Up Deals">
-        CHALK UP TIPS
+        CHALK UP Deals
       </div>
       <?php echo get_field('mcu_deals'); ?>
     <?php endif ?>
     <?php if (get_field('mcu_calendar')): ?>
       <div class="sub-sec tips">
         <img src="<?php echo get_template_directory_uri(); ?>/img/calendar.png" alt="Chalk Up Calendar">
-        CHALK UP TIPS
+        CHALK UP Calendar
       </div>
       <?php echo get_field('mcu_calendar'); ?>
     <?php endif ?>
