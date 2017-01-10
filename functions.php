@@ -224,8 +224,8 @@ if(function_exists("register_field_group"))
         'name' => 'featured',
         'type' => 'radio',
         'instructions' => 'Select "Home" for homepage top content.
-  
-  Select "Section" for section area feature (smaller content).',
+    
+    Select "Section" for section area feature (smaller content).',
         'required' => 1,
         'choices' => array (
           'home = Home' => 'home = Home',
@@ -271,19 +271,6 @@ if(function_exists("register_field_group"))
     'id' => 'acf_quotes',
     'title' => 'Quotes',
     'fields' => array (
-      array (
-        'key' => 'field_5873b4c557f36',
-        'label' => 'Quote Text',
-        'name' => 'quote_text',
-        'type' => 'textarea',
-        'instructions' => 'Do not include physical quotes (") around entire quote.',
-        'required' => 1,
-        'default_value' => '',
-        'placeholder' => '',
-        'maxlength' => '',
-        'rows' => '',
-        'formatting' => 'none',
-      ),
       array (
         'key' => 'field_5873b50457f37',
         'label' => 'Qute Attribution',
