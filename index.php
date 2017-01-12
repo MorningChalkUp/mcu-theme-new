@@ -16,7 +16,8 @@
   $exclude = array();
   $ex_str = '';
 
-  $feature_cats = mplode( ",", array( $cat_tidbit_id, $cat_story_id ) );
+  $feat_array = array( $cat_tidbit_id, $cat_story_id );
+  $feature_cats = mplode( ",", $feat_array );
 ?>
 
 <?php get_header(); ?>

@@ -25,7 +25,7 @@
   }
 
   $exclude[] = wp_list_pluck( $story_feature->posts, 'ID' );
-  $ex_str = implode(" ",$exclude);
+  $ex_str = implode(",",$exclude);
 
   $story_args = array (
     'cat' => $cat_story_id,
