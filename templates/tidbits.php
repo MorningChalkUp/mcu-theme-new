@@ -51,7 +51,7 @@
   <div class="mdl-grid">
     <div class="mdl-layout-spacer"></div>
     <div class="mdl-cell mdl-cell--8-col sec-title">
-      <a href="<?php echo esc_url( $cat__tidbits_link ); ?>">Latest Tidbits</a>
+      <a href="<?php echo $cat_tidbits_link; ?>">Latest Tidbits</a>
     </div>
     <div class="mdl-layout-spacer"></div>
   </div>
