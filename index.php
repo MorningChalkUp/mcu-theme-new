@@ -3,12 +3,9 @@
   $cat_mcu_id = $cat_mcu->term_id;
   $cat_mcu_link = get_category_link( $cat_mcu_id );
 
-  $cat_tidbits = get_category_by_slug( 'tidbits' );
-    echo '<pre>';
-  var_dump($cat_tidbits);
-  echo '</pre>';
-  $cat_tidbits_id = $cat_tidbit->term_id;
-  $cat_tidbits_link = get_category_link( $cat_tidbits_id );
+  $cat_tidbit = get_category_by_slug( 'tidbits' );
+  $cat_tidbit_id = $cat_tidbits->term_id;
+  $cat_tidbit_link = get_category_link( $cat_tidbits_id );
 
   $cat_story = get_category_by_slug( 'stories' );
   $cat_story_id = $cat_story->term_id;

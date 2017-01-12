@@ -1,8 +1,8 @@
 <?php
-  global $quote_num, $exclude, $ex_str, $cat_tidbits_id, $cat_tidbits_link;
+  global $quote_num, $exclude, $ex_str, $cat_tidbit_id, $cat_tidbits_link;
 
   $tidbit_args_feature = array (
-    'cat' => $cat_tidbits_id,
+    'cat' => $cat_tidbit_id,
     'posts_per_page'  => 1,
     'meta_query'      => array(
       array(
@@ -18,7 +18,7 @@
 
   if ($tidbit_feature->post_count != 1) {
     $tidbit_args_feature = array (
-      'cat' => $cat_tidbits_id,
+      'cat' => $cat_tidbit_id,
       'posts_per_page'  => 1,
     );
     $tidbit_feature = new WP_Query($tidbit_args_feature);
@@ -28,13 +28,13 @@
   $ex_str = implode(" ",$exclude);
 
   $tidbit_args = array (
-    'cat' => $cat_tidbits_id,
+    'cat' => $cat_tidbit_id,
     'posts_per_page'  => 3,
     // 'post__not_in' => $ex_str,
   );
 
   $tidbit_args_2 = array (
-    'cat' => $cat_tidbits_id,
+    'cat' => $cat_tidbit_id,
     'posts_per_page'  => 6,
     'offset' => 3,
     // 'post__not_in' => $ex_str,
@@ -51,7 +51,7 @@
   <div class="mdl-grid">
     <div class="mdl-layout-spacer"></div>
     <div class="mdl-cell mdl-cell--8-col sec-title">
-      <a href="<?php echo $cat_tidbits_link; ?>">Latest Tidbits</a>
+      <a href="<?php echo $cat_tidbit_link; ?>">Latest Tidbits</a>
     </div>
     <div class="mdl-layout-spacer"></div>
   </div>
