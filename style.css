@@ -15,6 +15,7 @@ div {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 2em;
+  font-size: 18px;
 }
 .center {
   text-align: center;
@@ -172,9 +173,6 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   background-color: #3D5BA9;
   color: #fff;
   text-decoration: none;
-}
-.mdl-layout__content .page-content article.main {
-  font-size: 18px;
 }
 .mdl-layout__content .page-content article.main.article {
   max-width: 770px;
