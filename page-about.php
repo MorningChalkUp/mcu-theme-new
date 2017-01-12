@@ -106,7 +106,7 @@
             </section>
             <section class="team-member mdl-cell mdl-cell--4-col">
               <div class="img">
-                <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/jkatie.jpg" alt="Katie Breazeal">
+                <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/katie.jpg" alt="Katie Breazeal">
               </div>
               <div class="name">
                 Katie Breazeal
