@@ -260,7 +260,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   background-size: cover;
   position: relative;
   height: calc(100vh - 64px);
-  width: 100%;
+  min-width: 100%;
 }
 .mdl-layout__content .page-content article.main.about .hero h1 {
   position: absolute;
@@ -290,22 +290,29 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content article.main.about .story {
   text-align: center;
   background: rgba(216, 216, 216, 0.1);
+  min-width: 100%;
 }
 .mdl-layout__content .page-content article.main.about .mission {
   text-align: center;
+  min-width: 100%;
 }
 .mdl-layout__content .page-content article.main.about .team {
   text-align: center;
   background: rgba(216, 216, 216, 0.1);
+  min-width: 100%;
 }
 .mdl-layout__content .page-content article.main.about .team section.team-member {
   margin-bottom: 25px;
+}
+.mdl-layout__content .page-content article.main.about .team section.team-member .img img {
+  max-width: 200px;
 }
 .mdl-layout__content .page-content article.main.about .team section.team-member .name {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 36px;
   color: #333132;
+  line-height: normal;
 }
 .mdl-layout__content .page-content article.main.about .team section.team-member .info {
   font-size: 18px;

@@ -225,6 +225,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   width: 100%;
   height: auto;
   display: block;
+  margin-bottom: 10px;
 }
 .mdl-layout__content .page-content article.main .img .caption {
   font-family: 'Open Sans', sans-serif;
@@ -305,6 +306,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   font-weight: 700;
   font-size: 36px;
   color: #333132;
+  line-height: normal;
 }
 .mdl-layout__content .page-content article.main.about .team section.team-member .info {
   font-size: 18px;
