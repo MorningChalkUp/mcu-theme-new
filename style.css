@@ -15,7 +15,6 @@ div {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 2em;
-  font-size: 18px;
 }
 .center {
   text-align: center;
@@ -176,6 +175,11 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 .mdl-layout__content .page-content article.main.article {
   max-width: 770px;
+}
+.mdl-layout__content .page-content article.main.article body,
+.mdl-layout__content .page-content article.main.article p,
+.mdl-layout__content .page-content article.main.article div {
+  font-size: 18px;
 }
 .mdl-layout__content .page-content article.main h2 {
   font-family: 'Open Sans', sans-serif;
