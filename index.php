@@ -4,6 +4,9 @@
   $cat_mcu_link = get_category_link( $cat_mcu_id );
 
   $cat_tidbits = get_category_by_slug( 'tidbits' );
+    echo '<pre>';
+  var_dump($cat_tidbits);
+  echo '</pre>';
   $cat_tidbits_id = $cat_tidbit->term_id;
   $cat_tidbits_link = get_category_link( $cat_tidbits_id );
 
