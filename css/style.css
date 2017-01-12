@@ -173,11 +173,13 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   color: #fff;
   text-decoration: none;
 }
-.mdl-layout__content .page-content article.main {
-  font-size: 18px;
-}
 .mdl-layout__content .page-content article.main.article {
   max-width: 770px;
+}
+.mdl-layout__content .page-content article.main.article body,
+.mdl-layout__content .page-content article.main.article p,
+.mdl-layout__content .page-content article.main.article div {
+  font-size: 18px;
 }
 .mdl-layout__content .page-content article.main h2 {
   font-family: 'Open Sans', sans-serif;
@@ -223,6 +225,12 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   width: 100%;
   height: auto;
   display: block;
+}
+.mdl-layout__content .page-content article.main .img .caption {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: right;
 }
 .mdl-layout__content .page-content article.main .sub-sec {
   text-align: center;

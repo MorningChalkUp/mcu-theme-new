@@ -1,7 +1,9 @@
 <?php 
 $thumb_id = get_post_thumbnail_id();
-$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
+$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'featured', true);
 $thumb_url = $thumb_url_array[0];
+
+$caption = get_post( $thumb_id )->post_excerpt;
 
 $tags = wp_get_post_tags( $post->ID );
 ?>
@@ -25,6 +27,9 @@ $tags = wp_get_post_tags( $post->ID );
   </div>
   <div class="img">
     <img class="feature-img" src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>">
+    <?php if ( $caption ) : ?>
+      <div class="caption">Photo Credit: <?php echo $caption ?></div>
+    <?php endif; ?>
   </div>
   <div class="content">
     <?php the_content(); ?>
