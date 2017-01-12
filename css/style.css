@@ -173,6 +173,9 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   color: #fff;
   text-decoration: none;
 }
+.mdl-layout__content .page-content article.main {
+  font-size: 18px;
+}
 .mdl-layout__content .page-content article.main.article {
   max-width: 770px;
 }
