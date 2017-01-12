@@ -1,9 +1,9 @@
 <?php 
-  global $cat_mcu_id, $cat_mcu_link, $ex_str;
+  global $cat_mcu_id, $cat_mcu_link, $exclude, $ex_str, $feature_cats;
 
   // Home Feature
   $feature_args = array (
-    'cat' => array($cat_story_id,$cat_tidbits_id),
+    'cat' => $feature_cats,
     'posts_per_page'  => 1,
     'meta_query'      => array(
       array(
@@ -18,14 +18,14 @@
 
   if ($feature->post_count != 1) {
     $feature_args = array (
-      'cat' => array($cat_story_id,$cat_tidbits_id),
+      'cat' => $feature_cats,
       'posts_per_page'  => 1,
     );
     $feature = new WP_Query($feature_args);
   }
 
-  $exclude[] = wp_list_pluck( $tidbit_feature->posts, 'ID' );
-  $ex_str = implode(" ",$exclude);
+  $exclude[] = wp_list_pluck( $feature->posts, 'ID' );
+  $ex_str = implode( ",", $exclude );
   
   // MCU
   $mcu_args = array (

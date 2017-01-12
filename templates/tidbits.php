@@ -1,5 +1,5 @@
 <?php
-  global $quote_num, $exclude, $ex_str, $cat_tidbit_id, $cat_tidbit_link;
+  global $quote_num, $exclude, $ex_str, $cat_tidbit_id, $cat_tidbits_link;
 
   $tidbit_args_feature = array (
     'cat' => $cat_tidbit_id,
@@ -11,7 +11,7 @@
         'value' => 'section',
       ),
     ),
-    // 'post__not_in' => $ex_str,
+    'post__not_in' => $ex_str,
   );
 
   $tidbit_feature = new WP_Query($tidbit_args_feature);
@@ -30,14 +30,14 @@
   $tidbit_args = array (
     'cat' => $cat_tidbit_id,
     'posts_per_page'  => 3,
-    // 'post__not_in' => $ex_str,
+    'post__not_in' => $ex_str,
   );
 
   $tidbit_args_2 = array (
     'cat' => $cat_tidbit_id,
     'posts_per_page'  => 6,
     'offset' => 3,
-    // 'post__not_in' => $ex_str,
+    'post__not_in' => $ex_str,
   );
 
   $quote_args = array (

@@ -12,6 +12,11 @@
   $cat_story_link = get_category_link( $cat_story_id );
 
   $quote_num = 0;
+
+  $exclude = array();
+  $ex_str = '';
+
+  $feature_cats = mplode( ",", array( $cat_tidbit_id, $cat_story_id ) );
 ?>
 
 <?php get_header(); ?>
