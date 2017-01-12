@@ -225,6 +225,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   width: 100%;
   height: auto;
   display: block;
+  margin-bottom: 10px;
 }
 .mdl-layout__content .page-content article.main .img .caption {
   font-family: 'Open Sans', sans-serif;
