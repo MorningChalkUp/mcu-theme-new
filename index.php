@@ -13,9 +13,6 @@
 
   $quote_num = 0;
 
-  $exclude = array();
-  $ex_str = '';
-
   $feat_array = array( $cat_tidbit_id, $cat_story_id );
   $feature_cats = mplode( ",", $feat_array );
 ?>
