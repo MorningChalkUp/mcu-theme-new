@@ -11,7 +11,7 @@
         'value' => 'section',
       ),
     ),
-    'post__not_in' => $ex_str,
+    'post__not_in' => $exclude,
   );
 
   $story_feature = new WP_Query($story_args_feature);
@@ -20,7 +20,7 @@
     $story_args_feature = array (
       'cat' => $cat_story_id,
       'posts_per_page'  => 1,
-      'post__not_in' => $ex_str,
+      'post__not_in' => $exclude,
     );
     $story_feature = new WP_Query($story_args_feature);
   }
@@ -32,7 +32,7 @@
   $story_args = array (
     'cat' => $cat_story_id,
     'posts_per_page'  => 6,
-    'post__not_in' => $ex_str,
+    'post__not_in' => $exclude,
   );
 
   $quote_args = array (

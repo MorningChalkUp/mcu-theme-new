@@ -11,7 +11,7 @@
         'value' => 'section',
       ),
     ),
-    'post__not_in' => $ex_str,
+    'post__not_in' => $exclude,
   );
 
   $tidbit_feature = new WP_Query($tidbit_args_feature);
@@ -20,7 +20,7 @@
     $tidbit_args_feature = array (
       'cat' => $cat_tidbit_id,
       'posts_per_page'  => 1,
-      'post__not_in' => $ex_str,
+      'post__not_in' => $exclude,
     );
     $tidbit_feature = new WP_Query($tidbit_args_feature);
   }
@@ -32,14 +32,14 @@
   $tidbit_args = array (
     'cat' => $cat_tidbit_id,
     'posts_per_page'  => 3,
-    'post__not_in' => $ex_str,
+    'post__not_in' => $exclude,
   );
 
   $tidbit_args_2 = array (
     'cat' => $cat_tidbit_id,
     'posts_per_page'  => 6,
     'offset' => 3,
-    'post__not_in' => $ex_str,
+    'post__not_in' => $exclude,
   );
 
   $quote_args = array (
