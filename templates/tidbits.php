@@ -20,13 +20,15 @@
     $tidbit_args_feature = array (
       'cat' => $cat_tidbit_id,
       'posts_per_page'  => 1,
+      'post__not_in' => $ex_str,
     );
     $tidbit_feature = new WP_Query($tidbit_args_feature);
   }
-
-  $exclude[] = wp_list_pluck( $tidbit_feature->posts, 'ID' );
+  
+  $ex = wp_list_pluck( $tidbit_feature->posts, 'ID' );
+  $exclude[] = $ex[0];
   $ex_str = implode(",",$exclude);
-  var_dump($ex_str);
+
   $tidbit_args = array (
     'cat' => $cat_tidbit_id,
     'posts_per_page'  => 3,

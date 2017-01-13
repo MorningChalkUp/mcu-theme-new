@@ -24,7 +24,8 @@
     $feature = new WP_Query($feature_args);
   }
 
-  $exclude[] = wp_list_pluck( $feature->posts, 'ID' );
+  $ex = wp_list_pluck( $feature->posts, 'ID' );
+  $exclude[] = $ex[0];
   $ex_str = implode( ",", $exclude );
   
   // MCU

@@ -20,11 +20,13 @@
     $story_args_feature = array (
       'cat' => $cat_story_id,
       'posts_per_page'  => 1,
+      'post__not_in' => $ex_str,
     );
     $story_feature = new WP_Query($story_args_feature);
   }
 
-  $exclude[] = wp_list_pluck( $story_feature->posts, 'ID' );
+  $ex = wp_list_pluck( $story_feature->posts, 'ID' );
+  $exclude[] = $ex[0];
   $ex_str = implode(",",$exclude);
 
   $story_args = array (
