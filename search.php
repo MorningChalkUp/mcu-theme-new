@@ -1,21 +1,29 @@
+<?php
+/*
+Template Name: Search Page
+*/
+?>
+
 <?php get_header(); ?>
 
 <main class="mdl-layout__content">
   <div class="page-content">
     <div class="mdl-grid">
       <div class="mdl-layout-spacer"></div>
-        <section class="mdl-cell mdl-cell--2-col search-side">
+        <!-- <section class="mdl-cell mdl-cell--2-col search-side">
           Sidebar
-        </section>
-        <section class="mdl-cell mdl-cell--6-col main search">
+        </section> -->
+        <section class="mdl-cell mdl-cell--8-col main search">
 
           <?php
-            if ( have_posts() ) {
+            get_search_form();
+
+            /*if ( have_posts() ) {
               while ( have_posts() ) {
                 the_post();
                 get_template_part( 'templates/search', 'result' );
               }
-            }
+            }*/
           ?>
 
         </section>
