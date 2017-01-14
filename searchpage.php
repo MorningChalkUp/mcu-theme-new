@@ -37,9 +37,31 @@ query_posts(array(
   <div class="page-content">
     <div class="mdl-grid">
       <div class="mdl-layout-spacer"></div>
-        <!-- <section class="mdl-cell mdl-cell--2-col search-side">
-          Sidebar
-        </section> -->
+        <section class="mdl-cell mdl-cell--2-col search-side">
+          
+          <form class="keywords" action="/search/?=<?php echo $_GET['keyword']; ?>">
+          
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="tidbits">
+              <input type="checkbox" id="tidbits" class="mdl-checkbox__input" checked>
+              <span class="mdl-checkbox__label">Tidbits</span>
+            </label>
+
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="stories">
+              <input type="checkbox" id="stories" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Stories</span>
+            </label>
+
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="mcu">
+              <input type="checkbox" id="mcu" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Morning Chalk Up</span>
+            </label>
+
+            <button type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect submit">
+              Filter
+            </button>
+          
+          </form>
+        </section>
         <section class="mdl-cell mdl-cell--8-col main search">
 
           <form class="keywords" action="/search">
