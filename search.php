@@ -2,6 +2,21 @@
 /*
 Template Name: Search Page
 */
+
+if ( isset( $_GET['s'] ) ) {
+  $s = $_GET['s'];
+} else {
+  $s = '';
+}
+
+$search_cat_array = array( $cat_tidbit_id, $cat_story_id, $cat_mcu_id );
+$search_cats = implode( ",", $search_cat_array );
+
+query_posts(array(
+  's' => $s,
+  'cat' => $search_cats,
+));
+
 ?>
 
 <?php get_header(); ?>
@@ -16,14 +31,13 @@ Template Name: Search Page
         <section class="mdl-cell mdl-cell--8-col main search">
 
           <?php
-            get_search_form();
 
-            /*if ( have_posts() ) {
+            if ( have_posts() ) {
               while ( have_posts() ) {
                 the_post();
                 get_template_part( 'templates/search', 'result' );
               }
-            }*/
+            }
           ?>
 
         </section>
