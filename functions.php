@@ -12,6 +12,12 @@ add_image_size( 'featured', 855, 590, true );
 
 add_image_size( 'team-member', 200, 200, true );
 
+function add_query_vars_filter( $vars ){
+  $vars[] = "keyword";
+  return $vars;
+}
+add_filter( 'query_vars', 'add_query_vars_filter' );
+
 function mcu_register_menu() {
   register_nav_menu('main-menu',__( 'Main Nav' ));
 }
