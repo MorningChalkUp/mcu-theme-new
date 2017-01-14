@@ -693,11 +693,17 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   text-decoration: none;
 }
 .mdl-layout__content section.search form.keywords i {
-  font-size: 40px;
+  font-size: 32px;
+  vertical-align: middle;
+}
+.mdl-layout__content section.search form.keywords .mdl-textfield__input {
+  font-size: 24px;
 }
 .mdl-layout__content section.search form.keywords button {
   background-color: #3b5998;
   color: #fff;
+  font-size: 18px;
+  margin-left: 10px;
 }
 .mdl-layout__content section.search form.keywords button:hover {
   background-color: #2d4373;
