@@ -3,10 +3,10 @@
 Template Name: Search Page
 */
 
-$s = get_query_var('keyword');
-
-if ( isset( $_POST['filter'] ) ) {
-  $filters = $_POST['filter'];
+if ( isset( $_GET['keyword'] ) ) {
+  $_GET['keyword'] = $s;
+} else {
+  $s = '';
 }
 
 $cat_mcu = get_category_by_slug( 'mcu' );
@@ -21,8 +21,8 @@ $cat_story = get_category_by_slug( 'stories' );
 $cat_story_id = $cat_story->term_id;
 $cat_story_link = get_category_link( $cat_story_id );
 
-if ( isset( $filters ) ) {
-  foreach ( $filters as $filter ) {
+if ( isset( $_POST['filter'] ) ) {
+  foreach ( $_POST['filter'] as $filter ) {
     $search_cat[] = get_category_by_slug( $filter )->term_id;
   }
 } else {
@@ -32,11 +32,12 @@ if ( isset( $filters ) ) {
 $args = array(
   's' => $s,
   'category__in' => $search_cat,
-  'posts_per_page'  => 10,
-  'paged' => get_query_var('paged', 1),
+  'posts_per_page'  => -1,
 );
 
 query_posts( $args );
+
+
 
 ?>
 
@@ -49,21 +50,25 @@ query_posts( $args );
         <section class="mdl-cell mdl-cell--2-col search-side">
 
           <div class="title">Type</div>
-
-          <form class="filters" action="/search/?=<?php echo isset( $_GET['keyword'] ? '?keyword=' . $_GET['keyword'] : '' ); ?>" method="post">
+          
+          <?php if ( $s != '' ) : ?>
+            <form class="filters" action="/search/?keyword=<?php echo $s; ?>" method="post">
+          <?php else : ?>
+            <form class="filters" action="/search/" method="post">
+          <?php endif; ?>
           
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="tidbits">
-              <input type="checkbox" name="filter[]" id="tidbits" class="mdl-checkbox__input" value="tidbits" <?php echo ( in_array( 'tidbits', $filters ) ? 'checked' : '' ); ?>>
+              <input type="checkbox" name="filter[]" id="tidbits" class="mdl-checkbox__input" value="tidbits" <?php echo ( in_array( 'tidbits', $_POST['filter'] ) ? 'checked' : '' ); ?>>
               <span class="mdl-checkbox__label">Tidbits</span>
             </label>
 
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="stories">
-              <input type="checkbox" name="filter[]" id="stories" class="mdl-checkbox__input" value="stories" <?php echo ( in_array( 'stories', $filters ) ? 'checked' : '' ); ?>>
+              <input type="checkbox" name="filter[]" id="stories" class="mdl-checkbox__input" value="stories" <?php echo ( in_array( 'stories', $_POST['filter'] ) ? 'checked' : '' ); ?>>
               <span class="mdl-checkbox__label">Stories</span>
             </label>
 
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="mcu">
-              <input type="checkbox" name="filter[]" id="mcu" class="mdl-checkbox__input" value="mcu" <?php echo ( in_array( 'mcu', $filters ) ? 'checked' : '' ); ?>>
+              <input type="checkbox" name="filter[]" id="mcu" class="mdl-checkbox__input" value="mcu" <?php echo ( in_array( 'mcu', $_POST['filter'] ) ? 'checked' : '' ); ?>>
               <span class="mdl-checkbox__label">Morning Chalk Up</span>
             </label>
 
@@ -78,7 +83,7 @@ query_posts( $args );
           <form class="keywords" action="/search/" method="get">
             <i class="mdi mdi-magnify"></i>
             <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" name="keyword" id="keyword" value="<?php echo $_GET['keyword']; ?>">
+              <input class="mdl-textfield__input" type="text" name="keyword" id="keyword" value="<?php echo $s; ?>">
             </div>
             <button type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect submit">
               Search
@@ -86,14 +91,13 @@ query_posts( $args );
           </form>
 
           <?php
+
             if ( have_posts() ) {
               while ( have_posts() ) {
                 the_post();
                 get_template_part( 'templates/search', 'result' );
               }
             }
-
-            echo paginate_links();
           ?>
 
         </section>
