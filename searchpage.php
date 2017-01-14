@@ -42,6 +42,16 @@ query_posts(array(
         </section> -->
         <section class="mdl-cell mdl-cell--8-col main search">
 
+          <form action="/search">
+            <i class="mdi mdi-magnify"></i>
+            <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" name="keyword" id="keyword" value="<?php echo $_GET['keyword']; ?>">
+            </div>
+            <button type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect submit">
+              Search
+            </button>
+          </form>
+
           <?php
 
             if ( have_posts() ) {

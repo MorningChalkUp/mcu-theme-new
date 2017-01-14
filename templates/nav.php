@@ -17,7 +17,7 @@
       </a>
     </div>
     <div class="right search">
-      <a href="#">
+      <a href="/search">
         <i class="mdi mdi-magnify"></i>
       </a>
     </div>
@@ -27,9 +27,9 @@
   <span class="mdl-layout-title"><a href="#"><span>Morning</span> Chalk Up</a></span>
   <nav class="mdl-navigation">
     <?php 
-      $array_menu = wp_get_nav_menu_items('main-menu');
+      $array_menu = wp_get_nav_menu_items('Main Nav');
       foreach ($array_menu as $m) {
-        echo '<a class="mdl-navigation__link" href="{$m->url}" title="{$m->title}">{$m->title}</a>';
+        echo '<a class="mdl-navigation__link" href="' . $m->url . '" title="' . $m->title . '">' . $m->title . '</a>';
       }
     ?>
   </nav>
