@@ -3,7 +3,7 @@
 
   // Home Feature
   $feature_args = array (
-    'cat' => $feature_cats,
+    'category__in' => $feature_cats,
     'posts_per_page'  => 1,
     'meta_query'      => array(
       array(
@@ -18,7 +18,7 @@
 
   if ($feature->post_count != 1) {
     $feature_args = array (
-      'cat' => $feature_cats,
+      'category__in' => $feature_cats,
       'posts_per_page'  => 1,
     );
     $feature = new WP_Query($feature_args);

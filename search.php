@@ -9,12 +9,23 @@ if ( isset( $_GET['s'] ) ) {
   $s = '';
 }
 
-$search_cat_array = array( $cat_tidbit_id, $cat_story_id, $cat_mcu_id );
-$search_cats = implode( ",", $search_cat_array );
+$cat_mcu = get_category_by_slug( 'mcu' );
+$cat_mcu_id = $cat_mcu->term_id;
+$cat_mcu_link = get_category_link( $cat_mcu_id );
+
+$cat_tidbit = get_category_by_slug( 'tidbits' );
+$cat_tidbit_id = $cat_tidbit->term_id;
+$cat_tidbit_link = get_category_link( $cat_tidbit_id );
+
+$cat_story = get_category_by_slug( 'stories' );
+$cat_story_id = $cat_story->term_id;
+$cat_story_link = get_category_link( $cat_story_id );
+
+$search_cat = array( $cat_tidbit_id, $cat_story_id, $cat_mcu_id );
 
 query_posts(array(
   's' => $s,
-  'cat' => $search_cats,
+  'category__in' => $search_cat,
   'posts_per_page'  => -1,
 ));
 
