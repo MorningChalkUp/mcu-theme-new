@@ -802,11 +802,16 @@ header {
     }
     &.search {
       form {
-        button {
-          background-color: @fb-btn;
-          color: @white;
-          &:hover {
-            background-color: @fb-btn-hover;
+        &.keyword {
+          i {
+            font-size: 40px;
+          }
+          button {
+            background-color: @fb-btn;
+            color: @white;
+            &:hover {
+              background-color: @fb-btn-hover;
+            }
           }
         }
       }
