@@ -3,8 +3,8 @@
 Template Name: Search Page
 */
 
-if ( isset( $_GET['s'] ) ) {
-  $s = $_GET['s'];
+if ( isset( $_GET['keyword'] ) ) {
+  $s = $_GET['keyword'];
 } else {
   $s = '';
 }
