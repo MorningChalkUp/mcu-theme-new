@@ -692,6 +692,13 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content section.feature .featured .content .title mark a:hover {
   text-decoration: none;
 }
+.mdl-layout__content section.search form button {
+  background-color: #3b5998;
+  color: #fff;
+}
+.mdl-layout__content section.search form button:hover {
+  background-color: #2d4373;
+}
 .mdl-layout__content section.search article {
   margin-bottom: 30px;
 }
