@@ -101,7 +101,7 @@
               </div>
               <div class="quote">
                 FAVORITE QUOTE<br>
-                “Write it on your heart that every day is the best day in the year. He is rich who owns the day, and no one owns the day who allows it to be invaded with fret and anxiety.” — Ralph Waldo Emerson
+                Courage does not always roar. Sometimes it is a quiet voice at the end of the day saying, “I will try again tomorrow.” — Maryanne Radmacker
               </div>
             </section>
             <section class="team-member mdl-cell mdl-cell--4-col">
@@ -109,7 +109,7 @@
                 <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/katie.jpg" alt="Katie Breazeal">
               </div>
               <div class="name">
-                Katie Breazeal
+                Kati Breazeal
               </div>
               <div class="info">
                 <strong>Chief Motivation Officer // Venus de Milo</strong>
