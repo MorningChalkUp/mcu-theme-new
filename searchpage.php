@@ -23,7 +23,7 @@ $cat_story_link = get_category_link( $cat_story_id );
 
 if ( isset( $_POST['filter'] ) ) {
   foreach ( $_POST['filter'] as $filter ) {
-    $search_cat[] = get_category_by_slug( $filter );
+    $search_cat[] = get_category_by_slug( $filter )->term_id;
   }
 } else {
   $search_cat = array( $cat_tidbit_id, $cat_story_id, $cat_mcu_id );
@@ -57,12 +57,12 @@ query_posts( $args );
             </label>
 
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="stories">
-              <input type="checkbox" name="filter[]" id="stories" class="mdl-checkbox__input" value="stories" <?php echo ( in_array( 'tidbits', $_POST['filter'] ) ? 'checked' : '' ); ?>>
+              <input type="checkbox" name="filter[]" id="stories" class="mdl-checkbox__input" value="stories" <?php echo ( in_array( 'stories', $_POST['filter'] ) ? 'checked' : '' ); ?>>
               <span class="mdl-checkbox__label">Stories</span>
             </label>
 
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="mcu">
-              <input type="checkbox" name="filter[]" id="mcu" class="mdl-checkbox__input" value="mcu" <?php echo ( in_array( 'tidbits', $_POST['filter'] ) ? 'checked' : '' ); ?>>
+              <input type="checkbox" name="filter[]" id="mcu" class="mdl-checkbox__input" value="mcu" <?php echo ( in_array( 'mcu', $_POST['filter'] ) ? 'checked' : '' ); ?>>
               <span class="mdl-checkbox__label">Morning Chalk Up</span>
             </label>
 
