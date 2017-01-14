@@ -15,6 +15,7 @@ $search_cats = implode( ",", $search_cat_array );
 query_posts(array(
   's' => $s,
   'cat' => $search_cats,
+  'posts_per_page'  => -1,
 ));
 
 ?>
