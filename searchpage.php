@@ -38,21 +38,23 @@ query_posts(array(
     <div class="mdl-grid">
       <div class="mdl-layout-spacer"></div>
         <section class="mdl-cell mdl-cell--2-col search-side">
+
+          <div class="title">Type</div>
           
-          <form class="keywords" action="/search/?=<?php echo $_GET['keyword']; ?>">
+          <form class="filters" action="/search/?=<?php echo $_GET['keyword']; ?>" method="get">
           
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="tidbits">
-              <input type="checkbox" id="tidbits" class="mdl-checkbox__input" checked>
+              <input type="checkbox" id="tidbits" class="mdl-checkbox__input" value="tidbits">
               <span class="mdl-checkbox__label">Tidbits</span>
             </label>
 
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="stories">
-              <input type="checkbox" id="stories" class="mdl-checkbox__input">
+              <input type="checkbox" id="stories" class="mdl-checkbox__input" value="stories">
               <span class="mdl-checkbox__label">Stories</span>
             </label>
 
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="mcu">
-              <input type="checkbox" id="mcu" class="mdl-checkbox__input">
+              <input type="checkbox" id="mcu" class="mdl-checkbox__input" value="mcu">
               <span class="mdl-checkbox__label">Morning Chalk Up</span>
             </label>
 
@@ -64,7 +66,7 @@ query_posts(array(
         </section>
         <section class="mdl-cell mdl-cell--8-col main search">
 
-          <form class="keywords" action="/search">
+          <form class="keywords" action="/search/" method="get">
             <i class="mdi mdi-magnify"></i>
             <div class="mdl-textfield mdl-js-textfield">
               <input class="mdl-textfield__input" type="text" name="keyword" id="keyword" value="<?php echo $_GET['keyword']; ?>">
