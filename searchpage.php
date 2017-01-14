@@ -52,17 +52,17 @@ query_posts( $args );
           <form class="filters" action="/search/?=<?php echo $_GET['keyword']; ?>" method="post">
           
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="tidbits">
-              <input type="checkbox" name="filter[]" id="tidbits" class="mdl-checkbox__input" value="tidbits" <?php echo ( in_array( 'tidbits', $_POST['filter'] ) : 'checked' ); ?>>
+              <input type="checkbox" name="filter[]" id="tidbits" class="mdl-checkbox__input" value="tidbits" <?php echo ( in_array( 'tidbits', $_POST['filter'] ) ? 'checked' : '' ); ?>>
               <span class="mdl-checkbox__label">Tidbits</span>
             </label>
 
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="stories">
-              <input type="checkbox" name="filter[]" id="stories" class="mdl-checkbox__input" value="stories" <?php echo ( in_array( 'tidbits', $_POST['filter'] ) : 'checked' ); ?>>
+              <input type="checkbox" name="filter[]" id="stories" class="mdl-checkbox__input" value="stories" <?php echo ( in_array( 'tidbits', $_POST['filter'] ) ? 'checked' : '' ); ?>>
               <span class="mdl-checkbox__label">Stories</span>
             </label>
 
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="mcu">
-              <input type="checkbox" name="filter[]" id="mcu" class="mdl-checkbox__input" value="mcu" <?php echo ( in_array( 'tidbits', $_POST['filter'] ) : 'checked' ); ?>>
+              <input type="checkbox" name="filter[]" id="mcu" class="mdl-checkbox__input" value="mcu" <?php echo ( in_array( 'tidbits', $_POST['filter'] ) ? 'checked' : '' ); ?>>
               <span class="mdl-checkbox__label">Morning Chalk Up</span>
             </label>
 
