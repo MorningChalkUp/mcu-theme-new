@@ -21,13 +21,21 @@ $cat_story = get_category_by_slug( 'stories' );
 $cat_story_id = $cat_story->term_id;
 $cat_story_link = get_category_link( $cat_story_id );
 
-$search_cat = array( $cat_tidbit_id, $cat_story_id, $cat_mcu_id );
+if ( isset( $_POST['filter'] ) ) {
+  foreach ( $_POST['filter'] as $filter ) {
+    $search_cat[] = get_category_by_slug( $filter );
+  }
+} else {
+  $search_cat = array( $cat_tidbit_id, $cat_story_id, $cat_mcu_id );
+}
 
-query_posts(array(
+$args = array(
   's' => $s,
   'category__in' => $search_cat,
   'posts_per_page'  => -1,
-));
+);
+
+query_posts( $args );
 
 ?>
 
@@ -41,20 +49,20 @@ query_posts(array(
 
           <div class="title">Type</div>
           
-          <form class="filters" action="/search/?=<?php echo $_GET['keyword']; ?>" method="get">
+          <form class="filters" action="/search/?=<?php echo $_GET['keyword']; ?>" method="post">
           
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="tidbits">
-              <input type="checkbox" id="tidbits" class="mdl-checkbox__input" value="tidbits">
+              <input type="checkbox" name="filter[]" id="tidbits" class="mdl-checkbox__input" value="tidbits">
               <span class="mdl-checkbox__label">Tidbits</span>
             </label>
 
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="stories">
-              <input type="checkbox" id="stories" class="mdl-checkbox__input" value="stories">
+              <input type="checkbox" name="filter[]" id="stories" class="mdl-checkbox__input" value="stories">
               <span class="mdl-checkbox__label">Stories</span>
             </label>
 
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="mcu">
-              <input type="checkbox" id="mcu" class="mdl-checkbox__input" value="mcu">
+              <input type="checkbox" name="filter[]" id="mcu" class="mdl-checkbox__input" value="mcu">
               <span class="mdl-checkbox__label">Morning Chalk Up</span>
             </label>
 
