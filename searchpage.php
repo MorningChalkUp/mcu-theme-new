@@ -47,8 +47,10 @@ query_posts( $args );
   <div class="page-content">
     <div class="mdl-grid">
       <section class="mdl-cell mdl-cell--12-col">
-        <h1>Search Results</h1>
+        <h1 class="center">Search Results</h1>
       </section>
+    </div>
+     <div class="mdl-grid">
       <div class="mdl-layout-spacer"></div>
         <section class="mdl-cell mdl-cell--2-col search-side">
 
