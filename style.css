@@ -692,6 +692,15 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content section.feature .featured .content .title mark a:hover {
   text-decoration: none;
 }
+.mdl-layout__content section.search-side button {
+  background-color: #3b5998;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.mdl-layout__content section.search-side button:hover {
+  background-color: #2d4373;
+}
 .mdl-layout__content section.search form.keywords i {
   font-size: 32px;
   vertical-align: middle;
