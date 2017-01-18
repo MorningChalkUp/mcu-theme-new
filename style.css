@@ -97,10 +97,11 @@ header.mdl-layout__header .mdl-layout__header-row .mdl-layout-title a {
   text-transform: uppercase;
   font-size: 20px;
   font-family: "industry", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 header.mdl-layout__header .mdl-layout__header-row .mdl-layout-title a span {
   color: #333132;
+  font-weight: 600;
 }
 header.mdl-layout__header .mdl-layout__header-row .mdl-layout-title a:hover {
   text-decoration: none;
@@ -192,6 +193,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   color: rgba(51, 49, 50, 0.75);
   text-transform: uppercase;
   line-height: 1.5em;
+  font-family: 'Open Sans', sans-serif;
 }
 .mdl-layout__content .page-content article.main .share {
   margin: 21px 0;
@@ -286,6 +288,11 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   font-size: 1px;
   visibility: hidden;
   display: block;
+}
+.mdl-layout__content .page-content article.main.about h2 {
+  font-family: "freight-text-pro", 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
 }
 .mdl-layout__content .page-content article.main.about .story {
   text-align: center;
@@ -401,6 +408,9 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 .mdl-layout__content .page-content article.main.subscribe-page .hero .form.thank-you {
   margin-top: 50px;
+}
+.mdl-layout__content .page-content article.main.subscribe-page .mdl-button {
+  text-transform: none;
 }
 .mdl-layout__content .page-content article.main.events .filters .mdl-textfield {
   width: 200px;
@@ -604,6 +614,12 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   font-size: 14px;
   color: #3D5BA9;
 }
+.mdl-layout__content section.feature .mcu-roll .stories article.category-title .info a {
+  font-family: "industry", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #3D5BA9;
+}
 .mdl-layout__content section.feature .mcu-roll .stories article.mcu {
   display: table-row;
 }
@@ -793,10 +809,15 @@ article.teaser .img .teaser-img {
 }
 article.teaser .meta {
   font-size: 14px;
-  font-family: "open sans", sans-serif;
-  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  margin: 1em 0;
+  margin-top: 15px;
+}
+article.teaser .meta span {
+  margin: 0 10px;
+}
+article.teaser h4 {
+  margin-bottom: 15px;
 }
 article.teaser h4 a {
   color: #333132;
@@ -808,6 +829,8 @@ article.teaser h4 a:hover {
 article.teaser .byline {
   font-size: 14px;
   color: rgba(51, 49, 50, 0.75);
+  font-family: "freight-text-pro", 'Open Sans', sans-serif;
+  text-transform: uppercase;
 }
 footer.mdl-mini-footer {
   border-top: 1px solid rgba(51, 49, 50, 0.2);

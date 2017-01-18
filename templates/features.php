@@ -1,5 +1,5 @@
 <?php 
-  global $cat_mcu_id, $cat_mcu_link, $exclude, $ex_str, $feature_cats;
+  global $cat_mcu_id, $cat_mcu_link, $exclude, $ex_str, $feature_cats, $cat_mcu_link;
 
   // Home Feature
   $feature_args = array (
@@ -51,7 +51,7 @@
       <article class="mdl-grid category-title">
         <div class="img"></div>
         <div class="info">
-          The Morning Chalk Up
+          <a href="<?php echo $cat_mcu_link ?>" title="The Morning Chalk Up">The Morning Chalk Up</a>
         </div>
       </article>
       

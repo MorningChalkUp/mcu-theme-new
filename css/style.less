@@ -37,6 +37,7 @@ Text Domain: morningchalkup_v2
 
 @open-sans: 'Open Sans', sans-serif;
 @industry: "industry",sans-serif;
+@freight: "freight-text-pro", 'Open Sans', sans-serif;
 
 /* Event Chip Colors */
 @national: #3F51B5;
@@ -143,9 +144,10 @@ header {
           text-transform: uppercase;
           font-size: 20px;
           font-family: @industry;
-          font-weight: @demi;
+          font-weight: @bold;
           span {
             color: @grey;
+            font-weight: @demi;
           }
           &:hover {
             text-decoration: none;
@@ -260,6 +262,7 @@ header {
           color: @lt-grey;
           text-transform: uppercase;
           line-height: 1.5em;
+          font-family: @open-sans;
         }
         .share {
           margin: 21px 0;
@@ -355,6 +358,11 @@ header {
               visibility: hidden;
               display: block;
             }
+          }
+          h2 {
+            font-family: @freight;
+            font-weight: @normal;
+            font-size: 28px;
           }
           .story {
             text-align: center;
@@ -478,6 +486,9 @@ header {
                 margin-top: 50px;
               }
             }
+          }
+          .mdl-button {
+            text-transform: none;
           }
         }
         &.events {
@@ -702,6 +713,12 @@ header {
                 font-weight: @demi;
                 font-size: 14px;
                 color: @blue;
+                a {
+                  font-family: @industry;
+                  font-weight: @demi;
+                  font-size: 14px;
+                  color: @blue;
+                }
               }
             }
             &.mcu {
@@ -929,12 +946,15 @@ article {
     }
     .meta {
       font-size: 14px;
-      font-family: "open sans", sans-serif;
-      font-weight: @regular;
+      font-family: @open-sans;
       text-transform: uppercase;
-      margin: 1em 0;
+      margin-top: 15px;
+      span {
+        margin: 0 10px;
+      }
     }
     h4 {
+      margin-bottom: 15px;
       a {
         color: @grey;
         font-weight: @demi;
@@ -946,6 +966,9 @@ article {
     .byline {
       font-size: 14px;
       color: @lt-grey;
+      font-family: @freight;
+      @font-weight: @regular;
+      text-transform: uppercase;
     }
   }
 }

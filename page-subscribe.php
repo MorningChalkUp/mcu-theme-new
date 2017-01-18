@@ -25,20 +25,10 @@
                 <div class="mdl-layout-spacer"></div>
                 <div class="mdl-cell mdl-cell--4-col">
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="fname" name="fname">
-                    <label class="mdl-textfield__label" for="fname">First Name</label>
+                    <input class="mdl-textfield__input" type="text" id="name" name="name">
+                    <label class="mdl-textfield__label" for="name">Name</label>
                   </div>
                 </div>
-                <div class="mdl-layout-spacer"></div>
-                <div class="mdl-cell mdl-cell--4-col">
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="lname" name="lname">
-                    <label class="mdl-textfield__label" for="lname">Last Name</label>
-                  </div>
-                </div>
-                <div class="mdl-layout-spacer"></div>
-              </div>
-              <div class="mdl-grid fields">
                 <div class="mdl-layout-spacer"></div>
                 <div class="mdl-cell mdl-cell--4-col">
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -47,6 +37,9 @@
                   </div>
                 </div>
                 <div class="mdl-layout-spacer"></div>
+              </div>
+              <div class="mdl-grid fields">
+                <div class="mdl-layout-spacer"></div>
                 <div class="mdl-cell mdl-cell--4-col">
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                     <input class="mdl-textfield__input" type="text" id="zip" name="zip">
@@ -54,15 +47,15 @@
                   </div>
                 </div>
                 <div class="mdl-layout-spacer"></div>
-              </div>
-              <div class="mdl-grid fields">
-                <div class="mdl-layout-spacer"></div>
                 <div class="mdl-cell mdl-cell--4-col">
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                     <input class="mdl-textfield__input" type="text" id="website" name="website">
                     <label class="mdl-textfield__label" for="website">Website</label>
                   </div>
                 </div>
+                <div class="mdl-layout-spacer"></div>
+              </div>
+              <div class="mdl-grid fields">
                 <div class="mdl-layout-spacer"></div>
                 <div class="mdl-cell mdl-cell--4-col">
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height" style="width: 100%;">
@@ -80,16 +73,10 @@
                   </div>
                 </div>
                 <div class="mdl-layout-spacer"></div>
-              </div>
-              <div class="mdl-grid fields">
-                <div class="mdl-layout-spacer"></div>
                 <div class="mdl-cell mdl-cell--4-col">
-                  <a href="./thank-you" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                  <a href="./thank-you" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect submit">
                     Subscribe
                   </a>
-                </div>
-                <div class="mdl-layout-spacer"></div>
-                <div class="mdl-cell mdl-cell--4-col">
                 </div>
                 <div class="mdl-layout-spacer"></div>
               </div>
