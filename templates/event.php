@@ -10,7 +10,7 @@
   </div>
   <div class="mdl-cell mdl-cell--9-col mdl-cell--middle event-info">
     <a href="<?php echo get_field('event_url'); ?>" target="_blank" title="<?php the_title(); ?>" alt="<?php the_title(); ?>"><h5><?php the_title(); ?></h5></a>
-    <div class="event-address"><?php echo get_field('event_location') ?></div>
+    <div class="event-address"><?php echo get_field('event_address') ?></div>
   </div>
   <div class="mdl-cell mdl-cell--2-col mdl-cell--middle tag">
     <?php
