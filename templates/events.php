@@ -122,14 +122,8 @@ $select_terms = get_terms( array(
 ?>
 
 <article class="mdl-cell mdl-cell--8-col main events">
-  
-  <div class="mdl-layout-spacer"></div>
   <h1>Competition Calendar</h1>
-  <div class="mdl-layout-spacer"></div>
-
   <div class="mdl-cell mdl-cell--12-col filters">
-
-    <div class="mdl-layout-spacer"></div>
     
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height">
       <input class="mdl-textfield__input event-state" type="text" id="state" value="" readonly tabIndex="-1">
@@ -222,8 +216,6 @@ $select_terms = get_terms( array(
     </div>
 
     <a href="?" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Reset</a>
-
-    <div class="mdl-layout-spacer"></div>
 
   </div>
   <div class="mdl-cell mdl-cell--12-col info">

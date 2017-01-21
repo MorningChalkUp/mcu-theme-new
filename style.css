@@ -454,6 +454,12 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content article.main.subscribe-page .mdl-button {
   text-transform: none;
 }
+.mdl-layout__content .page-content article.main.events h1 {
+  text-align: center;
+}
+.mdl-layout__content .page-content article.main.events .filters {
+  text-align: center;
+}
 .mdl-layout__content .page-content article.main.events .filters .mdl-textfield {
   width: 200px;
 }
@@ -466,6 +472,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content article.main.events .filters a.reset {
   background-color: #3b5998;
   color: #fff;
+  margin-left: 10px;
 }
 .mdl-layout__content .page-content article.main.events .filters a.reset:hover {
   background-color: #2d4373;
