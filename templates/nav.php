@@ -17,10 +17,17 @@
       </a>
     </div>
     <div class="right search">
-      <a href="/search/">
+      <a class="search-btn">
         <i class="mdi mdi-magnify"></i>
       </a>
     </div>
+  </div>
+  <div class="mdl-layout__header-row search-bar">
+    <form action="/search/" method="get">
+      <i class="mdi mdi-magnify"></i>
+      <input type="text" placeholder="Search ...">
+      <button class="mdl-btn" type="submit" name="keyword">Search</button>
+    </form>
   </div>
 </header>
 <div class="mdl-layout__drawer mdl-layout--small-screen-only">

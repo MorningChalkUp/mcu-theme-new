@@ -80,6 +80,7 @@ h5 {
   max-width: 100%;
 }
 header.mdl-layout__header {
+  z-index: 6;
   background-color: #fff;
   box-shadow: none;
   border-bottom: 1px solid rgba(51, 49, 50, 0.2);
@@ -139,6 +140,46 @@ header.mdl-layout__header .mdl-layout__header-row .right.search {
 header.mdl-layout__header .mdl-layout__header-row .right.search a i {
   font-size: 24px;
   vertical-align: middle;
+}
+header.mdl-layout__header .mdl-layout__header-row.search-bar {
+  padding-right: 0px;
+  line-height: 64px;
+  border-top: 1px solid rgba(51, 49, 50, 0.2);
+  display: none;
+}
+header.mdl-layout__header .mdl-layout__header-row.search-bar form {
+  width: calc(100% + 1px);
+  height: 64px;
+}
+header.mdl-layout__header .mdl-layout__header-row.search-bar form input:focus,
+header.mdl-layout__header .mdl-layout__header-row.search-bar form select:focus,
+header.mdl-layout__header .mdl-layout__header-row.search-bar form textarea:focus,
+header.mdl-layout__header .mdl-layout__header-row.search-bar form button:focus {
+  outline: none;
+}
+header.mdl-layout__header .mdl-layout__header-row.search-bar form i {
+  color: #3D5BA9;
+  font-size: 24px;
+  vertical-align: middle;
+}
+header.mdl-layout__header .mdl-layout__header-row.search-bar form input[type=text] {
+  border: 0px;
+  margin: 0;
+  padding: 4px 0;
+  font-size: 18px;
+  width: calc(100% - 132px);
+}
+header.mdl-layout__header .mdl-layout__header-row.search-bar form button {
+  height: 64px;
+  width: 100px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: #3D5BA9;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
 }
 header.mdl-layout__header .mdl-layout__drawer-button {
   color: #333132;
@@ -219,6 +260,9 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 .mdl-layout__content .page-content article.main .share button.em:hover {
   background-color: #008061;
+}
+.mdl-layout__content .page-content article.main .img {
+  width: 100%;
 }
 .mdl-layout__content .page-content article.main .img .feature-img {
   max-width: 770px;
@@ -850,6 +894,14 @@ footer.mdl-mini-footer ul li a {
 footer.mdl-mini-footer ul li a i {
   font-size: 24px;
 }
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  display: none;
+}
 @media screen and (max-width: 1024px) {
   header.mdl-layout__header .mdl-layout__header-row {
     padding: 0 16px 0 72px;
@@ -863,6 +915,16 @@ footer.mdl-mini-footer ul li a i {
   }
   header.mdl-layout__header .mdl-layout__header-row .right.search {
     padding-left: 16px;
+  }
+  header.mdl-layout__header .mdl-layout__header-row.search-bar {
+    padding-left: 20px;
+    line-height: 56px;
+  }
+  header.mdl-layout__header .mdl-layout__header-row.search-bar form {
+    height: 56px;
+  }
+  header.mdl-layout__header .mdl-layout__header-row.search-bar form button {
+    height: 56px;
   }
   .mdl-layout__content .page-content article.main.about .hero {
     height: calc(100vh - 56px);

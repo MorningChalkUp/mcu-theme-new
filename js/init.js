@@ -25,7 +25,7 @@ $('.js-share-twitter').on('click', function() {
 });
 
 $('input.event-state').on('change', function() {
-  if (window.location.search != "") {
+  if (window.location.search !== "") {
     window.location = window.location.search + "&state=" + $('input.event-state').data('val');
   } else {
     window.location = '?state=' + $('input.event-state').data('val');
@@ -33,7 +33,7 @@ $('input.event-state').on('change', function() {
 });
 
 $('input.event-month').on('change', function() {
-  if (window.location.search != "") {
+  if (window.location.search !== "") {
     window.location = window.location.search + "&month=" + $('input.event-month').data('val');
   } else {
     window.location = '?month=' + $('input.event-month').data('val');
@@ -41,9 +41,14 @@ $('input.event-month').on('change', function() {
 });
 
 $('input.event-type').on('change', function() {
-  if (window.location.search != "") {
+  if (window.location.search !== "") {
     window.location = window.location.search + "&type=" + $('input.event-type').data('val');
   } else {
     window.location = '?type=' + $('input.event-type').data('val');
   }
+});
+
+$('.search-btn').on('click', function() {
+  $('.search-bar').slideToggle(100);
+  $('.overlay').toggle();
 });
