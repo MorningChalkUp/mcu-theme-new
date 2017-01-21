@@ -4,7 +4,7 @@ Template Name: Search Page
 */
 
 if ( isset( $_GET['keyword'] ) ) {
-  $_GET['keyword'] = $s;
+  $s = $_GET['keyword'];
 } else {
   $s = '';
 }
