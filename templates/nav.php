@@ -25,8 +25,8 @@
   <div class="mdl-layout__header-row search-bar">
     <form action="/search/" method="get">
       <i class="mdi mdi-magnify"></i>
-      <input type="text" placeholder="Search ...">
-      <button class="mdl-btn" type="submit" name="keyword">Search</button>
+      <input type="text" name="keyword" placeholder="Search ...">
+      <button class="mdl-btn" type="submit">Search</button>
     </form>
   </div>
 </header>
