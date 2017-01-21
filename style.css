@@ -754,7 +754,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   background-color: #3b5998;
   color: #fff;
   font-size: 18px;
-  margin-left: 10px;
+  margin-top: 10px;
 }
 .mdl-layout__content section.search-side button:hover {
   background-color: #2d4373;
