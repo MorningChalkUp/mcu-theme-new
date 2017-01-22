@@ -262,7 +262,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   background-color: #008061;
 }
 .mdl-layout__content .page-content article.main iframe {
-  width: 100%;
+  max-width: 100%;
 }
 .mdl-layout__content .page-content article.main .img {
   width: 100%;
