@@ -12,7 +12,7 @@ $tags = wp_get_post_tags( $post->ID );
   <h1><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
   <div class="meta">
     <?php the_date('F j, Y'); ?><br>
-    BY  <a href="<?php echo get_the_author_meta('url') ?>" title="<?php the_author(); ?>" alt="<?php the_author(); ?>"><?php the_author(); ?></a>  | STAFF
+    BY  <a href="<?php echo get_author_posts_url($post->post_author) ?>" title="<?php the_author(); ?>" alt="<?php the_author(); ?>"><?php the_author(); ?></a>   |  STAFF
   </div>
   <div class="share">
     <button class="mdl-button js-share-facebook fb">
