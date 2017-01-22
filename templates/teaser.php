@@ -25,6 +25,6 @@ if ( has_post_thumbnail() ) {
   <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
   <div class="byline">
     BY  <a href="<?php echo get_the_author_meta('url') ?>" title="<?php the_author(); ?>" alt="<?php the_author(); ?>"><?php the_author(); ?></a>   |  STAFF
-    <?php var_dump(get_the_author_meta('url')); ?>
+    <?php var_dump( get_the_author_meta( 'url', $post->post_author ) ); ?>
   </div>
 </article>
