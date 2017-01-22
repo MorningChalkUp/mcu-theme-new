@@ -21,7 +21,7 @@ if ( has_post_thumbnail() ) {
           echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
       }
     ?>
-    •
+    <span>•</span>
     <?php echo get_the_date('M j, Y'); ?>
   </div>
   <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
