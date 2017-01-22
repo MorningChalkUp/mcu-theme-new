@@ -24,6 +24,6 @@ if ( has_post_thumbnail() ) {
   </div>
   <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
   <div class="byline">
-    BY  <?php the_author(); ?>   |  STAFF
+    BY  <a href="<?php echo get_the_author_meta('url') ?>" title="<?php the_author(); ?>" alt="<?php the_author(); ?>"><?php the_author(); ?></a>   |  STAFF
   </div>
 </article>
