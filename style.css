@@ -719,6 +719,9 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 .mdl-layout__content section.feature .mcu-roll .stories article.mcu .info .title a {
   color: #333132;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
 }
 .mdl-layout__content section.feature .mcu-roll .stories article.mcu .info .title a:hover {
   text-decoration: none;
