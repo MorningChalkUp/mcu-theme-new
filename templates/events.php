@@ -121,10 +121,18 @@ $select_terms = get_terms( array(
 
 ?>
 
-<article class="mdl-cell mdl-cell--8-col main events">
-  <h1>Competition Calendar</h1>
+<article class="mdl-cell mdl-cell--10-col main events">
+  <div class="mdl-grid">
+    <div class="mdl-layout-spacer"></div>
+    <div class="mdl-cell mdl-cell--8-col title">
+      <h1>Competition Calendar</h1>
+      <p>It's not a CrossFit competition unless it's sponsored by CrossFit®. Every other competition, except for weightlifting, is unofficial. Large-scale major sponsored events are "national" and smaller ones are "local."</p>
+    </div>
+    <div class="mdl-layout-spacer"></div>
+  </div>
+  
   <div class="mdl-cell mdl-cell--12-col filters">
-    
+
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height">
       <input class="mdl-textfield__input event-state" type="text" id="state" value="" readonly tabIndex="-1">
       <label for="state">
@@ -215,11 +223,8 @@ $select_terms = get_terms( array(
       </ul>
     </div>
 
-    <a href="?" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Reset</a>
+    <a href="?" class="mdl-button mdl-button--raised mdl-button--colored">Reset</a>
 
-  </div>
-  <div class="mdl-cell mdl-cell--12-col info">
-    It's not a CrossFit competition unless it's sponsored by CrossFit®. Every other competition, except for weightlifting, is unofficial. Large-scale major sponsored events are "national" and smaller ones are "local."
   </div>
   <div class="mdl-cell mdl-cell--12-col calendar">
 

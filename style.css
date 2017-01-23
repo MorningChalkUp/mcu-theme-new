@@ -476,14 +476,26 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content article.main.subscribe-page .mdl-button {
   text-transform: none;
 }
-.mdl-layout__content .page-content article.main.events h1 {
+.mdl-layout__content .page-content article.main.events .title {
   text-align: center;
+}
+.mdl-layout__content .page-content article.main.events .title h1 {
+  font-family: "industry", sans-serif;
+  margin: 18px 0;
+}
+.mdl-layout__content .page-content article.main.events .title p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #333132;
+  line-height: 1.5em;
+  margin: 0;
 }
 .mdl-layout__content .page-content article.main.events .filters {
   text-align: center;
 }
 .mdl-layout__content .page-content article.main.events .filters .mdl-textfield {
   width: 200px;
+  margin: 0 10px;
 }
 .mdl-layout__content .page-content article.main.events .filters .mdl-textfield label {
   line-height: 1em;
@@ -494,7 +506,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content article.main.events .filters a.reset {
   background-color: #3b5998;
   color: #fff;
-  margin-left: 10px;
+  width: 100%;
 }
 .mdl-layout__content .page-content article.main.events .filters a.reset:hover {
   background-color: #2d4373;
@@ -554,7 +566,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 .mdl-layout__content .page-content section.archive .title p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   color: #333132;
   line-height: 1.5em;
   margin: 0;

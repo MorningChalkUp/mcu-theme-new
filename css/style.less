@@ -557,13 +557,25 @@ header {
           }
         }
         &.events {
-          h1 {
+          .title {
             text-align: center;
+            h1 {
+              font-family: @industry;
+              margin: 18px 0;
+            }
+            p {
+              font-family: @open-sans;
+              font-size: 20px;
+              color: @grey;
+              line-height: 1.5em;
+              margin: 0;
+            }
           }
           .filters {
             text-align: center;
             .mdl-textfield {
               width: 200px;
+              margin: 0 10px;
               label {
                 line-height: 1em;
               }
@@ -575,7 +587,7 @@ header {
               &.reset {
                 background-color: @fb-btn;
                 color: @white;
-                margin-left: 10px;
+                width: 100%;
                 &:hover {
                   background-color: @fb-btn-hover;
                 }
@@ -645,7 +657,7 @@ header {
           }
           p {
             font-family: @open-sans;
-            font-size: 24px;
+            font-size: 20px;
             color: @grey;
             line-height: 1.5em;
             margin: 0;
