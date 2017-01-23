@@ -16,7 +16,8 @@ div {
   font-weight: 400;
   line-height: 2em;
 }
-.center {
+.center,
+.aligncenter {
   text-align: center;
 }
 a {
@@ -215,10 +216,6 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 .mdl-layout__content .page-content article.main.article {
   max-width: 770px;
-}
-.mdl-layout__content .page-content article.main.article body,
-.mdl-layout__content .page-content article.main.article p,
-.mdl-layout__content .page-content article.main.article div {
   font-size: 18px;
 }
 .mdl-layout__content .page-content article.main h2 {
@@ -260,6 +257,14 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 .mdl-layout__content .page-content article.main .share button.em:hover {
   background-color: #008061;
+}
+.mdl-layout__content .page-content article.main .content {
+  font-size: 18px;
+}
+.mdl-layout__content .page-content article.main .content p,
+.mdl-layout__content .page-content article.main .content div,
+.mdl-layout__content .page-content article.main .content span {
+  font-size: 18px;
 }
 .mdl-layout__content .page-content article.main iframe {
   max-width: 100%;
@@ -335,18 +340,26 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   display: block;
 }
 .mdl-layout__content .page-content article.main.about h2 {
-  font-family: "freight-text-pro", serif;
-  font-weight: 500;
-  font-size: 28px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
 }
 .mdl-layout__content .page-content article.main.about .story {
   text-align: center;
   background: rgba(216, 216, 216, 0.1);
   min-width: 100%;
 }
+.mdl-layout__content .page-content article.main.about .story p {
+  font-size: 28px;
+  font-family: "freight-text-pro", serif;
+}
 .mdl-layout__content .page-content article.main.about .mission {
   text-align: center;
   min-width: 100%;
+}
+.mdl-layout__content .page-content article.main.about .mission p {
+  font-size: 28px;
+  font-family: "freight-text-pro", serif;
 }
 .mdl-layout__content .page-content article.main.about .team {
   text-align: center;
@@ -375,6 +388,9 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 .mdl-layout__content .page-content article.main.about .team section.team-member .quote {
   margin: 18px 0 10px 0;
+  font-family: "freight-text-pro", serif;
+  font-size: 18px;
+  font-weight: 500;
 }
 .mdl-layout__content .page-content article.main.about .team section.team-member .email a {
   background: #3D5BA9;

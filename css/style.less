@@ -54,7 +54,7 @@ body,p,div {
   line-height: 2em;
 }
 
-.center {
+.center, .aligncenter {
   text-align: center;
 }
 
@@ -288,9 +288,7 @@ header {
       &.main {
         &.article {
           max-width: 770px;
-          body,p,div {
-            font-size: 18px;
-          }
+          font-size: 18px;
         }
         h2 {
           font-family: @open-sans;
@@ -330,6 +328,12 @@ header {
                 background-color: @em-btn-hover;
               }
             }
+          }
+        }
+        .content {
+          font-size: 18px;
+          p, div, span {
+            font-size: 18px;
           }
         }
         iframe {
@@ -405,18 +409,26 @@ header {
             }
           }
           h2 {
-            font-family: @freight;
-            font-weight: @normal;
-            font-size: 28px;
+            font-family: @open-sans;
+            font-weight: @bold;
+            font-size: 36px;
           }
           .story {
             text-align: center;
             background: @bg-lt-grey;
             min-width: 100%;
+            p {
+              font-size: 28px;
+              font-family: @freight;
+            }
           }
           .mission {
             text-align: center;
             min-width: 100%;
+            p {
+              font-size: 28px;
+              font-family: @freight;
+            }
           }
           .team {
             text-align: center;
@@ -446,6 +458,9 @@ header {
                 }
                 .quote {
                   margin: 18px 0 10px 0;
+                  font-family: @freight;
+                  font-size: 18px;
+                  font-weight: @normal;
                 }
                 .email {
                   a {
