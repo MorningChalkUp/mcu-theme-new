@@ -1,7 +1,15 @@
 <?php 
 $thumb_id = get_post_thumbnail_id();
-$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'featured-sm', true);
+
+$thumb_url_array = wp_get_attachment_image_src( $thumb_id, 'featured', true );
 $thumb_url = $thumb_url_array[0];
+
+$thumb_size = getimagesize( $thumb_url );
+
+if ( $thumb_size[0] != 855 || $thumb_size[1] != 590 ) {
+  $thumb_url_array = wp_get_attachment_image_src( $thumb_id, 'featured-sm', true );
+  $thumb_url = $thumb_url_array[0];
+}
 
 $caption = get_post( $thumb_id )->post_excerpt;
 
