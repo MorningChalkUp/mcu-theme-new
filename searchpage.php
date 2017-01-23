@@ -44,15 +44,16 @@ query_posts( $args );
 <main class="mdl-layout__content">
   <div class="page-content">
     <div class="mdl-grid">
-      <section class="mdl-cell mdl-cell--12-col">
+      <div class="mdl-layout-spacer"></div>
+      <section class="mdl-cell mdl-cell--8-col">
         <h1 class="center">Search Results</h1>
+
       </section>
+      <div class="mdl-layout-spacer"></div>
     </div>
      <div class="mdl-grid">
       <div class="mdl-layout-spacer"></div>
-        <section class="mdl-cell mdl-cell--2-col search-side">
-
-          <div class="title"><strong>Type</strong></div>
+        <section class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet search-side">
           
           <?php if ( $s != '' ) : ?>
             <form class="filters" action="/search/?keyword=<?php echo $s; ?>" method="post">
