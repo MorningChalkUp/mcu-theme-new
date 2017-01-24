@@ -5,7 +5,7 @@
     <div class="sub-title">Delivered to your inbox every morning.</div>
     <form class="sub-form" action="/process/sub-bar.php" method="post">
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="text" id="email">
+        <input class="mdl-textfield__input" type="text" id="email" name="email">
         <label class="mdl-textfield__label" for="email">Email Address</label>
       </div>
   
