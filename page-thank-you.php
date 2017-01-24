@@ -1,3 +1,9 @@
+<?php 
+
+$name = $_GET['fname'];
+
+?>
+
 <?php get_header(); ?>
 
 <main class="mdl-layout__content">
@@ -13,7 +19,13 @@
                 <div class="mdl-cell mdl-cell--8-col headline">
                   <h1>
                     <i class="mdi mdi-email"></i>
-                    Thank you [Fname]. You are now subscribed.
+                    <?php 
+                      if (isset($name)) {
+                        echo 'Thank you ' . $name . '. You are now subscribed.';
+                      } else {
+                        echo 'Thank you. You are now subscribed.';
+                      }
+                    ?>
                   </h1>
                   <a target="_blank" href="https://www.facebook.com/MorningChalkUp/" class="mdl-button like">
                     Like us on Facebook

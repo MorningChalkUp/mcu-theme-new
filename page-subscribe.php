@@ -34,8 +34,8 @@
                   <div class="mdl-layout-spacer"></div>
                   <div class="mdl-cell mdl-cell--4-col">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                      <input class="mdl-textfield__input" type="text" id="name" name="name">
-                      <label class="mdl-textfield__label" for="name">Name</label>
+                      <input class="mdl-textfield__input" type="text" id="full-name" name="full-name">
+                      <label class="mdl-textfield__label" for="full-name">Name</label>
                     </div>
                   </div>
 
