@@ -632,6 +632,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   padding: 5px;
   line-height: 2em;
   text-transform: uppercase;
+  white-space: pre-wrap;
 }
 .mdl-layout__content .page-content section.archive.home article.sub-feature .content .title {
   text-align: right;
@@ -644,6 +645,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   font-size: 48px;
   padding: 10px;
   line-height: 2em;
+  white-space: pre-wrap;
 }
 .mdl-layout__content .page-content section.archive.home article.sub-feature .content .title mark a {
   background: #fff;
