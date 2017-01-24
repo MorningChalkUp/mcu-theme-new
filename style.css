@@ -14,7 +14,7 @@ p,
 div {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 .center {
   text-align: center;
@@ -232,7 +232,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   color: rgba(51, 49, 50, 0.75);
   text-transform: uppercase;
   line-height: 1.5em;
-  font-family: "freight-text-pro", serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .mdl-layout__content .page-content article.main .share {
   margin: 21px 0;
@@ -395,6 +395,9 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   font-family: "freight-text-pro", serif;
   font-size: 18px;
   font-weight: 500;
+}
+.mdl-layout__content .page-content article.main.about .team section.team-member .quote .title {
+  font-family: 'Open Sans', sans-serif;
 }
 .mdl-layout__content .page-content article.main.about .team section.team-member .email a {
   background: #3D5BA9;
@@ -911,12 +914,17 @@ article.teaser .img .teaser-img {
 }
 article.teaser .meta {
   font-size: 14px;
-  font-family: "freight-text-pro", serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
   margin-top: 15px;
 }
 article.teaser .meta span {
+  font-weight: 600;
+}
+article.teaser .meta spanspacer {
   margin: 0 5px;
+  font-weight: 500;
 }
 article.teaser h4 {
   margin-bottom: 5px;

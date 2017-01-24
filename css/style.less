@@ -51,7 +51,7 @@ Text Domain: morningchalkup_v2
 body,p,div {
   font-family: @open-sans;
   font-weight: @regular;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 
 .center {
@@ -306,7 +306,7 @@ header {
           color: @lt-grey;
           text-transform: uppercase;
           line-height: 1.5em;
-          font-family: @freight;
+          font-family: @open-sans;
         }
         .share {
           margin: 21px 0;
@@ -467,6 +467,9 @@ header {
                   font-family: @freight;
                   font-size: 18px;
                   font-weight: @normal;
+                  .title {
+                    font-family: @open-sans;
+                  }
                 }
                 .email {
                   a {
@@ -1047,11 +1050,16 @@ article {
     }
     .meta {
       font-size: 14px;
-      font-family: @freight;
+      font-family: @open-sans;
+      font-weight: @normal;
       text-transform: uppercase;
       margin-top: 15px;
       span {
-        margin: 0 5px;
+        font-weight: @demi;
+        &spacer {
+          margin: 0 5px;
+          font-weight: @normal;
+        }
       }
     }
     h4 {

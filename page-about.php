@@ -42,7 +42,7 @@
                 Location: California
               </div>
               <div class="quote">
-                FAVORITE QUOTE<br>
+                <div class="title">FAVORITE QUOTE</div><br>
                 “Write it on your heart that every day is the best day in the year. He is rich who owns the day, and no one owns the day who allows it to be invaded with fret and anxiety.” — Ralph Waldo Emerson
               </div>
               <div class="email">
@@ -63,7 +63,7 @@
                 Location: Florida
               </div>
               <div class="quote">
-                <div>FAVORITE QUOTE</div>
+                <div class="title">FAVORITE QUOTE</div>
                 “I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me. And when it has gone past I will turn the inner eye to see its path. Where the fear has gone there will be nothing. Only I will remain.” — Frank Herbert
               </div>
               <div class="email">
@@ -84,7 +84,7 @@
                 Location: New York
               </div>
               <div class="quote">
-                FAVORITE QUOTE<br>
+                <div class="title">FAVORITE QUOTE</div><br>
                 “Be who you are and say what you feel, because those who mind don’t matter, and those who matter don’t mind.”
               </div>
             </section>
@@ -100,8 +100,8 @@
                 Location: Colorado
               </div>
               <div class="quote">
-                FAVORITE QUOTE<br>
-                Courage does not always roar. Sometimes it is a quiet voice at the end of the day saying, “I will try again tomorrow.” — Maryanne Radmacker
+                <div class="title">FAVORITE QUOTE</div><br>
+                “Courage does not always roar. Sometimes it is a quiet voice at the end of the day saying, 'I will try again tomorrow.'” — Maryanne Radmacker
               </div>
             </section>
             <section class="team-member mdl-cell mdl-cell--4-col">
@@ -116,11 +116,11 @@
                 Location: Texas
               </div>
               <div class="quote">
-                FAVORITE QUOTE<br>
-                It matters not how strait the gate,<br>
+                <div class="title">FAVORITE QUOTE</div><br>
+                “It matters not how strait the gate,<br>
                 How charged with punishments the scroll,<br>
                 I am the master of my fate,<br>
-                I am the captain of my soul.<br>
+                I am the captain of my soul.”<br>
                 — William Ernest Henley
               </div>
             </section>
