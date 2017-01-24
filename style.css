@@ -632,10 +632,13 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   padding: 5px;
   line-height: 2em;
   text-transform: uppercase;
-  white-space: pre-wrap;
 }
 .mdl-layout__content .page-content section.archive.home article.sub-feature .content .title {
   text-align: right;
+  padding: 2px 0;
+  border-left: 20px solid #fff;
+  margin: 20px auto;
+  line-height: 2em;
 }
 .mdl-layout__content .page-content section.archive.home article.sub-feature .content .title mark {
   background: #fff;
@@ -643,15 +646,18 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 48px;
-  padding: 10px;
-  line-height: 2em;
-  white-space: pre-wrap;
+  /*padding: 10px;*/
+  padding: 4px 0;
+  display: inline;
+  margin: 0;
 }
 .mdl-layout__content .page-content section.archive.home article.sub-feature .content .title mark a {
   background: #fff;
   color: #333132;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
+  position: relative;
+  left: -10px;
 }
 .mdl-layout__content .page-content section.archive.home article.sub-feature .content .title mark a:hover {
   text-decoration: none;
