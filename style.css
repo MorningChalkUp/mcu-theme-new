@@ -346,6 +346,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 36px;
+  text-transform: uppercase;
 }
 .mdl-layout__content .page-content article.main.about .story {
   text-align: center;
@@ -401,6 +402,17 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 .mdl-layout__content .page-content article.main.about .team section.team-member .email a:hover {
   text-decoration: none;
+}
+.mdl-layout__content .page-content article.main.about .instagram {
+  max-width: 100%;
+  text-align: center;
+}
+.mdl-layout__content .page-content article.main.about .instagram .mdl-grid {
+  max-width: 100%;
+}
+.mdl-layout__content .page-content article.main.about .instagram img {
+  width: 100%;
+  height: auto;
 }
 .mdl-layout__content .page-content article.main.subscribe-page {
   min-height: 100%;

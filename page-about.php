@@ -128,7 +128,37 @@
         </div>
         <div class="mdl-layout-spacer"></div>
       </section>
-      <section class="instagram"></section>
+      <section class="instagram mdl-grid">
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-cell mdl-cell--10-col">
+          <h2>MORNING CHALK UP ON INSTAGRAM</h2>
+        </div>
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-grid">
+        <?php 
+          $url = 'https://api.instagram.com/v1/users/3055294744/media/recent/?access_token=3055294744.1b0f870.038ae2e4d9af424dbddbfbea72ccb4a1&count=12';
+
+          $ch = curl_init($url);
+          curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+          curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+          curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+          curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+          curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
+          curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+          $r = curl_exec($ch);
+          curl_close($ch);
+          $result = json_decode($r, true);
+
+          foreach ($result['data'] as $image) {
+            echo '<div class="mdl-cell mdl-cell--2-col">';
+              echo '<a href="' . $image['link'] . '" target="_blank"><img src="' . $image['images']['standard_resolution']['url'] . '"></a>';
+            echo '</div>';
+          }
+        ?>
+        </div>
+
+
+      </section>
 
     </article>
 
