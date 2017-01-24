@@ -29,94 +29,104 @@
 
                 <div class="mdl-layout-spacer"></div>
               </div>
-              <div class="mdl-grid fields">
-                <div class="mdl-layout-spacer"></div>
-                <div class="mdl-cell mdl-cell--4-col">
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="name" name="name">
-                    <label class="mdl-textfield__label" for="name">Name</label>
+              <form action="#" method="post">
+                <div class="mdl-grid fields">
+                  <div class="mdl-layout-spacer"></div>
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="text" id="name" name="name">
+                      <label class="mdl-textfield__label" for="name">Name</label>
+                    </div>
                   </div>
-                </div>
 
-                <div class="mdl-layout-spacer"></div>
+                  <div class="mdl-layout-spacer"></div>
 
-                <div class="mdl-cell mdl-cell--4-col">
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="email" name="email">
-                    <label class="mdl-textfield__label" for="email">Email</label>
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="text" id="email" name="email">
+                      <label class="mdl-textfield__label" for="email">Email</label>
+                    </div>
                   </div>
+
+                  <div class="mdl-layout-spacer"></div>
                 </div>
+                <div class="mdl-grid fields">
+                  <div class="mdl-layout-spacer"></div>
 
-                <div class="mdl-layout-spacer"></div>
-              </div>
-              <div class="mdl-grid fields">
-                <div class="mdl-layout-spacer"></div>
-
-                <!-- <div class="mdl-cell mdl-cell--4-col">
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="zip" name="zip">
-                    <label class="mdl-textfield__label" for="zip">Zip Code</label>
+                  <!-- <div class="mdl-cell mdl-cell--4-col">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="text" id="zip" name="zip">
+                      <label class="mdl-textfield__label" for="zip">Zip Code</label>
+                    </div>
+                  </div> -->
+                  
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height" style="width: 100%;">
+                      <input class="mdl-textfield__input" type="text" required id="affiliate" name="affiliate" readonly tabIndex="-1">
+                      <label for="affiliate">
+                          <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                      </label>
+                      <label for="affiliate" class="mdl-textfield__label">Your Affiliate</label>
+                      <ul for="affiliate" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                        <?php 
+                          foreach ($affiliates as $affiliate) {
+                            echo '<li class="mdl-menu__item">'. $affiliate['name'] .'</li>';
+                          }
+                        ?>
+                          <li class="mdl-menu__item">None/Other</li>
+                      </ul>
+                    </div>
                   </div>
-                </div> -->
-                
-                <div class="mdl-cell mdl-cell--4-col">
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height" style="width: 100%;">
-                    <input class="mdl-textfield__input" type="text" required id="affiliate" name="affiliate" readonly tabIndex="-1">
-                    <label for="affiliate">
-                        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
-                    </label>
-                    <label for="affiliate" class="mdl-textfield__label">Your Affiliate</label>
-                    <ul for="affiliate" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                      <?php 
-                        foreach ($affiliates as $affiliate) {
-                          echo '<li class="mdl-menu__item">'. $affiliate['name'] .'</li>';
-                        }
-                      ?>
-                        <li class="mdl-menu__item">None/Other</li>
-                    </ul>
+
+                  <div class="mdl-layout-spacer"></div>
+                  
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height" style="width: 100%;">
+                      <input class="mdl-textfield__input" type="text" required id="about" name="about" readonly tabIndex="-1">
+                      <label for="about">
+                          <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                      </label>
+                      <label for="about" class="mdl-textfield__label">Tell Us More About Youself</label>
+                      <ul for="about" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                          <li class="mdl-menu__item">CrossFit Fan!</li>
+                          <li class="mdl-menu__item">Elite Athlete</li>
+                          <li class="mdl-menu__item">Box Owner/Coach</li>
+                          <li class="mdl-menu__item">Media/Sponsor</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
 
-                <div class="mdl-layout-spacer"></div>
-                
-                <div class="mdl-cell mdl-cell--4-col">
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height" style="width: 100%;">
-                    <input class="mdl-textfield__input" type="text" required id="about" name="about" readonly tabIndex="-1">
-                    <label for="about">
-                        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
-                    </label>
-                    <label for="about" class="mdl-textfield__label">Tell Us More About Youself</label>
-                    <ul for="about" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                        <li class="mdl-menu__item">CrossFit Fan!</li>
-                        <li class="mdl-menu__item">Elite Athlete</li>
-                        <li class="mdl-menu__item">Box Owner/Coach</li>
-                        <li class="mdl-menu__item">Media/Sponsor</li>
-                    </ul>
+                  <div class="mdl-layout-spacer"></div>
+                </div>
+                <div class="mdl-grid fields">
+                  <div class="mdl-layout-spacer"></div>
+
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="text" id="website" name="website">
+                      <label class="mdl-textfield__label" for="website">Website</label>
+                    </div>
                   </div>
-                </div>
 
-                <div class="mdl-layout-spacer"></div>
-              </div>
-              <div class="mdl-grid fields">
-                <div class="mdl-layout-spacer"></div>
+                  <div class="mdl-layout-spacer"></div>
 
-                <div class="mdl-cell mdl-cell--4-col">
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="website" name="website">
-                    <label class="mdl-textfield__label" for="website">Website</label>
+                  <div class="hidden" style="display:none;">
+                    <input type="hidden" name="URL" id="URL" value="">
+                    <input type="hidden" name="UTM_SOURCE" id="UTM_SOURCE" value="">
+                    <input type="hidden" name="UTM_MEDIUM" id="UTM_MEDIUM" value="">
+                    <input type="hidden" name="UTM_CAMP" id="UTM_CAMP" value="">
+                    <input type="hidden" name="GCLID" id="GCLID" value="">
                   </div>
-                </div>
 
-                <div class="mdl-layout-spacer"></div>
-
-                <div class="mdl-cell mdl-cell--4-col">
-                  <a href="./thank-you" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect submit">
-                    Subscribe
-                  </a>
+                  <div class="mdl-cell mdl-cell--4-col">
+                    <a href="./thank-you" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect submit">
+                      Subscribe
+                    </a>
+                  </div>
+                  
+                  <div class="mdl-layout-spacer"></div>
                 </div>
-                
-                <div class="mdl-layout-spacer"></div>
-              </div>
+              </form>
             </div>
             <div class="mdl-layout-spacer"></div>
           </div>

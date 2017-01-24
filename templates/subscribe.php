@@ -8,6 +8,15 @@
         <input class="mdl-textfield__input" type="text" id="email">
         <label class="mdl-textfield__label" for="email">Email Address</label>
       </div>
+  
+      <div class="hidden" style="display:none;">
+        <input type="hidden" name="URL" id="URL" value="">
+        <input type="hidden" name="UTM_SOURCE" id="UTM_SOURCE" value="">
+        <input type="hidden" name="UTM_MEDIUM" id="UTM_MEDIUM" value="">
+        <input type="hidden" name="UTM_CAMP" id="UTM_CAMP" value="">
+        <input type="hidden" name="GCLID" id="GCLID" value="">
+      </div>
+
       <button type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect submit">
         Subscribe
       </button>

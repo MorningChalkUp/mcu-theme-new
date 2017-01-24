@@ -52,3 +52,38 @@ $('.search-btn').on('click', function() {
   $('.search-bar').slideToggle(100);
   $('.overlay').toggle();
 });
+
+
+$( '#URL' ).val( location.protocol + '//' + location.host + location.pathname );
+if (getQueryVariable('utm_source')) {
+  $('#UTM_SOURCE').val(getQueryVariable('utm_source'));
+}
+if (getQueryVariable('utm_medium')) {
+  $('#UTM_MEDIUM').val(getQueryVariable('utm_medium'));
+}
+if (getQueryVariable('utm_campaign')) {
+  $('#UTM_CAMP').val(getQueryVariable('utm_campaign'));
+}
+if (getQueryVariable('gclid')) {
+  $('#GCLID').val(getQueryVariable('gclid'));
+}
+// if (getQueryVariable('fname')) {
+//   $('#FNAME').val(getQueryVariable('fname'));
+// }
+// if (getQueryVariable('lname')) {
+//   $('#LNAME').val(getQueryVariable('lname'));
+// }
+// if (getQueryVariable('email')) {
+//   $('#EMAIL').val(getQueryVariable('email'));
+// }
+
+function getQueryVariable(variable) {
+  var query = window.location.search.substring(1);
+  var vars = query.split('&');
+  for (var i = 0; i < vars.length; i++) {
+    var pair = vars[i].split('=');
+    if (decodeURIComponent(pair[0]) == variable) {
+      return decodeURIComponent(pair[1]);
+    }
+  }
+}
