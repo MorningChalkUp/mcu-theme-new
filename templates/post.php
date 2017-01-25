@@ -32,6 +32,26 @@ $tags = wp_get_post_tags( $post->ID );
     <button class="mdl-button js-share-email em">
       <i class="mdi mdi-email"></i> Email
     </button>
+    <script>
+        $('.js-share-email').on('click', function() {
+          document.location = 'mailto:?subject=<?php the_title(); ?>&body=<?php the_permalink(); ?>';
+        });
+
+        $('.js-share-facebook').on('click', function() {
+          FB.ui({
+            method: 'feed',
+            link: '<?php the_permalink(); ?>?utm_source=facebook&utm_campaign=article-share&utm_medium=share',
+            caption: 'Morning Chalk Up',
+            picture: '<?php echo $thumb_url; ?>',
+            name: '<?php the_title(); ?>',
+            description: '<?php the_excerpt(); ?>',
+          }, function(response){});
+        });
+
+        $('.js-share-twitter').on('click', function() {
+          window.open('https://twitter.com/intent/tweet?text=' + '<?php the_title(); ?>' + ' via Morning Chalk Up' + '&link=' + '<?php the_permalink(); ?>', '_blank');
+        });
+    </script>
   </div>
   <div class="img">
     <img class="feature-img" src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>">
