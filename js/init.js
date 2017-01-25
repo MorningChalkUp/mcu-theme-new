@@ -104,6 +104,16 @@ function getQueryVariable(variable) {
   }
 }
 
+$('#about').immybox({
+  choices: [
+    {text: 'CrossFit Fan!', value: 'CrossFit Fan!'},
+    {text: 'Elite Athlete', value: 'Elite Athlete'},
+    {text: 'Box Owner/Coach', value: 'Box Owner/Coach'},
+    {text: 'Media', value: 'Media'},
+    {text: 'Vendor', value: 'Vendor'},
+  ]
+});
+
 $('#affiliate').immybox({
     choices: [
       {text: '10 Point CrossFit', value: '10 Point CrossFit'},

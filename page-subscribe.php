@@ -35,7 +35,7 @@
                   <div class="mdl-cell mdl-cell--4-col">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                       <input class="mdl-textfield__input" type="text" id="full-name" name="full-name">
-                      <label class="mdl-textfield__label" for="full-name">Name</label>
+                      <label class="mdl-textfield__label" for="full-name">Full Name</label>
                     </div>
                   </div>
 
@@ -63,7 +63,7 @@
                   <div class="mdl-cell mdl-cell--4-col">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                       <input class="mdl-textfield__input" type="text" id="affiliate" name="affiliate">
-                      <label class="mdl-textfield__label" for="affiliate">Your Affiliate</label>
+                      <label class="mdl-textfield__label" for="affiliate">Search For Your Box</label>
                     </div>
                   </div>
                   
@@ -86,8 +86,15 @@
                   </div> -->
 
                   <div class="mdl-layout-spacer"></div>
-                  
+
                   <div class="mdl-cell mdl-cell--4-col">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="text" id="about" name="about">
+                      <label class="mdl-textfield__label" for="about">Tell Us More About Youself</label>
+                    </div>
+                  </div>
+                  
+                  <!-- <div class="mdl-cell mdl-cell--4-col">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height" style="width: 100%;">
                       <input class="mdl-textfield__input" type="text" required id="about" name="about" readonly tabIndex="-1">
                       <label for="about">
@@ -101,7 +108,7 @@
                           <li class="mdl-menu__item">Media/Sponsor</li>
                       </ul>
                     </div>
-                  </div>
+                  </div> -->
 
                   <div class="mdl-layout-spacer"></div>
                 </div>
