@@ -1028,6 +1028,10 @@ footer.mdl-mini-footer ul li a i {
   }
 }
 @media screen and (max-width: 500px) {
+  article.quote #quote1,
+  article.quote #quote2 {
+    height: 450px;
+  }
   footer.mdl-mini-footer ul {
     text-align: center;
   }
