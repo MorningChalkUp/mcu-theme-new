@@ -73,9 +73,9 @@ if (getQueryVariable('gclid')) {
 // if (getQueryVariable('lname')) {
 //   $('#LNAME').val(getQueryVariable('lname'));
 // }
-// if (getQueryVariable('email')) {
-//   $('#EMAIL').val(getQueryVariable('email'));
-// }
+if (getQueryVariable('email')) {
+  $('#email').val(getQueryVariable('email'));
+}
 
 function getQueryVariable(variable) {
   var query = window.location.search.substring(1);
