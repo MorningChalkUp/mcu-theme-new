@@ -49,7 +49,7 @@ $tags = wp_get_post_tags( $post->ID );
         });
 
         $('.js-share-twitter').on('click', function() {
-          window.open('https://twitter.com/intent/tweet?text=<?php the_title(); ?> | <?php the_permalink(); ?> via Morning Chalk Up&link=', '_blank');
+          window.open('https://twitter.com/intent/tweet?text=' + '<?php echo urlencode(get_the_title() . ' via Morning Chalk Up' . ' | ' . get_the_permalink()); ?>' + '&link=' + '<?php echo urlencode(get_the_permalink()); ?>', '_blank');
         });
     </script>
   </div>
