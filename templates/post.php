@@ -43,7 +43,7 @@ $tags = wp_get_post_tags( $post->ID );
             link: '<?php the_permalink(); ?>?utm_source=facebook&utm_campaign=article-share&utm_medium=share',
             caption: 'Morning Chalk Up',
             picture: '<?php echo $thumb_url; ?>',
-            name: '<?php the_title(); ?>',
+            name: '<?php the_title(); ?> | Morning Chalk Up',
             description: '<?php echo get_the_excerpt(); ?>',
           }, function(response){});
         });
