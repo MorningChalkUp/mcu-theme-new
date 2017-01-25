@@ -29,7 +29,7 @@
 
                 <div class="mdl-layout-spacer"></div>
               </div>
-              <form action="#" method="post">
+              <form action="/process/subscribe.php" method="post">
                 <div class="mdl-grid fields">
                   <div class="mdl-layout-spacer"></div>
                   <div class="mdl-cell mdl-cell--4-col">
@@ -59,8 +59,15 @@
                       <label class="mdl-textfield__label" for="zip">Zip Code</label>
                     </div>
                   </div> -->
-                  
+
                   <div class="mdl-cell mdl-cell--4-col">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="text" id="affiliate" name="affiliate">
+                      <label class="mdl-textfield__label" for="affiliate">Your Affiliate</label>
+                    </div>
+                  </div>
+                  
+                  <!-- <div class="mdl-cell mdl-cell--4-col">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height" style="width: 100%;">
                       <input class="mdl-textfield__input" type="text" required id="affiliate" name="affiliate" readonly tabIndex="-1">
                       <label for="affiliate">
@@ -76,7 +83,7 @@
                           <li class="mdl-menu__item">None/Other</li>
                       </ul>
                     </div>
-                  </div>
+                  </div> -->
 
                   <div class="mdl-layout-spacer"></div>
                   
@@ -119,9 +126,9 @@
                   </div>
 
                   <div class="mdl-cell mdl-cell--4-col">
-                    <a href="./thank-you" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect submit">
+                    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect submit">
                       Subscribe
-                    </a>
+                    </button>
                   </div>
                   
                   <div class="mdl-layout-spacer"></div>
