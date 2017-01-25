@@ -71,8 +71,8 @@ query_posts( $args );
               <span class="mdl-checkbox__label">Stories</span>
             </label>
 
-            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="mcu">
-              <input type="checkbox" name="filter[]" id="mcu" class="mdl-checkbox__input" value="mcu" <?php echo ( in_array( 'mcu', $_POST['filter'] ) ? 'checked' : '' ); ?>>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="morningchalkup">
+              <input type="checkbox" name="filter[]" id="morningchalkup" class="mdl-checkbox__input" value="morningchalkup" <?php echo ( in_array( 'morningchalkup', $_POST['filter'] ) ? 'checked' : '' ); ?>>
               <span class="mdl-checkbox__label">Morning Chalk Up</span>
             </label>
 
