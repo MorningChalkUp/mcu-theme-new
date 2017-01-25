@@ -19,6 +19,7 @@
     <div class="right search">
       <a class="search-btn">
         <i class="mdi mdi-magnify"></i>
+        <i class="mdi mdi-close"></i>
       </a>
     </div>
   </div>
