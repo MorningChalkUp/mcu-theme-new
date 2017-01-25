@@ -491,6 +491,9 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content article.main.subscribe-page .hero .form.thank-you {
   margin-top: 50px;
 }
+.mdl-layout__content .page-content article.main.subscribe-page .hero .form.thank-you h1 {
+  font-size: 36px;
+}
 .mdl-layout__content .page-content article.main.subscribe-page .mdl-button {
   text-transform: none;
 }
