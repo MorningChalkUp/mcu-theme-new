@@ -27,9 +27,10 @@ $name = $_GET['fname'];
                       }
                     ?>
                   </h1>
-                  <a target="_blank" href="https://www.facebook.com/MorningChalkUp/" class="mdl-button like">
+                  <div class="like">
                     Like us on Facebook
-                  </a>
+                  </div>
+                  <div class="fb-like" data-href="https://www.facebook.com/MorningChalkUp/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
                 </div>
                 <div class="mdl-layout-spacer"></div>
               </div>

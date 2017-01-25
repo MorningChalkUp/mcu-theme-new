@@ -475,8 +475,9 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content article.main.subscribe-page .hero .form .headline .like {
   margin-top: 20px;
   font-size: 24px;
-  background-color: #3D5BA9;
-  color: #fff;
+  /*background-color: @blue;*/
+  color: #3D5BA9;
+  font-weight: 700;
   text-transform: initial;
 }
 .mdl-layout__content .page-content article.main.subscribe-page .hero .form .headline .like:hover {
