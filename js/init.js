@@ -88,7 +88,7 @@ function getQueryVariable(variable) {
   }
 }
 
-$/*('#about').immybox({
+$('#about').immybox({
   choices: [
     {text: 'CrossFit Fan!', value: 'CrossFit Fan!'},
     {text: 'Elite Athlete', value: 'Elite Athlete'},
@@ -96,7 +96,7 @@ $/*('#about').immybox({
     {text: 'Media', value: 'Media'},
     {text: 'Vendor', value: 'Vendor'},
   ]
-});*/
+});
 
 $('#affiliate').immybox({
     choices: [
