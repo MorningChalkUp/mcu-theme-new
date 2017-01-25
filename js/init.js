@@ -51,6 +51,22 @@ $('input.event-type').on('change', function() {
 $('.search-btn').on('click', function() {
   $('.search-bar').slideToggle(100);
   $('.overlay').toggle();
+  display = $('.search-bar').css('display');
+  if (display == 'block') {
+    $('.search-btn').html('<i class="mdi mdi-close"></i>');
+  }
+  if (display == 'none') {
+    $('.search-btn').html('<i class="mdi mdi-magnify"></i>');
+  }
+  
+});
+
+$(document).keyup(function(e) {
+  if (e.keyCode === 27) {
+    $('.search-bar').slideUp(100);
+    $('.overlay').hide();
+    $('.search-btn').html('<i class="mdi mdi-magnify"></i>');
+  }
 });
 
 
