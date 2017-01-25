@@ -44,7 +44,7 @@ $tags = wp_get_post_tags( $post->ID );
             caption: 'Morning Chalk Up',
             picture: '<?php echo $thumb_url; ?>',
             name: '<?php the_title(); ?>',
-            description: '<?php the_excerpt(); ?>',
+            description: '<?php echo get_the_excerpt(); ?>',
           }, function(response){});
         });
 

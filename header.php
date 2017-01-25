@@ -17,7 +17,8 @@
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-
+    
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-2.2.3.min.js"></script>
     <script src="https://use.typekit.net/ydo2tvd.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
