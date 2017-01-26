@@ -23,14 +23,14 @@ $tags = wp_get_post_tags( $post->ID );
     BY  <a href="<?php echo get_author_posts_url($post->post_author) ?>" title="<?php the_author(); ?>" alt="<?php the_author(); ?>"><?php the_author(); ?></a>   |  STAFF
   </div>
   <div class="share">
-    <button class="mdl-button js-share-facebook fb">
-      <i class="mdi mdi-facebook-box"></i> Facebook
+    <button class="mdl-button js-share js-share-facebook fb">
+      <i class="mdi mdi-facebook-box"></i><span class="mdl-cell--hide-phone"> Facebook</span>
     </button>
-    <button class="mdl-button js-share-twitter tw">
-      <i class="mdi mdi-twitter"></i> Twitter
+    <button class="mdl-button js-share js-share-twitter tw">
+      <i class="mdi mdi-twitter"></i><span class="mdl-cell--hide-phone"> Twitter</span>
     </button>
-    <button class="mdl-button js-share-email em">
-      <i class="mdi mdi-email"></i> Email
+    <button class="mdl-button js-share js-share-email em">
+      <i class="mdi mdi-email"></i><span class="mdl-cell--hide-phone"> Email</span>
     </button>
     <script>
         $('.js-share-email').on('click', function() {

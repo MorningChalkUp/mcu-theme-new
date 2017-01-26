@@ -1048,11 +1048,16 @@ section {
 article {
   &.teaser {
     .img {
+      /*overflow: hidden;*/
       .teaser-img {
         /*max-width: 400px;*/
         width: 100%;
         height: auto;
         display: block;
+        /*transition: all 0.3s;*/
+        &:hover {
+          /*transform: scale(1.1);*/
+        }
       }
     }
     .meta {
@@ -1213,6 +1218,11 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+  .share {
+    .js-share {
+      font-size: 18px;
+    }
+  }
   article {
     &.quote {
       #quote1, #quote2 {

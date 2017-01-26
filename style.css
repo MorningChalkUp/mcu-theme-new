@@ -913,11 +913,18 @@ section.subscribe .sub-form button.submit {
 section.subscribe .sub-form button.submit:hover {
   background-color: rgba(75, 183, 73, 0.9);
 }
+article.teaser .img {
+  /*overflow: hidden;*/
+}
 article.teaser .img .teaser-img {
   /*max-width: 400px;*/
   width: 100%;
   height: auto;
   display: block;
+  /*transition: all 0.3s;*/
+}
+article.teaser .img .teaser-img:hover {
+  /*transform: scale(1.1);*/
 }
 article.teaser .meta {
   font-size: 14px;
@@ -1028,6 +1035,9 @@ footer.mdl-mini-footer ul li a i {
   }
 }
 @media screen and (max-width: 500px) {
+  .share .js-share {
+    font-size: 18px;
+  }
   article.quote #quote1,
   article.quote #quote2 {
     height: 450px;
