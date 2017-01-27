@@ -621,6 +621,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 .mdl-layout__content .page-content section.archive.home article.quote span {
   display: block;
+  font-size: 70%;
 }
 .mdl-layout__content .page-content section.archive.home article.quote #quote1,
 .mdl-layout__content .page-content section.archive.home article.quote #quote2 {
