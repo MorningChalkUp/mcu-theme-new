@@ -888,7 +888,7 @@ header {
           position: absolute;
           text-align: right;
           display: table-cell;
-          max-width: 50%;
+          max-width: 60%;
           .category {
             mark {
               background: @blue;
@@ -1048,15 +1048,15 @@ section {
 article {
   &.teaser {
     .img {
-      /*overflow: hidden;*/
+      overflow: hidden;
       .teaser-img {
-        /*max-width: 400px;*/
+        max-width: 400px;
         width: 100%;
         height: auto;
         display: block;
-        /*transition: all 0.3s;*/
+        transition: all 0.3s;
         &:hover {
-          /*transform: scale(1.1);*/
+          transform: scale(1.1);
         }
       }
     }
@@ -1203,6 +1203,11 @@ footer {
 }
 
 @media screen and (max-width: 839px) {
+  .title {
+    mark {
+      font-size: 36px;
+    }
+  }
   .mdl-layout__content {
     section {
       &.feature {
@@ -1218,6 +1223,51 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+  .mdl-layout__content {
+    .page-content {
+      section {
+        &.archive {
+          &.home {
+            article {
+              &.sub-feature {
+                .content {
+                  width: 90%;
+                  .title {
+                    mark {
+                      font-size: 36px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mdl-layout__content {
+    section {
+      &.feature {
+        .featured {
+          .content {
+            width: 90%;
+            .category {
+              mark {
+              }
+            }
+            .title {
+              mark {
+                font-size: 36px;
+                a {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .share {
     .js-share {
       font-size: 18px;

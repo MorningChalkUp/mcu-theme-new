@@ -786,7 +786,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   position: absolute;
   text-align: right;
   display: table-cell;
-  max-width: 50%;
+  max-width: 60%;
 }
 .mdl-layout__content section.feature .featured .content .category mark {
   background: #3D5BA9;
@@ -914,17 +914,17 @@ section.subscribe .sub-form button.submit:hover {
   background-color: rgba(75, 183, 73, 0.9);
 }
 article.teaser .img {
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 article.teaser .img .teaser-img {
-  /*max-width: 400px;*/
+  max-width: 400px;
   width: 100%;
   height: auto;
   display: block;
-  /*transition: all 0.3s;*/
+  transition: all 0.3s;
 }
 article.teaser .img .teaser-img:hover {
-  /*transform: scale(1.1);*/
+  transform: scale(1.1);
 }
 article.teaser .meta {
   font-size: 14px;
@@ -1027,6 +1027,9 @@ footer.mdl-mini-footer ul li a i {
   }
 }
 @media screen and (max-width: 839px) {
+  .title mark {
+    font-size: 36px;
+  }
   .mdl-layout__content section.feature .mcu-roll {
     min-width: 100%;
   }
@@ -1035,6 +1038,18 @@ footer.mdl-mini-footer ul li a i {
   }
 }
 @media screen and (max-width: 500px) {
+  .mdl-layout__content .page-content section.archive.home article.sub-feature .content {
+    width: 90%;
+  }
+  .mdl-layout__content .page-content section.archive.home article.sub-feature .content .title mark {
+    font-size: 36px;
+  }
+  .mdl-layout__content section.feature .featured .content {
+    width: 90%;
+  }
+  .mdl-layout__content section.feature .featured .content .title mark {
+    font-size: 36px;
+  }
   .share .js-share {
     font-size: 18px;
   }
