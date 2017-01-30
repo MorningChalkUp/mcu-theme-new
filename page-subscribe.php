@@ -66,7 +66,7 @@
 
                   <div class="mdl-cell mdl-cell--4-col">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                      <input class="mdl-textfield__input" type="text" id="about" name="about">
+                      <input class="mdl-textfield__input" type="text" id="about-ib" name="about">
                       <label class="mdl-textfield__label" for="about">Tell Us More About Youself</label>
                     </div>
                   </div>
