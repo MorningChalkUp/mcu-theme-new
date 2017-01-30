@@ -126,7 +126,7 @@ $select_terms = get_terms( array(
     <div class="mdl-layout-spacer"></div>
     <div class="mdl-cell mdl-cell--8-col title">
       <h1>Competition Calendar</h1>
-      <p>It's not a CrossFit competition unless it's sponsored by CrossFit®. Every other competition, except for weightlifting, is unofficial. Large-scale major sponsored events are "national" and smaller ones are "local."</p>
+      <p>It's not a CrossFit competition unless it's sponsored by CrossFit<sup style="font-size:small;">®</sup>. Every other competition, except for weightlifting, is unofficial. Large-scale major sponsored events are "national" and smaller ones are "local."</p>
     </div>
     <div class="mdl-layout-spacer"></div>
   </div>

@@ -26,7 +26,7 @@
 
                 <div class="mdl-cell mdl-cell--10-col headline">
                   <img src="<?php echo get_template_directory_uri(); ?>/img/chalkup-eu.svg" alt="Morning Chalk Up Europe" style="max-width: 370px;width: 100%;display: block;margin: 0 auto 10px auto;">
-                  The daily newsletter for CrossFit<small>&reg;</small> athletes in Europe. Be ignored no longer.
+                  The daily newsletter for CrossFit<sup style="font-size:small;">®</sup> athletes in Europe. Be ignored no longer.
                 </div>
 
                 <div class="mdl-layout-spacer"></div>
