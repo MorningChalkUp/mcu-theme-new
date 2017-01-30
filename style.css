@@ -774,6 +774,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 .mdl-layout__content section.feature .featured {
   background-size: cover;
+  background-position: top center;
   min-width: 66.666666666666667%;
   position: relative;
   height: 590px;
@@ -1039,6 +1040,9 @@ footer.mdl-mini-footer ul li a i {
   }
 }
 @media screen and (max-width: 500px) {
+  .overlay {
+    top: 112px;
+  }
   .mdl-layout__content .page-content section.archive.home article.sub-feature .content {
     width: 90%;
   }
