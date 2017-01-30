@@ -99,7 +99,7 @@ $('#about').immybox({
 });
 
 $('#affiliate').immybox({
-    oices: [
+    choices: [
     {text: '10 Point CrossFit', value: '10 Point CrossFit'},
     {text: '10,000 AC CrossFit', value: '10,000 AC CrossFit'},
     {text: '100 Pourcent CrossFit', value: '100 Pourcent CrossFit'},

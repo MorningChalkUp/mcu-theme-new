@@ -1,8 +1,3 @@
-<?php
-  $string = file_get_contents( get_template_directory_uri() . "/js/crossfit_affiliates.json" );
-  $affiliates = json_decode($string, true);
-?>
-
 <?php get_header(); ?>
 
 <main class="mdl-layout__content">
@@ -66,24 +61,6 @@
                       <label class="mdl-textfield__label" for="affiliate">Search For Your Box</label>
                     </div>
                   </div>
-                  
-                  <!-- <div class="mdl-cell mdl-cell--4-col">
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height" style="width: 100%;">
-                      <input class="mdl-textfield__input" type="text" required id="affiliate" name="affiliate" readonly tabIndex="-1">
-                      <label for="affiliate">
-                          <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
-                      </label>
-                      <label for="affiliate" class="mdl-textfield__label">Your Affiliate</label>
-                      <ul for="affiliate" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                        <?php 
-                          foreach ($affiliates as $affiliate) {
-                            echo '<li class="mdl-menu__item">'. $affiliate['name'] .'</li>';
-                          }
-                        ?>
-                          <li class="mdl-menu__item">None/Other</li>
-                      </ul>
-                    </div>
-                  </div> -->
 
                   <div class="mdl-layout-spacer"></div>
 
