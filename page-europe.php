@@ -17,10 +17,10 @@
           </div>
         </div>
         <div class="mdl-grid" style="padding-top: 0">
-          <div class="mdl-cell mdl-cell--12-col mdl-grid">
+          <div class="mdl-cell mdl-cell--12-col mdl-grid" style="padding-top: 0; margin-top: 0;">
             <div class="mdl-layout-spacer"></div>
-            <div class="mdl-cell mdl-cell--10-col form">
-              <div class="mdl-grid" style="padding-top: 0; margin-top: 0;">
+            <div class="mdl-cell mdl-cell--10-col form" style="margin-top: 0">
+              <div class="mdl-grid">
                 
                 <div class="mdl-layout-spacer"></div>
 
