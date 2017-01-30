@@ -77,10 +77,24 @@
                   <div class="mdl-layout-spacer"></div>
 
                   <div class="mdl-cell mdl-cell--4-col">
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+
+                    <!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                       <input class="mdl-textfield__input" type="text" id="about" name="about">
                       <label class="mdl-textfield__label" for="about">Tell Us More About Youself *</label>
+                    </div> -->
+
+                    <div class="mdl-select mdl-js-select mdl-select--floating-label">
+                      <select class="mdl-select__input" id="about" name="about">
+                        <option value=""></option>
+                        <option value="CrossFit Fan!">CrossFit Fan!</option>
+                        <option value="Elite Athlete">Elite Athlete</option>
+                        <option value="Box Owner/Coach">Box Owner/Coach</option>
+                        <option value="Media">Media</option>
+                        <option value="Vendor">Vendor</option>
+                      </select>
+                      <label class="mdl-select__label" for="about">Tell Us More About Youself *</label>
                     </div>
+                    
                   </div>
 
                   <div class="mdl-layout-spacer"></div>
