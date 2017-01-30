@@ -10,23 +10,23 @@
 
     <article class="main subscribe-page">
       <section class="hero">
-        <div class="mdl-grid">
+        <div class="mdl-grid" style="padding-bottom: 0">
           <div class="mdl-layout-spacer"></div>
           <div class="mdl-cell mdl-cell--8-col title">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/eu.svg" alt="Morning Chalk Up Europe" style="max-width: 110px;width: 100%;float: right;">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/eu.svg" alt="Morning Chalk Up Europe" style="max-width: 100px;width: 100%;float: right;">
           </div>
         </div>
-        <div class="mdl-grid">
+        <div class="mdl-grid" style="padding-top: 0">
           <div class="mdl-cell mdl-cell--12-col mdl-grid">
             <div class="mdl-layout-spacer"></div>
             <div class="mdl-cell mdl-cell--10-col form">
-              <div class="mdl-grid">
+              <div class="mdl-grid" style="padding-top: 0; margin-top: 0;">
                 
                 <div class="mdl-layout-spacer"></div>
 
-                <div class="mdl-cell mdl-cell--10-col headline">
+                <div class="mdl-cell mdl-cell--10-col headline" style="margin-top: 0;">
                   <img src="<?php echo get_template_directory_uri(); ?>/img/chalkup-eu.svg" alt="Morning Chalk Up Europe" style="max-width: 370px;width: 100%;display: block;margin: 0 auto 10px auto;">
-                  The daily newsletter for CrossFit<sup style="font-size:small;">®</sup> athletes in Europe. Be ignored no longer.
+                  The daily newsletter for CrossFitters in Europe. Be ignored no longer.
                 </div>
 
                 <div class="mdl-layout-spacer"></div>
@@ -94,7 +94,7 @@
                       </select>
                       <label class="mdl-select__label" for="about">Tell Us More About Youself *</label>
                     </div>
-                    
+
                   </div>
 
                   <div class="mdl-layout-spacer"></div>
