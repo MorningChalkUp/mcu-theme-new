@@ -74,18 +74,18 @@
             </section>
             <section class="team-member mdl-cell mdl-cell--4-col">
               <div class="img">
-                <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/jesse-k.png" alt="Jesse Krim">
+                <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/jesse-krim.png" alt="Jesse Krim">
               </div>
               <div class="name">
                 Jesse Krim
               </div>
               <div class="info">
-                <strong>Events Curator // CrossFit Assassin</strong>
+                <strong>Events Curator // Travel Aficionado</strong>
                 Location: New York
               </div>
               <div class="quote">
                 <div class="title">FAVORITE QUOTE</div><br>
-                “Be who you are and say what you feel, because those who mind don’t matter, and those who matter don’t mind.”
+                “Be who you are and say what you feel, because those who mind don’t matter, and those who matter don’t mind.” — Bernard M Baruch
               </div>
             </section>
             <section class="team-member mdl-cell mdl-cell--4-col">
