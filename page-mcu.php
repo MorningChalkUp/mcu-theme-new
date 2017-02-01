@@ -25,7 +25,7 @@
 
                 <div class="mdl-layout-spacer"></div>
               </div>
-              <form action="/process/europe.php" method="post">
+              <form action="/process/morningchalkup.php" method="post">
                 <div class="mdl-grid fields">
                   <div class="mdl-layout-spacer"></div>
                   <div class="mdl-cell mdl-cell--4-col">
