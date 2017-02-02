@@ -36,6 +36,9 @@
 
       fbq('init', '253166851706578');
       fbq('track', "PageView");
+      <?php if (is_page( 'thank-you' )): ?>
+      fbq('track', 'CompleteRegistration');
+      <?php endif; ?>
       </script>
       <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=253166851706578&ev=PageView&noscript=1"
