@@ -19,7 +19,7 @@
 
                 <div class="mdl-cell mdl-cell--10-col headline">
                   <img src="<?php echo get_template_directory_uri(); ?>/img/chalkup.png" alt="Morning Chalk Up Europe" style="max-width: 370px;width: 100%;display: block;margin: 0 auto 10px auto;">
-                  The Morning Chalk Up is the daily newletter for people who do CrossFit<sup style="font-size: small;">&reg;</sup>. Get the email that athletes, insiders and fans are reading every morning..
+                  The Morning Chalk Up is the daily newletter for people who do CrossFit<sup style="font-size: small;">&reg;</sup>. Get the email that athletes, insiders and fans are reading every morning.
                 </div>
 
                 <div class="mdl-layout-spacer"></div>
