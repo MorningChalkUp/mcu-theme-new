@@ -1039,7 +1039,7 @@ footer.mdl-mini-footer ul li a i {
 .mdl-select--floating-label.is-dirty .mdl-select__label {
   color: #3f51b5;
   font-size: 12px;
-  top: 0px;
+  top: 4px;
   visibility: visible;
 }
 .mdl-select--floating-label.is-focused .mdl-select__expandable-holder .mdl-select__label,
