@@ -987,6 +987,7 @@ footer.mdl-mini-footer ul li a i {
   max-width: 100%;
   margin: 0;
   padding: 20px 0;
+  margin-top: 10px;
 }
 .mdl-select__input {
   border: none;
@@ -1019,7 +1020,7 @@ footer.mdl-mini-footer ul li a i {
   right: 0;
   pointer-events: none;
   position: absolute;
-  top: 24px;
+  top: 20px;
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
@@ -1038,7 +1039,7 @@ footer.mdl-mini-footer ul li a i {
 .mdl-select--floating-label.is-dirty .mdl-select__label {
   color: #3f51b5;
   font-size: 12px;
-  top: 4px;
+  top: 0px;
   visibility: visible;
 }
 .mdl-select--floating-label.is-focused .mdl-select__expandable-holder .mdl-select__label,
@@ -1051,7 +1052,7 @@ footer.mdl-mini-footer ul li a i {
 }
 .mdl-select__label:after {
   background-color: #3f51b5;
-  bottom: 20px;
+  bottom: 29px;
   content: '';
   height: 2px;
   left: 45%;

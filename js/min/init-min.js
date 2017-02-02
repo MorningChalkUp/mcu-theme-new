@@ -53,29 +53,42 @@ $('.overlay').on('click', function() {
   $('.search-btn i.mdi-close').toggle();
 });
 
-
-$( '#URL' ).val( location.protocol + '//' + location.host + location.pathname );
-if (getQueryVariable('utm_source')) {
-  $('#UTM_SOURCE').val(getQueryVariable('utm_source'));
-}
-if (getQueryVariable('utm_medium')) {
-  $('#UTM_MEDIUM').val(getQueryVariable('utm_medium'));
-}
-if (getQueryVariable('utm_campaign')) {
-  $('#UTM_CAMP').val(getQueryVariable('utm_campaign'));
-}
-if (getQueryVariable('gclid')) {
-  $('#GCLID').val(getQueryVariable('gclid'));
-}
-// if (getQueryVariable('fname')) {
-//   $('#FNAME').val(getQueryVariable('fname'));
-// }
-// if (getQueryVariable('lname')) {
-//   $('#LNAME').val(getQueryVariable('lname'));
-// }
-if (getQueryVariable('email')) {
-  $('#email').val(getQueryVariable('email'));
-}
+$(function() {
+    $( '#URL' ).val( location.protocol + '//' + location.host + location.pathname );
+    if (getQueryVariable('utm_source')) {
+      $('#UTM_SOURCE').val(getQueryVariable('utm_source'));
+    }
+    if (getQueryVariable('utm_medium')) {
+      $('#UTM_MEDIUM').val(getQueryVariable('utm_medium'));
+    }
+    if (getQueryVariable('utm_campaign')) {
+      $('#UTM_CAMP').val(getQueryVariable('utm_campaign'));
+    }
+    if (getQueryVariable('gclid')) {
+      $('#GCLID').val(getQueryVariable('gclid'));
+    }
+    if (getQueryVariable('fname')) {
+      $('#fname').val(getQueryVariable('fname'));
+    }
+    if (getQueryVariable('lname')) {
+      $('#lname').val(getQueryVariable('lname'));
+    }
+    if (getQueryVariable('email')) {
+      $('#email').val(getQueryVariable('email'));
+    }
+    if (getQueryVariable('full-name')) {
+      $('#full-name').val(getQueryVariable('full-name'));
+    }
+    if (getQueryVariable('country')) {
+      $('#country').val(getQueryVariable('country'));
+    }
+    if (getQueryVariable('about')) {
+      $('#about').val(getQueryVariable('about'));
+    }
+    if (getQueryVariable('affiliate')) {
+      $('#affiliate').val(getQueryVariable('affiliate'));
+    }
+});
 
 function getQueryVariable(variable) {
   var query = window.location.search.substring(1);

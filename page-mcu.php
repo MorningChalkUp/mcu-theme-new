@@ -1,6 +1,5 @@
 <?php
-  $string = file_get_contents( get_template_directory_uri() . "/js/crossfit_affiliates.json" );
-  $affiliates = json_decode($string, true);
+  $error = $_GET['e'];
 ?>
 
 <?php get_header(); ?>
@@ -25,6 +24,36 @@
 
                 <div class="mdl-layout-spacer"></div>
               </div>
+              <?php if (isset($error)): ?>
+              <div class="mdl-grid">
+                
+                <div class="mdl-layout-spacer"></div>
+
+                <div class="mdl-cell mdl-cell--6-col error" style="border-radius: 5px; border: 1px solid #ebccd1; padding: 5px; background: #f2dede; color: #a94442; text-align: center;">
+                  <p><strong>The below fields are required:</strong></p>
+                  <?php
+                    foreach ($error as $e => $v) {
+                      switch ($e) {
+                        case 'email':
+                          echo 'Email<br>';
+                          break;
+                        case 'full-name':
+                          echo 'Full Name<br>';
+                          break;
+                        case 'country':
+                          echo 'Country<br>';
+                          break;
+                        case 'about':
+                          echo 'Tell Us More About Youself<br>';
+                          break;
+                      }
+                    }
+                  ?>
+                </div>
+
+                <div class="mdl-layout-spacer"></div>
+              </div>
+              <?php endif; ?>
               <form action="/process/morningchalkup.php" method="post">
                 <div class="mdl-grid fields">
                   <div class="mdl-layout-spacer"></div>
@@ -51,53 +80,26 @@
 
                   <div class="mdl-cell mdl-cell--4-col">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                      <input class="mdl-textfield__input" type="text" id="country" name="country">
-                      <label class="mdl-textfield__label" for="country">Country *</label>
-                    </div>
-                  </div>
-
-                  <div class="mdl-layout-spacer"></div>
-
-                  <div class="mdl-cell mdl-cell--4-col">
-                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                       <input class="mdl-textfield__input" type="text" id="affiliate" name="affiliate">
                       <label class="mdl-textfield__label" for="affiliate">Search For Your Box</label>
                     </div>
                   </div>
 
                   <div class="mdl-layout-spacer"></div>
-                </div>
-                <div class="mdl-grid fields">
-                  <div class="mdl-layout-spacer"></div>
 
-                  <div class="mdl-cell mdl-cell--4-col">
-
-                    <!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                      <input class="mdl-textfield__input" type="text" id="about" name="about">
-                      <label class="mdl-textfield__label" for="about">Tell Us More About Youself *</label>
-                    </div> -->
-
-                    <div class="mdl-select mdl-js-select mdl-select--floating-label">
-                      <select class="mdl-select__input" id="about" name="about">
-                        <option value=""></option>
-                        <option value="CrossFit Fan!">CrossFit Fan!</option>
-                        <option value="Elite Athlete">Elite Athlete</option>
-                        <option value="Box Owner/Coach">Box Owner/Coach</option>
-                        <option value="Media">Media</option>
-                        <option value="Vendor">Vendor</option>
-                      </select>
-                      <label class="mdl-select__label" for="about">Tell Us More About Youself *</label>
-                    </div>
-
+                  <div class="mdl-select mdl-js-select mdl-select--floating-label">
+                    <select class="mdl-select__input" id="about" name="about">
+                      <option value=""></option>
+                      <option value="CrossFit Fan!">CrossFit Fan!</option>
+                      <option value="Elite Athlete">Elite Athlete</option>
+                      <option value="Box Owner/Coach">Box Owner/Coach</option>
+                      <option value="Media">Media</option>
+                      <option value="Vendor">Vendor</option>
+                    </select>
+                    <label class="mdl-select__label" for="about">Tell Us More About Youself *</label>
                   </div>
 
                   <div class="mdl-layout-spacer"></div>
-
-                  <div class="mdl-cell mdl-cell--4-col">
-                    &nbsp;
-                  </div>
-
-                   <div class="mdl-layout-spacer"></div>
                 </div>
                 <div class="mdl-grid fields">
                   <div class="mdl-layout-spacer"></div>
