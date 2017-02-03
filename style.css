@@ -272,6 +272,10 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content article.main .content span {
   font-size: 18px;
 }
+.mdl-layout__content .page-content article.main .content img {
+  max-width: 100%;
+  height: auto;
+}
 .mdl-layout__content .page-content article.main iframe {
   max-width: 100%;
 }
