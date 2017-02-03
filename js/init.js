@@ -13004,6 +13004,7 @@ $('#country').immybox({
     {text: "Georgia", value: "Georgia"},
     {text: "Germany", value: "Germany"},
     {text: "Ghana", value: "Ghana"},
+    {text: "Gibraltar", value: "Gibraltar"},
     {text: "Greece", value: "Greece"},
     {text: "Grenada", value: "Grenada"},
     {text: "Guatemala", value: "Guatemala"},
