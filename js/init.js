@@ -1,8 +1,12 @@
 $(document).ready(function(){
 
-  $('#quote1').textfit('bestfit');
-  $('#quote2').textfit('bestfit');
+  
 
+});
+
+$(window).on('load', function() {
+    $('#quote1').textfit('bestfit');
+    $('#quote2').textfit('bestfit');
 });
 
 $('input.event-state').on('change', function() {

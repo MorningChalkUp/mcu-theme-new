@@ -1,8 +1,12 @@
 $(document).ready(function(){
 
-  $('#quote1').textfit('bestfit');
-  $('#quote2').textfit('bestfit');
+  
 
+});
+
+$(window).on('load', function() {
+    $('#quote1').textfit('bestfit');
+    $('#quote2').textfit('bestfit');
 });
 
 $('input.event-state').on('change', function() {
@@ -13004,6 +13008,7 @@ $('#country').immybox({
     {text: "Georgia", value: "Georgia"},
     {text: "Germany", value: "Germany"},
     {text: "Ghana", value: "Ghana"},
+    {text: "Gibraltar", value: "Gibraltar"},
     {text: "Greece", value: "Greece"},
     {text: "Grenada", value: "Grenada"},
     {text: "Guatemala", value: "Guatemala"},

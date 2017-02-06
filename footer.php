@@ -7,7 +7,8 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.textfit.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/immybox/jquery.immybox.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/MaterialSelect.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/init.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/mdl-selectfield.min.js"></script>
+    <script defer src="<?php echo get_template_directory_uri(); ?>/js/init.js"></script>
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
