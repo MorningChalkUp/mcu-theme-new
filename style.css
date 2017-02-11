@@ -649,6 +649,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 .mdl-layout__content .page-content section.archive.home article.sub-feature {
   background-size: cover;
+  background-position: top center;
   height: 510px;
   position: relative;
 }
