@@ -493,12 +493,22 @@ header {
           .instagram {
             max-width: 100%;
             text-align: center;
+            padding: 0px;
             .mdl-grid {
               max-width: 100%;
+              padding: 0px;
+              .mdl-cell {
+                margin: 0px;
+              }
             }
             img {
               width: 100%;
               height: auto;
+              transition: opacity .5s ease-in-out, filter .5s ease-in-out;
+              &:hover {
+                filter: grayscale(100%);
+                opacity: 0.6;
+              }
             }
           }
         }
@@ -1453,6 +1463,36 @@ footer {
       }
       .mdl-mini-footer__right-section {
         margin: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: 840px) {
+  .instagram {
+    .mdl-grid {
+      .mdl-cell {
+        width: calc(16.6666666667% - 0px);
+      }
+    }
+  }
+}
+
+@media (max-width: 839px) and (min-width: 480px) {
+  .instagram {
+    .mdl-grid {
+      .mdl-cell {
+        width: calc(25% - 0px);
+      }
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .instagram {
+    .mdl-grid {
+      .mdl-cell {
+        width: calc(50% - 0px);
       }
     }
   }

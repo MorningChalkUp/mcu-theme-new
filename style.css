@@ -416,13 +416,23 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content article.main.about .instagram {
   max-width: 100%;
   text-align: center;
+  padding: 0px;
 }
 .mdl-layout__content .page-content article.main.about .instagram .mdl-grid {
   max-width: 100%;
+  padding: 0px;
+}
+.mdl-layout__content .page-content article.main.about .instagram .mdl-grid .mdl-cell {
+  margin: 0px;
 }
 .mdl-layout__content .page-content article.main.about .instagram img {
   width: 100%;
   height: auto;
+  transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+.mdl-layout__content .page-content article.main.about .instagram img:hover {
+  filter: grayscale(100%);
+  opacity: 0.6;
 }
 .mdl-layout__content .page-content article.main.subscribe-page {
   min-height: 100%;
@@ -1211,5 +1221,20 @@ footer.mdl-mini-footer ul li a i {
   }
   footer.mdl-mini-footer .mdl-mini-footer__right-section {
     margin: auto;
+  }
+}
+@media (min-width: 840px) {
+  .instagram .mdl-grid .mdl-cell {
+    width: calc(16.66666667%);
+  }
+}
+@media (max-width: 839px) and (min-width: 480px) {
+  .instagram .mdl-grid .mdl-cell {
+    width: calc(25%);
+  }
+}
+@media (max-width: 479px) {
+  .instagram .mdl-grid .mdl-cell {
+    width: calc(50%);
   }
 }
