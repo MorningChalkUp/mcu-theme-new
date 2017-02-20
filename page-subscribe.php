@@ -50,6 +50,8 @@
                         case 'about':
                           echo 'Tell Us More About Youself<br>';
                           break;
+                        case 'list':
+                          echo 'Subscribe To';
                       }
                     }
                   ?>
@@ -132,7 +134,18 @@
                   <div class="mdl-layout-spacer"></div>
 
                   <div class="mdl-cell mdl-cell--4-col">
-                    &nbsp;
+                    Subscribe to:
+                    
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="us">
+                      <input type="checkbox" id="us" class="mdl-checkbox__input" name="us">
+                      <span class="mdl-checkbox__label">Morning Chalk Up</span>
+                    </label>
+
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="eu">
+                      <input type="checkbox" id="eu" class="mdl-checkbox__input" name="eu">
+                      <span class="mdl-checkbox__label">Morning Chalk Up Europe</span>
+                    </label>
+
                   </div>
                   
                   <div class="mdl-layout-spacer"></div>
