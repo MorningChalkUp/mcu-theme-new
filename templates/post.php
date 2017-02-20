@@ -23,35 +23,7 @@ $tags = wp_get_post_tags( $post->ID );
     BY  <a href="<?php echo get_author_posts_url($post->post_author) ?>" title="<?php the_author(); ?>" alt="<?php the_author(); ?>"><?php the_author(); ?></a>   |  STAFF
   </div>
   <div class="share">
-    <button class="mdl-button js-share js-share-facebook fb">
-      <i class="mdi mdi-facebook-box"></i><span class="mdl-cell--hide-phone"> Facebook</span>
-    </button>
-    <button class="mdl-button js-share js-share-twitter tw">
-      <i class="mdi mdi-twitter"></i><span class="mdl-cell--hide-phone"> Twitter</span>
-    </button>
-    <button class="mdl-button js-share js-share-email em">
-      <i class="mdi mdi-email"></i><span class="mdl-cell--hide-phone"> Email</span>
-    </button>
-    <script>
-        $('.js-share-email').on('click', function() {
-          document.location = 'mailto:?subject=<?php the_title(); ?>&body=<?php the_permalink(); ?>';
-        });
-
-        $('.js-share-facebook').on('click', function() {
-          FB.ui({
-            method: 'feed',
-            link: '<?php the_permalink(); ?>?utm_source=facebook&utm_campaign=article-share&utm_medium=share',
-            caption: 'Morning Chalk Up',
-            picture: '<?php echo $thumb_url; ?>',
-            name: '<?php the_title(); ?> | Morning Chalk Up',
-            description: '<?php echo get_the_excerpt(); ?>',
-          }, function(response){});
-        });
-
-        $('.js-share-twitter').on('click', function() {
-          window.open('https://twitter.com/intent/tweet?text=' + '<?php echo urlencode(get_the_title() . ' via Morning Chalk Up' . ' | ' . get_the_permalink()); ?>' + '&link=' + '<?php echo urlencode(get_the_permalink()); ?>', '_blank');
-        });
-    </script>
+    <a data-sumome-share-id="fb105827-64cd-4b3b-b06e-b0d4282f33cf"></a>
   </div>
   <div class="img">
     <img class="feature-img" src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>">
