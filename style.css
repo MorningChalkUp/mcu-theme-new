@@ -269,7 +269,8 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 .mdl-layout__content .page-content article.main .content p,
 .mdl-layout__content .page-content article.main .content div,
-.mdl-layout__content .page-content article.main .content span {
+.mdl-layout__content .page-content article.main .content span,
+.mdl-layout__content .page-content article.main .content li {
   font-size: 18px;
 }
 .mdl-layout__content .page-content article.main .content img {
