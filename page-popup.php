@@ -54,7 +54,7 @@
                 <div class="mdl-layout-spacer"></div>
               </div>
               <?php endif; ?>
-              <form action="/process/morningchalkup.php" method="post">
+              <form action="/process/popup.php" method="post">
                 <div class="mdl-grid fields">
                   <div class="mdl-layout-spacer"></div>
                   <div class="mdl-cell mdl-cell--4-col">
