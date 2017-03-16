@@ -72,7 +72,7 @@
                 </a>
               </div>
             </section>
-            <section class="team-member mdl-cell mdl-cell--4-col">
+            <section class="team-member mdl-cell mdl-cell--6-col">
               <div class="img">
                 <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/jesse-krim.png" alt="Jesse Krim">
               </div>
@@ -88,7 +88,7 @@
                 “Be who you are and say what you feel, because those who mind don’t matter, and those who matter don’t mind.” — Bernard M Baruch
               </div>
             </section>
-            <section class="team-member mdl-cell mdl-cell--4-col">
+            <section class="team-member mdl-cell mdl-cell--6-col">
               <div class="img">
                 <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/jesse-f.png" alt="Jesse Friedl">
               </div>
@@ -102,26 +102,6 @@
               <div class="quote">
                 <div class="title">FAVORITE QUOTE</div><br>
                 “Courage does not always roar. Sometimes it is a quiet voice at the end of the day saying, 'I will try again tomorrow.'” — Maryanne Radmacker
-              </div>
-            </section>
-            <section class="team-member mdl-cell mdl-cell--4-col">
-              <div class="img">
-                <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/katie.jpg" alt="Katie Breazeal">
-              </div>
-              <div class="name">
-                Kati Breazeal
-              </div>
-              <div class="info">
-                <strong>Chief Motivation Officer // Venus de Milo</strong>
-                Location: Texas
-              </div>
-              <div class="quote">
-                <div class="title">FAVORITE QUOTE</div><br>
-                “It matters not how strait the gate,<br>
-                How charged with punishments the scroll,<br>
-                I am the master of my fate,<br>
-                I am the captain of my soul.”<br>
-                — William Ernest Henley
               </div>
             </section>
           </div>
