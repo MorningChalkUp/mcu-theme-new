@@ -21,7 +21,7 @@
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-cell mdl-cell--8-col">
           <h2>Our Mission</h2>
-          <p>The Morning Chalk Up’s mission is to educate, inform and inspire. To find relevelant and timely stories that contribute to the whole community and each reader’s growth as an athlete. We believe that a giving community is a growing community which is why we commit resources to help those in need thrive and grow.</p>
+          <p>The Morning Chalk Up’s mission is to educate, inform and inspire. To find relevant and timely stories that contribute to the whole community and each reader’s growth as an athlete. We believe that a giving community is a growing community which is why we commit resources to help those in need thrive and grow.</p>
         </div>
         <div class="mdl-layout-spacer"></div>
       </section>
