@@ -123,6 +123,36 @@ h5 {
   margin: 0;
 }
 
+blockquote {
+  font-family: @industry;
+  font-weight: @demi;
+  width: 75%;
+  font-size: 36px;
+  text-align: center;
+  margin: auto;
+  font-style: normal;
+  p {
+    font-family: @industry;
+    font-weight: @demi;
+    font-size: 36px !important;
+    line-height: 1.5em;
+    font-style: normal;
+  }
+  &:before {
+    font-family: @industry;
+    content: '“';
+    font-size: 150px;
+    margin-bottom: -100px;
+    display: block;
+    position: relative;
+    left: auto;
+    color: @blue;
+  }
+  &:after {
+    content: '';
+  }
+}
+
 .mdl-grid {
   max-width: 1170px;
   &.feature {
