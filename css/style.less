@@ -125,25 +125,27 @@ h5 {
 
 blockquote {
   font-family: @industry;
-  font-weight: @demi;
+  font-weight: @normal;
   width: 75%;
-  font-size: 30px;
+  font-size: 22px;
   text-align: center;
   margin: auto;
-  font-style: normal;
-  /*line-height: 1.1em;*/
+  font-style: italic;
+  letter-spacing: 1px;
   p,div {
     font-family: @industry;
-    font-weight: @demi;
-    font-size: 26px !important;
+    font-weight: @normal;
+    font-size: 22px !important;
     line-height: 1.3em;
     font-style: normal;
+    letter-spacing: 1px;
   }
   &:before {
     font-family: @industry;
+    font-weight: @demi;
     content: '“';
-    font-size: 120px;
-    margin-bottom: -75px;
+    font-size: 100px;
+    margin-bottom: -70px;
     display: block;
     position: relative;
     left: auto;
@@ -1393,15 +1395,7 @@ footer {
 
 @media screen and (max-width: 839px) {
   blockquote {
-    font-size: 22px;
     width: 100%;
-    p {
-      font-size: 22px !important;
-    }
-    &:before {
-      font-size: 100px;
-      margin-bottom: -60px;
-    }
   }
   .title {
     mark {
