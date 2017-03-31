@@ -90,7 +90,7 @@ blockquote div {
   font-weight: 500;
   font-size: 22px !important;
   line-height: 1.3em;
-  font-style: normal;
+  font-style: italic;
   letter-spacing: 1px;
 }
 blockquote:before {
