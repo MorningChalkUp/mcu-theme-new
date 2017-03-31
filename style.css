@@ -82,12 +82,13 @@ blockquote {
   text-align: center;
   margin: auto;
   font-style: normal;
+  /*line-height: 1.1em;*/
 }
 blockquote p {
   font-family: "industry", sans-serif;
   font-weight: 600;
   font-size: 30px !important;
-  line-height: 1.5em;
+  line-height: 1.1em;
   font-style: normal;
 }
 blockquote:before {
@@ -1203,6 +1204,7 @@ footer.mdl-mini-footer ul li a i {
 @media screen and (max-width: 839px) {
   blockquote {
     font-size: 27px;
+    width: 100%;
   }
   blockquote p {
     font-size: 27px !important;
