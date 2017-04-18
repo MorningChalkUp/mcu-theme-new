@@ -76,27 +76,29 @@ h5 {
 }
 blockquote {
   font-family: "industry", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   width: 75%;
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
   margin: auto;
-  font-style: normal;
-  /*line-height: 1.1em;*/
+  font-style: italic;
+  letter-spacing: 1px;
 }
 blockquote p,
 blockquote div {
   font-family: "industry", sans-serif;
-  font-weight: 600;
-  font-size: 26px !important;
+  font-weight: 500;
+  font-size: 28px !important;
   line-height: 1.3em;
-  font-style: normal;
+  font-style: italic;
+  letter-spacing: 1px;
 }
 blockquote:before {
   font-family: "industry", sans-serif;
+  font-weight: 600;
   content: '“';
-  font-size: 120px;
-  margin-bottom: -75px;
+  font-size: 100px;
+  margin-bottom: -70px;
   display: block;
   position: relative;
   left: auto;
@@ -1204,15 +1206,7 @@ footer.mdl-mini-footer ul li a i {
 }
 @media screen and (max-width: 839px) {
   blockquote {
-    font-size: 22px;
     width: 100%;
-  }
-  blockquote p {
-    font-size: 22px !important;
-  }
-  blockquote:before {
-    font-size: 100px;
-    margin-bottom: -60px;
   }
   .title mark {
     font-size: 36px;
