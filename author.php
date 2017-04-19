@@ -12,7 +12,7 @@
           <div class="mdl-grid">
             <div class="mdl-layout-spacer"></div>
             <div class="mdl-cell mdl-cell--10-col title">
-            
+
               <div class="user-image">
                 <?php if(get_cupp_meta($user_id, 'team-member') != ''): ?>
                   <img src="<?php echo get_cupp_meta($user_id, 'team-member');  ?>" class="circle" alt="<?php echo $curauth->display_name; ?>">
@@ -37,12 +37,12 @@
                   <a target="_balnk" href="https://www.instagram.com/<?php the_field('user_instagram', 'user_' . $user_id) ?>"><i class="mdi mdi-instagram"></i></a>
                 <?php endif; ?>
 
-                <?php if (get_the_author_meta('twitter') != ''): ?>
-                  <a target="_balnk" href="https://twitter.com/<?php the_author_meta('twitter') ?>"><i class="mdi mdi-twitter"></i></a>
+                <?php if (get_the_author_meta('twitter', $user_id) != ''): ?>
+                  <a target="_balnk" href="https://twitter.com/<?php the_author_meta('twitter', $user_id) ?>"><i class="mdi mdi-twitter"></i></a>
                 <?php endif; ?>
 
-                <?php if (get_the_author_meta('facebook') != ''): ?>
-                  <a target="_balnk" href="<?php the_author_meta('facebook') ?>"><i class="mdi mdi-facebook-box"></i></a>
+                <?php if (get_the_author_meta('facebook', $user_id) != ''): ?>
+                  <a target="_balnk" href="<?php the_author_meta('facebook', $user_id) ?>"><i class="mdi mdi-facebook-box"></i></a>
                 <?php endif; ?>
 
               </div>
