@@ -726,6 +726,24 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content section.archive.home article.sub-feature .content .title mark a:hover {
   text-decoration: none;
 }
+.mdl-layout__content .page-content section.archive.author .user-image img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+.mdl-layout__content .page-content section.archive.author .user-image h1 {
+  font-size: 72px;
+  font-family: "industry", sans-serif;
+  font-weight: 600;
+  line-height: 1em;
+}
+.mdl-layout__content .page-content section.archive.author .user-image .location {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1em;
+  color: #595858;
+}
 .mdl-layout__content section.feature.mdl-grid {
   padding: 0;
 }
