@@ -184,3 +184,55 @@ function cptui_register_my_taxes() {
 
 // End cptui_register_my_taxes()
 }
+
+if(function_exists("register_field_group"))
+{
+    register_field_group(array (
+        'id' => 'acf_user-profile',
+        'title' => 'User Profile',
+        'fields' => array (
+            array (
+                'key' => 'field_58f6eacbc4424',
+                'label' => 'Instagram',
+                'name' => 'user_instagram',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => 'Username',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'none',
+                'maxlength' => '',
+            ),
+            array (
+                'key' => 'field_58f6eb3bc4425',
+                'label' => 'Location',
+                'name' => 'user_location',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => 'City, ST',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'ef_user',
+                    'operator' => '==',
+                    'value' => 'all',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array (
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+}
