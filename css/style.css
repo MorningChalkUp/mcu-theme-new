@@ -627,6 +627,12 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   margin-bottom: 50px;
   padding-bottom: 21px;
 }
+.mdl-layout__content .page-content section.archive .user-image img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  margin: 0 0 10px 0;
+}
 .mdl-layout__content .page-content section.archive .title {
   text-align: center;
 }
@@ -634,12 +640,33 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   font-family: "industry", sans-serif;
   margin: 18px 0;
 }
-.mdl-layout__content .page-content section.archive .title p {
+.mdl-layout__content .page-content section.archive .title h1.author {
+  margin: 5px 0;
+}
+.mdl-layout__content .page-content section.archive .title p,
+.mdl-layout__content .page-content section.archive .title div {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   color: #333132;
   line-height: 1.5em;
   margin: 0;
+}
+.mdl-layout__content .page-content section.archive .title p.location,
+.mdl-layout__content .page-content section.archive .title div.location {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  color: #595858;
+  margin: 5px 0;
+}
+.mdl-layout__content .page-content section.archive .title p.social,
+.mdl-layout__content .page-content section.archive .title div.social {
+  font-size: 30px;
+  margin: 5px 0 0 0;
+}
+.mdl-layout__content .page-content section.archive .title p.social i,
+.mdl-layout__content .page-content section.archive .title div.social i {
+  color: rgba(0, 0, 0, 0.870588);
+  margin: 0 5px;
 }
 .mdl-layout__content .page-content section.archive article {
   margin-top: 25px;
@@ -725,6 +752,41 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 .mdl-layout__content .page-content section.archive.home article.sub-feature .content .title mark a:hover {
   text-decoration: none;
+}
+.mdl-layout__content .page-content section.archive.author .user-image {
+  margin: 0 0 10px 0;
+}
+.mdl-layout__content .page-content section.archive.author .user-image img {
+  max-width: 175px;
+  width: 100%;
+  height: auto;
+  margin: 0 0 20px 0;
+}
+.mdl-layout__content .page-content section.archive.author h1 {
+  font-size: 72px;
+  font-family: "industry", sans-serif;
+  font-weight: 600;
+  margin: 5px 0;
+}
+.mdl-layout__content .page-content section.archive.author .location {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #595858;
+  margin: 5px 0;
+}
+.mdl-layout__content .page-content section.archive.author .bio {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 5px 0;
+}
+.mdl-layout__content .page-content section.archive.author .social {
+  font-size: 30px;
+}
+.mdl-layout__content .page-content section.archive.author .social i {
+  color: rgba(0, 0, 0, 0.870588);
+  margin: 0 5px;
 }
 .mdl-layout__content section.feature.mdl-grid {
   padding: 0;

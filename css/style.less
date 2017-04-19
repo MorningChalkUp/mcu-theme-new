@@ -22,6 +22,7 @@ Text Domain: morningchalkup_v2
 @green: #4BB749;
 @dk-green: rgba(75,183,73,0.9);
 @lt-black: rgba(0,0,0,0.6);
+@black: rgba(0, 0, 0, 0.870588);
 
 @fb-btn: #3b5998;
 @fb-btn-hover: #2d4373;
@@ -718,18 +719,43 @@ header {
         padding-bottom: 21px;
       }
       &.archive {
+        .user-image {
+          img {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            margin: 0 0 10px 0;
+          }
+        }
         .title {
           text-align: center;
           h1 {
             font-family: @industry;
             margin: 18px 0;
+            &.author {
+              margin: 5px 0;
+            }
           }
-          p {
+          p, div {
             font-family: @open-sans;
             font-size: 20px;
             color: @grey;
             line-height: 1.5em;
             margin: 0;
+            &.location {
+              font-family: @open-sans;
+              font-weight: @demi;
+              color: #595858;
+              margin: 5px 0;
+            }
+            &.social {
+              font-size: 30px;
+              margin: 5px 0 0 0;
+              i {
+                color: @black;
+                margin: 0 5px;
+              }
+            }
           }
         }
         article {
@@ -818,6 +844,43 @@ header {
                   }
                 }
               }
+            }
+          }
+        }
+        &.author {
+          .user-image {
+            margin: 0 0 10px 0;
+            img {
+              max-width: 175px;
+              width: 100%;
+              height: auto;
+              margin: 0 0 20px 0;
+            }
+          }
+          h1 {
+            font-size: 72px;
+            font-family: @industry;
+            font-weight: @demi;
+            margin: 5px 0;
+          }
+          .location {
+            font-family: @open-sans;
+            font-weight: @demi;
+            font-size: 30px;
+            color: #595858;
+            margin: 5px 0;
+          }
+          .bio {
+            font-family: @open-sans;
+            font-weight: @normal;
+            font-size: 24px;
+            margin: 5px 0;
+          }
+          .social {
+            font-size: 30px;
+            i {
+              color: @black;
+              margin: 0 5px;
             }
           }
         }
