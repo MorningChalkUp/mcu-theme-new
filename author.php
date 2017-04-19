@@ -12,6 +12,7 @@
           <div class="mdl-grid">
             <div class="mdl-layout-spacer"></div>
             <div class="mdl-cell mdl-cell--10-col title">
+            
               <div class="user-image">
                 <?php if(get_cupp_meta($user_id, 'team-member') != ''): ?>
                   <img src="<?php echo get_cupp_meta($user_id, 'team-member');  ?>" class="circle" alt="<?php echo $curauth->display_name; ?>">
