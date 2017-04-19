@@ -719,18 +719,44 @@ header {
         padding-bottom: 21px;
       }
       &.archive {
+        .user-image {
+          img {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            margin: 0 0 10px 0;
+          }
+        }
         .title {
           text-align: center;
           h1 {
             font-family: @industry;
             margin: 18px 0;
+            &.author {
+              margin: 5px 0;
+            }
           }
-          p {
+          p, div {
             font-family: @open-sans;
             font-size: 20px;
             color: @grey;
             line-height: 1.5em;
             margin: 0;
+            &.location {
+              font-family: @open-sans;
+              font-weight: @demi;
+              font-size: 32px;
+              color: #595858;
+              margin: 5px 0;
+            }
+            &.social {
+              font-size: 30px;
+              margin: 5px 0 0 0;
+              i {
+                color: @black;
+                margin: 0 5px;
+              }
+            }
           }
         }
         article {

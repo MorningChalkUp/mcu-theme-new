@@ -8,7 +8,7 @@
   <main class="mdl-layout__content">
     <div class="page-content">
       <div class="mdl-grid">
-        <section class="mdl-cell mdl-cell--12-col main archive author">
+        <section class="mdl-cell mdl-cell--12-col main archive">
           <div class="mdl-grid">
             <div class="mdl-layout-spacer"></div>
             <div class="mdl-cell mdl-cell--10-col title">
@@ -21,7 +21,7 @@
                 <?php endif; ?>
               </div>
               
-              <h1><?php echo $curauth->display_name; ?></h1>
+              <h1 class="author"><?php echo $curauth->display_name; ?></h1>
               
               <div class="location"><?php the_field('user_location', 'user_' . $user_id) ?></div>
               

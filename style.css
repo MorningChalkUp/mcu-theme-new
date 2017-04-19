@@ -627,6 +627,12 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   margin-bottom: 50px;
   padding-bottom: 21px;
 }
+.mdl-layout__content .page-content section.archive .user-image img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  margin: 0 0 10px 0;
+}
 .mdl-layout__content .page-content section.archive .title {
   text-align: center;
 }
@@ -634,12 +640,34 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   font-family: "industry", sans-serif;
   margin: 18px 0;
 }
-.mdl-layout__content .page-content section.archive .title p {
+.mdl-layout__content .page-content section.archive .title h1.author {
+  margin: 5px 0;
+}
+.mdl-layout__content .page-content section.archive .title p,
+.mdl-layout__content .page-content section.archive .title div {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   color: #333132;
   line-height: 1.5em;
   margin: 0;
+}
+.mdl-layout__content .page-content section.archive .title p.location,
+.mdl-layout__content .page-content section.archive .title div.location {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #595858;
+  margin: 5px 0;
+}
+.mdl-layout__content .page-content section.archive .title p.social,
+.mdl-layout__content .page-content section.archive .title div.social {
+  font-size: 30px;
+  margin: 5px 0 0 0;
+}
+.mdl-layout__content .page-content section.archive .title p.social i,
+.mdl-layout__content .page-content section.archive .title div.social i {
+  color: rgba(0, 0, 0, 0.870588);
+  margin: 0 5px;
 }
 .mdl-layout__content .page-content section.archive article {
   margin-top: 25px;
