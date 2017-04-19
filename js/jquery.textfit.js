@@ -58,6 +58,8 @@
         this.css("font-size", --fs + "px");
       }
 
+      this.css("font-size", --fs + "px");
+
       removeWrap(i);
       return this;
     },

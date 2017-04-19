@@ -9,7 +9,7 @@ if ( isset( $_GET['keyword'] ) ) {
   $s = '';
 }
 
-$cat_mcu = get_category_by_slug( 'mcu' );
+$cat_mcu = get_category_by_slug( 'morningchalkup' );
 $cat_mcu_id = $cat_mcu->term_id;
 $cat_mcu_link = get_category_link( $cat_mcu_id );
 
@@ -44,15 +44,16 @@ query_posts( $args );
 <main class="mdl-layout__content">
   <div class="page-content">
     <div class="mdl-grid">
-      <section class="mdl-cell mdl-cell--12-col">
+      <div class="mdl-layout-spacer"></div>
+      <section class="mdl-cell mdl-cell--8-col">
         <h1 class="center">Search Results</h1>
+
       </section>
+      <div class="mdl-layout-spacer"></div>
     </div>
      <div class="mdl-grid">
       <div class="mdl-layout-spacer"></div>
-        <section class="mdl-cell mdl-cell--2-col search-side">
-
-          <div class="title"><strong>Type</strong></div>
+        <section class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet search-side">
           
           <?php if ( $s != '' ) : ?>
             <form class="filters" action="/search/?keyword=<?php echo $s; ?>" method="post">
@@ -70,8 +71,8 @@ query_posts( $args );
               <span class="mdl-checkbox__label">Stories</span>
             </label>
 
-            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="mcu">
-              <input type="checkbox" name="filter[]" id="mcu" class="mdl-checkbox__input" value="mcu" <?php echo ( in_array( 'mcu', $_POST['filter'] ) ? 'checked' : '' ); ?>>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="morningchalkup">
+              <input type="checkbox" name="filter[]" id="morningchalkup" class="mdl-checkbox__input" value="morningchalkup" <?php echo ( in_array( 'morningchalkup', $_POST['filter'] ) ? 'checked' : '' ); ?>>
               <span class="mdl-checkbox__label">Morning Chalk Up</span>
             </label>
 

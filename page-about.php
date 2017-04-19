@@ -21,7 +21,7 @@
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-cell mdl-cell--8-col">
           <h2>Our Mission</h2>
-          <p>The Morning Chalk Up’s mission is to educate, inform and inspire. To find relevelant and timely stories that contribute to the whole community and each reader’s growth as an athlete. We believe that a giving community is a growing community which is why we commit resources to help those in need thrive and grow.</p>
+          <p>The Morning Chalk Up’s mission is to educate, inform and inspire. To find relevant and timely stories that contribute to the whole community and each reader’s growth as an athlete. We believe that a giving community is a growing community which is why we commit resources to help those in need thrive and grow.</p>
         </div>
         <div class="mdl-layout-spacer"></div>
       </section>
@@ -42,7 +42,7 @@
                 Location: California
               </div>
               <div class="quote">
-                FAVORITE QUOTE<br>
+                <div class="title">FAVORITE QUOTE</div><br>
                 “Write it on your heart that every day is the best day in the year. He is rich who owns the day, and no one owns the day who allows it to be invaded with fret and anxiety.” — Ralph Waldo Emerson
               </div>
               <div class="email">
@@ -63,7 +63,7 @@
                 Location: Florida
               </div>
               <div class="quote">
-                <div>FAVORITE QUOTE</div>
+                <div class="title">FAVORITE QUOTE</div>
                 “I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me. And when it has gone past I will turn the inner eye to see its path. Where the fear has gone there will be nothing. Only I will remain.” — Frank Herbert
               </div>
               <div class="email">
@@ -72,23 +72,23 @@
                 </a>
               </div>
             </section>
-            <section class="team-member mdl-cell mdl-cell--4-col">
+            <section class="team-member mdl-cell mdl-cell--6-col">
               <div class="img">
-                <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/jesse-k.png" alt="Jesse Krim">
+                <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/jesse-krim.png" alt="Jesse Krim">
               </div>
               <div class="name">
                 Jesse Krim
               </div>
               <div class="info">
-                <strong>Events Curator // CrossFit Assassin</strong>
+                <strong>Events Curator // Travel Aficionado</strong>
                 Location: New York
               </div>
               <div class="quote">
-                FAVORITE QUOTE<br>
-                “Be who you are and say what you feel, because those who mind don’t matter, and those who matter don’t mind.”
+                <div class="title">FAVORITE QUOTE</div><br>
+                “Be who you are and say what you feel, because those who mind don’t matter, and those who matter don’t mind.” — Bernard M Baruch
               </div>
             </section>
-            <section class="team-member mdl-cell mdl-cell--4-col">
+            <section class="team-member mdl-cell mdl-cell--6-col">
               <div class="img">
                 <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/jesse-f.png" alt="Jesse Friedl">
               </div>
@@ -100,35 +100,45 @@
                 Location: Colorado
               </div>
               <div class="quote">
-                FAVORITE QUOTE<br>
-                Courage does not always roar. Sometimes it is a quiet voice at the end of the day saying, “I will try again tomorrow.” — Maryanne Radmacker
-              </div>
-            </section>
-            <section class="team-member mdl-cell mdl-cell--4-col">
-              <div class="img">
-                <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/katie.jpg" alt="Katie Breazeal">
-              </div>
-              <div class="name">
-                Kati Breazeal
-              </div>
-              <div class="info">
-                <strong>Chief Motivation Officer // Venus de Milo</strong>
-                Location: Texas
-              </div>
-              <div class="quote">
-                FAVORITE QUOTE<br>
-                It matters not how strait the gate,<br>
-                How charged with punishments the scroll,<br>
-                I am the master of my fate,<br>
-                I am the captain of my soul.<br>
-                — William Ernest Henley
+                <div class="title">FAVORITE QUOTE</div><br>
+                “Courage does not always roar. Sometimes it is a quiet voice at the end of the day saying, 'I will try again tomorrow.'” — Maryanne Radmacker
               </div>
             </section>
           </div>
         </div>
         <div class="mdl-layout-spacer"></div>
       </section>
-      <section class="instagram"></section>
+      <section class="instagram mdl-grid">
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-cell mdl-cell--10-col">
+          <h2>MORNING CHALK UP ON INSTAGRAM</h2>
+        </div>
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-grid">
+        <?php 
+          $url = 'https://api.instagram.com/v1/users/3055294744/media/recent/?access_token=3055294744.1b0f870.038ae2e4d9af424dbddbfbea72ccb4a1&count=12';
+
+          $ch = curl_init($url);
+          curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+          curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+          curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+          curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+          curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
+          curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+          $r = curl_exec($ch);
+          curl_close($ch);
+          $result = json_decode($r, true);
+
+          foreach ($result['data'] as $image) {
+            echo '<div class="mdl-cell mdl-cell--2-col">';
+              echo '<a href="' . $image['link'] . '" target="_blank"><img src="' . $image['images']['standard_resolution']['url'] . '"></a>';
+            echo '</div>';
+          }
+        ?>
+        </div>
+
+
+      </section>
 
     </article>
 

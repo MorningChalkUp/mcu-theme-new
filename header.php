@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="<?php echo get_template_directory_uri(); ?>/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="<?php echo get_template_directory_uri(); ?>/immybox/immybox.css" media="all" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/getmdl-select.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/mdl-selectfield.min.css">
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-
+    
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-2.2.3.min.js"></script>
     <script src="https://use.typekit.net/ydo2tvd.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
@@ -26,6 +29,14 @@
     <![endif]-->
 
     <?php wp_head(); ?>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5MZWLQK');</script>
+    <!-- End Google Tag Manager -->
   </head>
   <body>
     <?php get_template_part( 'templates/fb' ); ?>

@@ -1,5 +1,5 @@
 <?php
-  $cat_mcu = get_category_by_slug( 'mcu' );
+  $cat_mcu = get_category_by_slug( 'morningchalkup' );
   $cat_mcu_id = $cat_mcu->term_id;
   $cat_mcu_link = get_category_link( $cat_mcu_id );
 

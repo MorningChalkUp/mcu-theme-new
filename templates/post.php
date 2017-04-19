@@ -1,7 +1,15 @@
 <?php 
 $thumb_id = get_post_thumbnail_id();
-$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'featured', true);
+
+$thumb_url_array = wp_get_attachment_image_src( $thumb_id, 'featured', true );
 $thumb_url = $thumb_url_array[0];
+
+$thumb_size = getimagesize( $thumb_url );
+
+if ( $thumb_size[0] != 855 || $thumb_size[1] != 590 ) {
+  $thumb_url_array = wp_get_attachment_image_src( $thumb_id, 'featured-sm', true );
+  $thumb_url = $thumb_url_array[0];
+}
 
 $caption = get_post( $thumb_id )->post_excerpt;
 
@@ -15,15 +23,7 @@ $tags = wp_get_post_tags( $post->ID );
     BY  <a href="<?php echo get_author_posts_url($post->post_author) ?>" title="<?php the_author(); ?>" alt="<?php the_author(); ?>"><?php the_author(); ?></a>   |  STAFF
   </div>
   <div class="share">
-    <button class="mdl-button js-share-facebook fb">
-      <i class="mdi mdi-facebook-box"></i> Facebook
-    </button>
-    <button class="mdl-button js-share-twitter tw">
-      <i class="mdi mdi-twitter"></i> Twitter
-    </button>
-    <button class="mdl-button js-share-email em">
-      <i class="mdi mdi-email"></i> Email
-    </button>
+    <a data-sumome-share-id="fb105827-64cd-4b3b-b06e-b0d4282f33cf"></a>
   </div>
   <div class="img">
     <img class="feature-img" src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>">

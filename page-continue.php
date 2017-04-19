@@ -20,6 +20,8 @@
                 <div class="mdl-cell mdl-cell--10-col headline">
                   <img src="<?php echo get_template_directory_uri(); ?>/img/chalkup.png" alt="Morning Chalk Up Europe" style="max-width: 370px;width: 100%;display: block;margin: 0 auto 10px auto;">
                   The Morning Chalk Up is the daily newletter for people who do CrossFit<sup style="font-size: small;">&reg;</sup>. Get the email that athletes, insiders and fans are reading every morning.
+                  <br><br>
+                  Thank you for subscribing! Please share a little more info about yourself.
                 </div>
 
                 <div class="mdl-layout-spacer"></div>
@@ -56,7 +58,7 @@
                 <div class="mdl-layout-spacer"></div>
               </div>
               <?php endif; ?>
-              <form action="/process/subscribe.php" method="post">
+              <form action="/process/continue.php" method="post">
                 <div class="mdl-grid fields">
                   <div class="mdl-layout-spacer"></div>
                   <div class="mdl-cell mdl-cell--4-col">
@@ -156,7 +158,7 @@
 
                   <div class="mdl-cell mdl-cell--4-col">
                     <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect submit">
-                      Subscribe
+                      Continue
                     </button>
                   </div>
 

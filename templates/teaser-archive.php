@@ -15,13 +15,15 @@ if ( has_post_thumbnail() ) {
     </a>
   </div>
   <div class="meta">
+    <span>
     <?php 
       $categories = get_the_category( $post->ID );
       if ( ! empty( $categories ) ) {
           echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
       }
     ?>
-    <span>•</span>
+    </span>
+    <span class="spacer">•</span>
     <?php echo get_the_date('M j, Y'); ?>
   </div>
   <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>

@@ -9,17 +9,23 @@
 
     <article class="main subscribe-page">
       <section class="hero">
-        <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--12-col mdl-grid">
+        <div class="mdl-grid" style="padding-bottom: 0">
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-cell mdl-cell--8-col title">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/eu.svg" alt="Morning Chalk Up Europe" style="max-width: 100px;width: 100%;float: right;">
+          </div>
+        </div>
+        <div class="mdl-grid" style="padding-top: 0">
+          <div class="mdl-cell mdl-cell--12-col mdl-grid" style="padding-top: 0; margin-top: 0;">
             <div class="mdl-layout-spacer"></div>
-            <div class="mdl-cell mdl-cell--10-col form">
+            <div class="mdl-cell mdl-cell--10-col form" style="margin-top: 0">
               <div class="mdl-grid">
                 
                 <div class="mdl-layout-spacer"></div>
 
-                <div class="mdl-cell mdl-cell--10-col headline">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/chalkup.png" alt="Morning Chalk Up Europe" style="max-width: 370px;width: 100%;display: block;margin: 0 auto 10px auto;">
-                  The Morning Chalk Up is the daily newletter for people who do CrossFit<sup style="font-size: small;">&reg;</sup>. Get the email that athletes, insiders and fans are reading every morning.
+                <div class="mdl-cell mdl-cell--10-col headline" style="margin-top: 0;">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/chalkup-eu.svg" alt="Morning Chalk Up Europe" style="max-width: 370px;width: 100%;display: block;margin: 0 auto 10px auto;">
+                  The daily newsletter for CrossFitters in Europe. Be ignored no longer.
                 </div>
 
                 <div class="mdl-layout-spacer"></div>
@@ -46,8 +52,6 @@
                         case 'about':
                           echo 'Tell Us More About Youself<br>';
                           break;
-                        case 'list':
-                          echo 'Subscribe To';
                       }
                     }
                   ?>
@@ -56,7 +60,7 @@
                 <div class="mdl-layout-spacer"></div>
               </div>
               <?php endif; ?>
-              <form action="/process/subscribe.php" method="post">
+              <form action="/process/europe.php" method="post">
                 <div class="mdl-grid fields">
                   <div class="mdl-layout-spacer"></div>
                   <div class="mdl-cell mdl-cell--4-col">
@@ -82,8 +86,8 @@
 
                   <div class="mdl-cell mdl-cell--4-col">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                      <input class="mdl-textfield__input" type="text" id="affiliate" name="affiliate">
-                      <label class="mdl-textfield__label" for="affiliate">Search For Your Box</label>
+                      <input class="mdl-textfield__input" type="text" id="country" name="country">
+                      <label class="mdl-textfield__label" for="country">Country *</label>
                     </div>
                   </div>
 
@@ -121,27 +125,19 @@
                   <div class="mdl-layout-spacer"></div>
 
                   <div class="mdl-cell mdl-cell--4-col">
-                    Subscribe to:
-                    
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="us">
-                      <input type="checkbox" id="us" class="mdl-checkbox__input" name="us">
-                      <span class="mdl-checkbox__label">Morning Chalk Up</span>
-                    </label>
-                    
-                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="eu">
-                      <input type="checkbox" id="eu" class="mdl-checkbox__input" name="eu">
-                      <span class="mdl-checkbox__label">Morning Chalk Up Europe</span>
-                    </label>
-
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input class="mdl-textfield__input" type="text" id="affiliate" name="affiliate">
+                      <label class="mdl-textfield__label" for="affiliate">Search For Your Box</label>
+                    </div>
                   </div>
-                  
+
                   <div class="mdl-layout-spacer"></div>
 
                   <div class="mdl-cell mdl-cell--4-col">
                     &nbsp;
                   </div>
-                  
-                  <div class="mdl-layout-spacer"></div>
+
+                   <div class="mdl-layout-spacer"></div>
                 </div>
                 <div class="mdl-grid fields">
                   <div class="mdl-layout-spacer"></div>
