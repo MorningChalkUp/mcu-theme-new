@@ -14,7 +14,9 @@ p,
 div {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  line-height: 1.5em;
+  line-height: 1.6em;
+  font-size: 20px;
+  color: #333132;
 }
 .center {
   text-align: center;
@@ -83,6 +85,7 @@ blockquote {
   margin: auto;
   font-style: italic;
   letter-spacing: 1px;
+  color: #333132;
 }
 blockquote p,
 blockquote div {
@@ -92,6 +95,7 @@ blockquote div {
   line-height: 1.3em;
   font-style: italic;
   letter-spacing: 1px;
+  color: #333132;
 }
 blockquote:before {
   font-family: "industry", sans-serif;
@@ -298,13 +302,13 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   background-color: #008061;
 }
 .mdl-layout__content .page-content article.main .content {
-  font-size: 18px;
+  font-size: 20px;
 }
 .mdl-layout__content .page-content article.main .content p,
 .mdl-layout__content .page-content article.main .content div,
 .mdl-layout__content .page-content article.main .content span,
 .mdl-layout__content .page-content article.main .content li {
-  font-size: 18px;
+  font-size: 20px;
 }
 .mdl-layout__content .page-content article.main .content img {
   max-width: 100%;
