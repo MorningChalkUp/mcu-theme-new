@@ -711,6 +711,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content section.archive.home article.quote #quote1 #textfit-inner,
 .mdl-layout__content .page-content section.archive.home article.quote #quote2 #textfit-inner {
   line-height: normal;
+  font-size: inherit;
 }
 .mdl-layout__content .page-content section.archive.home article.sub-feature {
   background-size: cover;

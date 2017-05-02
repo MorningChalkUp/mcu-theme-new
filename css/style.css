@@ -14,7 +14,9 @@ p,
 div {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  line-height: 1.5em;
+  line-height: 1.6em;
+  font-size: 20px;
+  color: #333132;
 }
 .center {
   text-align: center;
@@ -73,11 +75,6 @@ h5 {
   font-weight: 600;
   line-height: 1.5em;
   margin: 0;
-}
-p {
-  font-size: 20px;
-  line-height: 1.6em;
-  color: #333132;
 }
 blockquote {
   font-family: "industry", sans-serif;
@@ -305,13 +302,13 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   background-color: #008061;
 }
 .mdl-layout__content .page-content article.main .content {
-  font-size: 18px;
+  font-size: 20px;
 }
 .mdl-layout__content .page-content article.main .content p,
 .mdl-layout__content .page-content article.main .content div,
 .mdl-layout__content .page-content article.main .content span,
 .mdl-layout__content .page-content article.main .content li {
-  font-size: 18px;
+  font-size: 20px;
 }
 .mdl-layout__content .page-content article.main .content img {
   max-width: 100%;
@@ -714,6 +711,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 .mdl-layout__content .page-content section.archive.home article.quote #quote1 #textfit-inner,
 .mdl-layout__content .page-content section.archive.home article.quote #quote2 #textfit-inner {
   line-height: normal;
+  font-size: auto;
 }
 .mdl-layout__content .page-content section.archive.home article.sub-feature {
   background-size: cover;
