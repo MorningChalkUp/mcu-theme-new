@@ -67,8 +67,14 @@
               <?php endif; ?>
 
               <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell--12-col">
-                  <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>
+                <div class="mdl-cell mdl-cell--12-col center">
+                  <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true" scope="public_profile,email"></div>
+                </div>
+              </div>
+
+              <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--12-col center">
+                  Or
                 </div>
               </div>
 
