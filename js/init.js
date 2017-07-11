@@ -4,10 +4,10 @@ $(document).ready(function(){
 
 });
 
-$(window).on('load', function() {
+/*$(window).on('load', function() {
     $('#quote1').textfit('bestfit');
     $('#quote2').textfit('bestfit');
-});
+});*/
 
 $('input.event-state').on('change', function() {
   if (window.location.search !== "") {

@@ -717,6 +717,12 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   line-height: normal;
   font-size: inherit;
 }
+.mdl-layout__content .page-content section.archive.home article.quote #quote1 {
+  font-size: 76px;
+}
+.mdl-layout__content .page-content section.archive.home article.quote #quote2 {
+  font-size: 61px;
+}
 .mdl-layout__content .page-content section.archive.home article.sub-feature {
   background-size: cover;
   background-position: top center;
@@ -1232,6 +1238,54 @@ footer.mdl-mini-footer ul li a i {
   background: rgba(0, 0, 0, 0.5);
   z-index: 5;
   display: none;
+}
+@media screen and (max-width: 1190px) {
+  #quote1 {
+    font-size: 69px;
+  }
+  #quote2 {
+    font-size: 57px;
+  }
+}
+@media screen and (max-width: 943px) {
+  #quote1 {
+    font-size: 59px;
+  }
+  #quote2 {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 840px) {
+  #quote1 {
+    font-size: 70px;
+  }
+  #quote2 {
+    font-size: 57px;
+  }
+}
+@media screen and (max-width: 780px) {
+  #quote1 {
+    font-size: 60px;
+  }
+  #quote2 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 593px) {
+  #quote1 {
+    font-size: 47px;
+  }
+  #quote2 {
+    font-size: 41px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #quote1 {
+    font-size: 63px;
+  }
+  #quote2 {
+    font-size: 54px;
+  }
 }
 @media screen and (max-width: 1024px) {
   header.mdl-layout__header .mdl-layout__header-row {
