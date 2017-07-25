@@ -116,7 +116,7 @@
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-grid">
         <?php 
-          $url = 'https://api.instagram.com/v1/users/3055294744/media/recent/?access_token=3055294744.1b0f870.038ae2e4d9af424dbddbfbea72ccb4a1&count=12';
+          $url = 'https://api.instagram.com/v1/users/3055294744/media/recent/?access_token=3055294744.1b0f870.28ca4c901d834b9085f4c662b9253a3f&count=12';
 
           $ch = curl_init($url);
           curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
