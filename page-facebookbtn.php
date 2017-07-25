@@ -5,13 +5,38 @@
 <?php get_header(); ?>
 
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script>
+function statusChangeCallback(response) {
+  if (response.status === 'connected') {
+    mcu_fb_signup();
+  }
+}
+
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+
+
+(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=1635216993444923";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+
+function mcu_fb_signup() {
+  FB.api('/me?fields=name,email', function(response) {
+    $('#FBID').val(response.id);
+    $('#full-name').val(response.name);
+    $('#email').val(response.email);
+    $('#about').val('CrossFit Fan!');
+    $('subscribe').submit();
+  });
+}
+</script>
 
 <main class="mdl-layout__content">
   <div class="page-content">
@@ -68,7 +93,12 @@
 
               <div class="mdl-grid">
                 <div class="mdl-cell mdl-cell--12-col center">
-                  <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true" scope="public_profile,email"></div>
+                  <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true" scope="public_profile,email,user_location" onlogin="checkLoginState();"></div>
+                  <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+                  </fb:login-button> -->
+
+                  <div id="status">
+                  </div>
                 </div>
               </div>
 
@@ -78,7 +108,7 @@
                 </div>
               </div>
 
-              <form action="/process/facebook.php" method="post">
+              <form action="/process/fb-process.php" id="subscribe" method="post">
                 <div class="mdl-grid fields">
                   <div class="mdl-layout-spacer"></div>
                   <div class="mdl-cell mdl-cell--4-col">
@@ -146,7 +176,7 @@
                     Subscribe to:
                     
                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="us">
-                      <input type="checkbox" id="us" class="mdl-checkbox__input" name="us">
+                      <input type="checkbox" checked="checked" id="us" class="mdl-checkbox__input" name="us">
                       <span class="mdl-checkbox__label">Morning Chalk Up</span>
                     </label>
                     
@@ -174,6 +204,7 @@
                     <input type="hidden" name="UTM_MEDIUM" id="UTM_MEDIUM" value="">
                     <input type="hidden" name="UTM_CAMP" id="UTM_CAMP" value="">
                     <input type="hidden" name="GCLID" id="GCLID" value="">
+                    <input type="hidden" name="FBID" id="FBID" value="">
                   </div>
 
                   <div class="mdl-cell mdl-cell--4-col">
