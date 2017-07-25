@@ -33,7 +33,7 @@ function mcu_fb_signup() {
     $('#full-name').val(response.name);
     $('#email').val(response.email);
     $('#about').val('CrossFit Fan!');
-    $('subscribe').submit();
+    $('#subscribe').submit();
   });
 }
 </script>
