@@ -4,6 +4,16 @@ $(document).ready(function(){
 
 });
 
+function toggel(id) {
+  if ($(id).hasClass('hidden')) {
+    $(id).removeClass('hidden');
+    $(id+'-i').text('keyboard_arrow_down');
+  } else {
+    $(id).addClass('hidden');
+    $(id+'-i').text('keyboard_arrow_right');
+  }
+}
+
 /*$(window).on('load', function() {
     $('#quote1').textfit('bestfit');
     $('#quote2').textfit('bestfit');
