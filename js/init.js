@@ -14,6 +14,13 @@ function toggel(id) {
   }
 }
 
+function tab(id, tab) {
+  $('.day').addClass('hidden');
+  $(id).removeClass('hidden');
+  $('li.mdl-list__item').removeClass('active');
+  $('li.mdl-list__item', tab).addClass('active');
+}
+
 /*$(window).on('load', function() {
     $('#quote1').textfit('bestfit');
     $('#quote2').textfit('bestfit');
