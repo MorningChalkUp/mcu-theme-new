@@ -336,6 +336,9 @@ header {
           max-width: 770px;
           font-size: 18px;
         }
+        &.schedule {
+          font-size: 18px;
+        }
         h2 {
           font-family: @open-sans;
           font-weight: @bold;
@@ -1659,6 +1662,61 @@ footer {
       .mdl-cell {
         width: calc(50% - 0px);
       }
+    }
+  }
+}
+
+.tabs {
+  .demo-list-item {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  li {
+    height: 30px;
+    border-left: 3px solid transparent;
+    margin-bottom: 10px;
+    cursor: pointer;
+    &.active {
+      border-left: 3px solid #3D5BA9;
+      text-decoration: none;
+    }
+    &:hover {
+      background-color: rgba(158,158,158,.2);
+    }
+  }
+  a {
+    color: #000000;
+    font-weight: 400;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.question-section {
+  font-size: 18px !important;
+  margin-bottom: 14px;
+
+  .question {
+    font-size: 18px !important;
+    cursor: pointer;
+  }
+  
+  .answer {
+    font-size: 16px !important;
+    color: rgba(51, 49, 50, .75);
+    margin: 10px 0 10px 10px;
+    div {
+      font-size: 16px !important;
+      color: rgba(51, 49, 50, .75);
+      margin: 5px 0;
+    }
+  }
+
+  a {
+    color: #3D5BA9;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

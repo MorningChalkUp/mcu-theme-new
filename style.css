@@ -262,6 +262,9 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   max-width: 770px;
   font-size: 18px;
 }
+.mdl-layout__content .page-content article.main.schedule {
+  font-size: 18px;
+}
 .mdl-layout__content .page-content article.main h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -1400,4 +1403,52 @@ footer.mdl-mini-footer ul li a i {
   .instagram .mdl-grid .mdl-cell {
     width: calc(50%);
   }
+}
+.tabs .demo-list-item {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.tabs li {
+  height: 30px;
+  border-left: 3px solid transparent;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.tabs li.active {
+  border-left: 3px solid #3D5BA9;
+  text-decoration: none;
+}
+.tabs li:hover {
+  background-color: rgba(158, 158, 158, 0.2);
+}
+.tabs a {
+  color: #000000;
+  font-weight: 400;
+}
+.tabs a:hover {
+  text-decoration: none;
+}
+.question-section {
+  font-size: 18px !important;
+  margin-bottom: 14px;
+}
+.question-section .question {
+  font-size: 18px !important;
+  cursor: pointer;
+}
+.question-section .answer {
+  font-size: 16px !important;
+  color: rgba(51, 49, 50, 0.75);
+  margin: 10px 0 10px 10px;
+}
+.question-section .answer div {
+  font-size: 16px !important;
+  color: rgba(51, 49, 50, 0.75);
+  margin: 5px 0;
+}
+.question-section a {
+  color: #3D5BA9;
+}
+.question-section a:hover {
+  text-decoration: underline;
 }
