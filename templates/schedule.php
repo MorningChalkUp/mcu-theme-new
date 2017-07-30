@@ -20,6 +20,9 @@ $tags = wp_get_post_tags( $post->ID ); ?>
     <div class="mdl-grid">
       <article class="mdl-cell mdl-cell--12-col main schedule">
         <h1><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
+        <div class="content">
+          <?php the_content(); ?>
+        </div>
         <!-- <div class="meta">
           <?php the_date('F j, Y'); ?><br>
         </div> -->
@@ -35,9 +38,9 @@ $tags = wp_get_post_tags( $post->ID ); ?>
           </button>
         </div>
         <?php if ($thumb_url): ?>
-        <div class="img">
+        <!-- <div class="img">
           <img class="feature-img" src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>">
-        </div>
+        </div> -->
         <?php endif ?>
       </article>
     </div>
