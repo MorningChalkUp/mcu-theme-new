@@ -250,7 +250,7 @@ $tags = wp_get_post_tags( $post->ID ); ?>
           <div class="question-section">
             <div class="question" onclick="toggel('#th3');">
               <i id="th3-i" class="material-icons" style="float: right;">keyboard_arrow_right</i>
-              Beer Pong @ Kill Cliff
+              Beer Pong @ Kill Cliff Tent
             </div>
 
             <div id="th3" class="hidden answer">
@@ -258,7 +258,7 @@ $tags = wp_get_post_tags( $post->ID ); ?>
                 Show off your beer pong skills on some special Kill Cliff branded beer pong tables, paired with some vodka and your favorite Kill Cliff flavors.
               </div>
               <div>
-                <strong>Location:</strong> ???
+                <strong>Location:</strong> Kill Cliff Tent in Vendor Village
               </div>
             </div>
           </div>
@@ -413,6 +413,22 @@ $tags = wp_get_post_tags( $post->ID ); ?>
               </div>
               <div>
                 <strong>Location: </strong> Paleoethics Tent in Vendor Village
+              </div>
+            </div>
+          </div>
+
+          <div class="question-section">
+            <div class="question" onclick="toggel('#f12');">
+              <i id="f12-i" class="material-icons" style="float: right;">keyboard_arrow_right</i>
+              Beer Pong @ Kill Cliff Tent
+            </div>
+
+            <div id="f12" class="hidden answer">
+              <div>
+                Show off your beer pong skills on some special Kill Cliff branded beer pong tables, paired with some vodka and your favorite Kill Cliff flavors.
+              </div>
+              <div>
+                <strong>Location:</strong> Kill Cliff Tent in Vendor Village
               </div>
             </div>
           </div>
@@ -625,6 +641,22 @@ $tags = wp_get_post_tags( $post->ID ); ?>
             </div>
           </div>
 
+          <div class="question-section">
+            <div class="question" onclick="toggel('#sa14');">
+              <i id="sa14-i" class="material-icons" style="float: right;">keyboard_arrow_right</i>
+              Beer Pong @ Kill Cliff Tent
+            </div>
+
+            <div id="sa14" class="hidden answer">
+              <div>
+                Show off your beer pong skills on some special Kill Cliff branded beer pong tables, paired with some vodka and your favorite Kill Cliff flavors.
+              </div>
+              <div>
+                <strong>Location:</strong> Kill Cliff Tent in Vendor Village
+              </div>
+            </div>
+          </div>
+
           <p><strong>10 AM</strong></p>
 
           <div class="question-section">
@@ -825,6 +857,22 @@ $tags = wp_get_post_tags( $post->ID ); ?>
               </div>
               <div>
                 <strong>Location: </strong> Paleoethics Tent in Vendor Village
+              </div>
+            </div>
+          </div>
+
+          <div class="question-section">
+            <div class="question" onclick="toggel('#su10');">
+              <i id="su10-i" class="material-icons" style="float: right;">keyboard_arrow_right</i>
+              Beer Pong @ Kill Cliff Tent
+            </div>
+
+            <div id="su10" class="hidden answer">
+              <div>
+                Show off your beer pong skills on some special Kill Cliff branded beer pong tables, paired with some vodka and your favorite Kill Cliff flavors.
+              </div>
+              <div>
+                <strong>Location:</strong> Kill Cliff Tent in Vendor Village
               </div>
             </div>
           </div>
