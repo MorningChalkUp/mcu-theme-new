@@ -451,7 +451,7 @@ $tags = wp_get_post_tags( $post->ID ); ?>
           <div class="question-section">
             <div class="question" onclick="toggel('#f4');">
               <i id="f4-i" class="material-icons" style="float: right;">keyboard_arrow_right</i>
-              RWOD with Sam Dancer and KILL CLIFF @ CrossFit Foremost
+              WOD with Sam Dancer and KILL CLIFF @ CrossFit Foremost
             </div>
 
             <div id="f4" class="hidden answer">
