@@ -5,6 +5,7 @@
   $feature_args = array (
     // 'category__in' => $feature_cats,
     'posts_per_page'  => 1,
+    'post_type' => array('post', 'page'),
     'meta_query'      => array(
       array(
         'key' => 'featured',
