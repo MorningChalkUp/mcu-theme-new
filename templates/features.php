@@ -3,7 +3,7 @@
 
   // Home Feature
   $feature_args = array (
-    'category__in' => $feature_cats,
+    // 'category__in' => $feature_cats,
     'posts_per_page'  => 1,
     'meta_query'      => array(
       array(
