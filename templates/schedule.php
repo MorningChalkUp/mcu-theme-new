@@ -990,12 +990,12 @@ $tags = wp_get_post_tags( $post->ID ); ?>
           <p><strong>10 PM - 2 AM</strong></p>
 
           <div class="question-section">
-            <div class="question" onclick="toggel('#su9');">
-              <i id="su9-i" class="material-icons" style="float: right;">keyboard_arrow_right</i>
+            <div class="question" onclick="toggel('#su11');">
+              <i id="su11-i" class="material-icons" style="float: right;">keyboard_arrow_right</i>
               "The Official 2017 Reebok CrossFit Games After-Party" Presented by PARTYAID
             </div>
 
-            <div id="su9" class="hidden answer">
+            <div id="su11" class="hidden answer">
               <div>
                 Come celebrate with your favorite athletes and friends at the "The Official 2017 Reebok CrossFit Games After-Party".
               </div>
