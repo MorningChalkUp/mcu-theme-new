@@ -33,6 +33,13 @@ $tags = wp_get_post_tags( $post->ID );
   </div>
   <div class="content">
     <?php the_content(); ?>
+    <?php if (get_field('mcu_reads')): ?>
+      <div class="sub-sec reads">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/reads.png" alt="Chalk Up Tips">
+        CHALK UP READS
+      </div>
+      <?php echo get_field('mcu_reads'); ?>
+    <?php endif ?>
     <?php if (get_field('mcu_tips')): ?>
       <div class="sub-sec tips">
         <img src="<?php echo get_template_directory_uri(); ?>/img/tips.png" alt="Chalk Up Tips">
