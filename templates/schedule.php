@@ -48,14 +48,14 @@ $tags = wp_get_post_tags( $post->ID ); ?>
       <div class="mdl-cell mdl-cell--3-col mdl-grid">
         <ul class="demo-list-item mdl-list" style="width: 100%;">
           <a onclick="tab('#monday', this);">
-            <li class="mdl-list__item active">
+            <li class="mdl-list__item">
               <span class="mdl-list__item-primary-content">
                 Monday, July 31
               </span>
             </li>
           </a>
           <a onclick="tab('#tuesday', this);">
-            <li class="mdl-list__item">
+            <li class="mdl-list__item active">
               <span class="mdl-list__item-primary-content">
                 Tuesday, August 1
               </span>
@@ -99,7 +99,7 @@ $tags = wp_get_post_tags( $post->ID ); ?>
         </ul>
       </div>
       <div class="mdl-cell mdl-cell--9-col mdl-grid mdl-color--white mdl-shadow--2dp faq">
-        <div class="mdl-cell mdl-cell--12-col mdl-cell--top day" id="monday">
+        <div class="mdl-cell mdl-cell--12-col mdl-cell--top day hidden" id="monday">
           <h2>Monday, July 31</h2>
           <p><strong>ALL DAY</strong></p>
 
@@ -122,7 +122,7 @@ $tags = wp_get_post_tags( $post->ID ); ?>
           </div>
         </div>
 
-        <div class="mdl-cell mdl-cell--12-col mdl-cell--top day hidden" id="tuesday">
+        <div class="mdl-cell mdl-cell--12-col mdl-cell--top day" id="tuesday">
           <h2>Tuesday, August 1</h2>
           <p><strong>ALL DAY</strong></p>
 
@@ -451,7 +451,7 @@ $tags = wp_get_post_tags( $post->ID ); ?>
           <div class="question-section">
             <div class="question" onclick="toggel('#f4');">
               <i id="f4-i" class="material-icons" style="float: right;">keyboard_arrow_right</i>
-              WOD with Sam Dancer and KILL CLIFF @ CrossFit Foremost
+              RWOD with Sam Dancer and KILL CLIFF @ CrossFit Foremost
             </div>
 
             <div id="f4" class="hidden answer">
@@ -472,7 +472,7 @@ $tags = wp_get_post_tags( $post->ID ); ?>
           <div class="question-section">
             <div class="question" onclick="toggel('#f5');">
               <i id="f5-i" class="material-icons" style="float: right;">keyboard_arrow_right</i>
-              Logan Aldridge Meet and Greet @ FITAID Ten
+              Logan Aldridge Meet and Greet @ FITAID Tent
             </div>
 
             <div id="f5" class="hidden answer">
@@ -574,12 +574,12 @@ $tags = wp_get_post_tags( $post->ID ); ?>
           <div class="question-section">
             <div class="question" onclick="toggel('#f11');">
               <i id="f11-i" class="material-icons" style="float: right;">keyboard_arrow_right</i>
-              CrossFit Affiliates Box Appreciation Party @ FITAID Tent
+              FITAID Affiliates Box Appreciation Party @ FITAID Tent
             </div>
 
             <div id="f11" class="hidden answer">
               <div>
-                A special BBQ, games and drinks for CrossFit Affiliates only at the FITAID tent in Vendor Village.
+                A special BBQ, games and drinks for FITAID Affiliates only at the FITAID tent in Vendor Village.
               </div>
               <div>
                 <strong>Location:</strong> FITAID Tent in Vendor Village
