@@ -106,7 +106,7 @@ function mcu_fb_signup() {
                 </div>
               </div>
 
-              <form action="/process/mcu-fb-process.php" method="post">
+              <form action="/process/mcu-fb-process.php" id="subscribe" method="post">
                 <div class="mdl-grid fields">
                   <div class="mdl-layout-spacer"></div>
                   <div class="mdl-cell mdl-cell--4-col">
