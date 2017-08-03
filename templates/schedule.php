@@ -62,14 +62,14 @@ $tags = wp_get_post_tags( $post->ID ); ?>
             </li>
           </a>
           <a onclick="tab('#wednesday', this);">
-            <li class="mdl-list__item active">
+            <li class="mdl-list__item">
               <span class="mdl-list__item-primary-content">
                 Wednesday, August 2
               </span>
             </li>
           </a>
           <a onclick="tab('#thursday', this);">
-            <li class="mdl-list__item">
+            <li class="mdl-list__item active">
               <span class="mdl-list__item-primary-content">
                 Thursday, August 3
               </span>
@@ -152,7 +152,7 @@ $tags = wp_get_post_tags( $post->ID ); ?>
           </div>
         </div>
 
-        <div class="mdl-cell mdl-cell--12-col mdl-cell--top day" id="wednesday">
+        <div class="mdl-cell mdl-cell--12-col mdl-cell--top day hidden" id="wednesday">
           <h2>Wednesday, August 2</h2>
           <p><strong>ALL DAY</strong></p>
 
@@ -211,7 +211,7 @@ $tags = wp_get_post_tags( $post->ID ); ?>
 
         </div>
 
-        <div class="mdl-cell mdl-cell--12-col mdl-cell--top day hidden" id="thursday">
+        <div class="mdl-cell mdl-cell--12-col mdl-cell--top day" id="thursday">
           <h2>Thursday, August 3</h2>
           <p><strong>ALL DAY</strong></p>
 
