@@ -176,6 +176,7 @@ function mcu_fb_signup() {
                     <input type="hidden" name="UTM_MEDIUM" id="UTM_MEDIUM" value="">
                     <input type="hidden" name="UTM_CAMP" id="UTM_CAMP" value="">
                     <input type="hidden" name="GCLID" id="GCLID" value="">
+                    <input type="hidden" name="FBID" id="FBID" value="">
                   </div>
 
                   <div class="mdl-cell mdl-cell--4-col">
