@@ -49,12 +49,14 @@
 
   <div class="mcu-roll mdl-cell mdl-cell--4-col mdl-cell--order-1-desktop">
     <div class="stories">
+      <?php /* ?>
       <article class="mdl-grid category-title">
         <div class="img"></div>
         <div class="info">
           <a href="<?php echo $cat_mcu_link ?>" title="The Morning Chalk Up">The Morning Chalk Up</a>
         </div>
       </article>
+      */?>
       
       <?php 
         $mcu = new WP_Query($mcu_args);

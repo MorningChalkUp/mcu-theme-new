@@ -10,7 +10,7 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="canonical" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link type="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.svg"  media="screen,projection"/>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/material.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="<?php echo get_template_directory_uri(); ?>/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
     <link href="<?php echo get_template_directory_uri(); ?>/immybox/immybox.css" media="all" rel="stylesheet" type="text/css" />
