@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/getmdl-select.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/mdl-selectfield.min.css">
     
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,600,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
     
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-2.2.3.min.js"></script>

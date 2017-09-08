@@ -20,11 +20,10 @@ if ( has_post_thumbnail() ) {
   <div class="content">
     <?php 
       $categories = get_the_category( $post->ID );
-      print_r($categories);
       if ( ! empty( $categories ) ) {
           echo '<div class="category"><mark>' . esc_html( $categories[0]->name ) . '</mark></div>';
       }
     ?>
-    <div class="title"><mark><a href="<?php echo the_permalink(); ?>" title="<?php echo the_title(); ?>"><?php echo the_title(); ?></a></mark></div>
+    <h3 class="title"><mark><a href="<?php echo the_permalink(); ?>" title="<?php echo the_title(); ?>"><?php echo the_title(); ?></a></mark></h3>
   </div>
 </div>
