@@ -1,4 +1,4 @@
-<footer class="mdl-mini-footer">
+<footer id="footer" class="mdl-mini-footer">
   <div class="mdl-mini-footer__left-section">
     <ul class="mdl-mini-footer__link-list">
       <?php 

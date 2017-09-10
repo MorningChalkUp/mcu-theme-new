@@ -8,10 +8,12 @@
   }
 ?>
 
-<article class="mcu mdl-grid">
-  <div class="img"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo $thumb_url ?>" alt="<?php the_title(); ?>"></a></div>
-  <div class="info">
-    <div class="title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></div>
-    <div class="date"><?php echo get_the_date('l, M. j, Y'); ?></div>
-  </div>
+<article class="mcu">
+  <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="block">
+    <div class="img"><img src="<?php echo $thumb_url ?>" alt="<?php the_title(); ?>"></div>
+    <div class="info">
+      <div class="title"><?php the_title(); ?></div>
+      <div class="date"><?php echo get_the_date('l, M. j, Y'); ?></div>
+    </div>
+  </a>
 </article>

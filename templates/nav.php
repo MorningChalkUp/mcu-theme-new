@@ -1,7 +1,9 @@
 <header class="mdl-layout__header">
   <div class="mdl-layout__header-row">
     <!-- Title -->
-    <span class="mdl-layout-title"><a href="/"><span>Morning</span> Chalk Up</a></span>
+    <span class="mdl-layout-title">
+		<a id="logo" href="/"><?php echo file_get_contents(get_bloginfo('stylesheet_directory').'/img/mcu.svg') ?></a>
+	</span>
     <nav class="mdl-navigation mdl-layout--large-screen-only">
       <?php 
         $array_menu = wp_get_nav_menu_items('Main Nav');

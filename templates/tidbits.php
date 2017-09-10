@@ -50,13 +50,7 @@
 ?>
 
 <section class="mdl-cell mdl-cell--12-col main archive home">
-  <div class="mdl-grid">
-    <div class="mdl-layout-spacer"></div>
-    <div class="mdl-cell mdl-cell--8-col sec-title">
-      <a href="<?php echo $cat_tidbit_link; ?>">Latest Tidbits</a>
-    </div>
-    <div class="mdl-layout-spacer"></div>
-  </div>
+  <h3 class="section-title center"><a href="<?php echo $cat_tidbit_link; ?>">Latest <strong>Tidbits</strong></a></h3>
   <div class="mdl-grid">
 
     <?php

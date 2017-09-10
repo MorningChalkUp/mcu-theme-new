@@ -1,7 +1,7 @@
 <section class="mdl-grid subscribe">
   <div class="mdl-layout-spacer"></div>
   <div class="mdl-cell mdl-cell--8-col">
-    <h1 class="title">Get The Morning Chalk Up</h1>
+    <h3>Get The Morning Chalk Up</h3>
     <div class="sub-title">Delivered to your inbox every morning.</div>
     <form class="sub-form" action="/process/sub-bar.php" method="post">
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">

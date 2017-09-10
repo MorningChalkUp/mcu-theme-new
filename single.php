@@ -18,9 +18,7 @@
     </div>
     <div class="mdl-grid">
       <div class="mdl-layout-spacer"></div>
-      
       <?php get_template_part( 'templates/recommended' ); ?>
-
       <div class="mdl-layout-spacer"></div>
     </div>
   </div>

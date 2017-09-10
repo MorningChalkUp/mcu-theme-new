@@ -19,11 +19,9 @@ if ( has_post_thumbnail() ) {
           echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
       }
     ?>
-    <span>•</span>
-    <?php echo get_the_date('M j, Y'); ?>
   </div>
   <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
   <div class="byline">
-    BY  <a href="<?php echo get_author_posts_url($post->post_author) ?>" title="<?php the_author(); ?>" alt="<?php the_author(); ?>"><?php the_author(); ?></a>   |  STAFF
+    <strong><?php echo get_the_date('M j, Y'); ?></strong> BY  <a href="<?php echo get_author_posts_url($post->post_author) ?>" title="<?php the_author(); ?>" alt="<?php the_author(); ?>"><?php the_author(); ?></a>   |  STAFF
   </div>
 </article>
