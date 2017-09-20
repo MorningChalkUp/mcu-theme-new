@@ -662,7 +662,7 @@ header.mdl-layout__header .mdl-layout__drawer-button {
 }
 
 .title{margin:0.5rem 0 0 0;}
-.title mark {color: #333132;font-weight: 600;font-size: 60px;line-height: 1.1em;}
+.title mark {color: #333132;font-weight: 600;font-size: 60px;line-height: 1.15em;}
 .title mark a {background: #fff;box-shadow:15px 0px 0 #fff, -15px -0px 0 #fff;color: #333132;font-weight: 600;text-decoration:none;}
 .title mark a:after{display:none;}
 
