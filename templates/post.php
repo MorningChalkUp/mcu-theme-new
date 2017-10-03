@@ -19,7 +19,8 @@ $tags = wp_get_post_tags( $post->ID );
 <article class="mdl-cell mdl-cell--8-col main article">
   <h2 class="post-title"><?php the_title(); ?></h2>
   <div class="meta">
-    <strong><?php the_date('F j, Y'); ?></strong> BY  <a href="<?php echo get_author_posts_url($post->post_author) ?>" title="<?php the_author(); ?>" alt="<?php the_author(); ?>"><?php the_author(); ?></a>  |  STAFF
+    <strong><?php the_date('F j, Y'); ?></strong>
+     BY  <a href="<?php echo get_author_posts_url($post->post_author) ?>" title="<?php the_author(); ?>" alt="<?php the_author(); ?>"><?php the_author(); ?></a>
   </div>
   <div class="share">
     <a data-sumome-share-id="fb105827-64cd-4b3b-b06e-b0d4282f33cf"></a>
