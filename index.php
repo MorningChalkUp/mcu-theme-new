@@ -28,9 +28,9 @@
 
       <div class="mdl-grid">
 
-        <?php get_template_part( 'templates/tidbits' ); ?>
-
-        <?php get_template_part( 'templates/stories' ); ?>
+        <?php get_template_part( 'templates/latest' ); ?>
+        <?php //get_template_part( 'templates/tidbits' ); ?>
+        <?php //get_template_part( 'templates/stories' ); ?>
 
       </div>
       
