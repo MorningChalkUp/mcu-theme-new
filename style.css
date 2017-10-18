@@ -99,6 +99,9 @@ a#logo:after{display:none;}
   font-size: 200%;
 }
 
+#instagram .insta-container{overflow:hidden;position:relative;}
+#instagram a.insta-shot{background-position:50% 50%;background-size:cover;display:block;float:left;width:16.666%;padding-top:16.666%;}
+
 header.mdl-layout__header {
   z-index: 6;
   background-color: #fff;
