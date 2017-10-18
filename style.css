@@ -86,9 +86,16 @@ a#logo:after{display:none;}
 #banner .meta{}
 #banner .meta a{color:#fff;}
 #banner .caption{font-size:14px;font-style:italic;opacity:0.5;}
-#banner .social a{color:rgba(255,255,255,0.5);font-size:20px;padding:1rem 0.5rem;}
-#banner .social a:after{display:none;}
+#banner .social a{color:rgba(255,255,255,0.5);padding:1rem 0.5rem;}
 #banner .social a:hover{color:#fff;}
+
+.social{font-size:14px;margin:0.5rem 0 0.5rem -0.3rem;}
+.social a{font-size:20px;padding:0.3rem;}
+.social a:after{display:none;}
+.social a.mdi-facebook{color:#3b5998;}
+.social a.mdi-twitter{color:#1da1f2;}
+.social a.mdi-reddit{color:#ff4500;}
+.social a.mdi-email{color:#666;}
 
 #banner + .mdl-grid .content::first-letter{
 /*  font-family:"industry", sans-serif;*/
