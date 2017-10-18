@@ -72,7 +72,7 @@
                 </a>
               </div>
             </section>
-            <section class="team-member mdl-cell mdl-cell--6-col">
+            <!-- <section class="team-member mdl-cell mdl-cell--6-col">
               <div class="img">
                 <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/jesse-krim.png" alt="Jesse Krim">
               </div>
@@ -103,7 +103,7 @@
                 <div class="title">FAVORITE QUOTE</div><br>
                 “Courage does not always roar. Sometimes it is a quiet voice at the end of the day saying, 'I will try again tomorrow.'” — Maryanne Radmacker
               </div>
-            </section>
+            </section> -->
           </div>
         </div>
         <div class="mdl-layout-spacer"></div>
@@ -116,7 +116,7 @@
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-grid">
         <?php 
-          $url = 'https://api.instagram.com/v1/users/3055294744/media/recent/?access_token=3055294744.1b0f870.28ca4c901d834b9085f4c662b9253a3f&count=12';
+          $url = 'https://api.instagram.com/v1/users/3055294744/media/recent/?access_token=2094595.1b0f870.2554092678c54b4ab91aaf5743164595&count=12';
 
           $ch = curl_init($url);
           curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
