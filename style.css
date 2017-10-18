@@ -78,6 +78,26 @@ a#logo:after{display:none;}
 
 .article .content {font-family:'Noto Serif', serif;}
 
+#banner{background-size:cover;background-repeat:no-repeat;background-position:50% 50%;color:#fff;font-family:'Noto Serif', serif;text-align:center;padding:25% 0 1rem;position:relative;margin-top:-16px;}
+#banner:before{background-color:rgba(0,0,0,0.5);content:'';position:absolute;top:0;bottom:0;left:0;right:0;}
+#banner h2{color:#fff;font-family:'Noto Serif', serif;font-size:56px;}
+#banner .mdl-grid{position:relative;}
+#banner .meta{}
+#banner .meta a{color:#fff;}
+#banner .caption{font-size:14px;font-style:italic;opacity:0.5;}
+#banner .social a{color:rgba(255,255,255,0.5);font-size:20px;padding:1rem 0.5rem;}
+#banner .social a:after{display:none;}
+#banner .social a:hover{color:#fff;}
+
+#banner + .mdl-grid .content::first-letter{
+/*  font-family:"industry", sans-serif;*/
+  font-weight:700;
+/*  color: #3D5BA9;*/
+  
+  margin-left:-0.1em;
+  font-size: 200%;
+}
+
 header.mdl-layout__header {
   z-index: 6;
   background-color: #fff;
