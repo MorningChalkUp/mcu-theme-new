@@ -70,7 +70,7 @@
                 </a>
               </div>
             </section>
-            <section class="team-member mdl-cell mdl-cell--6-col">
+            <!-- <section class="team-member mdl-cell mdl-cell--6-col">
               <div class="img">
                 <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/jesse-krim.png" alt="Jesse Krim">
               </div>
@@ -98,21 +98,17 @@
               </div>
               <blockquote class="small">
                 “Courage does not always roar. Sometimes it is a quiet voice at the end of the day saying, 'I will try again tomorrow.'” — Maryanne Radmacker
-              </blockquote>
-            </section>
+-->
           </div>
         </div>
         <div class="mdl-layout-spacer"></div>
       </section>
-      <section class="instagram mdl-grid">
-        <div class="mdl-layout-spacer"></div>
-        <div class="mdl-cell mdl-cell--10-col">
-          <h2>MORNING CHALK UP ON INSTAGRAM</h2>
-        </div>
-        <div class="mdl-layout-spacer"></div>
-        <div class="mdl-grid">
+      <div id="instagram">
+        <h2 class="center">MORNING CHALK UP ON INSTAGRAM</h2>
+        
+        <div class="insta-container">
         <?php 
-          $url = 'https://api.instagram.com/v1/users/3055294744/media/recent/?access_token=3055294744.1b0f870.28ca4c901d834b9085f4c662b9253a3f&count=12';
+          $url = 'https://api.instagram.com/v1/users/3055294744/media/recent/?access_token=3055294744.1b0f870.d01377c913fa401a8c6e5134a325ce4d&count=12';
 
           $ch = curl_init($url);
           curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -126,15 +122,13 @@
           $result = json_decode($r, true);
 
           foreach ($result['data'] as $image) {
-            echo '<div class="mdl-cell mdl-cell--2-col">';
-              echo '<a href="' . $image['link'] . '" target="_blank"><img src="' . $image['images']['standard_resolution']['url'] . '"></a>';
-            echo '</div>';
+              echo '<a class="insta-shot" href="' . $image['link'] . '" target="_blank" style="background-image:url('.$image['images']['standard_resolution']['url'].');"></a>';
           }
         ?>
         </div>
 
 
-      </section>
+      </div>
 
     </article>
 
