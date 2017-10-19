@@ -63,6 +63,7 @@ blockquote {
   position:relative;
   border-left:3px solid #3D5BA9;
 }
+blockquote.small{border:none;font-size: 18px;line-height:24px;margin: 1rem auto;}
 /*blockquote:before {font-weight: 600;content: '“';font-size: 100px;left: auto;color: #3D5BA9;position:absolute;left:0;top:1.5rem;}*/
 
 .mdl-grid {max-width: 1170px;}
@@ -77,6 +78,36 @@ a#logo:after{display:none;}
 .section{margin:3rem 0;}
 
 .article .content {font-family:'Noto Serif', serif;}
+
+#banner{background-size:cover;background-repeat:no-repeat;background-position:50% 50%;color:#fff;font-family:'Noto Serif', serif;text-align:center;padding:25% 0 1rem;position:relative;margin-top:-16px;}
+#banner:before{background-color:rgba(0,0,0,0.5);content:'';position:absolute;top:0;bottom:0;left:0;right:0;}
+#banner h2{color:#fff;font-family:'Noto Serif', serif;font-size:56px;}
+#banner .mdl-grid{position:relative;}
+#banner .meta{}
+#banner .meta a{color:#fff;}
+#banner .caption{font-size:14px;font-style:italic;opacity:0.5;}
+#banner .social a{color:rgba(255,255,255,0.5);padding:1rem 0.5rem;}
+#banner .social a:hover{color:#fff;}
+
+.social{font-size:14px;margin:0.5rem 0 0.5rem -0.3rem;}
+.social a{font-size:20px;padding:0.3rem;}
+.social a:after{display:none;}
+.social a.mdi-facebook{color:#3b5998;}
+.social a.mdi-twitter{color:#1da1f2;}
+.social a.mdi-reddit{color:#ff4500;}
+.social a.mdi-email{color:#666;}
+
+#banner + .mdl-grid .content::first-letter{
+/*  font-family:"industry", sans-serif;*/
+  font-weight:700;
+/*  color: #3D5BA9;*/
+  
+  margin-left:-0.1em;
+  font-size: 200%;
+}
+
+#instagram .insta-container{overflow:hidden;position:relative;}
+#instagram a.insta-shot{background-position:50% 50%;background-size:cover;display:block;float:left;width:16.666%;padding-top:16.666%;}
 
 header.mdl-layout__header {
   z-index: 6;

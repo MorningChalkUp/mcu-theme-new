@@ -41,10 +41,9 @@
                 <strong>Founder // Adventurer</strong>
                 Location: California
               </div>
-              <div class="quote">
-                <div class="title">FAVORITE QUOTE</div><br>
+              <blockquote class="small">
                 “Write it on your heart that every day is the best day in the year. He is rich who owns the day, and no one owns the day who allows it to be invaded with fret and anxiety.” — Ralph Waldo Emerson
-              </div>
+              </blockquote>
               <div class="email">
                 <a class="mdl-button" href="mailto:justin@morningchalkup.com">
                   <i class="mdi mdi-email"></i> Email Me
@@ -62,10 +61,9 @@
                 <strong>Tech Guru // Cat Herder</strong>
                 Location: Florida
               </div>
-              <div class="quote">
-                <div class="title">FAVORITE QUOTE</div>
+              <blockquote class="small">
                 “I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me. And when it has gone past I will turn the inner eye to see its path. Where the fear has gone there will be nothing. Only I will remain.” — Frank Herbert
-              </div>
+              </blockquote>
               <div class="email">
                 <a class="mdl-button" href="mailto:eric@morningchalkup.com">
                   <i class="mdi mdi-email"></i> Email Me
@@ -83,10 +81,9 @@
                 <strong>Events Curator // Travel Aficionado</strong>
                 Location: New York
               </div>
-              <div class="quote">
-                <div class="title">FAVORITE QUOTE</div><br>
+              <blockquote class="small">
                 “Be who you are and say what you feel, because those who mind don’t matter, and those who matter don’t mind.” — Bernard M Baruch
-              </div>
+              </blockquote>
             </section>
             <section class="team-member mdl-cell mdl-cell--6-col">
               <div class="img">
@@ -99,22 +96,17 @@
                 <strong>Writer // Pizza Lover</strong>
                 Location: Colorado
               </div>
-              <div class="quote">
-                <div class="title">FAVORITE QUOTE</div><br>
+              <blockquote class="small">
                 “Courage does not always roar. Sometimes it is a quiet voice at the end of the day saying, 'I will try again tomorrow.'” — Maryanne Radmacker
-              </div>
-            </section> -->
+-->
           </div>
         </div>
         <div class="mdl-layout-spacer"></div>
       </section>
-      <section class="instagram mdl-grid">
-        <div class="mdl-layout-spacer"></div>
-        <div class="mdl-cell mdl-cell--10-col">
-          <h2>MORNING CHALK UP ON INSTAGRAM</h2>
-        </div>
-        <div class="mdl-layout-spacer"></div>
-        <div class="mdl-grid">
+      <div id="instagram">
+        <h2 class="center">MORNING CHALK UP ON INSTAGRAM</h2>
+        
+        <div class="insta-container">
         <?php 
           $url = 'https://api.instagram.com/v1/users/3055294744/media/recent/?access_token=3055294744.1b0f870.d01377c913fa401a8c6e5134a325ce4d&count=12';
 
@@ -130,15 +122,13 @@
           $result = json_decode($r, true);
 
           foreach ($result['data'] as $image) {
-            echo '<div class="mdl-cell mdl-cell--2-col">';
-              echo '<a href="' . $image['link'] . '" target="_blank"><img src="' . $image['images']['standard_resolution']['url'] . '"></a>';
-            echo '</div>';
+              echo '<a class="insta-shot" href="' . $image['link'] . '" target="_blank" style="background-image:url('.$image['images']['standard_resolution']['url'].');"></a>';
           }
         ?>
         </div>
 
 
-      </section>
+      </div>
 
     </article>
 
