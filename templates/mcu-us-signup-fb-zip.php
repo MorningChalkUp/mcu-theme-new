@@ -113,7 +113,7 @@
                 </div>
               </div>
 
-              <form action="/process/mcu-zip.php" method="post" id="subscribe">
+              <form action="/process/mcu-cm.php" method="post" id="subscribe">
                 <div class="mdl-grid fields">
                   <div class="mdl-layout-spacer"></div>
                   <div class="mdl-cell mdl-cell--4-col">
