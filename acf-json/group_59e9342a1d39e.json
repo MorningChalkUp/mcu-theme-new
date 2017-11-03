@@ -1,0 +1,78 @@
+{
+    "key": "group_59e9342a1d39e",
+    "title": "Quotes",
+    "fields": [
+        {
+            "key": "field_5873b4c557f36",
+            "label": "Quote Text",
+            "name": "quote_text",
+            "type": "textarea",
+            "value": null,
+            "instructions": "Do not include physical quotes (\") around entire quote.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5873b50457f37",
+            "label": "Qute Attribution",
+            "name": "qute_attribution",
+            "type": "text",
+            "value": null,
+            "instructions": "Attribute the quote",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "none",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "quote"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1508455592
+}
