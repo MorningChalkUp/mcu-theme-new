@@ -9,18 +9,25 @@
         if ( have_posts() ) {
           while ( have_posts() ) {
             the_post();
-            get_template_part( 'templates/post' );
+            if(in_category('morningchalkup')) {
+              get_template_part( 'templates/newsletter' );
+            } else {
+              get_template_part( 'templates/post' );
+            }
+            
           }
         }
       ?>
 
       <div class="mdl-layout-spacer"></div>
     </div>
+    <?php if(!in_category('morningchalkup')) : ?>
     <div class="mdl-grid">
       <div class="mdl-layout-spacer"></div>
       <?php get_template_part( 'templates/recommended' ); ?>
       <div class="mdl-layout-spacer"></div>
     </div>
+    <?php endif; ?>
   </div>
 
   <?php get_template_part( 'templates/subscribe' ); ?>
