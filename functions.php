@@ -48,6 +48,33 @@ add_filter( 'get_the_archive_title', function ($title) {
     return $title;
 });
 
+// 1. customize ACF path
+add_filter('acf/settings/path', 'my_acf_settings_path');
+ 
+function my_acf_settings_path( $path ) {
+ 
+    // update path
+    $path = get_stylesheet_directory() . '/acf-json/';
+    
+    // return
+    return $path;
+    
+}
+ 
+
+// 2. customize ACF dir
+add_filter('acf/settings/dir', 'my_acf_settings_dir');
+ 
+function my_acf_settings_dir( $dir ) {
+ 
+    // update path
+    $dir = get_stylesheet_directory_uri() . '/acf-json/';
+    
+    // return
+    return $dir;
+    
+}
+
 $state['AK'] = 'Alaska';
 $state['AZ'] = 'Arizona';
 $state['AR'] = 'Arkansas';
