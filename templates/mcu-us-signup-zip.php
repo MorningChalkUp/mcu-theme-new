@@ -4,7 +4,22 @@
  */
 ?>
 <?php
-  $error = $_GET['e'];
+  require '/process/inc/functions.php';
+
+  $ip = get_client_ip();
+
+  $url = $domain . strtok($_SERVER['REQUEST_URI'], '?');
+
+  $time = date("Y-m-d H:i:s");
+
+  $reff = isset($_GET['reff']) ? $_GET['reff'] : null;
+  
+  track_pageview($ip,$url,$time,$reff);
+
+  if (isset($_GET['e'])) {
+    $error = $_GET['e'];
+  }
+
 ?>
 
 <?php get_header(); ?>
@@ -133,6 +148,7 @@
                     <input type="hidden" name="UTM_CAMP" id="UTM_CAMP" value="">
                     <input type="hidden" name="GCLID" id="GCLID" value="">
                     <input type="hidden" id="us" name="us" value="1">
+                    <input type="hidden" name="reff" id="reff" value="<?php echo $reff != null ? $reff : ''; ?>">
                   </div>
 
                   <div class="mdl-cell mdl-cell--4-col">
