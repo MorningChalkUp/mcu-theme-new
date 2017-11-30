@@ -4,7 +4,7 @@
  */
 ?>
 <?php
-  require '/process/inc/functions.php';
+  require __DIR__ . '/../../../../process/inc/functions.php';
 
   $ip = get_client_ip();
 
@@ -17,7 +17,7 @@
   track_pageview($ip,$url,$time,$reff);
 
   if (isset($_GET['e'])) {
-    $error = $_GET['e'];
+    $err = $_GET['e'];
   }
 
 ?>
@@ -44,7 +44,7 @@
 
                 <div class="mdl-layout-spacer"></div>
               </div>
-              <?php if (isset($error)): ?>
+              <?php if (isset($err)): ?>
               <div class="mdl-grid">
                 
                 <div class="mdl-layout-spacer"></div>
@@ -52,7 +52,7 @@
                 <div class="mdl-cell mdl-cell--6-col error" style="border-radius: 5px; border: 1px solid #ebccd1; padding: 5px; background: #f2dede; color: #a94442; text-align: center;">
                   <p><strong>The below fields are required:</strong></p>
                   <?php
-                    foreach ($error as $e => $v) {
+                    foreach ($err as $e => $v) {
                       switch ($e) {
                         case 'email':
                           echo 'Email<br>';
