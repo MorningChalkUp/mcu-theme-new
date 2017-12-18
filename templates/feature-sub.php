@@ -1,4 +1,4 @@
-<?php 
+ <?php 
 if ( has_post_thumbnail() ) {
   $thumb_id = get_post_thumbnail_id();
   $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'featured', true);
@@ -16,7 +16,7 @@ if ( has_post_thumbnail() ) {
 }
 ?>
 
-<article class="mdl-cell mdl-cell--8-col sub-feature"style="background-image: url('<?php echo $thumb_url; ?>');">
+<article class="mdl-cell mdl-cell--12-col sub-feature"style="background-image: url('<?php echo $thumb_url; ?>');">
   <div class="content">
     <?php 
       $categories = get_the_category( $post->ID );
