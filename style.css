@@ -738,62 +738,20 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   font-size: 18px;
   line-height: normal;
 }
-section.subscribe {
-  background-color: #3D5BA9;
-  text-align: center;
-}
-section.subscribe h3 {
-  color: #fff;
-  margin: 12px 0;
-}
-section.subscribe .sub-title {
-  color: #fff;
-  font-size: 22px;
-  line-height: 1.5em;
-}
-section.subscribe .sub-form .mdl-textfield label {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 16px;
-  top: 18px;
-  
-}
-section.subscribe .sub-form .mdl-textfield label:after {
-  background: #fff;
-}
-section.subscribe .sub-form .mdl-textfield input {
-  border-bottom-color: rgba(255, 255, 255, 0.5);
-  font-size: 16px;
-  color: #fff;
-  
-}
-section.subscribe .sub-form .mdl-textfield.is-dirty label {
-  color: #fff;
-  font-size: 12px;
-  top: 2px;
-}
-section.subscribe .sub-form .mdl-textfield.is-dirty input {
-  border-bottom: 1px solid #fff;
-}
-section.subscribe .sub-form .mdl-textfield.is-focused label {
-  color: #fff;
-  font-size: 12px;
-  top: 2px;
-}
-section.subscribe .sub-form .mdl-textfield.is-focused input {
-  border-bottom: 1px solid #fff;
-  font-size: 16px;
-  color: #fff;
-}
-section.subscribe .sub-form button {
-  margin-left: 5px;
-}
-section.subscribe .sub-form button.submit {
-  background-color: #4BB749;
-  color: #fff;
-}
-section.subscribe .sub-form button.submit:hover {
-  background-color: rgba(75, 183, 73, 0.9);
-}
+
+.subscribe {padding:2rem;border-radius:10px;background-color: #3D5BA9;border:3px solid #3D5BA9;text-align: center;}
+.subscribe h3 {color: #fff;margin: 12px 0;}
+.subscribe .sub-title {color: #fff;font-size: 22px;line-height: 1.5em;}
+.subscribe .sub-form .mdl-textfield label {color: rgba(255, 255, 255, 0.5);font-size: 16px;top: 18px;}
+.subscribe .sub-form .mdl-textfield label:after {background: #fff;}
+.subscribe .sub-form .mdl-textfield input {border-bottom-color: rgba(255, 255, 255, 0.5);font-size: 16px;color: #fff;}
+.subscribe .sub-form .mdl-textfield.is-dirty label {color: #fff;font-size: 12px;top: 2px;}
+.subscribe .sub-form .mdl-textfield.is-dirty input {border-bottom: 1px solid #fff;}
+.subscribe .sub-form .mdl-textfield.is-focused label {color: #fff;font-size: 12px;top: 2px;}
+.subscribe .sub-form .mdl-textfield.is-focused input {border-bottom: 1px solid #fff;font-size: 16px;color: #fff;}
+.subscribe .sub-form button {margin-left: 5px;}
+.subscribe .sub-form button.submit {background-color: #4BB749;color: #fff;}
+.subscribe .sub-form button.submit:hover {background-color: rgba(75, 183, 73, 0.9);}
 
 article.teaser .img {overflow: hidden;box-shadow:0 1px 5px rgba(0,0,0,0.1);}
 article.teaser .img .teaser-img {max-width: 400px;width: 100%;height: auto;display: block;transition: all 0.3s;}
