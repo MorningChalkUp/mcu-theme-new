@@ -2,9 +2,10 @@
   <div class="mdl-layout-spacer"></div>
   <div class="mdl-cell mdl-cell--8-col">
     <div class="subscribe">
-      <h3>Get The Morning Chalk Up</h3>
-      <div class="sub-title">Delivered to your inbox every morning.</div>
+      
       <form class="sub-form" action="/process/sub-bar.php" method="post">
+        <h3>Get The Morning Chalk Up</h3>
+        <div class="sub-title">Delivered to your inbox every morning.</div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
           <input class="mdl-textfield__input" type="text" id="email" name="email">
           <label class="mdl-textfield__label" for="email">Email Address</label>

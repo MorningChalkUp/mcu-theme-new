@@ -7,6 +7,7 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/MaterialSelect.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/mdl-selectfield.min.js"></script>
     <script defer src="<?php echo get_template_directory_uri(); ?>/js/init.js"></script>
+    <script defer src="<?php echo get_template_directory_uri(); ?>/js/theme.js"></script>
 
     <?php wp_footer(); ?>
 

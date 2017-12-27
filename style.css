@@ -25,6 +25,7 @@ Text Domain: morningchalkup_v2
 html,body{font-family: 'Roboto', sans-serif;font-weight: 400;line-height: 170%;font-size: 20px;color: #484546;margin:0;padding:0;-webkit-text-size-adjust: none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
 
 .center {text-align: center;}
+.text-right{text-align:right;}
 .aligncenter {margin: auto;display: block;}
 
 a {color: #3D5BA9;position:relative;transition:0.2s all;text-decoration:none;}
@@ -38,18 +39,18 @@ img.circle {border-radius: 50%;}
 
 h1,h2,h3,h4,h5,h6{color:#333132;font-family: 'Roboto', sans-serif;font-weight: 600;line-height:120%;}
 h1 *,h2 *,h3 *,h4 *,h5 *,h6 *{line-height:100%;}
-
-h2 {font-size: 28px;}
-h3 {font-size: 26px;}
+h1 {font-size:64px;}
+h2 {font-size: 36px;}
+h3 {font-size: 32px;}
 h4 {font-size: 28px;}
 h5 {font-size: 24px;margin: 0;}
 
 h2.post-title{font-size:48px;}
 
-h3.section-title{font-family: "industry", sans-serif;font-weight: 400;text-transform:uppercase;letter-spacing:0.1em;margin:2rem 0 0.5rem;}
+h3.section-title{font-family: "industry", sans-serif;font-weight: 400;font-size: 24px;text-transform:uppercase;letter-spacing:0.1em;margin:2rem 0 0.5rem;}
 h3.section-title strong{font-weight: 700;}
 
-hr{background-color:#3D5BA9;border:none;height:5px;margin:3rem 0;}
+hr{background-color:#3D5BA9;border:none;height:3px;margin:3rem auto;width:100px;}
 
 blockquote {
   background-color:#f9f9f9;
@@ -70,7 +71,7 @@ blockquote.small{border:none;font-size: 18px;line-height:24px;margin: 1rem auto;
   .wrapper{margin:0 auto;width:940px;position:relative;}
   .placeholder{min-height:1px;}
   .section{padding:4rem 0;z-index:2;position:relative;}
-  
+    
   .row{margin-left:-20px;*zoom:1;}
   .row:before,
   .row:after{display:table;content:"";}
@@ -160,30 +161,65 @@ blockquote.small{border:none;font-size: 18px;line-height:24px;margin: 1rem auto;
 
 
 .mdl-grid {max-width: 1170px;}
-.mdl-grid.feature {max-width: 100%;}
-.mdl-grid.subscribe {max-width: 100%;}
 
 a#logo:after{display:none;}
-#mcu-logo{width:240px;margin-right:2rem;}
+#mcu-logo{width:240px;}
 #mcu-logo .morning{fill:#333132;}
 #mcu-logo .chalkup{fill:#3D5BA9;}
 
 .section{margin:3rem 0;}
+
+.top-title{margin-top:4rem;}
 
 .article .content {font-family:'Noto Serif', serif;}
 
 .newsletter-code{box-shadow:0 0 5px rgba(0,0,0,0.1);}
 .newsletter-code br + br{display:none;}
 
+#navbar {position:fixed;top:0;left:0;right:0;z-index:100;padding:5px 40px;transition:all 0.5s;}
+#navbar .contain{align-items:center;display:flex;flex-direction:row;justify-content:space-between;}
+#navbar .contain *{color:#fff;transition:all 0.5s;}
+#navbar .contain #mcu-logo .morning,
+#navbar .contain #mcu-logo .chalkup{fill:#fff;transition:all 0.5s;}
+#navbar .contain a{padding:0.5rem;}
+#navbar .contain > *{flex:1;}
+#navbar .contain h1{font-size:24px;}
+#navbar .contain .navleft{text-align:left;}
+#navbar .contain .navmid{text-align:center;flex:auto;}
+#navbar .contain .navright{text-align:right;}
+
+#navbar.scrolled{background-color:rgba(255,255,255,0.9);box-shadow:0 0 7px rgba(0,0,0,0.2);}
+#navbar.scrolled *{color:#000;}
+#navbar.scrolled #mcu-logo .morning{fill:#333132;}
+#navbar.scrolled #mcu-logo .chalkup{fill:#3D5BA9;}
+
+#navbar.open{background-color:rgba(255,255,255,0.9);box-shadow:0 0 7px rgba(0,0,0,0.2);}
+#navbar.open *{color:#000;}
+#navbar.open #mcu-logo .morning{fill:#333132;}
+#navbar.open #mcu-logo .chalkup{fill:#3D5BA9;}
+
+#navbar.noban{background-color:rgba(255,255,255,0.9);}
+#navbar.noban *{color:#000;}
+#navbar.noban #mcu-logo .morning{fill:#333132;}
+#navbar.noban #mcu-logo .chalkup{fill:#3D5BA9;}
+
+#menu{display:none;}
+#menu a{display:block;font-size:24px;text-align:center;padding:20px;}
+
+
+@supports (backdrop-filter:blur()) or (-webkit-backdrop-filter:blur()){
+  #navbar.scrolled{background-color:rgba(255,255,255,0.8);backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);}
+}
+
 #banner{background-size:cover;background-repeat:no-repeat;background-position:50% 50%;color:#fff;font-family:'Noto Serif', serif;text-align:center;padding:25% 0 1rem;position:relative;margin-top:-16px;}
 #banner:before{background-color:rgba(0,0,0,0.5);content:'';position:absolute;top:0;bottom:0;left:0;right:0;}
 #banner h2{color:#fff;font-family:'Noto Serif', serif;font-size:56px;}
-#banner .mdl-grid{position:relative;}
-#banner .meta{}
 #banner .meta a{color:#fff;}
 #banner .caption{font-size:14px;font-style:italic;opacity:0.5;}
 #banner .social a{color:rgba(255,255,255,0.5);padding:1rem 0.5rem;}
 #banner .social a:hover{color:#fff;}
+
+
 
 .social{font-size:14px;margin:0.5rem 0 0.5rem -0.3rem;}
 .social a{font-size:20px;padding:0.3rem;}
@@ -193,10 +229,30 @@ a#logo:after{display:none;}
 .social a.mdi-reddit{color:#ff4500;}
 .social a.mdi-email{color:#666;}
 
-#singup{background-color:#111;color:#fff;padding:25% 0 1rem;}
-#demo{position:relative;/*padding-top:200%;*/width:400px;}
-#demo img{width:100%;position:relative;z-index:10;}
-#demo .newsletter{left:5%;width:90%;top:72px;bottom:18px;background-color:yellow;position:absolute;z-index:1;margin:0 auto;}
+#bg{background-image:url('img/sol.jpg');background-position: 50% 50%;background-size:cover;bottom:0;position:absolute;left:0;right:0;top:0;}
+
+#signup{background-color:#111;padding-top:10%;position:relative;overflow:hidden;}
+#signup:before{background-color:#000;content:'';position:absolute;top:0;right:0;left:0;bottom:0;opacity:0.5;z-index:1;}
+#signup .wrapper{z-index:2;}
+#signup h1{color:#fff;text-shadow:0 0 30px rgba(0,0,0,0.1);}
+#signup .sub-form{position:relative;}
+#signup .sub-form input{background-color:transparent;border:1px solid rgba(255,255,255,0.5);border-radius:6px;color:#fff;font-size:24px;padding:0.5em 140px 0.5em 0.5em;transition:0.5s all;}
+#signup .sub-form input:focus{border-color:#fff;outline:none;}
+#signup .sub-form button{position:absolute;right:7px;top:7px;bottom:7px;background-color:rgba(255,255,255,0.7);color:#3D5BA9;border:none;border-radius:6px;font-size:17px;font-family: "industry", sans-serif;padding:0 13px 2px 15px;cursor:pointer;font-weight: 700;text-transform: uppercase;letter-spacing: 0.1em;transition:0.5s all;}
+#signup .sub-form input:focus + button{background-color:#fff;}
+
+#signup .sub-form button:hover{background-color:#3D5BA9;color:#fff;}
+
+
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label, 
+.mdl-textfield--floating-label.is-dirty .mdl-textfield__label, 
+.mdl-textfield--floating-label.has-placeholder 
+.mdl-textfield__label{font-size:18px !important;}
+
+#demo{position:relative;width:400px;margin-bottom:-150px;}
+#demo img{width:100%;position:relative;z-index:10;pointer-events:none;}
+#demo .newsletter{overflow:scroll;left:6.5%;right:6.5%;top:12.5%;bottom:3%;background-color:#fff;position:absolute;z-index:1;margin:0 auto;}
+#demo .newsletter br + br{display:none;}
 
 #banner + .mdl-grid .content::first-letter{
 /*  font-family:"industry", sans-serif;*/
@@ -209,6 +265,8 @@ a#logo:after{display:none;}
 
 #instagram .insta-container{overflow:hidden;position:relative;}
 #instagram a.insta-shot{background-position:50% 50%;background-size:cover;display:block;float:left;width:16.666%;padding-top:16.666%;}
+
+.mdl-layout--fixed-header .mdl-layout__header{position:fixed;top:0;right:0;left:0;z-index:10;}
 
 header.mdl-layout__header {
   z-index: 6;
@@ -433,8 +491,8 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   min-height: 100%;
 }
 .mdl-layout__content .page-content article.main.subscribe-page .hero {
-  background-image: url('img/about-bg.png');
-  background-position: bottom center;
+  background-image: url('img/racked.jpg');
+  background-position: 50% 50%;
   background-size: cover;
   position: relative;
   min-height: calc(100vh - 64px);
@@ -840,9 +898,11 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   line-height: normal;
 }
 
-.subscribe {padding:2rem;border-radius:10px;background-color: #3D5BA9;border:3px solid #3D5BA9;text-align: center;}
-.subscribe h3 {color: #fff;margin: 12px 0;}
-.subscribe .sub-title {color: #fff;font-size: 22px;line-height: 1.5em;}
+.subscribe {padding:2rem;margin:2rem 0;border-radius:10px;background-color: #3D5BA9;text-align: center;position:relative;}
+.subscribe:before{background-image:url('./img/boss-fight-free-high-quality-stock-images-photos-photography-woman-bar-weights-exercise.jpg');background-position:50% 50%;background-size:cover;content:'';position:absolute;top:0;right:0;left:0;bottom:0;opacity:0.1;border-radius:10px;}
+.subscribe .sub-form{position:relative;}
+.subscribe .sub-form h3 {color: #fff;margin: 12px 0;}
+.subscribe .sub-form .sub-title {color: #fff;font-size: 22px;line-height: 1.5em;}
 .subscribe .sub-form .mdl-textfield label {color: rgba(255, 255, 255, 0.5);font-size: 16px;top: 18px;}
 .subscribe .sub-form .mdl-textfield label:after {background: #fff;}
 .subscribe .sub-form .mdl-textfield input {border-bottom-color: rgba(255, 255, 255, 0.5);font-size: 16px;color: #fff;}

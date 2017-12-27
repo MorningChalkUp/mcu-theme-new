@@ -1,5 +1,4 @@
 <section class="mdl-cell mdl-cell--8-col recommended">
-  <hr>
   <h3 class="center section-title">Recommended <strong>Articles</strong></h3>
   <div class="mdl-grid">
     <?php

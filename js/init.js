@@ -1,8 +1,4 @@
-$(document).ready(function(){
 
-  
-
-});
 
 function toggel(id) {
   if ($(id).hasClass('hidden')) {
@@ -21,10 +17,6 @@ function tab(id, tab) {
   $('li.mdl-list__item', tab).addClass('active');
 }
 
-/*$(window).on('load', function() {
-    $('#quote1').textfit('bestfit');
-    $('#quote2').textfit('bestfit');
-});*/
 
 $('input.event-state').on('change', function() {
   if (window.location.search !== "") {
@@ -86,6 +78,7 @@ function getQueryVariable(variable) {
 }
 
 $(function() {
+  
     $( '#URL' ).val( location.protocol + '//' + location.host + location.pathname );
     if (getQueryVariable('utm_source')) {
       $('#UTM_SOURCE').val(getQueryVariable('utm_source'));
@@ -128,15 +121,7 @@ $(function() {
     }
 });
 
-/*$('#about-ib').immybox({
-  choices: [
-    {text: 'CrossFit Fan!', value: 'CrossFit Fan!'},
-    {text: 'Elite Athlete', value: 'Elite Athlete'},
-    {text: 'Box Owner/Coach', value: 'Box Owner/Coach'},
-    {text: 'Media', value: 'Media'},
-    {text: 'Vendor', value: 'Vendor'},
-  ]
-});*/
+
 $(document).ready(function(){
     $('#affiliate').immybox({
         choices: [

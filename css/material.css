@@ -7306,10 +7306,10 @@ input.mdl-button[type="submit"] {
 .mdl-layout:not(.is-small-screen) .mdl-layout--small-screen-only {
   display: none; }
 
-.mdl-layout__container {
+/*.mdl-layout__container { this is breaking scroll detection
   position: absolute;
   width: 100%;
-  height: 100%; }
+  height: 100%; }*/
 
 .mdl-layout__title,
 .mdl-layout-title {

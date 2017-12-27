@@ -20,52 +20,55 @@ $tags = wp_get_post_tags( $post->ID );
   
 </div>
 <div id="banner" style="background-image:url('<?php echo $thumb_url; ?>');">
-  <div class="mdl-grid">
-    <div class="mdl-layout-spacer"></div>
-    <div class="mdl-cell mdl-cell--8-col">
-      <h2 class="post-title"><?php the_title(); ?></h2>
-      <div class="meta">
-        <?php the_date('F j, Y'); ?> by <a href="<?php echo get_author_posts_url($post->post_author) ?>" title="<?php the_author(); ?>" alt="<?php the_author(); ?>"><?php the_author(); ?></a>
+  <div class="wrapper">
+    <div class="row">
+      <div class="span2 placeholder"></div>
+      <div class="span8">
+        <h2 class="post-title"><?php the_title(); ?></h2>
+        <div class="meta">
+          <?php the_date('F j, Y'); ?> by <a href="<?php echo get_author_posts_url($post->post_author) ?>" title="<?php the_author(); ?>" alt="<?php the_author(); ?>"><?php the_author(); ?></a>
+        </div>
+        <?php if ( $caption ) : ?>
+          <div class="caption">Photo Credit: <?php echo $caption ?></div>
+        <?php endif; ?>
+        <div class="social">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink() ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on Facebook" class="mdi mdi-facebook"></a>
+          <a href="https://twitter.com/intent/tweet?text=<?php echo urlencode(get_the_title().' | '.get_bloginfo('name')) ?>&url=<?php echo get_permalink() ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on Twitter" class="mdi mdi-twitter"></a>
+          <a href="http://www.reddit.com/submit?url=<?php echo get_permalink() ?>&title=<?php echo urlencode(get_the_title().' | '.get_bloginfo('name')) ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on Reddit" class="mdi mdi-reddit"></a>
+          <a href="mailto:?subject=<?php echo get_the_title().' - '.get_bloginfo('name') ?>&body=<?php echo get_permalink() ?>" target="_blank" title="Share via Email" class="mdi mdi-email"></a>
+        </div>
       </div>
-      <?php if ( $caption ) : ?>
-        <div class="caption">Photo Credit: <?php echo $caption ?></div>
-      <?php endif; ?>
-      <div class="social">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink() ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on Facebook" class="mdi mdi-facebook"></a>
-        <a href="https://twitter.com/intent/tweet?text=<?php echo urlencode(get_the_title().' | '.get_bloginfo('name')) ?>&url=<?php echo get_permalink() ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on Twitter" class="mdi mdi-twitter"></a>
-        <a href="http://www.reddit.com/submit?url=<?php echo get_permalink() ?>&title=<?php echo urlencode(get_the_title().' | '.get_bloginfo('name')) ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on Reddit" class="mdi mdi-reddit"></a>
-        <a href="mailto:?subject=<?php echo get_the_title().' - '.get_bloginfo('name') ?>&body=<?php echo get_permalink() ?>" target="_blank" title="Share via Email" class="mdi mdi-email"></a>
-      </div>
+      <div class="span2 placeholder"></div>
     </div>
-    <div class="mdl-layout-spacer"></div>
   </div>
 </div>
 <div class="mdl-grid">
   <div class="mdl-layout-spacer"></div>
-  
+<?php else: ?>  
+  <script>$('#navbar').addClass('noban');</script>
 <?php endif; ?>
   
   <article class="mdl-cell mdl-cell--8-col main article">
     
     <?php if(!$banner) : ?>
       
-    <h2 class="post-title"><?php the_title(); ?></h2>
-    <div class="meta">
-      <strong><?php the_date('F j, Y'); ?></strong>
-       BY  <a href="<?php echo get_author_posts_url($post->post_author) ?>" title="<?php the_author(); ?>" alt="<?php the_author(); ?>"><?php the_author(); ?></a>
-    </div>
-    <div class="social">
-      <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink() ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;ga('send', 'event', 'share', 'facebook', '<?php echo get_the_title(); ?>');" target="_blank" title="Share on Facebook" class="mdi mdi-facebook"></a>
-      <a href="https://twitter.com/intent/tweet?text=<?php echo urlencode(get_the_title().' | '.get_bloginfo('name')) ?>&url=<?php echo get_permalink() ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;ga('send', 'event', 'share', 'twitter', '<?php echo get_the_title(); ?>');" target="_blank" title="Share on Twitter" class="mdi mdi-twitter"></a>
-      <a href="http://www.reddit.com/submit?url=<?php echo get_permalink() ?>&title=<?php echo urlencode(get_the_title().' | '.get_bloginfo('name')) ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;ga('send', 'event', 'share', 'reddit', '<?php echo get_the_title(); ?>');" target="_blank" title="Share on Reddit" class="mdi mdi-reddit"></a>
-      <a href="mailto:?subject=<?php echo get_the_title().' - '.get_bloginfo('name') ?>&body=<?php echo get_permalink() ?>" target="_blank" onclick="ga('send', 'event', 'share', 'email', '<?php echo get_the_title(); ?>');" title="Share via Email" class="mdi mdi-email"></a>
-    </div>
-    <div class="img">
-      <img class="feature-img" src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>">
-      <?php if ( $caption ) : ?>
-        <div class="caption">Photo Credit: <?php echo $caption ?></div>
-      <?php endif; ?>
-    </div>
+      <h2 class="post-title top-title" ><?php the_title(); ?></h2>
+      <div class="meta">
+        <strong><?php the_date('F j, Y'); ?></strong>
+         BY  <a href="<?php echo get_author_posts_url($post->post_author) ?>" title="<?php the_author(); ?>" alt="<?php the_author(); ?>"><?php the_author(); ?></a>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink() ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;ga('send', 'event', 'share', 'facebook', '<?php echo get_the_title(); ?>');" target="_blank" title="Share on Facebook" class="mdi mdi-facebook"></a>
+        <a href="https://twitter.com/intent/tweet?text=<?php echo urlencode(get_the_title().' | '.get_bloginfo('name')) ?>&url=<?php echo get_permalink() ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;ga('send', 'event', 'share', 'twitter', '<?php echo get_the_title(); ?>');" target="_blank" title="Share on Twitter" class="mdi mdi-twitter"></a>
+        <a href="http://www.reddit.com/submit?url=<?php echo get_permalink() ?>&title=<?php echo urlencode(get_the_title().' | '.get_bloginfo('name')) ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;ga('send', 'event', 'share', 'reddit', '<?php echo get_the_title(); ?>');" target="_blank" title="Share on Reddit" class="mdi mdi-reddit"></a>
+        <a href="mailto:?subject=<?php echo get_the_title().' - '.get_bloginfo('name') ?>&body=<?php echo get_permalink() ?>" target="_blank" onclick="ga('send', 'event', 'share', 'email', '<?php echo get_the_title(); ?>');" title="Share via Email" class="mdi mdi-email"></a>
+      </div>
+      <div class="img">
+        <img class="feature-img" src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>">
+        <?php if ( $caption ) : ?>
+          <div class="caption">Photo Credit: <?php echo $caption ?></div>
+        <?php endif; ?>
+      </div>
     
     <?php endif; ?>
     
