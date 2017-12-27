@@ -172,6 +172,9 @@ a#logo:after{display:none;}
 
 .article .content {font-family:'Noto Serif', serif;}
 
+.newsletter-code{box-shadow:0 0 5px rgba(0,0,0,0.1);}
+.newsletter-code br + br{display:none;}
+
 #banner{background-size:cover;background-repeat:no-repeat;background-position:50% 50%;color:#fff;font-family:'Noto Serif', serif;text-align:center;padding:25% 0 1rem;position:relative;margin-top:-16px;}
 #banner:before{background-color:rgba(0,0,0,0.5);content:'';position:absolute;top:0;bottom:0;left:0;right:0;}
 #banner h2{color:#fff;font-family:'Noto Serif', serif;font-size:56px;}
