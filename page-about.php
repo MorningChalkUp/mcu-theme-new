@@ -93,7 +93,7 @@
 
   <?php get_template_part( 'templates/subscribe' ); ?>
 
-  <?php get_template_part( 'templates/footer' ); ?>
+  
 
 </main>
 

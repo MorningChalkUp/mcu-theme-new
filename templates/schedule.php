@@ -1018,7 +1018,7 @@ $tags = wp_get_post_tags( $post->ID ); ?>
 
   <?php get_template_part( 'templates/subscribe' ); ?>
 
-  <?php get_template_part( 'templates/footer' ); ?>
+  
 
 </main>
 

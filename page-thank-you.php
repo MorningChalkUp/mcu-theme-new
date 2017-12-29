@@ -41,7 +41,7 @@ if (isset($_GET['fname'])) $name = $_GET['fname'];
       </section>
     </article>
 
-  <?php get_template_part( 'templates/footer' ); ?>
+  
 
 </main>
 

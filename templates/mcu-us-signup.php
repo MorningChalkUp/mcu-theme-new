@@ -169,7 +169,7 @@
       </section>
     </article>
 
-  <?php get_template_part( 'templates/footer' ); ?>
+  
 
 </main>
 

@@ -10,7 +10,7 @@
     <?php get_template_part( 'templates/subscribe' ); ?>
   </div>
   
-  <?php get_template_part( 'templates/footer' ); ?>
+  
 
 </main>
 
