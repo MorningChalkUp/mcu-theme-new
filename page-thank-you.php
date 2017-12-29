@@ -1,6 +1,6 @@
 <?php 
 
-$name = $_GET['fname'];
+if (isset($_GET['fname'])) $name = $_GET['fname'];
 
 ?>
 
@@ -16,7 +16,7 @@ $name = $_GET['fname'];
             <div class="mdl-cell mdl-cell--10-col form thank-you">
               <div class="mdl-grid">
                 <div class="mdl-layout-spacer"></div>
-                <div class="mdl-cell mdl-cell--8-col headline">
+                <div class="mdl-cell mdl-cell--8-col headline center">
                   <h1>
                     <i class="mdi mdi-email"></i>
                     <?php 
