@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<script>$('#navbar').addClass('noban');</script>
 <main class="mdl-layout__content">
   <div class="page-content">
     <div class="mdl-grid">

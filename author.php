@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<script>$('#navbar').addClass('noban');</script>
 <?php
   $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
   $user_id = $curauth->ID;
@@ -11,8 +11,8 @@
         <section class="mdl-cell mdl-cell--12-col main archive">
           <div class="mdl-grid">
             <div class="mdl-layout-spacer"></div>
-            <div class="mdl-cell mdl-cell--10-col title">
-
+            <div class="mdl-cell mdl-cell--8-col center">
+              <br>
               <div class="user-image">
                 <?php if(get_cupp_meta($user_id, 'team-member') != ''): ?>
                   <img src="<?php echo get_cupp_meta($user_id, 'team-member');  ?>" class="circle" alt="<?php echo $curauth->display_name; ?>">
@@ -20,31 +20,28 @@
                   <img src="<?php echo get_avatar_url($curauth->ID); ?>" class="circle" alt="<?php echo $curauth->display_name; ?>">
                 <?php endif; ?>
               </div>
-              
-              <h1 class="author"><?php echo $curauth->display_name; ?></h1>
-              
-              <div class="location"><?php the_field('user_location', 'user_' . $user_id) ?></div>
-              
-              <div class="bio"><?php echo $curauth->user_description; ?></div>
-              
+              <h3 class="top-title section-title "><strong><?php the_archive_title(); ?></strong></h2>
+                <div class="location"><?php the_field('user_location', 'user_' . $user_id) ?></div>
+              <p><?php echo $curauth->user_description; ?></p>
+            </div>
+            <div class="mdl-layout-spacer"></div>
+          </div>
+          <div class="mdl-grid">
+            <div class="mdl-layout-spacer"></div>
+            <div class="mdl-cell mdl-cell--10-col title">
               <div class="social">
-
                 <?php if (isset($curauth->user_email) && $curauth->user_email != ''): ?>
                   <a href="mailto:<?php echo $curauth->user_email ?>"><i class="mdi mdi-email"></i></a>
                 <?php endif; ?>
-
                 <?php if(get_field('user_instagram', 'user_' . $user_id) != ''): ?>
                   <a target="_balnk" href="https://www.instagram.com/<?php the_field('user_instagram', 'user_' . $user_id) ?>"><i class="mdi mdi-instagram"></i></a>
                 <?php endif; ?>
-
                 <?php if (get_the_author_meta('twitter', $user_id) != ''): ?>
                   <a target="_balnk" href="https://twitter.com/<?php the_author_meta('twitter', $user_id) ?>"><i class="mdi mdi-twitter"></i></a>
                 <?php endif; ?>
-
                 <?php if (get_the_author_meta('facebook', $user_id) != ''): ?>
                   <a target="_balnk" href="<?php the_author_meta('facebook', $user_id) ?>"><i class="mdi mdi-facebook-box"></i></a>
                 <?php endif; ?>
-
               </div>
             </div>
             <div class="mdl-layout-spacer"></div>

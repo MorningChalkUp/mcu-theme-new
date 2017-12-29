@@ -121,18 +121,16 @@ $select_terms = get_terms( array(
 
 ?>
 
-<article class="mdl-cell mdl-cell--10-col main events">
+<article class="mdl-cell mdl-cell--12-col main events">
   <div class="mdl-grid">
-    <div class="mdl-layout-spacer"></div>
-    <div class="mdl-cell mdl-cell--8-col title">
-      <h1>Competition Calendar</h1>
-      <p>It's not a CrossFit competition unless it's sponsored by CrossFit<sup style="font-size:small;">®</sup>. Every other competition, except for weightlifting, is unofficial. Large-scale major sponsored events are "national" and smaller ones are "local."</p>
+    <div class="mdl-cell mdl-cell--12-col center">
+      <br><hr>
+      <h3 class="top-title section-title "><strong>Competition Calendar</strong></h2>
+      <small>It's not a CrossFit competition unless it's sponsored by CrossFit<sup style="font-size:small;">®</sup>. Every other competition, except for weightlifting, is unofficial. Large-scale major sponsored events are "national" and smaller ones are "local."</small>
     </div>
-    <div class="mdl-layout-spacer"></div>
   </div>
   
   <div class="mdl-cell mdl-cell--12-col filters">
-
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height">
       <input class="mdl-textfield__input event-state" type="text" id="state" value="" readonly tabIndex="-1">
       <label for="state">

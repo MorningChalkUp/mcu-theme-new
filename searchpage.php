@@ -40,17 +40,18 @@ query_posts( $args );
 ?>
 
 <?php get_header(); ?>
-
+<script>$('#navbar').addClass('noban');</script>
 <main class="mdl-layout__content">
   <div class="page-content">
     <div class="mdl-grid">
       <div class="mdl-layout-spacer"></div>
-      <section class="mdl-cell mdl-cell--8-col">
-        <h1 class="center">Search Results</h1>
-
-      </section>
+      <div class="mdl-cell mdl-cell--8-col center">
+        <br><hr>
+        <h3 class="top-title section-title "><strong>Search Results</strong></h2>
+      </div>
       <div class="mdl-layout-spacer"></div>
     </div>
+    
      <div class="mdl-grid">
       <div class="mdl-layout-spacer"></div>
         <section class="mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet search-side">

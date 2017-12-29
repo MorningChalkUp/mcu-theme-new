@@ -1,10 +1,7 @@
 <?php get_header(); ?>
 <div id="banner" class="banner-min" style="background-image:url('<?php bloginfo('stylesheet_directory') ?>/img/racked.jpg');">
   <div class="wrapper">
-
-
-        <h2 class="post-title">The Morning <span>Chalk Up</span> is the newsletter for people who do CrossFit.</h2>
-
+    <h2 class="post-title">The Morning <span>Chalk Up</span> is the newsletter for people who do CrossFit.</h2>
   </div>
 </div>
 <main class="mdl-layout__content">
