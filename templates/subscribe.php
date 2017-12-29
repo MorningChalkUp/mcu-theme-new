@@ -2,15 +2,9 @@
   <div class="mdl-layout-spacer"></div>
   <div class="mdl-cell mdl-cell--8-col">
     <div class="subscribe">
-      
-      <form class="sub-form" action="/process/sub-bar.php" method="post">
-        <h3>Get The Morning Chalk Up</h3>
-        <div class="sub-title">Delivered to your inbox every morning.</div>
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input class="mdl-textfield__input" type="text" id="email" name="email">
-          <label class="mdl-textfield__label" for="email">Email Address</label>
-        </div>
-  
+      <h3>Get The Morning Chalk Up<br><small>Delivered to your inbox every morning.</small></h3>
+      <form class="pill-form" action="/process/sub-bar.php" method="post">
+        <input type="text" id="email" name="email" placeholder="Your Email">
         <div class="hidden" style="display:none;">
           <input type="hidden" name="URL" id="URL" value="">
           <input type="hidden" name="UTM_SOURCE" id="UTM_SOURCE" value="">
@@ -18,10 +12,7 @@
           <input type="hidden" name="UTM_CAMP" id="UTM_CAMP" value="">
           <input type="hidden" name="GCLID" id="GCLID" value="">
         </div>
-
-        <button type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect submit">
-          Subscribe
-        </button>
+        <button type="submit" class="submit">CHALK UP</button>
       </form>
     </div>
   </div>

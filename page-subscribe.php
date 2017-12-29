@@ -7,10 +7,9 @@
   <div class="page-content">
     <article class="main subscribe-page">
       <section class="hero">
-        <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--12-col mdl-grid">
+          <div class="mdl-grid">
             <div class="mdl-layout-spacer"></div>
-            <div class="mdl-cell mdl-cell--10-col form" style="margin-top:2rem">
+            <div class="mdl-cell mdl-cell--8-col form" style="margin-top:6rem">
               <?php if (($error)): ?>
               <div class="mdl-grid">
                 <div class="mdl-layout-spacer"></div>
@@ -42,7 +41,7 @@
               <?php endif; ?>
               <div class="mdl-grid">
                 <div class="mdl-layout-spacer"></div>
-                <div class="mdl-cell mdl-cell--10-col">
+                <div class="mdl-cell mdl-cell--11-col">
                   <h2 class="center">Morning Chalk Up is the daily newsletter for people who do CrossFit<sup style="font-size: small;">&reg;</sup>. Get the email that athletes, insiders and fans are reading every morning.</h2>
                   <form action="/process/subscribe.php" method="post">
                     <div class="mdl-grid fields">
@@ -88,7 +87,7 @@
                         <input type="hidden" name="UTM_CAMP" id="UTM_CAMP" value="">
                         <input type="hidden" name="GCLID" id="GCLID" value="">
                       </div>
-                      <div class="mdl-cell mdl-cell--4-col">
+                      <div class="mdl-cell mdl-cell--12-col center">
                         <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect submit">
                           Subscribe
                         </button>
@@ -101,7 +100,6 @@
             </div>
             <div class="mdl-layout-spacer"></div>
           </div>
-        </div>
       </section>
     </article>
 
