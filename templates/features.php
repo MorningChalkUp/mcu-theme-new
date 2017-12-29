@@ -3,7 +3,7 @@
   <div class="wrapper">
     <div class="row">
       <div class="span6 text-right">
-        <h1>Start your morning with a fresh cup of fitness.</h1>
+        <h2>Start your morning with a fresh cup of fitness.</h2>
         <form class="sub-form" action="/process/sub-bar.php" method="post">
           <input type="text" id="email" name="email" placeholder="Your Email">
           <button type="submit" class="submit">CHALK UP</button>
@@ -15,6 +15,9 @@
             <input type="hidden" name="GCLID" id="GCLID" value="">
           </div>
         </form>
+        <!-- <div class="quote">
+          <p><em>&ldquo;Proud of you guys!! Your morning chalk talk is absolutely outstanding and has evolved to the top tier of what I read daily!! Keep up the good work!!&rdquo;</em></p><p>- Coach Mike Burgener</p>
+        </div> -->
       </div>
       <div class="span6">
         <div id="demo">

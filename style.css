@@ -231,10 +231,11 @@ a#logo:after{display:none;}
 
 #bg{background-image:url('img/sol.jpg');background-position: 50% 50%;background-size:cover;bottom:0;position:absolute;left:0;right:0;top:0;}
 
-#signup{background-color:#111;padding-top:10%;position:relative;overflow:hidden;}
+#signup{background-color:#111;color:#fff;padding-top:10%;position:relative;text-shadow:0 0 30px rgba(0,0,0,0.1);overflow:hidden;}
 #signup:before{background-color:#000;content:'';position:absolute;top:0;right:0;left:0;bottom:0;opacity:0.5;z-index:1;}
+#signup:after{content:'';height:20px;background-image:linear-gradient(to bottom, rgba(0,0,0,0), #000);opacity:0.1;position:absolute;bottom:0;left:0;right:0;z-index:2;}
 #signup .wrapper{z-index:2;}
-#signup h1{color:#fff;text-shadow:0 0 30px rgba(0,0,0,0.1);}
+#signup h2{color:#fff;font-size:64px;margin-bottom:1rem;}
 #signup .sub-form{position:relative;}
 #signup .sub-form input{background-color:transparent;border:1px solid rgba(255,255,255,0.5);border-radius:6px;color:#fff;font-size:24px;padding:0.5em 140px 0.5em 0.5em;transition:0.5s all;max-width:100%;box-sizing:border-box;}
 #signup .sub-form input:focus{border-color:#fff;outline:none;}
@@ -257,13 +258,16 @@ a#logo:after{display:none;}
 #demo .newsletter{overflow:scroll;left:6.5%;right:6.5%;top:12.5%;bottom:3%;background-color:#fff;position:absolute;z-index:1;margin:0 auto;}
 #demo .newsletter br + br{display:none;}
 
+.quote{font-family:'Noto Serif', serif;}
+#quotes{border:2px solid #3D5BA9;border-radius:6px;font-family:'Noto Serif', serif;margin:2rem;padding:1rem 2rem;}
+
 @media (max-width: 767px) {
   #mcu-logo{width:200px;margin-top:-4px;}
   
   #navbar{padding:0px 15px;}
   
   #signup{padding: 20% 0;}
-  #signup h1{font-size:48px;text-align:center;}
+  #signup h2{font-size:48px;text-align:center;}
   #signup .sub-form input{width:100%;}
   #demo{margin:2rem auto -150px;display:none;}
 }
@@ -702,10 +706,6 @@ header.mdl-layout__header .mdl-layout__drawer-button {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.quote {box-shadow:inset 0 0 0 2px #3D5BA9;text-align: center;color: #3D5BA9;font-size:48px;font-weight:700;line-height: normal;}
-.quote:before{content: " ";display: inline-block;height: 100%;width: 1%;vertical-align: middle;}
-.quote div{display: inline-block;vertical-align: middle;width: 80%;padding:20px 2% 20px 0;}
-.quote span{display: block;font-size: 50%;margin-top:1rem;}
 
 .mdl-layout__content .page-content section.archive.home article.sub-feature {
   background-size: cover;
