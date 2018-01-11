@@ -1,9 +1,13 @@
 <div id="signup">
-  <div id="bg"></div>
+  <?php 
+    $bgs = get_field('banner_images','options');
+    shuffle($bgs);
+  ?>
+  <div id="bg" style="background-image:url('<?php echo $bgs[0]['url'] ?>');"></div>
   <div class="wrapper">
     <div class="row">
       <div class="span6 text-right">
-        <h2>Start your morning with a fresh cup of fitness.</h2>
+        <h2><?php the_field('call_to_action','options') ?></h2>
         <form class="pill-form" action="/process/sub-bar.php" method="post">
           <input type="text" id="email" name="email" placeholder="Your Email">
           <button type="submit" class="submit">CHALK UP</button>

@@ -1,7 +1,11 @@
 <section class="mdl-grid ">
   <div class="mdl-layout-spacer"></div>
   <div class="mdl-cell mdl-cell--8-col">
-    <div class="subscribe">
+    <?php 
+      $bgs = get_field('banner_images','options');
+      shuffle($bgs);
+    ?>
+    <div class="subscribe" style="background-image:url('<?php echo $bgs[0]['url'] ?>');" >
       <h3>Get The Morning Chalk Up<br><small>Delivered to your inbox every morning.</small></h3>
       <form class="pill-form" action="/process/sub-bar.php" method="post">
         <input type="text" id="email" name="email" placeholder="Your Email">
