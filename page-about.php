@@ -51,7 +51,7 @@
               </div>
               <h4>Mat Masoni</h4>
               <div class="info">
-                <strong>Designer // Cat Herder</strong><br>
+                <strong>Designer // Beer Snob</strong><br>
                 Location: California
               </div>
               <blockquote class="small">

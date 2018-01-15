@@ -242,7 +242,7 @@ a#logo:after{display:none;}
 .pill-form button:hover{background-color:#3D5BA9 !important;color:#fff;}
 
 
-#demo{position:relative;width:400px;margin-bottom:-150px;}
+#demo{color:#333132;position:relative;width:400px;margin-bottom:-150px;}
 #demo img{width:100%;position:relative;z-index:10;pointer-events:none;}
 #demo .newsletter{overflow:scroll;left:6.5%;right:6.5%;top:12.5%;bottom:3%;background-color:#fff;position:absolute;z-index:1;margin:0 auto;}
 #demo .newsletter br + br{display:none;}
@@ -263,6 +263,7 @@ a#logo:after{display:none;}
   
   #signup{padding: 20% 0;}
   #signup h2{font-size:48px;text-align:center;}
+  #signup .pill-form{float:none;margin:0 auto;}
   #demo{margin:2rem auto -150px;display:none;}
 }
 
