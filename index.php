@@ -52,7 +52,7 @@
           <p><em>&ldquo;Proud of you guys!! Your morning chalk talk is absolutely outstanding and has evolved to the top tier of what I read daily!! Keep up the good work!!&rdquo;</em></p><p>- Coach Mike Burgener</p>
         </div>
         <h3 class="section-title center">Latest <strong>Articles</strong></h3>
-        <div class="mdl-grid">
+        <div class="mdl-grid" style="align-items:center">
           <?php
             if ($feature->have_posts()) {
               while($feature->have_posts()) {
@@ -60,7 +60,10 @@
                 get_template_part( 'templates/feature', 'sub' );
               }
             }
-
+            ?>
+        </div>
+        <div class="mdl-grid">
+          <?php
             $latest = new WP_Query($args);
             if ($latest->have_posts()) {
               while($latest->have_posts()) {
