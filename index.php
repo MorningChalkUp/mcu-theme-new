@@ -49,7 +49,7 @@
       ?>
       <section class="mdl-cell mdl-cell--12-col main archive home">
         <div id="quotes" class="center">
-          <p><em>&ldquo;Proud of you guys!! Your morning chalk talk is absolutely outstanding and has evolved to the top tier of what I read daily!! Keep up the good work!!&rdquo;</em></p><p>- Coach Mike Burgener</p>
+          <p><em>&ldquo;Proud of you guys!! The Morning Chalk Up is absolutely outstanding and has evolved to the top tier of what I read daily!! Keep up the good work!!&rdquo;</em></p><p>- Coach Mike Burgener</p>
         </div>
         <h3 class="section-title center">Latest <strong>Articles</strong></h3>
         <div class="mdl-grid" style="align-items:center">
