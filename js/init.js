@@ -110,6 +110,9 @@ $(function() {
     if (getQueryVariable('about')) {
       $('#about').val(getQueryVariable('about'));
     }
+    if (getQueryVariable('zip')) {
+      $('#zip').val(getQueryVariable('zip'));
+    }
     if (getQueryVariable('affiliate')) {
       $('#affiliate').val(getQueryVariable('affiliate'));
     }
