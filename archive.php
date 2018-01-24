@@ -1,13 +1,14 @@
 <?php get_header(); ?>
-
+  <script>$('#navbar').addClass('noban');</script>
   <main class="mdl-layout__content">
     <div class="page-content">
       <div class="mdl-grid">
         <section class="mdl-cell mdl-cell--12-col main archive">
           <div class="mdl-grid">
             <div class="mdl-layout-spacer"></div>
-            <div class="mdl-cell mdl-cell--8-col title">
-              <h1><?php the_archive_title(); ?></h1>
+            <div class="mdl-cell mdl-cell--8-col center">
+              <br><hr>
+              <h3 class="top-title section-title "><strong><?php the_archive_title(); ?></strong></h2>
               <p><?php the_archive_description(); ?></p>
             </div>
             <div class="mdl-layout-spacer"></div>
@@ -48,7 +49,7 @@
     <?php endif; ?>
     </div>
 
-    <?php get_template_part( 'templates/footer' ); ?>
+    
     
   </main>
 

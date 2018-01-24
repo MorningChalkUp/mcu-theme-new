@@ -4,16 +4,12 @@
   <div class="page-content">
     <div class="mdl-grid">
       <div class="mdl-layout-spacer"></div>
-
-      <?php
-        get_template_part( 'templates/events' );
-      ?>
-
+      <h1 class="top-title">404</h1>
       <div class="mdl-layout-spacer"></div>
     </div>
-
-  <?php get_template_part( 'templates/subscribe' ); ?>
-
+    <?php get_template_part( 'templates/subscribe' ); ?>
+  </div>
+  
   
 
 </main>

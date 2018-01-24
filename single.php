@@ -18,9 +18,10 @@
           }
         }
       ?>
-
+      
       <div class="mdl-layout-spacer"></div>
     </div>
+    <?php get_template_part( 'templates/subscribe' ); ?>
     <?php if(!in_category('morningchalkup')) : ?>
     <div class="mdl-grid">
       <div class="mdl-layout-spacer"></div>
@@ -29,10 +30,8 @@
     </div>
     <?php endif; ?>
   </div>
-
-  <?php get_template_part( 'templates/subscribe' ); ?>
-
-  <?php get_template_part( 'templates/footer' ); ?>
+  
+  
 
 </main>
 
