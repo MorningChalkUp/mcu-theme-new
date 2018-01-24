@@ -5,17 +5,17 @@
 ?>
 <?php
 
-  //require __DIR__ . '/../../../../process/inc/functions.php';
-  //
-  //$ip = get_client_ip();
-  //
-  //$url = $domain . strtok($_SERVER['REQUEST_URI'], '?');
-  //
-  //$time = date("Y-m-d H:i:s");
-  //
-  //$reff = isset($_GET['reff']) ? $_GET['reff'] : null;
-  //
-  //track_pageview($ip,$url,$time,$reff);
+  require __DIR__ . '/../../../../process/inc/functions.php';
+  
+  $ip = get_client_ip();
+  
+  $url = $domain . strtok($_SERVER['REQUEST_URI'], '?');
+  
+  $time = date("Y-m-d H:i:s");
+  
+  $reff = isset($_GET['reff']) ? $_GET['reff'] : null;
+  
+  track_pageview($ip,$url,$time,$reff);
 
   if (isset($_GET['e'])) {
     $err = $_GET['e'];
@@ -69,7 +69,7 @@
             <div class="mdl-grid">
               <div class="mdl-layout-spacer"></div>
               <div class="mdl-cell mdl-cell--11-col">
-                <h4 class="center" style="font-size:24px;font-weight:500;">Morning Chalk Up is the daily newsletter for people who do CrossFit<sup style="font-size: small;">&reg;</sup>. Get the email that athletes, insiders and fans are reading every morning.</h4>
+                <h4 class="center" style="font-size:24px;font-weight:400;">Morning Chalk Up is the daily newsletter for people who do CrossFit<sup style="font-size: small;">&reg;</sup>. Get the email that athletes, insiders and fans are reading every morning.</h4>
                 <form action="/process/mcu-cm.php" method="post" id="subscribe">
                   <div class="mdl-grid fields">
                     <div class="mdl-cell mdl-cell--6-col">
