@@ -8,7 +8,7 @@
     <div class="row">
       <div class="span6 text-right">
         <h2><?php the_field('call_to_action','options') ?></h2>
-        <form class="pill-form" action="/process/sub-bar.php" method="post">
+        <form class="pill-form" action="/process/sub-home.php" method="post">
           <input type="text" id="email" name="email" placeholder="Your Email">
           <button type="submit" class="submit">CHALK UP</button>
           <div class="hidden" style="display:none;">
