@@ -21,11 +21,6 @@
     
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-2.2.3.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/immybox/jquery.immybox.min.js"></script>
-    
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-    
-    <!-- <script src="https://use.typekit.net/ydo2tvd.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script> -->
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
