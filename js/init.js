@@ -78,6 +78,21 @@ function getQueryVariable(variable) {
 }
 
 $(function() {
+    if (location.protocol == 'https:') {
+      $('img').each(function(){
+        var url = $(this).attr('src');
+        var arr = url.split("/");
+        if (arr[0] == 'http:') {
+          arr[0] = 'https:';
+          newUrl = '';
+          arr.forEach(function(element){
+            newUrl += element + '/';
+          });
+          newUrl = newUrl.slice(0,-1);
+          $(this).attr('src', newUrl);
+        }
+      });
+    }
   
     $( '#URL' ).val( location.protocol + '//' + location.host + location.pathname );
     if (getQueryVariable('utm_source')) {
