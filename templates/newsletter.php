@@ -1,3 +1,4 @@
+<script>$('#navbar').addClass('noban');</script>
 <?php 
 $thumb_id = get_post_thumbnail_id();
 
@@ -17,6 +18,7 @@ $tags = wp_get_post_tags( $post->ID );
 ?>
   
   <article class="mdl-cell mdl-cell--8-col main article">
+    <br><hr>
     <div class="content newsletter-code">
       <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;max-width:600px;font-family:Roboto, sans-serif;mso-table-lspace:0pt !important;mso-table-rspace:0pt !important;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:auto !important;margin-left:auto !important;">
         <tbody><tr style="-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
