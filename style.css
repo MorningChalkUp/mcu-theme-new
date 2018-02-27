@@ -853,4 +853,4 @@ section.archive.home article.sub-feature .content {bottom: 40px;right: 40px;posi
 .question-section a:hover {text-decoration: underline;}
 
 
-.instagram-media {margin: auto;}
+.instagram-media {margin: auto !important;}
