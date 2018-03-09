@@ -47,7 +47,7 @@
       <a id="menutoggle" href="#"><i class="mdi mdi-menu"></i></a>
     </div>
     <div class="navmid">
-      <h1><a id="logo" href="/"><?php echo file_get_contents(get_bloginfo('stylesheet_directory').'/img/mcu.svg') ?></a></h1>
+      <h1><a id="logo" href="/"><?php echo file_get_contents(get_template_directory().'/img/mcu.svg') ?></a></h1>
     </div>
     <div class="navright">
       <a href="/subscribe" title="Subscribe">
