@@ -73,6 +73,7 @@ $tags = wp_get_post_tags( $post->ID );
     <?php endif; ?>
     
     <div class="content">
+      <?php the_field('scripts_and_styles'); ?>
       <?php the_content(); ?>
       <?php if (get_field('mcu_reads')): ?>
         <div class="sub-sec reads">
