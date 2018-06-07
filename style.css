@@ -834,7 +834,7 @@ section.archive.home article.sub-feature .content {bottom: 40px;right: 40px;posi
 
 .instagram-media {margin: auto !important;}
 
-.address_state{overflow: hidden;position:relative;margin-top:12px !important;margin-bottom:12px !important;}
+.address_state{overflow: hidden;position:relative;margin-top:5px !important;margin-bottom:5px !important;}
 .address_state:before{
   
   content:'expand_more';
@@ -861,24 +861,59 @@ section.archive.home article.sub-feature .content {bottom: 40px;right: 40px;posi
   /* Support for IE. */
   font-feature-settings: 'liga';
   
-  color:#3D5BA9;font-size:28px;position:absolute;right:0.8rem;top:50%;margin-top:-12px;z-index:15;
+  color:#3D5BA9;font-size:28px;position:absolute;right:0.8rem;top:50%;margin-top:-14px;z-index:15;
 }
-.address_state select{color:#6C6C6C;cursor:pointer;width: 100%;background-color:#fff;border: 1px solid #ccc;border-radius:4px;font-family:'Roboto' !important;font-size:inherit !important;-webkit-appearance: none;-moz-appearance: none;appearance: none;margin:0 !important;padding: 10px 10px 10px 10px !important;position:relative;z-index:10;width:100%;line-height:24px !important;height:46px;}
+.address_state select{color:#6C6C6C;cursor:pointer;width: 100%;background-color:#fff;border: 1px solid #ccc;border-radius:4px;font-family:'Roboto' !important;font-size:inherit !important;-webkit-appearance: none;-moz-appearance: none;appearance: none;margin:0 !important;padding: 10px 10px 10px 10px !important;position:relative;z-index:10;width:100%;line-height:24px !important;height:41px;}
 .address_state select:focus{outline:none;}
 .address_state select::-ms-expand{display: none;}
 .address_state select option{background-color:#fff;color:#808080;}
 
-.gform_wrapper .gform_body{ width: calc(100% + 16px) !important; } /* fixes 16px offset caused by margin-right on fields */
+.gform_wrapper .gform_body{ width: calc(100% + 16px) !important; font-size:16px;} /* fixes 16px offset caused by margin-right on fields */
 
 .gform_body .hidden_label label{display:none;}
 .gform_body .gfield{margin:0 !important;}
-.gform_body .gfield input{border:1px solid #ccc;border-radius:4px;padding:10px !important;transition:0.2s all;}
+.gform_body .gfield input{border:1px solid #ccc;border-radius:4px;padding:10px !important;transition:0.2s all;margin-top:5px !important;margin-bottom:5px !important;}
 .gform_body .gfield input:focus{border-color:#3D5BA9;}
 .gform_body .gfield .ginput_complex.ginput_container{margin:0;}
 
 .gfield_contains_required .ginput_container > span.ginput_full{display:block;}
 
 .gfield_contains_required .ginput_container > span{position:relative;}
-.gfield_contains_required .ginput_container > span:after{content:'*';position:absolute;right:24px;top:22px;color:red;}
+.gfield_contains_required .ginput_container > span:after{content:'*';position:absolute;right:24px;top:12px;color:red;}
 .gfield_contains_required .ginput_container > span.ginput_full:after{right:16px;}
 .gfield_contains_required .ginput_container_name > span:after{right:32px;}
+
+.gform_wrapper form{position:relative;}
+.gform_wrapper .gform_footer{padding:0 !important;position:absolute;right:0;bottom:0;width:calc(50% - 8px) !important;margin-top: 5px !important;margin-bottom: 5px !important;}
+
+.gform_button{
+  background-color: #3D5BA9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 17px;
+  font-family: "industry", sans-serif;
+  padding: 7px 15px 9px 17px;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: 0.5s all;
+}
+@media(max-width: 641px){
+  .gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="image"]):not([type="file"]){line-height:130% !important;min-height:0 !important;}
+  .gform_wrapper .gform_body{width: 100% !important;}
+  .gform_wrapper .gform_footer{position:relative;width:100% !important;}
+  .gfield_contains_required .ginput_container > span:after{right:16px;}
+  .gfield_contains_required .ginput_container > span.ginput_full:after{right:16px;}
+  .gfield_contains_required .ginput_container_name > span:after{right:16px;}
+}
+
+
+#giveaway .mdl-grid{padding-top:70px;}
+#giveaway .gform_button{width:100%;}
+
+@media(max-width: 839px){
+  #giveaway .mdl-grid{flex-direction:column-reverse;padding-left:30px;padding-right:30px;}
+  #giveaway .mdl-grid img{width:100%;}
+}

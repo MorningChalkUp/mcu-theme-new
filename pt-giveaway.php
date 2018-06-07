@@ -10,7 +10,7 @@
         if ( have_posts() ) :
           while ( have_posts() ) : the_post();
       ?>
-        <section class="hero" style="background-color:#f9f9f9;background-image:none;">
+        <section id="giveaway" class="hero" style="background-color:#f9f9f9;background-image:none;">
             <div class="mdl-grid" style="align-items:center;min-height:90vh;">
         
               <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
