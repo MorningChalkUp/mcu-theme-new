@@ -190,4 +190,7 @@ function cptui_register_my_taxes() {
 }
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page('Options');
-}
+} 
+
+add_filter('gform_enable_field_label_visibility_settings', '__return_true');
+
