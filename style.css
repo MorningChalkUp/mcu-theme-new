@@ -836,7 +836,7 @@ section.archive.home article.sub-feature .content {bottom: 40px;right: 40px;posi
 
 .address_state{overflow: hidden;position:relative;margin-top:5px !important;}
 .address_state:before{
-  
+  pointer-events:none;
   content:'expand_more';
   font-family: 'Material Icons';
   font-weight: normal;
