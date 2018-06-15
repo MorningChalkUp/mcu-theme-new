@@ -922,3 +922,38 @@ body .gform_wrapper .top_label div.ginput_container{margin-top:0 !important;}
   #giveaway .mdl-grid{flex-direction:column-reverse;padding-left:30px;padding-right:30px;}
   #giveaway .mdl-grid img{width:100%;}
 }
+
+h4.sponsor-block{font-family:'Noto Serif', serif;font-size:16px;font-weight:normal;text-align:center;font-style:italic;}
+h4.sponsor-block img{margin:0 10px;max-width:160px !important;max-height:100 !important;}
+h4.sponsor-block a:after{display:none !important;}
+
+.alignright{float:right; }
+.alignleft{float:left; }
+.aligncenter{display: block; margin-left: auto; margin-right: auto}
+
+.wp-caption{width:auto !important;}
+img.alignright,
+.wp-caption.alignright {margin:1em -100px 1em 1.5em;width:60% !important;}
+img.alignleft,
+.wp-caption.alignleft {margin:1em 1.5em 1em -100px;width:60% !important;}
+
+
+p.wp-caption-text{background-color:#f9f9f9;font-size:16px;font-style:italic;padding:0.5em 1em;margin:0;}
+
+
+@media(max-width: 976px){
+  img.alignright,
+  .wp-caption.alignright {margin:1em -20px 1em 1.5em;width:60% !important;}
+  img.alignleft,
+  .wp-caption.alignleft {margin:1em 1.5em 1em -20px;width:60% !important;}
+  
+}
+@media(max-width: 641px){
+  img.alignright,
+  .wp-caption.alignright {margin:1em 0;width:100% !important;}
+  img.alignleft,
+  .wp-caption.alignleft {margin:1em 0;width:100% !important;}
+  
+}
+
+
