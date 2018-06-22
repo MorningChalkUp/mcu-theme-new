@@ -72,26 +72,26 @@ $tags = wp_get_post_tags( $post->ID );
     
     <?php endif; ?>
     
+    <?php if(have_rows('sponsor')) : ?>
+      <h4 class="sponsor-block">
+        <?php while (have_rows('sponsor')) : the_row(); ?>
+          <?php the_sub_field('lead-in'); ?><br>
+          <a href="<?php the_sub_field('link'); ?>" target="_blank">
+            <?php 
+              if($logo = get_sub_field('logo')) : 
+                echo "<img src='{$logo['sizes']['medium_large']}' width='' height''/>";
+              else:
+                the_sub_field('name');
+              endif;
+            ?>
+          </a>
+        <?php endwhile ?>
+      </h4>
+    <?php endif; ?>
+    
     <div class="content">
       <?php the_field('scripts_and_styles'); ?>
-      <?php
-        if(have_rows('sponsor')) :
-      ?>
-        <h4 class="sponsor-block">
-          <?php while (have_rows('sponsor')) : the_row(); ?>
-            <?php the_sub_field('lead-in'); ?>
-            <a href="<?php the_sub_field('link'); ?>" target="_blank">
-              <?php 
-                if($logo = get_sub_field('logo')) : 
-                  echo "<img src='{$logo['sizes']['medium_large']}' width='' height''/>";
-                else:
-                  the_sub_field('name');
-                endif;
-              ?>
-            </a>
-          <?php endwhile ?>
-        </h4>
-      <?php endif; ?>
+
       <?php the_content(); ?>
       <?php if (get_field('mcu_reads')): ?>
         <div class="sub-sec reads">

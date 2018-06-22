@@ -54,6 +54,7 @@ blockquote {
   margin: 2rem auto;
   padding:1rem 2rem;
   font-style: italic;
+  clear:both;
   color: #333132;
   position:relative;
   border-left:3px solid #3D5BA9;
@@ -928,7 +929,7 @@ body .gform_wrapper .top_label div.ginput_container{margin-top:0 !important;}
 }
 
 h4.sponsor-block{font-family:'Noto Serif', serif;font-size:16px;font-weight:normal;text-align:center;font-style:italic;}
-h4.sponsor-block img{margin:0 10px;max-width:160px !important;max-height:80px !important;}
+h4.sponsor-block img{margin: 18px;max-width:160px !important;max-height:80px !important;}
 h4.sponsor-block a:after{display:none !important;}
 
 .alignright{float:right; }
@@ -941,22 +942,56 @@ img.alignright,
 img.alignleft,
 .wp-caption.alignleft {margin:1em 1.5em 1em -100px;width:60% !important;}
 
+.wp-caption.aligncenter{margin-left:-100px;margin-right:-100px;}
+
 
 p.wp-caption-text{background-color:#f9f9f9;font-size:16px;font-style:italic;padding:0.5em 1em;margin:0;}
 
+p.wp-caption-text:before{
+  pointer-events:none;
+  content:'camera_alt';
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  vertical-align:middle;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 
-@media(max-width: 976px){
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+  
+  margin-right:8px;
+  margin-bottom:1px;
+  opacity:0.5;
+}
+
+@media(max-width: 839px){
   img.alignright,
   .wp-caption.alignright {margin:1em -20px 1em 1.5em;width:60% !important;}
   img.alignleft,
   .wp-caption.alignleft {margin:1em 1.5em 1em -20px;width:60% !important;}
-  
+  .wp-caption.aligncenter{margin-left:-20px;margin-right:-20px;}
 }
 @media(max-width: 641px){
   img.alignright,
   .wp-caption.alignright {margin:1em 0;width:100% !important;}
   img.alignleft,
   .wp-caption.alignleft {margin:1em 0;width:100% !important;}
+  
   
 }
 
