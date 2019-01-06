@@ -17,7 +17,7 @@
   track_pageview($ip,$url,$time,$reff);
 
   if (isset($_GET['e'])) {
-    $err $_GET['e'];
+    $err = $_GET['e'];
   }
 
 ?>
